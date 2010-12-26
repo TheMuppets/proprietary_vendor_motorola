@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk \
     vendor/motorola/sholes/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk
 
-# All the blobs necessary for passion
+# All the blobs necessary for sholes
 PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/libmoto_gps.so:/system/lib/libmoto_gps.so \
     vendor/motorola/sholes/proprietary/libcamera.so:/system/lib/libcamera.so \
@@ -55,17 +55,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/libmoto_ril.so:/system/lib/libmoto_ril.so \
     vendor/motorola/sholes/proprietary/liboemcamera.so:/system/lib/liboemcamera.so \
     vendor/motorola/sholes/proprietary/libOMX.TI.AAC.decode.so:/system/lib/libOMX.TI.AAC.decode.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.AAC.encode.so:/system/lib/libOMX.TI.AAC.encode.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.AMR.decode.so:/system/lib/libOMX.TI.AMR.decode.so \
     vendor/motorola/sholes/proprietary/libOMX.TI.AMR.encode.so:/system/lib/libOMX.TI.AMR.encode.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.JPEG.Encoder.so:/system/lib/libOMX.TI.JPEG.Encoder.so \
     vendor/motorola/sholes/proprietary/libOMX.TI.MP3.decode.so:/system/lib/libOMX.TI.MP3.decode.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.Video.Decoder.so:/system/lib/libOMX.TI.Video.Decoder.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.Video.encoder.so:/system/lib/libOMX.TI.Video.encoder.so \
     vendor/motorola/sholes/proprietary/libOMX.TI.WBAMR.decode.so:/system/lib/libOMX.TI.WBAMR.decode.so \
-    vendor/motorola/sholes/proprietary/libOMX.TI.WBAMR.encode.so:/system/lib/libOMX.TI.WBAMR.encode.so \
     vendor/motorola/sholes/proprietary/libOMX.TI.WMA.decode.so:/system/lib/libOMX.TI.WMA.decode.so \
-    vendor/motorola/sholes/proprietary/libOMX_Core.so:/system/lib/libOMX_Core.so \
     vendor/motorola/sholes/proprietary/libopencore_asflocal.so:/system/lib/libopencore_asflocal.so \
     vendor/motorola/sholes/proprietary/libopencore_asflocalreg.so:/system/lib/libopencore_asflocalreg.so \
     vendor/motorola/sholes/proprietary/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \

@@ -23,8 +23,7 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/sholes/proprietary/libril_rds.so:obj/lib/libril_rds.so \
     vendor/motorola/sholes/proprietary/libnmea.so:obj/lib/libnmea.so \
     vendor/motorola/sholes/proprietary/gralloc.omap3.so:obj/lib/hw/gralloc.omap3.so \
-    vendor/motorola/sholes/proprietary/lights.sholes.so:obj/lib/hw/lights.sholes.so \
-    vendor/motorola/sholes/proprietary/sensors.sholes.so:obj/lib/hw/sensors.sholes.so
+    vendor/motorola/sholes/proprietary/lights.sholes.so:obj/lib/hw/lights.sholes.so
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
@@ -44,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/libGLESv2_POWERVR_SGX530_121.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_121.so \
     vendor/motorola/sholes/proprietary/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so \
     vendor/motorola/sholes/proprietary/lights.sholes.so:/system/lib/hw/lights.sholes.so \
-    vendor/motorola/sholes/proprietary/sensors.sholes.so:/system/lib/hw/sensors.sholes.so \
     vendor/motorola/sholes/proprietary/libbattd.so:/system/lib/libbattd.so \
     vendor/motorola/sholes/proprietary/libglslcompiler.so:/system/lib/libglslcompiler.so \
     vendor/motorola/sholes/proprietary/libHPImgApi.so:/system/lib/libHPImgApi.so \

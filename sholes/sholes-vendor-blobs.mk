@@ -19,11 +19,9 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/sholes/proprietary/libmoto_gps.so:obj/lib/libmoto_gps.so \
     vendor/motorola/sholes/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/motorola/sholes/proprietary/libaudio.so:obj/lib/libaudio.so \
-    vendor/motorola/sholes/proprietary/libaudiopolicy.so:obj/lib/libaudiopolicy.so \
     vendor/motorola/sholes/proprietary/libril_rds.so:obj/lib/libril_rds.so \
     vendor/motorola/sholes/proprietary/libnmea.so:obj/lib/libnmea.so \
     vendor/motorola/sholes/proprietary/gralloc.omap3.so:obj/lib/hw/gralloc.omap3.so \
-    vendor/motorola/sholes/proprietary/lights.sholes.so:obj/lib/hw/lights.sholes.so
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
@@ -35,14 +33,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/libmoto_gps.so:/system/lib/libmoto_gps.so \
     vendor/motorola/sholes/proprietary/libcamera.so:/system/lib/libcamera.so \
     vendor/motorola/sholes/proprietary/libaudio.so:/system/lib/libaudio.so \
-    vendor/motorola/sholes/proprietary/libaudiopolicy.so:/system/lib/libaudiopolicy.so \
     vendor/motorola/sholes/proprietary/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/sholes/proprietary/libnmea.so:/system/lib/libnmea.so \
     vendor/motorola/sholes/proprietary/libEGL_POWERVR_SGX530_121.so:/system/lib/egl/libEGL_POWERVR_SGX530_121.so \
     vendor/motorola/sholes/proprietary/libGLESv1_CM_POWERVR_SGX530_121.so:/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so \
     vendor/motorola/sholes/proprietary/libGLESv2_POWERVR_SGX530_121.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_121.so \
     vendor/motorola/sholes/proprietary/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so \
-    vendor/motorola/sholes/proprietary/lights.sholes.so:/system/lib/hw/lights.sholes.so \
     vendor/motorola/sholes/proprietary/libbattd.so:/system/lib/libbattd.so \
     vendor/motorola/sholes/proprietary/libglslcompiler.so:/system/lib/libglslcompiler.so \
     vendor/motorola/sholes/proprietary/libHPImgApi.so:/system/lib/libHPImgApi.so \
@@ -109,14 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/wbamrenc_sn.dll64P:/system/lib/dsp/wbamrenc_sn.dll64P \
     vendor/motorola/sholes/proprietary/wmadec_sn.dll64P:/system/lib/dsp/wmadec_sn.dll64P \
     vendor/motorola/sholes/proprietary/wmv9dec_sn.dll64P:/system/lib/dsp/wmv9dec_sn.dll64P \
-    vendor/motorola/sholes/proprietary/act_mirred.ko:/system/lib/modules/act_mirred.ko \
-    vendor/motorola/sholes/proprietary/act_police.ko:/system/lib/modules/act_police.ko \
-    vendor/motorola/sholes/proprietary/cls_u32.ko:/system/lib/modules/cls_u32.ko \
-    vendor/motorola/sholes/proprietary/em_u32.ko:/system/lib/modules/em_u32.ko \
-    vendor/motorola/sholes/proprietary/ifb.ko:/system/lib/modules/ifb.ko \
-    vendor/motorola/sholes/proprietary/sch_htb.ko:/system/lib/modules/sch_htb.ko \
-    vendor/motorola/sholes/proprietary/sch_ingress.ko:/system/lib/modules/sch_ingress.ko \
-    vendor/motorola/sholes/proprietary/wl127x_test.ko:/system/lib/modules/wl127x_test.ko \
     vendor/motorola/sholes/proprietary/de-DE_gl0_sg.bin:/system/tts/lang_pico/de-DE_gl0_sg.bin \
     vendor/motorola/sholes/proprietary/de-DE_ta.bin:/system/tts/lang_pico/de-DE_ta.bin \
     vendor/motorola/sholes/proprietary/en-GB_kh0_sg.bin:/system/tts/lang_pico/en-GB_kh0_sg.bin \

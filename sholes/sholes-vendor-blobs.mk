@@ -105,18 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/proprietary/wbamrenc_sn.dll64P:/system/lib/dsp/wbamrenc_sn.dll64P \
     vendor/motorola/sholes/proprietary/wmadec_sn.dll64P:/system/lib/dsp/wmadec_sn.dll64P \
     vendor/motorola/sholes/proprietary/wmv9dec_sn.dll64P:/system/lib/dsp/wmv9dec_sn.dll64P \
-    vendor/motorola/sholes/proprietary/de-DE_gl0_sg.bin:/system/tts/lang_pico/de-DE_gl0_sg.bin \
-    vendor/motorola/sholes/proprietary/de-DE_ta.bin:/system/tts/lang_pico/de-DE_ta.bin \
-    vendor/motorola/sholes/proprietary/en-GB_kh0_sg.bin:/system/tts/lang_pico/en-GB_kh0_sg.bin \
-    vendor/motorola/sholes/proprietary/en-GB_ta.bin:/system/tts/lang_pico/en-GB_ta.bin \
-    vendor/motorola/sholes/proprietary/en-US_lh0_sg.bin:/system/tts/lang_pico/en-US_lh0_sg.bin \
-    vendor/motorola/sholes/proprietary/en-US_ta.bin:/system/tts/lang_pico/en-US_ta.bin \
-    vendor/motorola/sholes/proprietary/es-ES_ta.bin:/system/tts/lang_pico/es-ES_ta.bin \
-    vendor/motorola/sholes/proprietary/es-ES_zl0_sg.bin:/system/tts/lang_pico/es-ES_zl0_sg.bin \
-    vendor/motorola/sholes/proprietary/fr-FR_nk0_sg.bin:/system/tts/lang_pico/fr-FR_nk0_sg.bin \
-    vendor/motorola/sholes/proprietary/fr-FR_ta.bin:/system/tts/lang_pico/fr-FR_ta.bin \
-    vendor/motorola/sholes/proprietary/it-IT_cm0_sg.bin:/system/tts/lang_pico/it-IT_cm0_sg.bin \
-    vendor/motorola/sholes/proprietary/it-IT_ta.bin:/system/tts/lang_pico/it-IT_ta.bin \
     vendor/motorola/sholes/proprietary/sholes-keypad.kcm.bin:/system/usr/keychars/sholes-keypad.kcm.bin \
     vendor/motorola/sholes/proprietary/cpcap-key.kl:/system/usr/keylayout/cpcap-key.kl \
     vendor/motorola/sholes/proprietary/sholes-keypad.kl:/system/usr/keylayout/sholes-keypad.kl

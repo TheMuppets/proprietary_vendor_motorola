@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/zeppelin/proprietary/libOmxVidEnc.so:/system/lib/libOmxVidEnc.so \
     vendor/motorola/zeppelin/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
     vendor/motorola/zeppelin/proprietary/libmm-adspsvc.so:/system/lib/libmm-adspsvc.so \
+    vendor/motorola/zeppelin/proprietary/libvideotrimer.so:/system/lib/libvideotrimer.so \
     vendor/motorola/zeppelin/proprietary/libspeech.so:/system/lib/libspeech.so \
     vendor/motorola/zeppelin/proprietary/akmd2:/system/bin/akmd2 \
     vendor/motorola/zeppelin/proprietary/bthelp:/system/bin/bthelp \

@@ -1,5 +1,0 @@
-#  Morrison 3.5 headset button keymap
-
-key 226    HEADSETHOOK       WAKE
-key 116    POWER             WAKE
-key 107    ENDCALL           WAKE_DROPPED    

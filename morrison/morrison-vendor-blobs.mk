@@ -19,13 +19,6 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/morrison/proprietary/libloc_api.so:obj/lib/libloc_api.so \
     vendor/motorola/morrison/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/motorola/morrison/proprietary/libril-qc-1.so:obj/lib/libril-qc-1.so
-#    vendor/motorola/morrison/proprietary/libaudio.so:obj/lib/libaudio.so
-#    vendor/motorola/morrison/proprietary/lights.msm7k.so:obj/lib/hw/lights.msm7k.so
-
-#PRODUCT_COPY_FILES += \
-#    vendor/motorola/morrison/proprietary/ProgramMenuSystem.apk:/system/app/ProgramMenuSystem.apk \
-#    vendor/motorola/morrison/proprietary/ProgramMenu.apk:/system/app/ProgramMenu.apk \
-#    vendor/motorola/morrison/proprietary/PhoneConfig.apk:/system/app/PhoneConfig.apk
 
 # All the blobs necessary for passion
 PRODUCT_COPY_FILES += \
@@ -60,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/morrison/proprietary/libOmxMpeg4Dec.so:/system/lib/libOmxMpeg4Dec.so \
     vendor/motorola/morrison/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
     vendor/motorola/morrison/proprietary/libOmxVidEnc.so:/system/lib/libOmxVidEnc.so \
+    vendor/motorola/morrison/proprietary/libvideotrimer.so:/system/lib/libvideotrimer.so \
     vendor/motorola/morrison/proprietary/libmm-adspsvc.so:/system/lib/libmm-adspsvc.so \
     vendor/motorola/morrison/proprietary/libopencore_motlocal.so:/system/lib/libopencore_motlocal.so \
     vendor/motorola/morrison/proprietary/libopencore_motlocalreg.so:/system/lib/libopencore_motlocalreg.so \
@@ -72,42 +66,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/morrison/proprietary/nvram.txt:/system/etc/wifi/nvram.txt \
     vendor/motorola/morrison/proprietary/sdio-g-cdc-reclaim-wme.bin:/system/etc/wifi/sdio-g-cdc-reclaim-wme.bin \
     vendor/motorola/morrison/proprietary/pvplayer_mot.cfg:/system/etc/pvplayer_mot.cfg \
-    vendor/motorola/morrison/proprietary/adp5588_morrison.kcm.bin:/system/usr/keychars/adp5588_morrison.kcm.bin \
-    vendor/motorola/morrison/proprietary/headset.kcm.bin:/system/usr/keychars/headset.kcm.bin \
-    vendor/motorola/morrison/proprietary/adp5588_morrison.kl:/system/usr/keylayout/adp5588_morrison.kl \
     vendor/motorola/morrison/proprietary/touchpad:/system/bin/touchpad \
     vendor/motorola/morrison/proprietary/tcmd_engine:/system/bin/tcmd_engine \
     vendor/motorola/morrison/proprietary/fuel_gauge:/system/bin/fuel_gauge \
-    vendor/motorola/morrison/proprietary/headset.kl:/system/usr/keylayout/headset.kl \
     vendor/motorola/morrison/proprietary/qmuxd:/system/bin/qmuxd \
     vendor/motorola/morrison/proprietary/akmd_set.cfg:/system/etc/akm/akmd_set.cfg \
     vendor/motorola/morrison/proprietary/BCM4325D1_004.002.004.0218.0225.hcd:/system/etc/BCM4325D1_004.002.004.0218.0225.hcd \
     vendor/motorola/morrison/proprietary/bt_downloader:/system/bin/bt_downloader \
     vendor/motorola/morrison/proprietary/bt_init:/system/bin/bt_init \
-    vendor/motorola/morrison/proprietary/bt_init.config:/system/etc/bt_init.config
+    vendor/motorola/morrison/proprietary/bt_init.config:/system/etc/bt_init.config \
+    vendor/motorola/morrison/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
+    vendor/motorola/morrison/proprietary/libomx_aacdec_sharedlibrary.so:/system/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_amrdec_sharedlibrary.so:/system/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_amrenc_sharedlibrary.so:/system/lib/libomx_amrenc_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_arcomxcore_sharedlibrary.so:/system/lib/libomx_arcomxcore_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_avcdec_sharedlibrary.so:/system/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_m4vdec_sharedlibrary.so:/system/lib/libomx_m4vdec_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/libomx_mp3dec_sharedlibrary.so:/system/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/motorola/morrison/proprietary/charge_only_mode:root/sbin/charge_only_mode
 
-#    vendor/motorola/morrison/proprietary/lights.msm7k.so:/system/lib/hw/lights.msm7k.so
-#    vendor/motorola/morrison/proprietary/FMRadio.apk:/system/app/FMRadio.apk
-#    vendor/motorola/morrison/proprietary/libOmxCore.so:/system/lib/libOmxCore.so \
-#    vendor/motorola/morrison/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
-#    vendor/motorola/morrison/proprietary/libomx_aacdec_sharedlibrary.so:/system/lib/libomx_aacdec_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_amrdec_sharedlibrary.so:/system/lib/libomx_amrdec_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_amrenc_sharedlibrary.so:/system/lib/libomx_amrenc_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_arcomxcore_sharedlibrary.so:/system/lib/libomx_arcomxcore_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_avcdec_sharedlibrary.so:/system/lib/libomx_avcdec_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_m4vdec_sharedlibrary.so:/system/lib/libomx_m4vdec_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/libomx_mp3dec_sharedlibrary.so:/system/lib/libomx_mp3dec_sharedlibrary.so \
-#    vendor/motorola/morrison/proprietary/fmradioserver:/system/bin/fmradioserver \
-#    vendor/motorola/morrison/proprietary/fmradio:/system/bin/fmradio \
-#    vendor/motorola/morrison/proprietary/libFMRadio.so:/system/lib/libFMRadio.so \
-#    vendor/motorola/morrison/proprietary/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
-#    vendor/motorola/morrison/proprietary/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
-#    vendor/motorola/morrison/proprietary/bt_downloader:/system/bin/bt_downloader \
-#    vendor/motorola/morrison/proprietary/bt_init:/system/bin/bt_init \
-#    vendor/motorola/morrison/proprietary/bt_test_exec:/system/bin/bt_test_exec \
-#    vendor/motorola/morrison/proprietary/BCM4325D1_004.002.004.0218.0225.hcd:/system/etc/BCM4325D1_004.002.004.0218.0225.hcd \
-#    vendor/motorola/morrison/proprietary/bt_init.config:/system/etc/bt_init.config \
-#    vendor/motorola/morrison/proprietary/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh
-#    vendor/motorola/morrison/proprietary/libaudio.so:/system/lib/libaudio.so \
 
 

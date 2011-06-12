@@ -17,6 +17,7 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/motorola/shadow/proprietary/libarcsoft.so:obj/lib/libarcsoft.so \
+    vendor/motorola/shadow/proprietary/libaudio.so:obj/lib/libaudio.so \
     vendor/motorola/shadow/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/motorola/shadow/proprietary/libgps_rds.so:obj/lib/libgps_rds.so \
     vendor/motorola/shadow/proprietary/libnmea.so:obj/lib/libnmea.so \
@@ -233,6 +234,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shadow/proprietary/run_backup:/system/xbin/run_backup \
     vendor/motorola/shadow/proprietary/run_restore:/system/xbin/run_restore \
     vendor/motorola/shadow/proprietary/ssmgrd:/system/xbin/ssmgrd \
+    vendor/motorola/shadow/proprietary/libaudio.so:/system/lib/libaudio.so \
     vendor/motorola/shadow/proprietary/libcamera.so:/system/lib/libcamera.so \
     vendor/motorola/shadow/proprietary/libnmea.so:/system/lib/libnmea.so \
     vendor/motorola/shadow/proprietary/libril_rds.so:/system/lib/libril_rds.so \

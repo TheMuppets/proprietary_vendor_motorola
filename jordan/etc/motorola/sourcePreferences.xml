@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<!-- EACH MAP IN THIS LIST DEFINES SETTINGS FOR account of that type. Please ensure that there are no duplicate entries for same type as this may lead to cloberring of these settings, the later settings would overide the preceding setting in that case -->
+
+	<map>
+		<!-- Settings for account type "com.google" -->
+		<string name="accountType">com.google</string>
+
+		<!-- Pretty name is constant string value "Google" -->
+		<string name="prettyName">strVal:Google</string>
+
+		<!-- Secondary Name is accountName -->
+		<string name="secondaryName">refVal:accountName</string>
+
+		<!-- This account type allows out of context pictures to be displayed for this contact -->
+		<string name="allowOutOfContext">intVal:1</string>
+
+		<!-- This account is editable in blur contacts app -->
+		<string name="activeSyncSource">intVal:1</string>
+
+		<!-- This Account Type does not have blur source name associated with it -->
+		<string name="blurSourceName">strVal:</string>
+
+		<!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+		<string name="capability">capabilityVal:contacts</string>
+
+		<!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+		<string name="pictureSource">intVal:0</string>
+	</map>
+
+	<map>
+		<!-- Settings for account type "com.facebook.auth.login" -->
+		<string name="accountType">com.facebook.auth.login</string>
+
+		<!-- Pretty name is constant string value "Native Facebook" -->
+		<string name="prettyName">strVal:Native Facebook</string>
+
+		<!-- Secondary Name is accountName -->
+		<string name="secondaryName">refVal:accountName</string>
+
+		<!-- This account type does not allow out of context pictures to be displayed for this contact -->
+		<string name="allowOutOfContext">intVal:0</string>
+
+		<!-- This account is not editable in blur contacts app. Use native app to modify attributes of this contact -->
+		<string name="activeSyncSource">intVal:0</string>
+
+		<!-- This Account Type does not have blur source name associated with it -->
+		<string name="blurSourceName">strVal:</string>
+
+		<!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+		<string name="capability">capabilityVal:contacts</string>
+
+		<!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+		<string name="pictureSource">intVal:0</string>
+	</map>
+
+	<map>
+		<!-- Settings for account type "com.android.exchange" -->
+		<string name="accountType">com.android.exchange</string>
+
+		<!-- Pretty name constant string value "Google Exchange" -->
+		<string name="prettyName">strVal:Google Exchange</string>
+
+		<!-- Secondary Name is accountName -->
+		<string name="secondaryName">refVal:accountName</string>
+
+		<!-- This account type allows out of context pictures to be displayed for this contact -->
+		<string name="allowOutOfContext">intVal:1</string>
+
+		<!-- This account is editable in blur contacts app -->
+		<string name="activeSyncSource">intVal:1</string>
+
+		<!-- This Account Type does not have blur source name associated with it -->
+		<string name="blurSourceName">strVal:</string>
+
+		<!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+		<string name="capability">capabilityVal:contacts</string>
+
+		<!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+		<string name="pictureSource">intVal:0</string>
+	</map>
+
+<!-- INSERT Carrier specific applications setting AFTER THIS COMMENT -->
+     <map>
+        <!-- These Setting are applicable to account of type "com.motorola..vf360" -->
+        <string name="accountType">com.motorola.vf360</string>
+
+        <!-- Pretty name is "VF360" -->
+        <string name="prettyName">strVal:VF360</string>
+
+        <!-- Secondary Name is accountName -->
+        <string name="secondaryName">refVal:VF360</string>
+
+        <!-- This account type alVF360 out of context pictures to be displayed for this contact -->
+        <string name="allowOutOfContext">intVal:1</string>
+
+        <!-- This account is editable in blur contacts app -->
+        <string name="activeSyncSource">intVal:2</string>
+
+        <!-- This Account Type does not have blur source name associated with it -->
+        <string name="blurSourceName">strVal:</string>
+
+        <!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+        <string name="capability">capabilityVal:contacts</string>
+
+        <!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+        <string name="pictureSource">intVal:0</string>
+    </map>
+
+	<map>
+                <!-- These Setting are applicable to account of type "com.motorola.nabsync.MyPhonebook" -->
+                <string name="accountType">com.motorola.nabsync.MyPhonebook</string>
+
+                <!-- Pretty name is "AccountName" -->
+                <string name="prettyName">refVal:accountName</string>
+
+                <!-- Secondary Name is null -->
+                <string name="secondaryName">strVal:</string>
+
+                <!-- This account type allows out of context pictures to be displayed for this contact -->
+                <string name="allowOutOfContext">intVal:1</string>
+
+                <!-- This account is editable in blur contacts app -->
+                <string name="activeSyncSource">intVal:1</string>
+
+                <!-- This Account Type does not have blur source name associated with it -->
+                <string name="blurSourceName">strVal:</string>
+
+                <!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+                <string name="capability">capabilityVal:contacts</string>
+
+                <!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+                <string name="pictureSource">intVal:0</string>
+    </map>
+
+
+<!-- INSERT Carrier specific applications setting BEFORE THIS COMMENT -->
+
+
+	<!-- Last Entry to indicate default value for remaining account types -->
+	<map>
+		<!-- These Setting are applicable to any NON BLUR account type that is not defined above -->
+		<string name="accountType">*</string>
+
+		<!-- Pretty name is derived value from accountType -->
+		<string name="prettyName">refVal:accountType</string>
+
+		<!-- Secondary Name is accountName -->
+		<string name="secondaryName">refVal:accountName</string>
+
+		<!-- This account type does not allow out of context pictures to be displayed for this contact -->
+		<string name="allowOutOfContext">intVal:0</string>
+
+		<!-- This account is not editable (read only contact) Use native app that supports this account type to edit information for this account -->
+		<string name="activeSyncSource">intVal:0</string>
+
+		<!-- This Account Type does not have blur source name associated with it -->
+		<string name="blurSourceName">strVal:</string>
+
+		<!-- This account type creates contacts of type "contacts" (In blur contacts can be either "contacts" or "friends") -->
+		<string name="capability">capabilityVal:contacts</string>
+
+		<!-- This account type is not part of Picture algorithm preferrd picture source selection -->
+		<string name="pictureSource">intVal:0</string>
+	</map>
+</list>

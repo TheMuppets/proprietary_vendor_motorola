@@ -179,6 +179,10 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/panic_daemon:system/bin/panic_daemon \
 	vendor/motorola/jordan/xbin/ssmgrd:system/xbin/ssmgrd
 
+#location proxy
+PRODUCT_COPY_FILES += \
+	vendor/motorola/jordan/framework/com.motorola.android.location.jar:system/framework/com.motorola.android.location.jar
+
 #app
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/app/FMRadio.apk:system/app/FMRadio.apk \

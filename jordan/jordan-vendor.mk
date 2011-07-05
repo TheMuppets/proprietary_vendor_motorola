@@ -14,6 +14,7 @@
 
 
 # LIBS
+#vendor/motorola/jordan/lib/libreference-ril.so:system/lib/libreference-ril.so
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libcamera.so:system/lib/libmotocamera.so \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
@@ -42,7 +43,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libssmgr.so:system/lib/libssmgr.so \
 	vendor/motorola/jordan/lib/libtpa.so:system/lib/libtpa.so \
 	vendor/motorola/jordan/lib/libtpa_core.so:system/lib/libtpa_core.so \
-	vendor/motorola/jordan/lib/libreference-ril.so:system/lib/libreference-ril.so \
 	vendor/motorola/jordan/lib/libril-moto-umts-1.so:system/lib/libril-moto-umts-1.so \
 	vendor/motorola/jordan/lib/librilswitch.so:system/lib/librilswitch.so \
 	vendor/motorola/jordan/lib/libsmapi.so:system/lib/libsmapi.so \
@@ -150,6 +150,8 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/motorola/tcmd/pkiprovision.cfg:system/etc/motorola/tcmd/pkiprovision.cfg
 
 #bin
+#vendor/motorola/jordan/bin/fmradio:system/bin/fmradio 
+#vendor/motorola/jordan/bin/iptables:system/bin/iptables
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/pvrsrvinit:system/bin/pvrsrvinit \
 	vendor/motorola/jordan/bin/dumpe2fs:system/bin/dumpe2fs \
@@ -163,9 +165,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
 	vendor/motorola/jordan/bin/ap_gain.bin:system/bin/ap_gain.bin \
 	vendor/motorola/jordan/bin/gkilogd:system/bin/gkilogd \
-	vendor/motorola/jordan/bin/iptables:system/bin/iptables \
 	vendor/motorola/jordan/bin/fmradioserver:system/bin/fmradioserver \
-	vendor/motorola/jordan/bin/fmradio:system/bin/fmradio \
 	vendor/motorola/jordan/bin/mount_ext3.sh:system/bin/mount_ext3.sh \
 	vendor/motorola/jordan/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
 	vendor/motorola/jordan/bin/brcm_guci_drv:system/bin/brcm_guci_drv \

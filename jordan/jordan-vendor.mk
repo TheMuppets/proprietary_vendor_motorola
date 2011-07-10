@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/location:system/bin/location \
 	vendor/motorola/jordan/bin/charge_only_mode:system/bin/charge_only_mode \
 	vendor/motorola/jordan/bin/panic_daemon:system/bin/panic_daemon \
-	vendor/motorola/jordan/xbin/ssmgrd:system/xbin/ssmgrd
+	vendor/motorola/jordan/bin/ssmgrd:system/bin/ssmgrd
 
 #location proxy
 PRODUCT_COPY_FILES += \

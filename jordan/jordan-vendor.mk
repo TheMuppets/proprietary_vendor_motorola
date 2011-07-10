@@ -150,8 +150,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/motorola/tcmd/pkiprovision.cfg:system/etc/motorola/tcmd/pkiprovision.cfg
 
 #bin
-#vendor/motorola/jordan/bin/fmradio:system/bin/fmradio 
-#vendor/motorola/jordan/bin/iptables:system/bin/iptables
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/pvrsrvinit:system/bin/pvrsrvinit \
 	vendor/motorola/jordan/bin/dumpe2fs:system/bin/dumpe2fs \
@@ -167,7 +165,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/gkilogd:system/bin/gkilogd \
 	vendor/motorola/jordan/bin/fmradioserver:system/bin/fmradioserver \
 	vendor/motorola/jordan/bin/mount_ext3.sh:system/bin/mount_ext3.sh \
-	vendor/motorola/jordan/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
 	vendor/motorola/jordan/bin/brcm_guci_drv:system/bin/brcm_guci_drv \
 	vendor/motorola/jordan/bin/bplogd_daemon:system/bin/bplogd_daemon \
 	vendor/motorola/jordan/bin/akmd2:system/bin/akmd2 \

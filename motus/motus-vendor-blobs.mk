@@ -68,18 +68,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/motus/proprietary/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
     vendor/motorola/motus/proprietary/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
     vendor/motorola/motus/proprietary/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+    vendor/motorola/motus/proprietary/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
     vendor/motorola/motus/proprietary/libvideotrimer.so:system/lib/libvideotrimer.so \
     vendor/motorola/motus/proprietary/libmm-qcamera-tgt.so:system/lib/libmm-qcamera-tgt.so \
     vendor/motorola/motus/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/motus/proprietary/libhpprop.so:system/lib/libhpprop.so \
-    vendor/motorola/motus/proprietary/libomx_sharedlibrary_qc.so:system/lib/libomx_sharedlibrary_qc.so \
-    vendor/motorola/motus/proprietary/libomx_wmadec_sharedlibrary.so:system/lib/libomx_wmadec_sharedlibrary.so \
-    vendor/motorola/motus/proprietary/libomx_wmvdec_sharedlibrary.so:system/lib/libomx_wmvdec_sharedlibrary.so \
-    vendor/motorola/motus/proprietary/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
-    vendor/motorola/motus/proprietary/libopencore_motlocal.so:system/lib/libopencore_motlocal.so \
-    vendor/motorola/motus/proprietary/libopencore_motlocalreg.so:system/lib/libopencore_motlocalreg.so \
     vendor/motorola/motus/proprietary/libspeech.so:system/lib/libspeech.so \
     vendor/motorola/motus/proprietary/01_pvplayer_mot.cfg:system/etc/01_pvplayer_mot.cfg \
     vendor/motorola/motus/proprietary/nvram.txt:system/etc/wifi/nvram.txt \
-    vendor/motorola/motus/proprietary/pvplayer_mot.cfg:system/etc/pvplayer_mot.cfg
+    vendor/motorola/motus/proprietary/pvplayer_mot.cfg:system/etc/pvplayer_mot.cfg \
+    vendor/motorola/motus/proprietary/charge_only_mode:root/sbin/charge_only_mode
 

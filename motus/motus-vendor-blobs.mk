@@ -77,5 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/motus/proprietary/01_pvplayer_mot.cfg:system/etc/01_pvplayer_mot.cfg \
     vendor/motorola/motus/proprietary/nvram.txt:system/etc/wifi/nvram.txt \
     vendor/motorola/motus/proprietary/pvplayer_mot.cfg:system/etc/pvplayer_mot.cfg \
-    vendor/motorola/motus/proprietary/charge_only_mode:root/sbin/charge_only_mode
+    vendor/motorola/motus/proprietary/charge_only_mode:root/sbin/charge_only_mode \
+    vendor/motorola/motus/proprietary/charge_only_mode:recovery/root/sbin/charge_only_mode
 

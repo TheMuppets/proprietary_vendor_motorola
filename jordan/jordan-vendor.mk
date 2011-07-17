@@ -14,6 +14,7 @@
 
 
 # LIBS
+#vendor/motorola/jordan/lib/libreference-ril.so:system/lib/libreference-ril.so
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libcamera.so:system/lib/libmotocamera.so \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
@@ -164,7 +165,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/gkilogd:system/bin/gkilogd \
 	vendor/motorola/jordan/bin/fmradioserver:system/bin/fmradioserver \
 	vendor/motorola/jordan/bin/mount_ext3.sh:system/bin/mount_ext3.sh \
-	vendor/motorola/jordan/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
 	vendor/motorola/jordan/bin/brcm_guci_drv:system/bin/brcm_guci_drv \
 	vendor/motorola/jordan/bin/bplogd_daemon:system/bin/bplogd_daemon \
 	vendor/motorola/jordan/bin/akmd2:system/bin/akmd2 \
@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/location:system/bin/location \
 	vendor/motorola/jordan/bin/charge_only_mode:system/bin/charge_only_mode \
 	vendor/motorola/jordan/bin/panic_daemon:system/bin/panic_daemon \
-	vendor/motorola/jordan/xbin/ssmgrd:system/xbin/ssmgrd
+	vendor/motorola/jordan/bin/ssmgrd:system/bin/ssmgrd
 
 #location proxy
 PRODUCT_COPY_FILES += \

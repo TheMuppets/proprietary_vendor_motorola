@@ -240,5 +240,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shadow/proprietary/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/shadow/proprietary/librds_util.so:/system/lib/librds_util.so \
     vendor/motorola/shadow/proprietary/libsmiledetect.so:/system/lib/libsmiledetect.so \
-    vendor/motorola/shadow/proprietary/libarcsoft.so:/system/lib/libarcsoft.so
-
+    vendor/motorola/shadow/proprietary/libarcsoft.so:/system/lib/libarcsoft.so \
+    vendor/motorola/shadow/proprietary/libLCML.so:/system/lib/libLCML.so \
+    vendor/motorola/shadow/proprietary/libVendor_ti_omx.so:/system/lib/libVendor_ti_omx.so \
+    vendor/motorola/shadow/proprietary/libVendor_ti_omx_config_parser.so:/system/lib/libVendor_ti_omx_config_parser.so \
+    vendor/motorola/shadow/proprietary/libbridge.so:/system/lib/libbridge.so \
+    vendor/motorola/shadow/proprietary/libstagefright.so:/system/lib/libstagefright.so \
+    vendor/motorola/shadow/proprietary/01_Vendor_ti_omx.cfg:/system/etc/01_Vendor_ti_omx.cfg \
+    vendor/motorola/shadow/proprietary/cameraCalFileDef.bin:/system/etc/cameraCalFileDef.bin

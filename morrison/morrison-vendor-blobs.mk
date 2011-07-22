@@ -17,7 +17,6 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/motorola/morrison/proprietary/libloc_api.so:obj/lib/libloc_api.so \
-    vendor/motorola/morrison/proprietary/libcamera.so:obj/lib/libcamera.so \
     vendor/motorola/morrison/proprietary/libril-qc-1.so:obj/lib/libril-qc-1.so
 
 # All the blobs necessary for passion
@@ -26,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/morrison/proprietary/libmm-qcamera-tgt.so:/system/lib/libmm-qcamera-tgt.so \
     vendor/motorola/morrison/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \
     vendor/motorola/morrison/proprietary/libhpprop.so:/system/lib/libhpprop.so \
-    vendor/motorola/morrison/proprietary/libcamera.so:/system/lib/libcamera.so \
     vendor/motorola/morrison/proprietary/libcm.so:/system/lib/libcm.so \
     vendor/motorola/morrison/proprietary/libdsm.so:/system/lib/libdsm.so \
     vendor/motorola/morrison/proprietary/libdss.so:/system/lib/libdss.so \

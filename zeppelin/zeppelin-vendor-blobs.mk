@@ -72,7 +72,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/zeppelin/proprietary/bt_downloader:/system/bin/bt_downloader \
     vendor/motorola/zeppelin/proprietary/bt_init:/system/bin/bt_init \
     vendor/motorola/zeppelin/proprietary/bt_init.config:/system/etc/bt_init.config \
-    vendor/motorola/zeppelin/proprietary/charge_only_mode:root/sbin/charge_only_mode
+    vendor/motorola/zeppelin/proprietary/charge_only_mode:root/sbin/charge_only_mode \
+    vendor/motorola/zeppelin/proprietary/0001.dffs:/system/etc/fuel_gauge/0001.dffs \
+    vendor/motorola/zeppelin/proprietary/0301.bqfs:/system/etc/fuel_gauge/0301.bqfs
 
 #    vendor/motorola/zeppelin/proprietary/FMRadio.apk:/system/app/FMRadio.apk
 #    vendor/motorola/zeppelin/proprietary/libOmxCore.so:/system/lib/libOmxCore.so \

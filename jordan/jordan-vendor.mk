@@ -14,14 +14,12 @@
 
 
 # LIBS
-#vendor/motorola/jordan/lib/libreference-ril.so:system/lib/libreference-ril.so
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libcamera.so:system/lib/libmotocamera.so \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libaudio.so:system/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libarcsoft.so:system/lib/libarcsoft.so \
 	vendor/motorola/jordan/lib/libbayercamera.so:system/lib/libbayercamera.so \
-	vendor/motorola/jordan/lib/libcaps.so:system/lib/libcaps.so \
 	vendor/motorola/jordan/lib/libIMGegl.so:system/lib/libIMGegl.so \
 	vendor/motorola/jordan/lib/libpvr2d.so:system/lib/libpvr2d.so \
 	vendor/motorola/jordan/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
@@ -88,8 +86,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libFMRadio.so:system/lib/libFMRadio.so \
 	vendor/motorola/jordan/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
 	vendor/motorola/jordan/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \
-	vendor/motorola/jordan/lib/liboemcamera.so:system/lib/liboemcamera.so \
-	vendor/motorola/jordan/lib/libpanic_daemon.so:system/lib/libpanic_daemon.so 
+	vendor/motorola/jordan/lib/liboemcamera.so:system/lib/liboemcamera.so 
 
 #etc
 PRODUCT_COPY_FILES += \
@@ -116,7 +113,6 @@ PRODUCT_COPY_FILES += \
 
 #Moto etc
 PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/etc/motorola/panic_daemon.config:system/etc/motorola/panic_daemon.config \
 	vendor/motorola/jordan/etc/motorola/ap_flex_version.txt:system/etc/motorola/ap_flex_version.txt \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio:system/etc/motorola/bp_nvm_default/File_Audio \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio1_AMR_WB:system/etc/motorola/bp_nvm_default/File_Audio1_AMR_WB \
@@ -144,31 +140,25 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/motorola/comm_drv/mmins_telephony.cfg:system/etc/motorola/comm_drv/mmins_telephony.cfg \
 	vendor/motorola/jordan/etc/motorola/comm_drv/mmins_user_settings.cfg:system/etc/motorola/comm_drv/mmins_user_settings.cfg \
 	vendor/motorola/jordan/etc/motorola/comm_drv/plmn_text_table.bin:system/etc/motorola/comm_drv/plmn_text_table.bin \
-	vendor/motorola/jordan/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt 
+	vendor/motorola/jordan/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt
 
 #bin
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/pvrsrvinit:system/bin/pvrsrvinit \
-	vendor/motorola/jordan/bin/dumpe2fs:system/bin/dumpe2fs \
 	vendor/motorola/jordan/bin/battd:system/bin/battd \
 	vendor/motorola/jordan/bin/protocol_driver:system/bin/protocol_driver \
 	vendor/motorola/jordan/bin/opprofdaemon:system/bin/opprofdaemon \
 	vendor/motorola/jordan/bin/nvm_daemon:system/bin/nvm_daemon \
 	vendor/motorola/jordan/bin/gkisystem:system/bin/gkisystem \
-	vendor/motorola/jordan/bin/gki_pd_notifier:system/bin/gki_pd_notifier \
 	vendor/motorola/jordan/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
 	vendor/motorola/jordan/bin/ap_gain.bin:system/bin/ap_gain.bin \
-	vendor/motorola/jordan/bin/gkilogd:system/bin/gkilogd \
 	vendor/motorola/jordan/bin/fmradioserver:system/bin/fmradioserver \
-	vendor/motorola/jordan/bin/mount_ext3.sh:system/bin/mount_ext3.sh \
 	vendor/motorola/jordan/bin/brcm_guci_drv:system/bin/brcm_guci_drv \
 	vendor/motorola/jordan/bin/akmd2:system/bin/akmd2 \
-	vendor/motorola/jordan/bin/rild_tcmd:system/bin/rild_tcmd \
 	vendor/motorola/jordan/bin/mot_boot_mode:system/bin/mot_boot_mode \
 	vendor/motorola/jordan/bin/usbd:system/bin/usbd \
 	vendor/motorola/jordan/bin/location:system/bin/location \
 	vendor/motorola/jordan/bin/charge_only_mode:system/bin/charge_only_mode \
-	vendor/motorola/jordan/bin/panic_daemon:system/bin/panic_daemon \
 	vendor/motorola/jordan/bin/ssmgrd:system/bin/ssmgrd
 
 #location proxy

@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libaudio.so:system/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libarcsoft.so:system/lib/libarcsoft.so \
 	vendor/motorola/jordan/lib/libbayercamera.so:system/lib/libbayercamera.so \
+	vendor/motorola/jordan/lib/libcaps.so:system/lib/libcaps.so \
 	vendor/motorola/jordan/lib/libIMGegl.so:system/lib/libIMGegl.so \
 	vendor/motorola/jordan/lib/libpvr2d.so:system/lib/libpvr2d.so \
 	vendor/motorola/jordan/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \

@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libHPImgApi.so:system/lib/libHPImgApi.so \
 	vendor/motorola/jordan/lib/libmotdb.so:system/lib/libmotdb.so \
 	vendor/motorola/jordan/lib/libmotodbgutils.so:system/lib/libmotodbgutils.so \
-	vendor/motorola/jordan/lib/libmotdb.so:system/lib/libmotdb.so \
 	vendor/motorola/jordan/lib/libmsl_interface.so:system/lib/libmsl_interface.so \
 	vendor/motorola/jordan/lib/libssmgr.so:system/lib/libssmgr.so \
 	vendor/motorola/jordan/lib/libtpa.so:system/lib/libtpa.so \

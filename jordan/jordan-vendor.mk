@@ -156,10 +156,8 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/bin/fmradioserver:system/bin/fmradioserver \
 	vendor/motorola/jordan/bin/brcm_guci_drv:system/bin/brcm_guci_drv \
 	vendor/motorola/jordan/bin/akmd2:system/bin/akmd2 \
-	vendor/motorola/jordan/bin/mot_boot_mode:system/bin/mot_boot_mode \
 	vendor/motorola/jordan/bin/usbd:system/bin/usbd \
 	vendor/motorola/jordan/bin/location:system/bin/location \
-	vendor/motorola/jordan/bin/charge_only_mode:system/bin/charge_only_mode \
 	vendor/motorola/jordan/bin/ssmgrd:system/bin/ssmgrd
 
 #location proxy

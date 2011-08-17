@@ -94,7 +94,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
 	vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap_rfmd.bin:system/etc/wifi/fw_tiwlan_ap_rfmd.bin \
 	vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
-	vendor/motorola/jordan/etc/wifi/hostapd.conf.templet:system/etc/wifi/hostapd.conf.templet \
 	vendor/motorola/jordan/etc/wifi/tiwlan.ini:system/etc/wifi/tiwlan.ini \
 	vendor/motorola/jordan/etc/wifi/tiwlan_ap.ini:system/etc/wifi/tiwlan_ap.ini \
 	vendor/motorola/jordan/etc/wifi/tiwlan_ap_rfmd.ini:system/etc/wifi/tiwlan_ap_rfmd.ini \

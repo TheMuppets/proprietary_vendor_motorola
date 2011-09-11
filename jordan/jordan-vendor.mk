@@ -15,7 +15,6 @@
 
 # LIBS
 PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/lib/libcamera.so:system/lib/libmotocamera.so \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libaudio.so:system/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libarcsoft.so:system/lib/libarcsoft.so \

@@ -15,7 +15,6 @@
 
 # LIBS
 PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/lib/libcamera.so:system/lib/libmotocamera.so \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libaudio.so:system/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libarcsoft.so:system/lib/libarcsoft.so \
@@ -89,30 +88,19 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \
 	vendor/motorola/jordan/lib/liboemcamera.so:system/lib/liboemcamera.so 
 
-#etc
-PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
-	vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap_rfmd.bin:system/etc/wifi/fw_tiwlan_ap_rfmd.bin \
-	vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
-	vendor/motorola/jordan/etc/wifi/tiwlan.ini:system/etc/wifi/tiwlan.ini \
-	vendor/motorola/jordan/etc/wifi/tiwlan_ap.ini:system/etc/wifi/tiwlan_ap.ini \
-	vendor/motorola/jordan/etc/wifi/tiwlan_ap_rfmd.ini:system/etc/wifi/tiwlan_ap_rfmd.ini \
-	vendor/motorola/jordan/etc/wifi/tiwlan_rfmd.ini:system/etc/wifi/tiwlan_rfmd.ini \
-	vendor/motorola/jordan/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/motorola/jordan/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
-	vendor/motorola/jordan/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
-	vendor/motorola/jordan/etc/cameraCalFileDef8M.bin:system/etc/cameraCalFileDef8M.bin \
-	vendor/motorola/jordan/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
-	vendor/motorola/jordan/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
-	vendor/motorola/jordan/etc/location.cfg:system/etc/location.cfg \
-	vendor/motorola/jordan/etc/fmc_init_1273.2.bts:system/etc/fmc_init_1273.2.bts \
-	vendor/motorola/jordan/etc/fmc_init_6450.2.bts:system/etc/fmc_init_6450.2.bts \
-	vendor/motorola/jordan/etc/fm_rx_init_1273.2.bts:system/etc/fm_rx_init_1273.2.bts \
-	vendor/motorola/jordan/etc/fm_rx_init_6450.2.bts:system/etc/fm_rx_init_6450.2.bts \
-	device/motorola/jordan/media_profiles.xml:system/etc/media_profiles.xml
-
 #Moto etc
 PRODUCT_COPY_FILES += \
+        vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
+        vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap_rfmd.bin:system/etc/wifi/fw_tiwlan_ap_rfmd.bin \
+        vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
+        vendor/motorola/jordan/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
+        vendor/motorola/jordan/etc/fmc_init_1273.2.bts:system/etc/fmc_init_1273.2.bts \
+        vendor/motorola/jordan/etc/fmc_init_6450.2.bts:system/etc/fmc_init_6450.2.bts \
+        vendor/motorola/jordan/etc/fm_rx_init_1273.2.bts:system/etc/fm_rx_init_1273.2.bts \
+        vendor/motorola/jordan/etc/fm_rx_init_6450.2.bts:system/etc/fm_rx_init_6450.2.bts \
+        vendor/motorola/jordan/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
+        vendor/motorola/jordan/etc/cameraCalFileDef8M.bin:system/etc/cameraCalFileDef8M.bin \
+        vendor/motorola/jordan/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
 	vendor/motorola/jordan/etc/motorola/ap_flex_version.txt:system/etc/motorola/ap_flex_version.txt \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio:system/etc/motorola/bp_nvm_default/File_Audio \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio1_AMR_WB:system/etc/motorola/bp_nvm_default/File_Audio1_AMR_WB \

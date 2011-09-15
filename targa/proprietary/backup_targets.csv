@@ -1,0 +1,10 @@
+# ACTION|PATH|FILE_MODE|DIR_MODE|OWNER_SRC_PATH
+copy|/data/data/com.android.providers.telephony/app_parts|0600|0771
+copy|/data/data/com.android.providers.telephony/databases/mmssms.db|0660
+copy|/data/data/com.android.providers.telephony/databases/telephony.db|0660
+copy|/data/data/com.android.providers.calendar/databases/calendar.db|0660
+copy|/data/data/com.android.providers.settings/databases/settings.db|0660
+copy|/data/data/com.motorola.providers.settings/databases/settings.db|0660
+copy|/data/data/com.android.calendar/shared_prefs/com.android.calendar_preferences.xml|0660
+copy|/data/data/com.google.android.providers.gmail/databases|0660
+

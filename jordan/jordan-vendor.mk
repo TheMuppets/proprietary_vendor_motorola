@@ -168,6 +168,5 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/cm71/libLCML.so:system/lib/libLCML.so \
 	vendor/motorola/jordan/cm71/libstagefright.so:system/lib/libstagefright.so \
 	vendor/motorola/jordan/cm71/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
-	vendor/motorola/jordan/cm71/libOMX.TI.Video.encoder.so:system/lib/libOMX.TI.Video.encoder.so \
 
 #the end

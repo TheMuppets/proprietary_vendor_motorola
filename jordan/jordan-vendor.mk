@@ -67,10 +67,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/dsp/720p_mp4venc_sn.dll64P:system/lib/dsp/720p_mp4venc_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/vpp_sn.dll64P:system/lib/dsp/vpp_sn.dll64P \
-	vendor/motorola/jordan/lib/egl/libeglinfo.so:system/lib/egl/libeglinfo.so \
 	vendor/motorola/jordan/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
-	vendor/motorola/jordan/lib/egl/libgles1_texture_stream.so:system/lib/egl/libgles1_texture_stream.so \
-	vendor/motorola/jordan/lib/egl/libgles2_texture_stream.so:system/lib/egl/libgles2_texture_stream.so \
 	vendor/motorola/jordan/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
 	vendor/motorola/jordan/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
 	vendor/motorola/jordan/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \

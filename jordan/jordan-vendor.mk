@@ -165,7 +165,6 @@ PRODUCT_COPY_FILES += \
 
 #prebuilt libs from CyanogenDefy for CM 7.1.0 (omap3 and omx changes)
 PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/cm71/libLCML.so:system/lib/libLCML.so \
 	vendor/motorola/jordan/cm71/libstagefright.so:system/lib/libstagefright.so \
 	vendor/motorola/jordan/cm71/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
 

@@ -17,3 +17,4 @@ ipcp-max-failure 30
 ipcp-max-terminate 10
 novj
 linkname ril
+mtu 1430

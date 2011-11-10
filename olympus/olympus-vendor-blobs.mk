@@ -12,7 +12,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
     vendor/motorola/olympus/proprietary/bin/am2server:system/bin/am2server \
     vendor/motorola/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+    vendor/motorola/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
     vendor/motorola/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+    vendor/motorola/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+    vendor/motorola/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \

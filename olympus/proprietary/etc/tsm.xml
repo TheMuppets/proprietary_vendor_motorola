@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  tsm.xml
+
+      This xml file provides the TrueSuite Mobile configuration. If this file
+      (or portions of it) are not provided, TSM will manage using internal
+      defaults. If this file is to be made available, it must be placed in a
+      location known to the am2server executable. On Android that location is
+      (by default) /system/etc/tsm.xml
+-->
+
+
+
+
+
+<config>
+
+    <!--====================================================================-->
+    <!-- database:                                                          -->
+    <!--    name contains the path and name of the database to use on this  -->
+    <!--    system. the maximum path length is 255.                         -->
+    <database name="/data/am2data.db" />
+    <!--====================================================================-->
+
+
+
+
+    <!--====================================================================-->
+    <!-- signature:                                                         -->
+    <!--    elf contains the prefix of the path to the TSM ELF signing key. -->
+    <!--    The actual file will have ".pubkey" appended to its name.       -->
+    <signature elf="/system/etc/am2server" />
+    <!--====================================================================-->
+
+
+
+
+    <!--====================================================================-->
+    <!-- lap_finger_mask:                                                   -->
+    <!--    value contains the (decimal) map of fingers which a user should -->
+    <!--    be prohibited from selecting for manual enrollment or deletion. -->
+    <!--    when used, the LAP enrollment must ensure that each of these    -->
+    <!--    fingers are enrolled.                                           -->
+    <!--    Fingers correspond to bits, where bits 0 through 9 are used to  -->
+    <!--    refer to the left pinky(0) through left thumb(4), and the right -->
+    <!--    thumb(5) through the right pinky(9)                             -->
+    <!--<lap_finger_mask value="72" />--> <!-- 72 = 0b0001001000, F4|F7            -->
+    <!--====================================================================-->
+
+</config>
+
+
+

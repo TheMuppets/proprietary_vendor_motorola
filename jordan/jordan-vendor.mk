@@ -17,25 +17,32 @@
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/libaudio.so:obj/lib/libaudio.so \
 	vendor/motorola/jordan/lib/libaudio.so:system/lib/libaudio.so \
+	vendor/motorola/jordan/lib/libarcsoft.so:system/lib/libarcsoft.so \
 	vendor/motorola/jordan/lib/libbayercamera.so:system/lib/libbayercamera.so \
 	vendor/motorola/jordan/lib/libcaps.so:system/lib/libcaps.so \
 	vendor/motorola/jordan/lib/libIMGegl.so:system/lib/libIMGegl.so \
 	vendor/motorola/jordan/lib/libpvr2d.so:system/lib/libpvr2d.so \
 	vendor/motorola/jordan/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
 	vendor/motorola/jordan/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+	vendor/motorola/jordan/lib/libsmiledetect.so:system/lib/libsmiledetect.so \
 	vendor/motorola/jordan/lib/libsrv_init.so:system/lib/libsrv_init.so \
 	vendor/motorola/jordan/lib/libsrv_um.so:system/lib/libsrv_um.so \
 	vendor/motorola/jordan/lib/libsoccamera.so:system/lib/libsoccamera.so \
 	vendor/motorola/jordan/lib/libbattd.so:system/lib/libbattd.so \
+	vendor/motorola/jordan/lib/libcryptoki.so:system/lib/libcryptoki.so \
 	vendor/motorola/jordan/lib/libganril.so:system/lib/libganril.so \
 	vendor/motorola/jordan/lib/libgki.so:system/lib/libgki.so \
 	vendor/motorola/jordan/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
 	vendor/motorola/jordan/lib/libHPImgApi.so:system/lib/libHPImgApi.so \
 	vendor/motorola/jordan/lib/libmotdb.so:system/lib/libmotdb.so \
+	vendor/motorola/jordan/lib/libmotodbgutils.so:system/lib/libmotodbgutils.so \
 	vendor/motorola/jordan/lib/libmsl_interface.so:system/lib/libmsl_interface.so \
 	vendor/motorola/jordan/lib/libssmgr.so:system/lib/libssmgr.so \
+	vendor/motorola/jordan/lib/libtpa.so:system/lib/libtpa.so \
+	vendor/motorola/jordan/lib/libtpa_core.so:system/lib/libtpa_core.so \
 	vendor/motorola/jordan/lib/libril-moto-umts-1.so:system/lib/libril-moto-umts-1.so \
 	vendor/motorola/jordan/lib/librilswitch.so:system/lib/librilswitch.so \
+	vendor/motorola/jordan/lib/libsmapi.so:system/lib/libsmapi.so \
 	vendor/motorola/jordan/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
 	vendor/motorola/jordan/lib/hw/gps.jordan.so:system/lib/hw/gps.jordan.so \
 	vendor/motorola/jordan/lib/dsp/baseimage.dof:system/lib/dsp/baseimage.dof \

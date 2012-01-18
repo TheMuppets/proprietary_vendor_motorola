@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/droid2/proprietary/lib/libsmiledetect.so:obj/lib/libsmiledetect.so \
     vendor/motorola/droid2/proprietary/lib/hw/gralloc.omap3.so:obj/lib/hw/gralloc.omap3.so
 
-#Motorola prebuilts
+# Apps
 PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/app/PhoneConfig.apk:/system/app/PhoneConfig.apk \
     vendor/motorola/droid2/proprietary/app/ProgramMenu.apk:/system/app/ProgramMenu.apk \
@@ -116,30 +116,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/lib/dsp/wbamrenc_sn.dll64P:/system/lib/dsp/wbamrenc_sn.dll64P \
     vendor/motorola/droid2/proprietary/lib/dsp/wmadec_sn.dll64P:/system/lib/dsp/wmadec_sn.dll64P \
     vendor/motorola/droid2/proprietary/lib/dsp/wmv9dec_sn.dll64P:/system/lib/dsp/wmv9dec_sn.dll64P \
-
-# egl
-PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/lib/egl/libEGL_POWERVR_SGX530_125.so:/system/lib/egl/libEGL_POWERVR_SGX530_125.so \
     vendor/motorola/droid2/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     vendor/motorola/droid2/proprietary/lib/egl/libGLESv2_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
     vendor/motorola/droid2/proprietary/lib/egl/libeglinfo.so:/system/lib/egl/libeglinfo.so \
     vendor/motorola/droid2/proprietary/lib/egl/libgles1_texture_stream.so:/system/lib/egl/libgles1_texture_stream.so \
     vendor/motorola/droid2/proprietary/lib/egl/libgles2_texture_stream.so:/system/lib/egl/libgles2_texture_stream.so \
-    vendor/motorola/droid2/proprietary/lib/egl/libpvrANDROID_WSEGL.so:/system/egl/libpvrANDROID_WSEGL.so \
-    vendor/motorola/droid2/proprietary/lib/egl/libIMGegl.so:/system/lib/libIMGegl.so \
-
-# hardware
-PRODUCT_COPY_FILE += \
     vendor/motorola/droid2/proprietary/lib/hw/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so \
-    vendor/motorola/droid2/proprietary/lib/hw/lights.droid2.so:/system/lib/hw/lights.droid2.so \
-    vendor/motorola/droid2/proprietary/lib/hw/sensors.droid2.so:/system/lib/hw/sensors.droid2.so \
-    vendor/motorola/droid2/proprietary/lib/hw/gps.droid2.so:/system/lib/hw/gps.droid2.so \
-    vendor/motorola/droid2/proprietary/lib/hw/overlay.omap3.so:/system/lib/hw/overlay.omap3.so
-
-PRODUCT_COPY_FILE += \
-    vendor/motorola/droid2/proprietary/lib/liba2dp.so:obj/lib/liba2dp.so \
-    vendor/motorola/droid2/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so \
     vendor/motorola/droid2/proprietary/lib/libHPImgApi.so:/system/lib/libHPImgApi.so \
+    vendor/motorola/droid2/proprietary/lib/libIMGegl.so:/system/lib/libIMGegl.so \
     vendor/motorola/droid2/proprietary/lib/libOMX.TI.AAC.decode.so:/system/lib/libOMX.TI.AAC.decode.so \
     vendor/motorola/droid2/proprietary/lib/libOMX.TI.AMR.decode.so:/system/lib/libOMX.TI.AMR.decode.so \
     vendor/motorola/droid2/proprietary/lib/libOMX.TI.MP3.decode.so:/system/lib/libOMX.TI.MP3.decode.so \
@@ -190,6 +175,7 @@ PRODUCT_COPY_FILE += \
     vendor/motorola/droid2/proprietary/lib/libprojectM.so:/system/lib/libprojectM.so \
     vendor/motorola/droid2/proprietary/lib/libprovlib.so:/system/lib/libprovlib.so \
     vendor/motorola/droid2/proprietary/lib/libpvr2d.so:/system/lib/libpvr2d.so \
+    vendor/motorola/droid2/proprietary/lib/libpvrANDROID_WSEGL.so:/system/lib/libpvrANDROID_WSEGL.so \
     vendor/motorola/droid2/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
     vendor/motorola/droid2/proprietary/lib/libsmapi.so:/system/lib/libsmapi.so \
     vendor/motorola/droid2/proprietary/lib/libsrv_init.so:/system/lib/libsrv_init.so \
@@ -204,6 +190,12 @@ PRODUCT_COPY_FILE += \
     vendor/motorola/droid2/proprietary/tts/lang_pico/en-US_ta.bin:/system/tts/lang_pico/en-US_ta.bin \
     vendor/motorola/droid2/proprietary/tts/lang_pico/es-ES_ta.bin:/system/tts/lang_pico/es-ES_ta.bin \
     vendor/motorola/droid2/proprietary/tts/lang_pico/es-ES_zl0_sg.bin:/system/tts/lang_pico/es-ES_zl0_sg.bin \
+    vendor/motorola/droid2/proprietary/usr/keychars/cdma_droid2-keypad.kcm.bin:/system/usr/keychars/cdma_droid2-keypad.kcm.bin \
+    vendor/motorola/droid2/proprietary/usr/keychars/cdma_droid2-keypad.kcm.bin:/system/usr/keychars/qwerty.kcm.bin \
+    vendor/motorola/droid2/proprietary/usr/keychars/cdma_droid2-keypad.kcm.bin:/system/usr/keychars/qwerty2.kcm.bin \
+    vendor/motorola/droid2/proprietary/usr/keylayout/cdma_droid2-keypad.kl:/system/usr/keylayout/cdma_droid2-keypad.kl \
+    vendor/motorola/droid2/proprietary/usr/keylayout/cdma_droid2-keypad.kl:/system/usr/keylayout/qwerty.kl \
+    vendor/motorola/droid2/proprietary/usr/keylayout/cpcap-key.kl:/system/usr/keylayout/cpcap-key.kl \
     vendor/motorola/droid2/proprietary/xbin/backup:/system/xbin/backup \
     vendor/motorola/droid2/proprietary/xbin/drm1_func_test:/system/xbin/drm1_func_test \
     vendor/motorola/droid2/proprietary/xbin/run_backup:/system/xbin/run_backup \
@@ -219,8 +211,13 @@ PRODUCT_COPY_FILE += \
     vendor/motorola/droid2/proprietary/lib/libLCML.so:/system/lib/libLCML.so \
     vendor/motorola/droid2/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
     vendor/motorola/droid2/proprietary/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
+    vendor/motorola/droid2/proprietary/lib/libreference-ril.so:/system/lib/libreference-ril.so \
     vendor/motorola/droid2/proprietary/lib/libril.so:/system/lib/libril.so \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/libbattd.so:/system/lib/libattd.so \
-    vendor/motorola/droid2/proprietary/bin/battd.so:/system/bin/battd \
     vendor/motorola/droid2/proprietary/lib/libusc.so:/system/lib/libusc.so \
+    vendor/motorola/droid2/proprietary/lib/hw/lights.droid2.so:/system/lib/hw/lights.droid2.so \
+    vendor/motorola/droid2/proprietary/lib/hw/sensors.droid2.so:/system/lib/hw/sensors.droid2.so \
+    vendor/motorola/droid2/proprietary/lib/hw/gps.droid2.so:/system/lib/hw/gps.droid2.so \
+    vendor/motorola/droid2/proprietary/lib/hw/overlay.omap3.so:/system/lib/hw/overlay.omap3.so
+

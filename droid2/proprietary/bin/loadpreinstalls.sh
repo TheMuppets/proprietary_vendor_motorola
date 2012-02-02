@@ -16,6 +16,9 @@ for file in `ls $PRELOAD_APP_DIR`; do
     if [ "$newMD5" != "$oldMD5" ]; then
         isInstalled=`pm path $file`
         if [ -n "$isInstalled" -o ! -e "$DATA_HASH_DIR/$file.md5" ]; then
+            if [ $file = "com.ideaworks3d.nfsshift" ]; then
+                rm -r /data/data/com.ideaworks3d.nfsshift
+            fi
             pm install -r $PRELOAD_APP_DIR/$file
             ret=$?
             if [ $ret -ne 0 ]; then

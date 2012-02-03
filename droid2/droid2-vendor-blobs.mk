@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/droid2/proprietary/lib/libmoto_gps.so:obj/lib/libmoto_gps.so \
     vendor/motorola/droid2/proprietary/lib/libarcsoft.so:obj/lib/libarcsoft.so \
     vendor/motorola/droid2/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
-    vendor/motorola/droid2/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/motorola/droid2/proprietary/lib/libmotocamera.so:obj/lib/libmotocamera.so \
     vendor/motorola/droid2/proprietary/lib/libnmea.so:obj/lib/libnmea.so \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:obj/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/librds_util.so:obj/lib/librds_util.so \
@@ -202,7 +202,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/xbin/run_restore:/system/xbin/run_restore \
     vendor/motorola/droid2/proprietary/xbin/ssmgrd:/system/xbin/ssmgrd \
     vendor/motorola/droid2/proprietary/lib/libaudio.so:/system/lib/libaudio.so \
-    vendor/motorola/droid2/proprietary/lib/libcamera.so:/system/lib/libcamera.so \
+    vendor/motorola/droid2/proprietary/lib/libmotocamera.so:/system/lib/libmotocamera.so \
     vendor/motorola/droid2/proprietary/lib/libnmea.so:/system/lib/libnmea.so \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/librds_util.so:/system/lib/librds_util.so \

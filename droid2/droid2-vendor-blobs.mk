@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/bin/btcmd:/system/bin/btcmd \
     vendor/motorola/droid2/proprietary/bin/bthelp:/system/bin/bthelp \
     vendor/motorola/droid2/proprietary/bin/bttest_mot:/system/bin/bttest_mot \
-    vendor/motorola/droid2/proprietary/bin/charge_only_mode:/system/bin/charge_only_mode \
     vendor/motorola/droid2/proprietary/bin/chat-ril:/system/bin/chat-ril \
     vendor/motorola/droid2/proprietary/bin/dbvc_atvc_property_set:/system/bin/dbvc_atvc_property_set \
     vendor/motorola/droid2/proprietary/bin/dmt:/system/bin/dmt \

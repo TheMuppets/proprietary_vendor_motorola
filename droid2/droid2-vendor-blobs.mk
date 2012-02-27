@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES := \
     vendor/motorola/droid2/proprietary/lib/libmoto_gps.so:obj/lib/libmoto_gps.so \
     vendor/motorola/droid2/proprietary/lib/libarcsoft.so:obj/lib/libarcsoft.so \
     vendor/motorola/droid2/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
-    vendor/motorola/droid2/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/motorola/droid2/proprietary/lib/libmotocamera.so:obj/lib/libmotocamera.so \
     vendor/motorola/droid2/proprietary/lib/libnmea.so:obj/lib/libnmea.so \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:obj/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/librds_util.so:obj/lib/librds_util.so \
@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/bin/btcmd:/system/bin/btcmd \
     vendor/motorola/droid2/proprietary/bin/bthelp:/system/bin/bthelp \
     vendor/motorola/droid2/proprietary/bin/bttest_mot:/system/bin/bttest_mot \
-    vendor/motorola/droid2/proprietary/bin/charge_only_mode:/system/bin/charge_only_mode \
     vendor/motorola/droid2/proprietary/bin/chat-ril:/system/bin/chat-ril \
     vendor/motorola/droid2/proprietary/bin/dbvc_atvc_property_set:/system/bin/dbvc_atvc_property_set \
     vendor/motorola/droid2/proprietary/bin/dmt:/system/bin/dmt \
@@ -202,7 +201,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/xbin/run_restore:/system/xbin/run_restore \
     vendor/motorola/droid2/proprietary/xbin/ssmgrd:/system/xbin/ssmgrd \
     vendor/motorola/droid2/proprietary/lib/libaudio.so:/system/lib/libaudio.so \
-    vendor/motorola/droid2/proprietary/lib/libcamera.so:/system/lib/libcamera.so \
+    vendor/motorola/droid2/proprietary/lib/libmotocamera.so:/system/lib/libmotocamera.so \
     vendor/motorola/droid2/proprietary/lib/libnmea.so:/system/lib/libnmea.so \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/librds_util.so:/system/lib/librds_util.so \
@@ -216,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/libbattd.so:/system/lib/libattd.so \
     vendor/motorola/droid2/proprietary/lib/libusc.so:/system/lib/libusc.so \
-    vendor/motorola/droid2/proprietary/lib/hw/lights.droid2.so:/system/lib/hw/lights.droid2.so \
     vendor/motorola/droid2/proprietary/lib/hw/sensors.droid2.so:/system/lib/hw/sensors.droid2.so \
     vendor/motorola/droid2/proprietary/lib/hw/gps.droid2.so:/system/lib/hw/gps.droid2.so \
     vendor/motorola/droid2/proprietary/lib/hw/overlay.omap3.so:/system/lib/hw/overlay.omap3.so

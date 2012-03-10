@@ -93,7 +93,6 @@ PRODUCT_COPY_FILES += \
 #Moto etc
 PRODUCT_COPY_FILES += \
         vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
-        vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap_rfmd.bin:system/etc/wifi/fw_tiwlan_ap_rfmd.bin \
         vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
         vendor/motorola/jordan/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
         vendor/motorola/jordan/etc/fmc_init_1273.2.bts:system/etc/fmc_init_1273.2.bts \
@@ -101,7 +100,6 @@ PRODUCT_COPY_FILES += \
         vendor/motorola/jordan/etc/fm_rx_init_1273.2.bts:system/etc/fm_rx_init_1273.2.bts \
         vendor/motorola/jordan/etc/fm_rx_init_6450.2.bts:system/etc/fm_rx_init_6450.2.bts \
         vendor/motorola/jordan/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
-        vendor/motorola/jordan/etc/cameraCalFileDef8M.bin:system/etc/cameraCalFileDef8M.bin \
         vendor/motorola/jordan/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
 	vendor/motorola/jordan/etc/motorola/ap_flex_version.txt:system/etc/motorola/ap_flex_version.txt \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio:system/etc/motorola/bp_nvm_default/File_Audio \

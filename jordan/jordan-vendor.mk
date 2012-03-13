@@ -163,9 +163,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/media/Moto.ogg:system/media/audio/ringtones/Moto.ogg
 
-#prebuilt libs from CyanogenDefy for CM 7.1.0 (omap3 and omx changes)
-PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/cm71/libstagefright.so:system/lib/libstagefright.so \
-	vendor/motorola/jordan/cm71/libOMX.TI.Video.Decoder.so:system/lib/libOMX.TI.Video.Decoder.so \
-
 #the end

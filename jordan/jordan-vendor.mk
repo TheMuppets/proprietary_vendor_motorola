@@ -149,6 +149,12 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
 	vendor/motorola/jordan/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk \
 
+#kineto
+PRODUCT_COPY_FILES += \
+	vendor/motorola/jordan/app/MS-MOTOJDN-FROYO-KNT20-02-A0-24.2.apk:system/app/MS-MOTOJDN-FROYO-KNT20-02-A0-24.2.apk \
+	vendor/motorola/jordan/lib/libkineto.so:system/lib/libkineto.so \
+	vendor/motorola/jordan/lib/libcryp98.so:system/lib/libcryp98.so
+
 #extra
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/media/Moto.ogg:system/media/audio/ringtones/Moto.ogg

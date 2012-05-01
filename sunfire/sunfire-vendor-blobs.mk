@@ -231,10 +231,11 @@ PRODUCT_COPY_FILES +=  \
 	vendor/motorola/sunfire/proprietary/etc/wimax/mfg/macxvi350.bin:system/etc/wimax/mfg/macxvi350.bin \
 	vendor/motorola/sunfire/proprietary/bin/wimaxc:system/bin/wimaxc \
 	vendor/motorola/sunfire/proprietary/bin/wimaxd:system/bin/wimaxd \
-	vendor/motorola/sunfire/proprietary/lib/libwimax_jni.so:system/lib/libwimax_jni.so \
 	vendor/motorola/sunfire/proprietary/lib/libwimax_moto.so:system/lib/libwimax_moto.so \
 	vendor/motorola/sunfire/proprietary/bin/wimax_test.sh:system/bin/wimax_test.sh \
 	vendor/motorola/sunfire/proprietary/lib/bcmwimax.ko:system/lib/bcmwimax.ko
+
+#	vendor/motorola/sunfire/proprietary/lib/libwimax_jni.so:system/lib/libwimax_jni.so \
 
 
 # FM Radio

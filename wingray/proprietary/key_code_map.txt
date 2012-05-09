@@ -1,0 +1,37 @@
+# /data/local/12m/key_code_map.txt
+
+# one event code maps one key code
+# an event code contains event_node, event_type and event_code
+# a key code is a user defined number that represents the event
+
+# see definitions in linux/input.h for more details
+
+# event_node:
+# 0x00 <----> /dev/input/event0
+# 0x01 <----> /dev/input/event1
+# 0x02 <----> /dev/input/event2
+# ......
+
+# event_type: 
+# 0x00 <----> EV_SYN
+# 0x01 <----> EV_KEY
+# 0x02 <----> EV_REL
+# 0x03 <----> EV_ABS
+# 0x04 <----> EV_MSC
+# 0x05 <----> EV_SW
+# 0x11 <----> EV_LED
+# 0x12 <----> EV_SND
+# 0x14 <----> EV_REP
+# 0x15 <----> EV_FF
+# 0x16 <----> EV_PWR_
+# 0x17 <----> EV_FF_STATUS
+
+# valid key_code 0x0000~0x00FF
+# This code is for Etna / Olympus
+
+# event_node    event_type    event_code    key_code         comment
+#-------------------------------------------------------------------------
+  0x07          0x01          0x0072        0x0017           # VOLUMN_DOWN
+  0x07          0x01          0x0073        0x0018           # VOLUMN_UP
+  0x05          0x01          0x006B        0x00A2           # POWER KEY
+

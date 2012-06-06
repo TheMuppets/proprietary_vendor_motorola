@@ -65,9 +65,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/stingray/proprietary/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/motorola/stingray/proprietary/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/motorola/stingray/proprietary/libcgdrv.so:system/lib/libcgdrv.so \
+    vendor/motorola/stingray/proprietary/libdmengine.so:system/lib/libdmengine.so \
+    vendor/motorola/stingray/proprietary/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/motorola/stingray/proprietary/libims_client_jni.so:system/lib/libims_client_jni.so \
     vendor/motorola/stingray/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
-    vendor/motorola/stingray/proprietary/libmoto_lte_ril.so:system/lib/libmoto_lte_ril.so \
     vendor/motorola/stingray/proprietary/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/motorola/stingray/proprietary/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
     vendor/motorola/stingray/proprietary/libnvddk_audiofx.so:system/lib/libnvddk_audiofx.so \
@@ -104,6 +105,8 @@ PRODUCT_COPY_FILES += \
 # All the apks necessary for stingray
 PRODUCT_PACKAGES += \
     AppDirectedSmsService \
+    ConnMO \
+    DMService \
     MotoImsServer \
     MotoLocationProxy \
     MotoLteTelephony \

@@ -22,6 +22,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/stingray/proprietary/brcm_guci_drv:system/bin/brcm_guci_drv \
     vendor/motorola/stingray/proprietary/bugtogo.sh:system/bin/bugtogo.sh \
     vendor/motorola/stingray/proprietary/bypassfactory:system/bin/bypassfactory \
+    vendor/motorola/stingray/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    vendor/motorola/stingray/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    vendor/motorola/stingray/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/motorola/stingray/proprietary/ftmipcd:system/bin/ftmipcd \
     vendor/motorola/stingray/proprietary/location:system/bin/location \
     vendor/motorola/stingray/proprietary/savebpver:system/bin/savebpver \
@@ -113,5 +116,7 @@ PRODUCT_PACKAGES += \
     MotoModemUtil \
     MotoSimUiHelper \
     StingrayProgramMenu \
-    StingrayProgramMenuSystem
+    StingrayProgramMenuSystem \
+    VZWAPNLib \
+    VZWAPNService
 

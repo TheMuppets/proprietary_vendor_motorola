@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/droid2/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
     vendor/motorola/droid2/proprietary/lib/libbattd.so:/system/lib/libattd.so \
     vendor/motorola/droid2/proprietary/lib/libusc.so:/system/lib/libusc.so \
-    vendor/motorola/droid2/proprietary/lib/hw/sensors.droid2.so:/system/lib/hw/sensors.droid2.so \
     vendor/motorola/droid2/proprietary/lib/hw/gps.droid2.so:/system/lib/hw/gps.droid2.so \
     vendor/motorola/droid2/proprietary/lib/hw/overlay.omap3.so:/system/lib/hw/overlay.omap3.so
 

@@ -68,8 +68,8 @@ rssisav5g=0x3
 bxa2g=0
 
 # country code
-ccode=XY
-regrev=4
+ccode=US
+regrev=69
 cctl=0x0
 
 rxpo2g=0

@@ -20,16 +20,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/batch:system/bin/batch \
     $(LOCAL_PATH)/proprietary/brcm_guci_drv:system/bin/brcm_guci_drv \
     $(LOCAL_PATH)/proprietary/bugtogo.sh:system/bin/bugtogo.sh \
-    $(LOCAL_PATH)/proprietary/bypassfactory:system/bin/bypassfactory \
     $(LOCAL_PATH)/proprietary/chat-ril:system/bin/chat-ril \
     $(LOCAL_PATH)/proprietary/ftmipcd:system/bin/ftmipcd \
     $(LOCAL_PATH)/proprietary/location:system/bin/location \
     $(LOCAL_PATH)/proprietary/pppd:system/bin/pppd \
     $(LOCAL_PATH)/proprietary/pppd-ril:system/bin/pppd-ril \
-    $(LOCAL_PATH)/proprietary/savebpver:system/bin/savebpver \
     $(LOCAL_PATH)/proprietary/tcmd:system/bin/tcmd \
-    $(LOCAL_PATH)/proprietary/testpppd:system/bin/testpppd \
-    $(LOCAL_PATH)/proprietary/vril-dump:system/bin/vril-dump \
+    $(LOCAL_PATH)/proprietary/tty2ttyd:system/bin/tty2ttyd \
     $(LOCAL_PATH)/proprietary/cpcap_gain.bin:system/etc/cpcap_gain.bin \
     $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/proprietary/gpsconfig.xml:system/etc/gpsconfig.xml \
@@ -41,23 +38,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/voip_aud_params.bin:system/etc/voip_aud_params.bin \
     $(LOCAL_PATH)/proprietary/camera.stingray.so:system/lib/hw/camera.stingray.so \
     $(LOCAL_PATH)/proprietary/gps.stingray.so:system/lib/hw/gps.stingray.so \
-    $(LOCAL_PATH)/proprietary/libdmengine.so:system/lib/libdmengine.so \
-    $(LOCAL_PATH)/proprietary/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     $(LOCAL_PATH)/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
     $(LOCAL_PATH)/proprietary/libmoto_ril.so:system/lib/libmoto_ril.so \
     $(LOCAL_PATH)/proprietary/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
+    $(LOCAL_PATH)/proprietary/libreference-ril.so:system/lib/libreference-ril.so \
     $(LOCAL_PATH)/proprietary/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/libril_rds.so:system/lib/libril_rds.so \
     $(LOCAL_PATH)/proprietary/libtpa.so:system/lib/libtpa.so \
     $(LOCAL_PATH)/proprietary/libtpa_core.so:system/lib/libtpa_core.so
-
-# All the apks necessary for everest
-PRODUCT_PACKAGES += \
-    AppDirectedSmsService \
-    ConnMO \
-    DMService \
-    MotoLocationProxy \
-    MotoModemUtil \
-    StingrayProgramMenu \
-    StingrayProgramMenuSystem
 

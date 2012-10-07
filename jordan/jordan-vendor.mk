@@ -100,46 +100,6 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/motorola/comm_drv/plmn_text_table.bin:system/etc/motorola/comm_drv/plmn_text_table.bin \
 	vendor/motorola/jordan/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt
 
-# basebands
-PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/etc/motorola/basebands/america/argentina_claro_342.zip:system/etc/motorola/basebands/america/argentina_claro_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/argentina_personal_342.zip:system/etc/motorola/basebands/america/argentina_personal_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/argentina_614.zip:system/etc/motorola/basebands/america/argentina_614.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/brasil_342.zip:system/etc/motorola/basebands/america/brasil_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/brasil_claro_342.zip:system/etc/motorola/basebands/america/brasil_claro_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/brasil_claro_614.zip:system/etc/motorola/basebands/america/brasil_claro_614.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/brasil_tim_342.zip:system/etc/motorola/basebands/america/brasil_tim_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/brasil_vivo_342.zip:system/etc/motorola/basebands/america/brasil_vivo_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/colombia_tigo_342.zip:system/etc/motorola/basebands/america/colombia_tigo_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/us_tmobile_342_4.zip:system/etc/motorola/basebands/america/us_tmobile_342_4.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/us_tmobile_342_9.zip:system/etc/motorola/basebands/america/us_tmobile_342_9.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/america/us_tmobile_6xx.zip:system/etc/motorola/basebands/america/us_tmobile_6xx.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/china_25_26_210.zip:system/etc/motorola/basebands/asia/china_25_26_210.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/china_026_110.zip:system/etc/motorola/basebands/asia/china_026_110.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/china_me722_110.zip:system/etc/motorola/basebands/asia/china_me722_110.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/hktaiwan_259.zip:system/etc/motorola/basebands/asia/hktaiwan_259.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/sea_343_331.zip:system/etc/motorola/basebands/asia/sea_343_331.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/sea_343_361.zip:system/etc/motorola/basebands/asia/sea_343_361.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/asia/southkorea_342.zip:system/etc/motorola/basebands/asia/southkorea_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/australia/optus_342.zip:system/etc/motorola/basebands/australia/optus_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/australia/telstra_226.zip:system/etc/motorola/basebands/australia/telstra_226.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/central_europe_221.zip:system/etc/motorola/basebands/europe/central_europe_221.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/central_europe_234.zip:system/etc/motorola/basebands/europe/central_europe_234.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/central_europe_251.zip:system/etc/motorola/basebands/europe/central_europe_251.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/central_europe_342.zip:system/etc/motorola/basebands/europe/central_europe_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/central_europe_34x.zip:system/etc/motorola/basebands/europe/central_europe_34x.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/france_orange_342.zip:system/etc/motorola/basebands/europe/france_orange_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/france_vodafone_342.zip:system/etc/motorola/basebands/europe/france_vodafone_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/italy_251.zip:system/etc/motorola/basebands/europe/italy_251.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/poland_orange_251.zip:system/etc/motorola/basebands/europe/poland_orange_251.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/poland_orange_342.zip:system/etc/motorola/basebands/europe/poland_orange_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_251.zip:system/etc/motorola/basebands/europe/uk_251.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_342.zip:system/etc/motorola/basebands/europe/uk_342.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_343_3.zip:system/etc/motorola/basebands/europe/uk_343_3.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_343_11.zip:system/etc/motorola/basebands/europe/uk_343_11.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_tmobile_221.zip:system/etc/motorola/basebands/europe/uk_tmobile_221.zip \
-	vendor/motorola/jordan/etc/motorola/basebands/europe/uk_tmobile_251.zip:system/etc/motorola/basebands/europe/uk_tmobile_251.zip
-
 # default baseband (central europe 3.4.x)
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/etc/motorola/bp_nvm_default/File_Audio:system/etc/motorola/bp_nvm_default/File_Audio \
@@ -183,22 +143,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/framework/com.motorola.android.location.jar:system/framework/com.motorola.android.location.jar
 
-#app
-PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/app/FMRadio.apk:system/app/FMRadio.apk \
-	vendor/motorola/jordan/app/FMRadioService.apk:system/app/FMRadioService.apk \
-	vendor/motorola/jordan/app/MotoPhonePortal.apk:system/app/MotoPhonePortal.apk \
-	vendor/motorola/jordan/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
-	vendor/motorola/jordan/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk \
-
 #kineto
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/app/MS-MOTOJDN-FROYO-KNT20-02-A0-24.2.apk:system/app/MS-MOTOJDN-FROYO-KNT20-02-A0-24.2.apk \
 	vendor/motorola/jordan/lib/libkineto.so:system/lib/libkineto.so \
 	vendor/motorola/jordan/lib/libcryp98.so:system/lib/libcryp98.so
 
-#extra
-PRODUCT_COPY_FILES += \
-	vendor/motorola/jordan/media/Moto.ogg:system/media/audio/ringtones/Moto.ogg
-
-#the end
+include vendor/motorola/jordan-common/jordan-common-vendor.mk

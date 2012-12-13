@@ -1,9 +1,0 @@
-<config>
-<application package_name="com.android.phone">
-<notification id="1"/>
-<notification id="5"/>
-</application>
-<application package_name="com.motorola.android.vvm">
-<notification id="1"/>
-</application>
-</config>

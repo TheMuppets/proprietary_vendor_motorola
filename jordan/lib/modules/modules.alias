@@ -1,7 +1,0 @@
-alias platform:wl127x-test wl127x_test
-alias char-major-10-200 tun
-alias TIWLAN_SDIO tiwlan_drv
-alias TIWLAN_SDIO tiap_drv
-alias gannet kineto_gan
-alias rtnl-link-ifb ifb
-alias ematch-kind-3 em_u32

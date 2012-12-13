@@ -1,7 +1,0 @@
-#  Morrison  slider keys  keymap
-
-key 139   MENU              WAKE
-key 102   HOME              WAKE
-key 116   POWER             WAKE
-key 158   BACK              WAKE
-key 226   HEADSETHOOK       WAKE

@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libmoto_ril.so:system/lib/libmoto_ril.so \
     $(LOCAL_PATH)/proprietary/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
     $(LOCAL_PATH)/proprietary/libreference-ril.so:system/lib/libreference-ril.so \
-    $(LOCAL_PATH)/proprietary/libril.so:system/lib/libril.so \
     $(LOCAL_PATH)/proprietary/libril_rds.so:system/lib/libril_rds.so \
     $(LOCAL_PATH)/proprietary/libtpa.so:system/lib/libtpa.so \
     $(LOCAL_PATH)/proprietary/libtpa_core.so:system/lib/libtpa_core.so

@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/crda/regulatory.bin:/system/lib/crda/regulatory.bin \
 $(VENDOR_BLOB_FOLDER)/lib/libadkutils.so:/system/lib/libadkutils.so \
 $(VENDOR_BLOB_FOLDER)/lib/libamcm.so:/system/lib/libamcm.so \
-$(VENDOR_BLOB_FOLDER)/lib/libaudio_ext.so:/system/lib/libaudio_ext.so \
 $(VENDOR_BLOB_FOLDER)/lib/libbattd.so:/system/lib/libbattd.so \
 $(VENDOR_BLOB_FOLDER)/lib/libbcbmsg.so:/system/lib/libbcbmsg.so \
 $(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so \
@@ -136,8 +135,6 @@ $(VENDOR_BLOB_FOLDER)/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.s
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/hw/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.umts_spyder.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.spyder.so:/system/lib/hw/gps.umts_spyder.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.spyder.so:/system/lib/hw/sensorhub.umts_spyder.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.spyder.so:/system/lib/hw/sensors.umts_spyder.so

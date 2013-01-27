@@ -12,22 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Pick up overlay for features that depend on non-open-source files
-#DEVICE_PACKAGE_OVERLAYS := vendor/motorola/omap4-common/overlay
+VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary/audio
 
-PRODUCT_PACKAGES := \
-    librs_jni \
-    VideoEditor \
-    VoiceDialer \
-    Basic \
-    HoloSpiralWallpaper \
-    MagicSmokeWallpapers \
-    NoiseField \
-    Galaxy4 \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    VisualizationWallpapers \
-    PhaseBeam
-
-$(call inherit-product, vendor/motorola/omap4-common/common-vendor-blobs.mk)
-$(call inherit-product, vendor/motorola/omap4-common/common_drm_phone.mk)
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    $(VENDOR_BLOB_FOLDER)/libaudio_ext.so:/system/lib/libaudio_ext.so \
+    $(VENDOR_BLOB_FOLDER)/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
+    $(VENDOR_BLOB_FOLDER)/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so

@@ -1,0 +1,3 @@
+#!/system/bin/sh
+
+/system/bin/mm-wrigley-qc-dump.sh

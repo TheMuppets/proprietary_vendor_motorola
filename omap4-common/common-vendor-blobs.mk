@@ -14,7 +14,7 @@
 
 VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary/audio
 
-# Backup Tool
+# Audio
 PRODUCT_COPY_FILES += \
     $(VENDOR_BLOB_FOLDER)/libaudio_ext.so:/system/lib/libaudio_ext.so \
     $(VENDOR_BLOB_FOLDER)/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \

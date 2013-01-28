@@ -84,7 +84,7 @@ $(VENDOR_BLOB_FOLDER)/lib/libpanorama_jni.so:/system/lib/libpanorama_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libPhotoEditor.so:/system/lib/libPhotoEditor.so \
 $(VENDOR_BLOB_FOLDER)/lib/libphotoflow.so:/system/lib/libphotoflow.so \
 $(VENDOR_BLOB_FOLDER)/lib/libpkip.so:/system/lib/libpkip.so \
-$(VENDOR_BLOB_FOLDER)/lib/libportaljni.so:/system/lib/libportaljni.so
+$(VENDOR_BLOB_FOLDER)/lib/libportaljni.so:/system/lib/libportaljni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libprovlib.so:/system/lib/libprovlib.so \
 $(VENDOR_BLOB_FOLDER)/lib/libquicksec.so:/system/lib/libquicksec.so \
 $(VENDOR_BLOB_FOLDER)/lib/libscalado.so:/system/lib/libscalado.so \

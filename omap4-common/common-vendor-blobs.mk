@@ -16,6 +16,8 @@ VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary/audio
 
 # Audio
 PRODUCT_COPY_FILES += \
+    $(VENDOR_BLOB_FOLDER)/ap_gain.bin:/system/bin/ap_gain.bin \
+    $(VENDOR_BLOB_FOLDER)/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
     $(VENDOR_BLOB_FOLDER)/libaudio_ext.so:/system/lib/libaudio_ext.so \
     $(VENDOR_BLOB_FOLDER)/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
     $(VENDOR_BLOB_FOLDER)/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so

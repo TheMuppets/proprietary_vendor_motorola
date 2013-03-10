@@ -18,7 +18,7 @@ $(call inherit, vendor/motorola/omap4-common/proprietary/vzw/Android.mk)
 
 PRODUCT_PACKAGES += \
 	appdirectedsmspermission \
-	VerizonSSO \
+	VerizonSSOEngine \
 	VZWAPNLib \
 	vzwapnpermission \
 	VZWAPNService

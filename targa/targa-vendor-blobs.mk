@@ -1,5 +1,9 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/targa/proprietary
 
+# system/bin
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
+
 # system/etc
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/ducati-m3.bin:/system/etc/firmware/ducati-m3.bin \

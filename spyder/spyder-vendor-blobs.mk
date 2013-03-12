@@ -2,6 +2,7 @@ VENDOR_BLOB_FOLDER := vendor/motorola/spyder/proprietary
 
 # system/bin
 PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
 $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430
 
 # system/etc

@@ -1,5 +1,9 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/solana/proprietary
 
+# system/bin (from targa)
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
+
 # system/etc (from targa)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts

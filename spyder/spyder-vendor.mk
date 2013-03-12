@@ -17,3 +17,5 @@
 
 $(call inherit-product, vendor/motorola/spyder/spyder-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/omap4-common/common-vendor.mk)
+$(call inherit-product, vendor/motorola/omap4-common/common-lte-blobs.mk)
+$(call inherit-product, vendor/motorola/omap4-common/verizon.mk)

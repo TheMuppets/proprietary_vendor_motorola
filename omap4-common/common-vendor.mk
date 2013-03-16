@@ -30,4 +30,3 @@ PRODUCT_PACKAGES := \
     PhaseBeam
 
 $(call inherit-product, vendor/motorola/omap4-common/common-vendor-blobs.mk)
-$(call inherit-product, vendor/motorola/omap4-common/common_drm_phone.mk)

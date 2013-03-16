@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<devices>
-    <device name="proximity" />
-    <device name="accelerometer" />
-    <device name="magnetometer" />
-    <device name="compass" />
-    <device name="sensors" />
-</devices>
-

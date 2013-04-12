@@ -4,6 +4,8 @@ VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/base64:/system/bin/base64 \
 $(VENDOR_BLOB_FOLDER)/bin/extract-embedded-files:/system/bin/extract-embedded-files \
+$(VENDOR_BLOB_FOLDER)/bin/logcatd:/system/bin/logcatd \
+$(VENDOR_BLOB_FOLDER)/bin/logcatd-blan:/system/bin/logcatd-blan \
 $(VENDOR_BLOB_FOLDER)/bin/mm-wrigley-qc-dump.sh:/system/bin/mm-wrigley-qc-dump.sh \
 $(VENDOR_BLOB_FOLDER)/bin/oem-iptables-init.sh:/system/bin/oem-iptables-init.sh \
 $(VENDOR_BLOB_FOLDER)/bin/vril-dump:/system/bin/vril-dump \

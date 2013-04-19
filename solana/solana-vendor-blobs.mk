@@ -2,11 +2,17 @@ VENDOR_BLOB_FOLDER := vendor/motorola/solana/proprietary
 
 # system/bin (from targa)
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
 
 # system/etc (from targa)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts
+
+# system/lib/hw (from targa)
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.solana.so
 
 # RIL files (from solana 5.7.906)
 PRODUCT_COPY_FILES += \

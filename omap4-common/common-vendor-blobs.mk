@@ -15,9 +15,13 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 
 # system/bin
+ifneq ($(filter solana targa,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
-$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
+endif
+
+PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/batch:/system/bin/batch \
 $(VENDOR_BLOB_FOLDER)/bin/battd:/system/bin/battd \
 $(VENDOR_BLOB_FOLDER)/bin/dbvc_atvc_property_set:/system/bin/dbvc_atvc_property_set \

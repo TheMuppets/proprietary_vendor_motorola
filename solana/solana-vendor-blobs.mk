@@ -8,6 +8,10 @@ $(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts
 
+# system/lib/hw (from targa)
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.solana.so
+
 # RIL files (from solana 5.7.906)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/ppp/peers/pppd-ril.options:/system/etc/ppp/peers/pppd-ril.options \

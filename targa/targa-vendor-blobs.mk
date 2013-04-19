@@ -15,6 +15,7 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.targa.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.targa.so:/system/lib/hw/sensors.targa.so
 
 # system/etc/omapcam/module2

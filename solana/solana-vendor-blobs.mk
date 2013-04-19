@@ -2,7 +2,9 @@ VENDOR_BLOB_FOLDER := vendor/motorola/solana/proprietary
 
 # system/bin (from targa)
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
 
 # system/etc (from targa)
 PRODUCT_COPY_FILES += \

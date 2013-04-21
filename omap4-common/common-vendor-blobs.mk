@@ -15,12 +15,6 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 
 # system/bin
-ifneq ($(filter solana targa,$(TARGET_DEVICE)),)
-PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
-$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
-endif
-
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/batch:/system/bin/batch \
 $(VENDOR_BLOB_FOLDER)/bin/battd:/system/bin/battd \
@@ -53,7 +47,6 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/hw/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.spyder.so:/system/lib/hw/gps.omap4.so
 

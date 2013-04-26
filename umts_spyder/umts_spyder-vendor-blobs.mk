@@ -22,7 +22,7 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/cy8c201xx.kl:system/usr/keylayout/cy8c201xx.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
-$(COMMON_BLOB_FOLDER)/lib/hw/alsa.omap4.so:/system/lib/hw/alsa.omap4.so
+$(COMMON_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so
 
 # RIL files
 PRODUCT_COPY_FILES += \

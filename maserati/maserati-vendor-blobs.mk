@@ -4,8 +4,8 @@ COMMON_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 # system/bin
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
-$(COMMON_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
-$(COMMON_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
 
 # system/etc
 PRODUCT_COPY_FILES += \
@@ -18,7 +18,7 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
-$(COMMON_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.maserati.so:/system/lib/hw/sensors.maserati.so
 
 # system/etc/omapcam/module2

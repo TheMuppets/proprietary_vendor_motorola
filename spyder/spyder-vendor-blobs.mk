@@ -1,11 +1,10 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/spyder/proprietary
-COMMON_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 
 # system/bin
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
-$(COMMON_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
-$(COMMON_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
 $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430
 
 # system/etc
@@ -21,7 +20,7 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/cy8c201xx.kl:system/usr/keylayout/cy8c201xx.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
-$(COMMON_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so
 
 # system/lib
 PRODUCT_COPY_FILES += \

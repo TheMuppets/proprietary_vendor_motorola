@@ -1,5 +1,4 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/maserati/proprietary
-COMMON_BLOB_FOLDER := vendor/motorola/omap4-common/proprietary
 
 # system/bin
 PRODUCT_COPY_FILES += \

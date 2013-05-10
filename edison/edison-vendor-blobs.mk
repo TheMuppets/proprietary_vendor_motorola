@@ -2,7 +2,9 @@ VENDOR_BLOB_FOLDER := vendor/motorola/edison/proprietary
 
 # system/bin
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975
+$(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin
 
 # system/etc
 PRODUCT_COPY_FILES += \
@@ -15,6 +17,7 @@ $(VENDOR_BLOB_FOLDER)/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.edison.so:/system/lib/hw/sensors.edison.so
 
 # system/etc/omapcam/module2

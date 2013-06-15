@@ -36,8 +36,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
 	$(LOCAL_PATH)/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
 	$(LOCAL_PATH)/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
-	$(LOCAL_PATH)/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
-	$(LOCAL_PATH)/lib/libC2D2.so:system/lib/libC2D2.so \
 	$(LOCAL_PATH)/lib/libgsl.so:system/lib/libgsl.so \
 	$(LOCAL_PATH)/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
 	$(LOCAL_PATH)/lib/libllvm-arm.so:system/lib/libllvm-arm.so \

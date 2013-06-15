@@ -20,3 +20,4 @@ LOCAL_PATH:=vendor/motorola/msm8960-common/jf/lib
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     $(LOCAL_PATH)/libC2D2.so:system/lib/libC2D2.so \
+    $(LOCAL_PATH)/libExtendedExtractor.so:system/lib/libExtendedExtractor.so

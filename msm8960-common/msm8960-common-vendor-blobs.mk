@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/msm8960-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
@@ -82,8 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \

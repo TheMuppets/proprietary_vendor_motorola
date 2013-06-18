@@ -21,4 +21,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     $(LOCAL_PATH)/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     $(LOCAL_PATH)/lib/libC2D2.so:system/lib/libC2D2.so \
-    $(LOCAL_PATH)/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so
+    $(LOCAL_PATH)/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
+    $(LOCAL_PATH)/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
+    $(LOCAL_PATH)/lib/libmmosal.so:system/lib/libmmosal.so \
+    $(LOCAL_PATH)/lib/libmmparser.so:system/lib/libmmparser.so

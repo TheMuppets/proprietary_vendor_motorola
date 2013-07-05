@@ -19,5 +19,4 @@ LOCAL_PATH:=vendor/motorola/msm8960-common/mako/lib
 # Libs from mako 4.2.2 must be added from
 # https://dl.google.com/dl/android/aosp/qcom-mako-jdq39-c89670ca.tgz
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/libacdbloader.so:system/lib/libacdbloader.so \
-    $(LOCAL_PATH)/libloc_api_v02.so:system/lib/libloc_api_v02.so
+    $(LOCAL_PATH)/libacdbloader.so:system/lib/libacdbloader.so

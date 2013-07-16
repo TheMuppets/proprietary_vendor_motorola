@@ -19,3 +19,10 @@ DEVICE_PACKAGE_OVERLAYS += vendor/motorola/maserati/overlay
 
 $(call inherit-product, vendor/motorola/maserati/maserati-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/omap4-common/omap4-common-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    appdirectedsmspermission \
+    VerizonSSOEngine \
+    VZWAPNLib \
+    vzwapnpermission \
+    VZWAPNService

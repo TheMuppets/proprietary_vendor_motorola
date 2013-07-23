@@ -1,0 +1,231 @@
+// Copyright (c) 2007-2010 Rx Networks, Inc. All rights reserved.
+//
+// Property of Rx Networks
+// Proprietary and Confidential
+// Do NOT distribute
+//
+// Any use, distribution, or copying of this document requires a
+// license agreement with Rx Networks.
+// Any product development based on the contents of this document
+// requires a license agreement with Rx Networks.
+// If you have received this document in error, please notify the
+// sender immediately by telephone and email, delete the original
+// document from your electronic files, and destroy any printed
+// versions.
+//
+// This file contains sample configuration data only and the data carries no
+// warranty whatsoever.
+//
+//
+// SAGPS and PGPS Mobile Suite Configuration Parameter Storage File.
+//
+// Preceed comments with "//".
+// Max line length is 256 chars (including terminators).
+// All parameters must be delimited by <ParamName>: <Param> (note the space between the ':' and <Param>)
+// <ParamName> must be a single word without spaces.
+// <Param> may be a string or data value (convertable to double) and must be terminated by ' ', '\r' or '\n'.
+// <Param> values will be internally clamped to the min value specified (if below this min value).
+// <Param> values will be internally clamped to the max value specified (if above this max value).
+
+// -----------------------
+// Common Elements
+// -----------------------
+
+// Config File Version. Value is string.
+Config_File_Ver: 1.3.0
+
+// Reference GPS Week used to determine GPS week roll over (%1024)
+Base_GPS_Week: 570
+
+// Max Log Filesize in kB. Set to ensure that the MSL log does not take up too much file system space.
+// Value in kB. Min value: 1. Max value: 1048576 (1GB). Default value: 102400 (102400kB = 100 MB). Logging is disabled once
+// maximum file size is reached.
+Log_Max_Size: 102400
+
+// Logging severity threshold. Set to match a severity to ensure that log entries labeled with this severity (or lower) are
+// included within your log (default 1 - Errors). Severity levels follow:
+// 0 - Fatal: Unrecoverable failure from which system is in indeterminate state, unwise to proceed.
+// 1 - Errors: Recoverable error, program can continue.
+// 2 - Warnings: Not as serious as errors.
+// 3 - Information: Useful data regarding flow of the code.
+// 4 - Trace: Supports RxN internal debugging only.
+// Min value: 0. Max Value 4. Default value: 1.
+Log_Sev_Threshold: 4
+
+// Log zone mask. Log entries can be separated by zone (in addition to severity). Only if log entries with specified
+// zone match up with the mask provided below will these entries be logged (regardless of severity).
+// Zones follow:
+// Zone 1 (0x0001) – Misc functions (catch all).
+// Zone 2 (0x0002) – Third Party log entry.
+// Zone 3 (0x0004) – Init/Shutdown functions.
+// Zone 4 (0x0008) – Serial Port I/O functions.
+// Zone 5 (0x0010) – File I/O functions.
+// Zones 6 - 16 - Reserved for future or RxN internal use.
+// Note there are no min or max values and Default mask value: 0xFFFF.
+Log_Zone_Mask: 0xFFFF
+
+// Vendor ID. Each vendor should specify a vendor ID to support licensing (all RxN products)
+// and access to PGPS seeds and clock updates (PGPS only).
+// A default developer vendor ID that is used for evaluation purposes is "evaluation".
+Vendor_ID: hjgXhDkjh73ff
+
+// License Key file path. Path to the RxN license key file that is used to support evalutation or licensed product use.
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+// Default behaviour is to have the key file adjacent to the executable that consumes the MSL library (./license.key)
+Lic_Key_Path: /system/etc/gps/RxN/license.key
+
+// CL Log file path. Path to the CL Log file.
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+// Default path /etc/RXN/CL_Log.txt will be used if missing
+CL_Log_Path: /data/location/rxn/CL_Log.txt
+
+// MSL Log file path. Path to the MSL Log file.
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+// Default path /etc/RXN/MSL_Log.txt will be used if missing
+MSL_Log_Path: /data/location/rxn/MSL_Log.txt
+
+// CL configuration string.
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+//CL_Config_Str: P:COM1:|B:115200|s:4|Z:FFF7
+CL_Config_Str: P:COM2:|B:115200|s:4|Z:FFF7
+
+// Pantry file path. Path to the seed, poly and ephemeris files.
+// There folders will be created under it:seed, poly and eph
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+// Default path /etc/RXN will be used if missing
+Pantry_Path: /data/location/rxn
+
+// How long extended ephemeris should be used before being replaced by broadcast ephemeris.
+// Value in sec. Min value: 0, Max value: 14400. Default 300.
+TOE_Eph_Dur: 300
+
+// How long a chipset typically uses ephemeris.
+// Value in sec. Min value: 3600. Max value: 14400. Default 7200.
+TOE_Chip_Exp: 7200
+
+// Number of hours to propagate forward when extended ephemeris is generated.
+// Value in sec. Min value: 14400 Max value: 604800. Default 604800. Please use multiples of 14400 (4 hours)
+Prop_Fwd: 172800
+
+// EE supplied by the MSL (using the RXN_MSL_GetAssistance function) must have a URE value at
+// or below this threashold. If EE has URE above this threshold for any PRN/SV, no assistance
+<!-- Font codes by Quackit.com -->
+<p style="font-size:xx-small;">Absolute size - xx-small</p>
+<p style="font-size:x-small;">Absolute size - x-small</p>
+<p style="font-size:small;">Absolute size - small</p>
+<p style="font-size:medium;">Absolute size - medium</p>
+<p style="font-size:large;">Absolute size - large</p>
+<p style="font-size:x-large;">Absolute size - x-large</p>
+<p style="font-size:xx-large;">Absolute size - xx-large</p>
+
+// data will be provided for that PRN/SV.
+// Value in meters. Min value: 20. Max Value: 200. Default value: 100.
+URE_Threshold: 100.
+
+// How frequently to check the seed for required clock or seed updates.
+// Value in sec. Min value: 60. Max value: 3600. Default 600.
+System_Check_Freq: 600
+
+// ---------------------------------
+// SAGPS-Specific Elements
+// ---------------------------------
+
+// Seed start time offset from TOE.
+Value in sec. Min value: -14400. Max value. 14400.  Default -7200.
+TOE_Buf_Offset: -7200
+
+// ---------------------------------
+// PGPS-Specific Elements
+// ---------------------------------
+
+// ******** max number of server accesses is 3 per week any combo of Seed accesses or Clock Updates
+// ******** max frequency of accesses is every 48 hours
+
+// Security Key file path. Path to the RxN security key file that is used to support evalutation or licensed product use.
+// Note that the path is typically relative but can be explicit from file system root.
+// Note that max path is 512 chars.
+// Default behaviour is to have the key file adjacent to the executable that consumes the MSL library (./security.key)
+Sec_Key_Path: /system/etc/gps/RxN/security.key
+
+// Model ID. Each vendor should specify a model ID to support access to PGPS seeds and clock updates.
+// A default model ID is provided.
+Model_ID: GUCI
+
+// Seed Host Format Field. Specifies the format of the PGPS seed DNS entries. The '%' char within this
+// field will be replaced by 1 - N where 'N' is specified as the Seed_Max_Host_Idx (see below).
+// Default "hotpgps%.gpstream.net " supporting access to hotpgps1.gpstream.net, hotpgps2.gpstream.net and
+// (assuming Seed_Max_Host_Idx = 3) hotpgps3.gpstream.net.
+// Seed_Host: hotpgps%.gpstream.net
+Seed_Host: pgps%.gpstream.net
+
+// Max index for the DNS entry specfied within the "Seed_Host" value. See Seed_Host comments for details.
+// Default value: 3.
+Seed_Max_Host_Idx: 3
+
+// Seed Host Port. Port used for PGPS seed server comms. Default value: 9280.
+Seed_Port: 9280
+
+// How old the seed should be before being replaced.
+// Value in sec. Min value: 60. Max value: 604800. Default value: 172800 (2 days)
+Seed_Update_Age: 172800
+
+// How Maximum offset used by a random function to added to the Seed_Update_Age for server access load balancing.
+// Value in sec. Min value: 0. Max value: Max value: 604800. Default 7200
+Seed_Update_Age_Offset: 7200
+
+// How old the seed should be before a clock updated. Note that a value
+// of '0' stipulates that no clock updates are to occur.
+// Value in sec. Min value: 60. Max value: 604800. Default value: 259200 (3 days)
+Clock_Update_Age: 259200
+
+// How Maximum offset used by a random function to added to the Clock_Update_Age for server access load balancing.
+// Value in sec. Min value: 0. Max value: Max value: 604800. Default 7200
+Clock_Update_Age_Offset: 7200
+
+// SNTP Host Format Field. Specifies the format of the SNTP DNS entries.
+// Default "time1.gpstream.net " supporting access to Rx Networks SNTP time server.
+SNTP_Host: time1.gpstream.net
+
+// SNTP Host Port. Port used for SNTP time server comms. Default value: 123.
+SNTP_Port: 123
+
+// Time to wait during start up before making seed or SNTP request.
+// Value in sec. Min value: 0 Max value: 604800. Default value: 10.
+Startup_Data_Wait_Duration: 10
+
+// Maximum allowable uncertainty for GPS clock for seed requests.
+// Value in sec. Min value: 0. Max value: 7200. Default Value: 120.
+Seed_GPSTime_Uncert_Threash: 120
+
+// Maximum allowable uncertainty for GPS clock for SNTP requests.
+// Value in sec. Min value: 0. Max value: 7200. Default Value: 3.
+SNTP_GPSTime_Uncert_Threash: 3
+
+// How frequent we hit the seed server after a failed initial attempt.
+// Value in sec. Min value: 0. Max value: 604800. Default value: 30.
+Seed_Retry_Period: 30
+
+// How frequent we hit the SNTP server after a failed initial attempt.
+// Value in sec. Min value: 0. Max value: 604800. Default value: 30.
+SNTP_Retry_Period: 30
+
+// Maximum number of failed retry, before stopping further seed downloads until Seed_Retry_Timer has elapsed.
+// Min value: 0. Max value: 10. Default value: 3.
+Seed_Retry_Max: 3
+
+// Maximum number of failed retry, before stopping further seed downloads until SNTP_Retry_Timer has elapsed.
+// Min value: 0. Max value: 10. Default value: 3.
+SNTP_Retry_Max: 3
+
+// Duration till the next set of retries to seed server after Seed_Retry_Max failures have been reached.
+// Value in sec. Min value: Greater than System_Check_Freq. Max value: 604800. Default value: 86400 (1 day).
+Seed_Retry_Timer: 86400
+
+// Duration till the next set of retries to seed server after SNTP_Retry_Max failures have been reached.
+// Value in sec. Min value: Greater than System_Check_Freq. Max value: 604800. Default value: 86400 (1 day).
+SNTP_Retry_Timer: 86400

@@ -1,0 +1,20 @@
+# config file defination
+GPSC_CONFIG_FILE    /system/etc/gps/ti/GPSCConfigFile.cfg
+# patch file defination
+PATCH_FILE   /system/etc/gps/ti/patch-X.0.ce
+# aiding file defination
+AIDING_PATH	   /data/location/
+# sensor data
+SENSOR_NVM_PATH /data/location/TI/
+#logger IP
+DEBUG_UDP 192.168.16.1 5555
+#Logger Control 0->dont log:1->log UDP: 2->Log NVM:Default->1
+LOGGER_CONTROL	0
+#must be set if LOGGER_CONTROL = 2
+LOGGER_NVM_FILE /data/location/TI/
+#maximum lines in log NVM
+MAX_LOG_LINES 60000
+#maximum NVM log files
+MAX_NVM_FILES 3000
+#To/From Sensor Control 0->Dont write:1-> Write to UDP(Not supported):2-> Write to NVM:Default-> 2
+SENSOR_CONTROL 0

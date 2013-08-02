@@ -23,5 +23,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libC2D2.so:system/lib/libC2D2.so \
     $(LOCAL_PATH)/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
     $(LOCAL_PATH)/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
+    $(LOCAL_PATH)/lib/libgeofence.so:system/lib/libgeofence.so \
     $(LOCAL_PATH)/lib/libmmosal.so:system/lib/libmmosal.so \
     $(LOCAL_PATH)/lib/libmmparser.so:system/lib/libmmparser.so

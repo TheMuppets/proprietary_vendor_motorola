@@ -17,6 +17,6 @@
 # Pick up overlay for features that depend on non-open-source files
 
 $(call inherit-product, vendor/motorola/msm8960-common/msm8960-common-vendor-blobs.mk)
-$(call inherit-product, vendor/motorola/msm8960-common/vendor-adreno-blobs_4.3.mk)
+$(call inherit-product, vendor/motorola/msm8960-common/vendor-adreno-blobs.mk)
 $(call inherit-product, vendor/motorola/msm8960-common/vendor-jf-blobs.mk)
 $(call inherit-product, vendor/motorola/msm8960-common/vendor-mako-blobs.mk)

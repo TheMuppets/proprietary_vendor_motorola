@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/edison/proprietary/bin/atrelay-ctrl.sh:system/bin/atrelay-ctrl.sh \
     vendor/motorola/edison/proprietary/bin/bridge_relay:system/bin/bridge_relay \
+    vendor/motorola/edison/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
     vendor/motorola/edison/proprietary/bin/ecckeyd:system/bin/ecckeyd \
     vendor/motorola/edison/proprietary/bin/ee_driver:system/bin/ee_driver \
     vendor/motorola/edison/proprietary/bin/fmradioserver:system/bin/fmradioserver \
@@ -33,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/edison/proprietary/bin/timedexec:system/bin/timedexec \
     vendor/motorola/edison/proprietary/bin/RxNDrv:system/bin/RxNDrv \
     vendor/motorola/edison/proprietary/bin/TIDrv:system/bin/TIDrv \
+    vendor/motorola/edison/proprietary/etc/dbus.conf:system/etc/dbus.conf \
     vendor/motorola/edison/proprietary/etc/firmware/ap_bt_data.bin:system/etc/firmware/ap_bt_data.bin \
     vendor/motorola/edison/proprietary/etc/firmware/fm_rx_init_1283.2.bts:system/etc/firmware/fm_rx_init_1283.2.bts \
     vendor/motorola/edison/proprietary/etc/firmware/fmc_init_1283.2.bts:system/etc/firmware/fmc_init_1283.2.bts \
@@ -59,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/edison/proprietary/lib/libcdal.so:system/lib/libcdal.so \
     vendor/motorola/edison/proprietary/lib/libconfig.so:system/lib/libconfig.so \
     vendor/motorola/edison/proprietary/lib/libdataencrypt.so:system/lib/libdataencrypt.so \
+    vendor/motorola/edison/proprietary/lib/libdbus.so:system/lib/libdbus.so \
     vendor/motorola/edison/proprietary/lib/libfm_stack.so:system/lib/libfm_stack.so \
     vendor/motorola/edison/proprietary/lib/libfmchr.so:system/lib/libfmchr.so \
     vendor/motorola/edison/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
@@ -75,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/edison/proprietary/lib/libmss.so:system/lib/libmss.so \
     vendor/motorola/edison/proprietary/lib/libmss.so.sig:system/lib/libmss.so.sig \
     vendor/motorola/edison/proprietary/lib/libpostcapimgproc_intf.so:system/lib/libpostcapimgproc_intf.so \
+    vendor/motorola/edison/proprietary/lib/libtinyxml_stl.so:system/lib/libtinyxml_stl.so \
     vendor/motorola/edison/proprietary/lib/libu300-parser.so:system/lib/libu300-parser.so \
     vendor/motorola/edison/proprietary/lib/libu300-ril.so:system/lib/libu300-ril.so \
     vendor/motorola/edison/proprietary/lib/libusb.so:system/lib/libusb.so \

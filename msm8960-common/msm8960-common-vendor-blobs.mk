@@ -46,12 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/msm8960-common/proprietary/bin/whisperd:system/bin/whisperd \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/motorola/msm8960-common/proprietary/etc/wifi/hostapd_default.conf:system/etc/wifi/hostapd_default.conf \
     vendor/motorola/msm8960-common/proprietary/etc/thermald.conf:system/etc/thermald.conf \
     vendor/motorola/msm8960-common/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \

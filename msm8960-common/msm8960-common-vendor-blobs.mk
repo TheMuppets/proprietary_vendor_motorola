@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/msm8960-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/msm8960-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/motorola/msm8960-common/proprietary/bin/ftmdaemon:system/bin/ftmdaemon \
     vendor/motorola/msm8960-common/proprietary/bin/ftmipcd:system/bin/ftmipcd \
     vendor/motorola/msm8960-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/msm8960-common/proprietary/bin/mpdecision:system/bin/mpdecision \
@@ -38,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/msm8960-common/proprietary/bin/whisperd:system/bin/whisperd \
     vendor/motorola/msm8960-common/proprietary/etc/wifi/hostapd_default.conf:system/etc/wifi/hostapd_default.conf \
-    vendor/motorola/msm8960-common/proprietary/etc/thermald.conf:system/etc/thermald.conf \
     vendor/motorola/msm8960-common/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
     vendor/motorola/msm8960-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \

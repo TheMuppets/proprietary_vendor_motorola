@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libmotpostprocinterface.so:system/lib/libmotpostprocinterface.so \
     vendor/motorola/msm8960-common/proprietary/lib/libnative_renderer.so:system/lib/libnative_renderer.so \
     vendor/motorola/msm8960-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libopenssl-smime.so:system/lib/libopenssl-smime.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \

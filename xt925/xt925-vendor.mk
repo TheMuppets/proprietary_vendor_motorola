@@ -19,3 +19,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/motorola/xt925/overlay
 
 $(call inherit-product, vendor/motorola/xt925/xt925-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/msm8960-common/msm8960-common-vendor.mk)
+$(call inherit-product, vendor/motorola/qcom-common/qcom-common-vendor.mk)

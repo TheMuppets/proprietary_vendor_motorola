@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/motorola/msm8960-common/proprietary/lib/libsensorhub_jni.so:system/lib/libsensorhub_jni.so \
     vendor/motorola/msm8960-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/motorola/msm8960-common/proprietary/lib/libxt_v02.so:system/lib/libxt_v02.so \
     vendor/motorola/msm8960-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/msm8960-common/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \

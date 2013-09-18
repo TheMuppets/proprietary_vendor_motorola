@@ -17,21 +17,11 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
     vendor/motorola/msm8960-common/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
-    vendor/motorola/msm8960-common/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-    vendor/motorola/msm8960-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/motorola/msm8960-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
-    vendor/motorola/msm8960-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/motorola/msm8960-common/proprietary/bin/ftmipcd:system/bin/ftmipcd \
-    vendor/motorola/msm8960-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/msm8960-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/motorola/msm8960-common/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/motorola/msm8960-common/proprietary/bin/nl_listener:system/bin/nl_listener \
-    vendor/motorola/msm8960-common/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/msm8960-common/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/msm8960-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/msm8960-common/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/motorola/msm8960-common/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/msm8960-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/msm8960-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960-common/proprietary/bin/thermald:system/bin/thermald \
@@ -52,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libdss.so:system/lib/libdss.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/motorola/msm8960-common/proprietary/lib/libidl.so:system/lib/libidl.so \
@@ -69,9 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmotpostprocinterface.so:system/lib/libmotpostprocinterface.so \
     vendor/motorola/msm8960-common/proprietary/lib/libnative_renderer.so:system/lib/libnative_renderer.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
@@ -86,8 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/motorola/msm8960-common/proprietary/lib/libsensorhub_jni.so:system/lib/libsensorhub_jni.so \
     vendor/motorola/msm8960-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libxt_v02.so:system/lib/libxt_v02.so \
     vendor/motorola/msm8960-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/msm8960-common/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     vendor/motorola/msm8960-common/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
@@ -115,48 +100,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-    vendor/motorola/msm8960-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
-    vendor/motorola/msm8960-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/motorola/msm8960-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/motorola/msm8960-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/motorola/msm8960-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/motorola/msm8960-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/motorola/msm8960-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libxml.so:system/lib/libxml.so
+    vendor/motorola/msm8960-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so

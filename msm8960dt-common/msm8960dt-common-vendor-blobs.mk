@@ -20,11 +20,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/msm8960dt-common/proprietary/bin/bootmodem:system/bin/bootmodem \
     vendor/motorola/msm8960dt-common/proprietary/bin/defuse:system/bin/defuse \
+    vendor/motorola/msm8960dt-common/proprietary/bin/diag_klog:system/bin/diag_klog \
+    vendor/motorola/msm8960dt-common/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
+    vendor/motorola/msm8960dt-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/motorola/msm8960dt-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
+    vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com_post.sh:system/bin/moto_com_post.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/msm8960dt-common/proprietary/bin/msp430:system/bin/msp430 \
+    vendor/motorola/msm8960dt-common/proprietary/bin/qcks:system/bin/qcks \
     vendor/motorola/msm8960dt-common/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -37,7 +42,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libadspd.so:system/lib/libadspd.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -47,8 +55,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdss.so:system/lib/libdss.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libidl.so:system/lib/libidl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
@@ -140,4 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_n1c2.patch:system/etc/firmware/tfa9890_n1c2.patch \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_ringtone_table.preset:system/etc/firmware/tfa9890_ringtone_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_voice_table.preset:system/etc/firmware/tfa9890_voice_table.preset \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/msm8960dt-common/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
+    vendor/motorola/msm8960dt-common/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc

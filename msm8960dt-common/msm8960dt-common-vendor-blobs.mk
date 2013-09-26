@@ -141,7 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat:system/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13042202-1647fe-obake.tdat:system/etc/firmware/synaptics-s3402b-13042202-1647fe-obake.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat:system/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.config:system/etc/firmware/tfa9890.config \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.eq:system/etc/firmware/tfa9890.eq \

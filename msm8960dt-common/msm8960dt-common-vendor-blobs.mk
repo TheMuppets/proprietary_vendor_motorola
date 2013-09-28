@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadspd.so:system/lib/libadspd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
@@ -87,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libl6lencgain.so:system/lib/libl6lencgain.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_3a_bayer.so:system/lib/libmmcamera_3a_bayer.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_3a_legacy.so:system/lib/libmmcamera_3a_legacy.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
@@ -99,6 +101,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_tintless_algo.so:system/lib/libmmcamera_tintless_algo.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_tintless_wrapper.so:system/lib/libmmcamera_tintless_wrapper.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmotcameracalibration.so:system/lib/libmotcameracalibration.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmot_drscene_detect.so:system/lib/libmot_drscene_detect.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmot_hdr.so:system/lib/libmot_hdr.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmot_sis.so:system/lib/libmot_sis.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_default_video.so:system/lib/libchromatix_imx135_default_video.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_preview.so:system/lib/libchromatix_imx135_preview.so \

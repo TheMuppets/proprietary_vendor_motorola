@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/xt897/proprietary/etc/firmware/atmxt-r1.tdat:system/etc/firmware/atmxt-r1.tdat \
     vendor/motorola/xt897/proprietary/etc/firmware/atmxt-r2.tdat:system/etc/firmware/atmxt-r2.tdat \
+    vendor/motorola/xt897/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/xt897/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/motorola/xt897/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so
 

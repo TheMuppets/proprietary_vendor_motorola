@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com_post.sh:system/bin/moto_com_post.sh \
+    vendor/motorola/msm8960dt-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/msm8960dt-common/proprietary/bin/msp430:system/bin/msp430 \
     vendor/motorola/msm8960dt-common/proprietary/bin/qcks:system/bin/qcks \

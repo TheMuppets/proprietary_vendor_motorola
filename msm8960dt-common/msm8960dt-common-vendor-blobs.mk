@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/adspd:system/bin/adspd \
     vendor/motorola/msm8960dt-common/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
     vendor/motorola/msm8960dt-common/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
+    vendor/motorola/msm8960dt-common/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/bootmodem:system/bin/bootmodem \
     vendor/motorola/msm8960dt-common/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/msm8960dt-common/proprietary/bin/defuse:system/bin/defuse \
@@ -25,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
     vendor/motorola/msm8960dt-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/motorola/msm8960dt-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
+    vendor/motorola/msm8960dt-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com_post.sh:system/bin/moto_com_post.sh \

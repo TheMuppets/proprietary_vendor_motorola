@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/audio.motvr.msm8960.so:system/lib/hw/audio.motvr.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -80,6 +81,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libnfcpn544c3_fw.so:system/lib/libnfcpn544c3_fw.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \

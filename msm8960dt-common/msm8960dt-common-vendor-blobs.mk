@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/motorola/msm8960dt-common/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/msm8960dt-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/msm8960dt-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960dt-common/proprietary/bin/thermald:system/bin/thermald \
@@ -98,6 +99,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqmi_csvt_srvc.so:system/lib/libqmi_csvt_srvc.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libquipc_os_api.so:system/lib/libquipc_os_api.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libulp2.so:system/lib/libulp2.so \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \

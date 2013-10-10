@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libnfcpn544c3_fw.so:system/lib/libnfcpn544c3_fw.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \

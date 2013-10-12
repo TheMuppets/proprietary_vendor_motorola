@@ -43,18 +43,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960dt-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/audio.motvr.msm8960.so:system/lib/hw/audio.motvr.msm8960.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/soundfx/libmmieffectswrapper.so:system/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadspd.so:system/lib/libadspd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libaudioparameter.so:system/lib/libaudioparameter.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -101,6 +107,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libsurround_proc.so:system/lib/libsurround_proc.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libulp2.so:system/lib/libulp2.so \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -177,6 +185,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_ringtone_table.preset:system/etc/firmware/tfa9890_ringtone_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_voice_table.preset:system/etc/firmware/tfa9890_voice_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter1i.pcm:system/etc/surround_sound/filter1i.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter1r.pcm:system/etc/surround_sound/filter1r.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter2i.pcm:system/etc/surround_sound/filter2i.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter2r.pcm:system/etc/surround_sound/filter2r.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter3i.pcm:system/etc/surround_sound/filter3i.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter3r.pcm:system/etc/surround_sound/filter3r.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter4i.pcm:system/etc/surround_sound/filter4i.pcm \
+    vendor/motorola/msm8960dt-common/proprietary/etc/surround_sound/filter4r.pcm:system/etc/surround_sound/filter4r.pcm \
     vendor/motorola/msm8960dt-common/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
     vendor/motorola/msm8960dt-common/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc \
     vendor/motorola/msm8960dt-common/proprietary/etc/sap.conf:system/etc/sap.conf

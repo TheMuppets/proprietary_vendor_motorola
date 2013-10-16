@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8960dt-common/proprietary/bin/bootmodem:system/bin/bootmodem \
     vendor/motorola/msm8960dt-common/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
+    vendor/motorola/msm8960dt-common/proprietary/bin/defuse:system/bin/defuse \
     vendor/motorola/msm8960dt-common/proprietary/bin/diag_klog:system/bin/diag_klog \
     vendor/motorola/msm8960dt-common/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
     vendor/motorola/msm8960dt-common/proprietary/bin/efsks:system/bin/efsks \

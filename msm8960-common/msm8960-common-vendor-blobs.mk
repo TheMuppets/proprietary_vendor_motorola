@@ -43,8 +43,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgps.so:system/lib/libgps.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960-common/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/motorola/msm8960-common/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/motorola/msm8960-common/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
@@ -101,4 +101,26 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/motorola/msm8960-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    vendor/motorola/msm8960-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
     vendor/motorola/msm8960-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so

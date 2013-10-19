@@ -22,14 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/bootmodem:system/bin/bootmodem \
     vendor/motorola/msm8960dt-common/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/msm8960dt-common/proprietary/bin/defuse:system/bin/defuse \
-    vendor/motorola/msm8960dt-common/proprietary/bin/diag_klog:system/bin/diag_klog \
-    vendor/motorola/msm8960dt-common/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
     vendor/motorola/msm8960dt-common/proprietary/bin/efsks:system/bin/efsks \
     vendor/motorola/msm8960dt-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
-    vendor/motorola/msm8960dt-common/proprietary/bin/moto_com_post.sh:system/bin/moto_com_post.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/msm8960dt-common/proprietary/bin/msp430:system/bin/msp430 \
@@ -56,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
@@ -82,6 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
@@ -101,6 +100,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsurround_proc.so:system/lib/libsurround_proc.so \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
@@ -124,27 +125,83 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmot_hdr.so:system/lib/libmot_hdr.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmot_sis.so:system/lib/libmot_sis.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx074_zsl.so:system/lib/libchromatix_imx074_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx091_default_video.so:system/lib/libchromatix_imx091_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx091_preview.so:system/lib/libchromatix_imx091_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx091_video_hd.so:system/lib/libchromatix_imx091_video_hd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_default_video.so:system/lib/libchromatix_imx135_default_video.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_preview.so:system/lib/libchromatix_imx135_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_video_hd.so:system/lib/libchromatix_imx135_video_hd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_video_hdr.so:system/lib/libchromatix_imx135_video_hdr.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_imx135_zsl.so:system/lib/libchromatix_imx135_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_mt9e013_default_video.so:system/lib/libchromatix_mt9e013_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_mt9e013_preview.so:system/lib/libchromatix_mt9e013_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_mt9e013_video_hfr.so:system/lib/libchromatix_mt9e013_video_hfr.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov2720_default_video.so:system/lib/libchromatix_ov2720_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov2720_hfr.so:system/lib/libchromatix_ov2720_hfr.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov2720_preview.so:system/lib/libchromatix_ov2720_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov2720_zsl.so:system/lib/libchromatix_ov2720_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov5647_default_video.so:system/lib/libchromatix_ov5647_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov5647_preview.so:system/lib/libchromatix_ov5647_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov5647_video_hfr.so:system/lib/libchromatix_ov5647_video_hfr.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8820_default_video.so:system/lib/libchromatix_ov8820_default_video.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8820_hfr_60fps.so:system/lib/libchromatix_ov8820_hfr_60fps.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8820_preview.so:system/lib/libchromatix_ov8820_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8820_video_hd.so:system/lib/libchromatix_ov8820_video_hd.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8820_zsl.so:system/lib/libchromatix_ov8820_zsl.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8835_default_video.so:system/lib/libchromatix_ov8835_default_video.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8835_preview.so:system/lib/libchromatix_ov8835_preview.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8835_zsl.so:system/lib/libchromatix_ov8835_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8825_default_video.so:system/lib/libchromatix_ov8825_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov8825_preview.so:system/lib/libchromatix_ov8825_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov9724_default_video.so:system/lib/libchromatix_ov9724_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov9724_preview.so:system/lib/libchromatix_ov9724_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov9726_default_video.so:system/lib/libchromatix_ov9726_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov9726_preview.so:system/lib/libchromatix_ov9726_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov10820_default_video.so:system/lib/libchromatix_ov10820_default_video.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov10820_hfr_60fps.so:system/lib/libchromatix_ov10820_hfr_60fps.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov10820_preview.so:system/lib/libchromatix_ov10820_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_ov10820_zsl.so:system/lib/libchromatix_ov10820_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_default_video.so:system/lib/libchromatix_s5k3l1yx_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k4e1_default_video.so:system/lib/libchromatix_s5k4e1_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k4e1_preview.so:system/lib/libchromatix_s5k4e1_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k5b3g_default_video.so:system/lib/libchromatix_s5k5b3g_default_video.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k5b3g_preview.so:system/lib/libchromatix_s5k5b3g_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_s5k5b3g_zsl.so:system/lib/libchromatix_s5k5b3g_zsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_vx6953_default_video.so:system/lib/libchromatix_vx6953_default_video.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_vx6953_preview.so:system/lib/libchromatix_vx6953_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libVdlFaceDetection.so:system/lib/libVdlFaceDetection.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/VdlData.dat:system/lib/VdlData.dat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libc2d2_a3xx.so:system/vendor/lib/libc2d2_a3xx.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/aonvr1.bin:system/etc/firmware/aonvr1.bin \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/aonvr2.bin:system/etc/firmware/aonvr2.bin \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/cyttsp_8064_mtp.hex:system/etc/firmware/cyttsp_8064_mtp.hex \
@@ -162,13 +219,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p0.txt:system/etc/firmware/mspversion_p0.txt \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p1.txt:system/etc/firmware/mspversion_p1.txt \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p2.txt:system/etc/firmware/mspversion_p2.txt \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3310b-13061200-16a405-obakem-p1.tdat:system/etc/firmware/synaptics-s3310b-13061200-16a405-obakem-p1.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3310b-13061201-16a405-obakem.tdat:system/etc/firmware/synaptics-s3310b-13061201-16a405-obakem.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat:system/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat:system/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s2316-13090502-1649cd-falcon.tdat:system/etc/firmware/synaptics-s2316-13090502-1649cd-falcon.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.config:system/etc/firmware/tfa9890.config \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.eq:system/etc/firmware/tfa9890.eq \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.speaker:system/etc/firmware/tfa9890.speaker \

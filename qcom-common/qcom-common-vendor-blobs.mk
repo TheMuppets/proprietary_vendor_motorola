@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/qcom-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/motorola/qcom-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/motorola/qcom-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
+    vendor/motorola/qcom-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/qcom-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
@@ -40,7 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/qcom-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/motorola/qcom-common/proprietary/lib/libxml.so:system/lib/libxml.so \
-    vendor/motorola/qcom-common/proprietary/lib/libxt_v02.so:system/lib/libxt_v02.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
@@ -48,28 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    vendor/motorola/qcom-common/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
-    vendor/motorola/qcom-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-    vendor/motorola/qcom-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/motorola/qcom-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    vendor/motorola/qcom-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-    vendor/motorola/qcom-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    vendor/motorola/qcom-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
-    vendor/motorola/qcom-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
-    vendor/motorola/qcom-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
-    vendor/motorola/qcom-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/motorola/qcom-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
-    vendor/motorola/qcom-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
-    vendor/motorola/qcom-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
-    vendor/motorola/qcom-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
-    vendor/motorola/qcom-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \

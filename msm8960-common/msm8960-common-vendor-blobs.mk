@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/msm8960-common/proprietary/bin/whisperd:system/bin/whisperd \
-    vendor/motorola/msm8960-common/proprietary/etc/wifi/hostapd_default.conf:system/etc/wifi/hostapd_default.conf \
     vendor/motorola/msm8960-common/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
     vendor/motorola/msm8960-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \

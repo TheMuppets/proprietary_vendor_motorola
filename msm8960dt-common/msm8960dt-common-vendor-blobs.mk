@@ -100,8 +100,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqmi_csvt_srvc.so:system/lib/libqmi_csvt_srvc.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \

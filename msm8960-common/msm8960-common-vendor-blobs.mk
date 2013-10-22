@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
     vendor/motorola/msm8960-common/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/msm8960-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/motorola/msm8960-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/msm8960-common/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/msm8960-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -58,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmotpostprocinterface.so:system/lib/libmotpostprocinterface.so \
     vendor/motorola/msm8960-common/proprietary/lib/libnative_renderer.so:system/lib/libnative_renderer.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/motorola/msm8960-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \

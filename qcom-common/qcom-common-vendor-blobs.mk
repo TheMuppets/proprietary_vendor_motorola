@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/motorola/qcom-common/proprietary/bin/ftmipcd:system/bin/ftmipcd \
     vendor/motorola/qcom-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/motorola/qcom-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/qcom-common/proprietary/bin/nl_listener:system/bin/nl_listener \
     vendor/motorola/qcom-common/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/qcom-common/proprietary/bin/qseecomd:system/bin/qseecomd \
@@ -32,14 +31,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/qcom-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/motorola/qcom-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/motorola/qcom-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/motorola/qcom-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/qcom-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/qcom-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/qcom-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/motorola/qcom-common/proprietary/lib/libxml.so:system/lib/libxml.so \
+    vendor/motorola/qcom-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \

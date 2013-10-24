@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmmjps.so:system/lib/libmmjps.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
@@ -107,6 +108,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libsensor_user_cal.so:system/lib/libsensor_user_cal.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsurround_proc.so:system/lib/libsurround_proc.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
@@ -197,9 +199,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libchromatix_vx6953_preview.so:system/lib/libchromatix_vx6953_preview.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libVdlFaceDetection.so:system/lib/libVdlFaceDetection.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/VdlData.dat:system/lib/VdlData.dat \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
@@ -219,7 +218,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/aonvr1.bin:system/etc/firmware/aonvr1.bin \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/aonvr2.bin:system/etc/firmware/aonvr2.bin \

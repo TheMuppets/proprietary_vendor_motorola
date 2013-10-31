@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
+    vendor/motorola/qcom-common/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \

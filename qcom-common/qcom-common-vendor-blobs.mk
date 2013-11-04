@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/qcom-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/motorola/qcom-common/proprietary/bin/radish:system/bin/radish \
+    vendor/motorola/qcom-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/motorola/qcom-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \

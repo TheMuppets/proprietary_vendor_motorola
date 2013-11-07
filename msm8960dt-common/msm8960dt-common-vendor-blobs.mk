@@ -76,6 +76,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmjps.so:system/lib/libmmjps.so \
@@ -86,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \

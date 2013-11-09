@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
+    vendor/motorola/msm8960-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/motorola/msm8960-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960-common/proprietary/lib/libidl.so:system/lib/libidl.so \

@@ -34,6 +34,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/motorola/qcom-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    vendor/motorola/qcom-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
+    vendor/motorola/qcom-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    vendor/motorola/qcom-common/proprietary/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
+    vendor/motorola/qcom-common/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/motorola/qcom-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/qcom-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/qcom-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \

@@ -243,7 +243,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p0.txt:system/etc/firmware/mspversion_p0.txt \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p1.txt:system/etc/firmware/mspversion_p1.txt \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/mspversion_p2.txt:system/etc/firmware/mspversion_p2.txt \
-    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s2316-13090502-1649cd-falcon.tdat:system/etc/firmware/synaptics-s2316-13090502-1649cd-falcon.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat:system/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
+    vendor/motorola/msm8960dt-common/proprietary/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat:system/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.config:system/etc/firmware/tfa9890.config \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.eq:system/etc/firmware/tfa9890.eq \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890.speaker:system/etc/firmware/tfa9890.speaker \

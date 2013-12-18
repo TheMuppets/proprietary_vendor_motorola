@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_VENDOR),motorola-msm8960)
+ifeq ($(BOARD_VENDOR),motorola-qcom)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff

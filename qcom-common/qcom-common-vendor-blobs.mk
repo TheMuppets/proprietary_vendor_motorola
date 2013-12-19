@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/motorola/qcom-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/qcom-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/qcom-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/motorola/qcom-common/proprietary/lib/libxml.so:system/lib/libxml.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \

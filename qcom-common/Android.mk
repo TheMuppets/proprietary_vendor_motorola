@@ -17,6 +17,7 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),motorola-qcom)
+ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
@@ -27,5 +28,6 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 include $(BUILD_PREBUILT)
 
+endif
 endif
 

@@ -76,6 +76,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/lib/rfsa/adsp/libadsp_denoise_skel.so:system/lib/rfsa/adsp/libadsp_denoise_skel.so \
     vendor/motorola/msm8226-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/msm8226-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
+    vendor/motorola/msm8226-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/msm8226-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/motorola/msm8226-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/msm8226-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \

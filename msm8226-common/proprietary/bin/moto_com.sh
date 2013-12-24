@@ -32,9 +32,7 @@ case "$mode" in
         echo 1 > /sys/module/pm_8x60/modes/cpu0/power_collapse/idle_enabled
         echo mem > /sys/power/autosleep
 
-	/system/bin/thermal-engine --minimode -c /etc/thermal-engine-8226.conf &
         /system/bin/charge_only_mode
-	/system/bin/killall thermal-engine
 
 	echo 3 > /sys/module/lpm_levels/enable_low_power/l2
 	echo 255 >/sys/class/leds/lcd-backlight/brightness

@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/msm8226-common/proprietary/bin/refuse:system/bin/refuse \
     vendor/motorola/msm8226-common/proprietary/bin/rfs_access:system/bin/rfs_access \
-    vendor/motorola/msm8226-common/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/msm8226-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/msm8226-common/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     vendor/motorola/msm8226-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
@@ -93,8 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/msm8226-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/msm8226-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/msm8226-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/motorola/msm8226-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \

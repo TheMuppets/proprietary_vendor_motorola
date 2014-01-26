@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -64,6 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/motorola/msm8226-common/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/motorola/msm8226-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
+    vendor/motorola/msm8226-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/motorola/msm8226-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/msm8226-common/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
     vendor/motorola/msm8226-common/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
     vendor/motorola/msm8226-common/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \

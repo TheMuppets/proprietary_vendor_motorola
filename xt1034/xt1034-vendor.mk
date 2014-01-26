@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,3 +19,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/motorola/xt1034/overlay
 
 $(call inherit-product, vendor/motorola/xt1034/xt1034-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/msm8226-common/msm8226-common-vendor.mk)
+

@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/bootmodem:system/bin/bootmodem \
     vendor/motorola/msm8960dt-common/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/msm8960dt-common/proprietary/bin/efsks:system/bin/efsks \
+    vendor/motorola/msm8960dt-common/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
@@ -76,6 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/motorola/msm8960dt-common/proprietary/lib/libloc_xtra.so:system/lib/libloc_xtra.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmercury.so:system/lib/libmercury.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
@@ -119,6 +121,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
@@ -128,6 +132,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/motorola/msm8960dt-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -252,6 +258,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_ringtone_table.preset:system/etc/firmware/tfa9890_ringtone_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_voice_table.preset:system/etc/firmware/tfa9890_voice_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/msm8960dt-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/msm8960dt-common/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
     vendor/motorola/msm8960dt-common/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc \
     vendor/motorola/msm8960dt-common/proprietary/etc/sap.conf:system/etc/sap.conf \

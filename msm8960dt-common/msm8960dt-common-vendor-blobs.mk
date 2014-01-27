@@ -258,6 +258,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_ringtone_table.preset:system/etc/firmware/tfa9890_ringtone_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/tfa9890_voice_table.preset:system/etc/firmware/tfa9890_voice_table.preset \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/msm8960dt-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/motorola/msm8960dt-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/msm8960dt-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/msm8960dt-common/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
     vendor/motorola/msm8960dt-common/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc \

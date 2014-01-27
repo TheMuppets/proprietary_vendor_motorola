@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/motorola/msm8960dt-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
+    vendor/motorola/msm8960dt-common/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/motorola/msm8960dt-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/mpdecision:system/bin/mpdecision \
@@ -44,6 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/msm8960dt-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/msm8960dt-common/proprietary/bin/thermald:system/bin/thermald \
+    vendor/motorola/msm8960dt-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/motorola/msm8960dt-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
@@ -109,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libsensorhubservice_jni.so:system/lib/libsensorhubservice_jni.so \
+    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \

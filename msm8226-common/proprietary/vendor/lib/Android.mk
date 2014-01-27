@@ -18,6 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),motorola-qcom)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8226)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_SRC_FILES := libtime_genoff.so

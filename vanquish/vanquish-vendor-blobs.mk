@@ -19,5 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/vanquish/proprietary/etc/firmware/atmxt-r2.tdat:system/etc/firmware/atmxt-r2.tdat \
     vendor/motorola/vanquish/proprietary/etc/firmware/melfas_45_7_15.fw:system/etc/firmware/melfas_45_7_15.fw \
     vendor/motorola/vanquish/proprietary/lib_xt897/libaudcal.so:system/lib_xt897/libaudcal.so \
+    vendor/motorola/vanquish/proprietary/lib_xt901/libqmiservices.so:system/lib_xt901/libqmiservices.so \
+    vendor/motorola/vanquish/proprietary/lib_xt901/libril-qc-qmi-1.so:system/lib_xt901/libril-qc-qmi-1.so \
     vendor/motorola/vanquish/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/motorola/vanquish/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so

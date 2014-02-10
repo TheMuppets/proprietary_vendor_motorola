@@ -18,6 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),motorola-qcom)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
+ifneq ($(TARGET_DEVICE),moto_msm8960dt)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcnvitems
@@ -37,5 +38,6 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
+endif
 endif
 endif

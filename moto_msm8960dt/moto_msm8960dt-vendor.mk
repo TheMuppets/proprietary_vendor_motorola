@@ -19,6 +19,5 @@ DEVICE_PACKAGE_OVERLAYS += vendor/motorola/moto_msm8960dt/overlay
 
 $(call inherit-product, vendor/motorola/moto_msm8960dt/moto_msm8960dt-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/qcom-common/qcom-common-vendor.mk)
-PRODUCT_PACKAGES += com.qualcomm.services.location
 PRODUCT_PACKAGES += qcnvitems
 PRODUCT_PACKAGES += qcrilhook

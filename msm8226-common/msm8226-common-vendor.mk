@@ -20,6 +20,5 @@ PRODUCT_PACKAGES += libtime_genoff
 
 $(call inherit-product, vendor/motorola/msm8226-common/msm8226-common-vendor-blobs.mk)
 
-PRODUCT_PACKAGES += com.qualcomm.services.location
 PRODUCT_PACKAGES += qcnvitems
 PRODUCT_PACKAGES += qcrilhook

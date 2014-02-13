@@ -17,6 +17,5 @@
 # Pick up overlay for features that depend on non-open-source files
 
 $(call inherit-product, vendor/motorola/msm8960dt-common/msm8960dt-common-vendor-blobs.mk)
-PRODUCT_PACKAGES += com.qualcomm.services.location
 PRODUCT_PACKAGES += qcnvitems
 PRODUCT_PACKAGES += qcrilhook

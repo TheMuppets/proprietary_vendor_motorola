@@ -43,13 +43,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
     vendor/motorola/msm8960-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/msm8960-common/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/motorola/msm8960-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960-common/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/motorola/msm8960-common/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/motorola/msm8960-common/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
-    vendor/motorola/msm8960-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \

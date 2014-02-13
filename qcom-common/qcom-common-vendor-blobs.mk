@@ -32,6 +32,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/qcom-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/motorola/qcom-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/motorola/qcom-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
+    vendor/motorola/qcom-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/motorola/qcom-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/qcom-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \

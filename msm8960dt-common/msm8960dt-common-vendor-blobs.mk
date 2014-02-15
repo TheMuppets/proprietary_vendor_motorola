@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \

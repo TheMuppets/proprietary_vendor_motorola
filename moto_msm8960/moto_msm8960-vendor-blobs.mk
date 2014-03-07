@@ -130,8 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/motorola/moto_msm8960/proprietary/xt897/lib/libaudcal.so:system/xt897/lib/libaudcal.so \
-    vendor/motorola/moto_msm8960/proprietary/xt897/lib/libqmiservices.so:system/xt897/lib/libqmiservices.so \
-    vendor/motorola/moto_msm8960/proprietary/xt897/lib/libril-qc-qmi-1.so:system/xt897/lib/libril-qc-qmi-1.so \
     vendor/motorola/moto_msm8960/proprietary/xt897/etc/firmware/atmxt-r2.tdat:system/xt897/etc/firmware/atmxt-r2.tdat \
     vendor/motorola/moto_msm8960/proprietary/xt901/lib/libqmiservices.so:system/xt901/lib/libqmiservices.so \
     vendor/motorola/moto_msm8960/proprietary/xt901/lib/libril-qc-qmi-1.so:system/xt901/lib/libril-qc-qmi-1.so

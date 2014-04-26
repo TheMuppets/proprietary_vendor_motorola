@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/moto_msm8960dt/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960dt/proprietary/bin/bootmodem:system/bin/bootmodem \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/moto_msm8960dt/proprietary/bin/efsks:system/bin/efsks \
     vendor/motorola/moto_msm8960dt/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/moto_msm8960dt/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -28,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/motorola/moto_msm8960dt/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ks:system/bin/ks \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
     vendor/motorola/moto_msm8960dt/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/moto_msm8960dt/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/moto_msm8960dt/proprietary/bin/msp430:system/bin/msp430 \

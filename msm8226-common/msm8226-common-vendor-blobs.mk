@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8226-common/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/motorola/msm8226-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/motorola/msm8226-common/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/msm8226-common/proprietary/bin/charger_monitor:system/bin/charger_monitor \
     vendor/motorola/msm8226-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/msm8226-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
@@ -35,8 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/msm8226-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/motorola/msm8226-common/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/motorola/msm8226-common/proprietary/bin/moto_com.sh:system/bin/moto_com.sh \
-    vendor/motorola/msm8226-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/msm8226-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/msm8226-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/msm8226-common/proprietary/bin/nl_listener:system/bin/nl_listener \

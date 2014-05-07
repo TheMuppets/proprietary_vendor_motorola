@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/msm8226-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/msm8226-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/motorola/msm8226-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/motorola/msm8226-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/msm8226-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/msm8226-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -191,12 +190,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:system/vendor/lib/libchromatix_imx135_hfr_120.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_common.so:system/vendor/lib/libchromatix_ov2720_common.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:system/vendor/lib/libchromatix_ov2720_default_video.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:system/vendor/lib/libchromatix_ov2720_hfr.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:system/vendor/lib/libchromatix_ov2720_liveshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_preview.so:system/vendor/lib/libchromatix_ov2720_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:system/vendor/lib/libchromatix_ov2720_zsl.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_common.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:system/vendor/lib/libchromatix_ov8825_default_video.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:system/vendor/lib/libchromatix_ov8825_hfr_60fps.so \
@@ -214,35 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:system/vendor/lib/libchromatix_ov9724_default_video.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:system/vendor/lib/libchromatix_ov9724_liveshot.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_ov9724_preview.so:system/vendor/lib/libchromatix_ov9724_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:system/vendor/lib/libchromatix_s5k3l1yx_common.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:system/vendor/lib/libchromatix_s5k3l1yx_default_video.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:system/vendor/lib/libchromatix_s5k3l1yx_liveshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:system/vendor/lib/libchromatix_s5k3l1yx_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:system/vendor/lib/libchromatix_s5k3l1yx_snapshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:system/vendor/lib/libchromatix_s5k3l1yx_video_hd.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:system/vendor/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
@@ -273,13 +237,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
-    vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \

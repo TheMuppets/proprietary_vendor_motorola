@@ -90,4 +90,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/edison/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/edison/proprietary/etc/firmware/ducati-m3.bin:system/etc/firmware/ducati-m3.bin \
     vendor/motorola/edison/proprietary/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
-    vendor/motorola/edison/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so
+    vendor/motorola/edison/proprietary/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
+    vendor/motorola/edison/proprietary/lib/hw/audio.primary.ics.so:system/lib/hw/audio.primary.ics.so

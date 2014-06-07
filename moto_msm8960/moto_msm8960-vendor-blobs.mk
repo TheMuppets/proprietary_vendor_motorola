@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/lib/libnative_renderer.so:system/lib/libnative_renderer.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqdp.so:system/lib/libqdp.so \

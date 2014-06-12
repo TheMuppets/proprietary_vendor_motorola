@@ -29,4 +29,5 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
+    libHevcSwDecoder \
     libtime_genoff

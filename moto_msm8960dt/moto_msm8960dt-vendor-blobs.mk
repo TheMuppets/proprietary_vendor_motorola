@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/aonvr1.bin:system/etc/firmware/aonvr1.bin \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/aonvr2.bin:system/etc/firmware/aonvr2.bin \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/tfa9890.config:system/etc/firmware/tfa9890.config \
@@ -36,9 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/tfa9890_ringtone_table.preset:system/etc/firmware/tfa9890_ringtone_table.preset \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/tfa9890_voice_table.preset:system/etc/firmware/tfa9890_voice_table.preset \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/motorola/moto_msm8960dt/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     vendor/motorola/moto_msm8960dt/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
@@ -83,9 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k4e1_default_video.so:system/lib/libchromatix_s5k4e1_default_video.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k4e1_preview.so:system/lib/libchromatix_s5k4e1_preview.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_default_video.so:system/lib/libchromatix_s5k5b3g_default_video.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_preview.so:system/lib/libchromatix_s5k5b3g_preview.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_zsl.so:system/lib/libchromatix_s5k5b3g_zsl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
@@ -116,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libVdlFaceDetection.so:system/lib/libVdlFaceDetection.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/VdlData.dat:system/lib/VdlData.dat \
+    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b00:system/etc/firmware/dxhdcp2.b00 \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b01:system/etc/firmware/dxhdcp2.b01 \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b02:system/etc/firmware/dxhdcp2.b02 \
@@ -170,6 +167,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmercury.so:system/lib/libmercury.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
@@ -223,7 +221,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/moto_msm8960dt/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/moto_msm8960dt/proprietary/bin/sapd:system/bin/sapd \
     vendor/motorola/moto_msm8960dt/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
@@ -233,8 +230,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/moto_msm8960dt/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \

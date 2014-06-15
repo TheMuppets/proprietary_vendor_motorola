@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/motorola/qcom-common/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/motorola/qcom-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/qcom-common/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \

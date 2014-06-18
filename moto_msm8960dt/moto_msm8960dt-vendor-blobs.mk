@@ -82,6 +82,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k4e1_default_video.so:system/lib/libchromatix_s5k4e1_default_video.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k4e1_preview.so:system/lib/libchromatix_s5k4e1_preview.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_default_video.so:system/lib/libchromatix_s5k5b3g_default_video.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_preview.so:system/lib/libchromatix_s5k5b3g_preview.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libchromatix_s5k5b3g_zsl.so:system/lib/libchromatix_s5k5b3g_zsl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \

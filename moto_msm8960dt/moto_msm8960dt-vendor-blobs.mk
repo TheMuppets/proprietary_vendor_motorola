@@ -124,6 +124,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
     vendor/motorola/moto_msm8960dt/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \

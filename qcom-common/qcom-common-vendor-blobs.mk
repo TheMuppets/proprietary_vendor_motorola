@@ -27,8 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/motorola/qcom-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
-    vendor/motorola/qcom-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \

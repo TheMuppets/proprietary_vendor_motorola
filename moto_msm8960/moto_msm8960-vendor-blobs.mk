@@ -159,6 +159,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/motorola/moto_msm8960/proprietary/bin/sapd:system/bin/sapd \
     vendor/motorola/moto_msm8960/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/motorola/moto_msm8960/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/moto_msm8960/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/moto_msm8960/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/moto_msm8960/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -166,6 +167,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/motorola/moto_msm8960/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/moto_msm8960/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \

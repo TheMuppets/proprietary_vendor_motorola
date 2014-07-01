@@ -117,8 +117,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \

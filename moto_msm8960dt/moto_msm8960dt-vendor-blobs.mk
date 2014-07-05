@@ -190,6 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/motorola/moto_msm8960dt/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmuxd:system/bin/qmuxd \

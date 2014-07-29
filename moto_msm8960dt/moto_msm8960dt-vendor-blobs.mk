@@ -21,10 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/aonvr1.bin:system/etc/firmware/aonvr1.bin \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/aonvr2.bin:system/etc/firmware/aonvr2.bin \
@@ -115,19 +112,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libVdlFaceDetection.so:system/lib/libVdlFaceDetection.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/VdlData.dat:system/lib/VdlData.dat \
+    vendor/motorola/moto_msm8960dt/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b00:system/etc/firmware/dxhdcp2.b00 \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b01:system/etc/firmware/dxhdcp2.b01 \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b02:system/etc/firmware/dxhdcp2.b02 \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.b03:system/etc/firmware/dxhdcp2.b03 \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/dxhdcp2.mdt:system/etc/firmware/dxhdcp2.mdt \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/hdcp_8960.dat.enc:system/etc/hdcp_8960.dat.enc \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -144,10 +133,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/motorola/moto_msm8960dt/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/moto_msm8960dt/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/moto_msm8960dt/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -170,18 +155,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libmercury.so:system/lib/libmercury.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/batt_health:system/bin/batt_health \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/refuse:system/bin/refuse \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/motorola/moto_msm8960dt/proprietary/bin/msp430:system/bin/msp430 \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/mspfirmware.bin:system/etc/firmware/mspfirmware.bin \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/mspfirmware_p0.bin:system/etc/firmware/mspfirmware_p0.bin \
@@ -192,18 +174,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/mspversion_p1.txt:system/etc/firmware/mspversion_p1.txt \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/mspversion_p2.txt:system/etc/firmware/mspversion_p2.txt \
     vendor/motorola/moto_msm8960dt/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/moto_msm8960dt/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libdsprofile.so:system/lib/libdsprofile.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libdss.so:system/lib/libdss.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqdi.so:system/lib/libqdi.so \
@@ -212,38 +188,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqmi_csvt_srvc.so:system/lib/libqmi_csvt_srvc.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/bootmodem:system/bin/bootmodem \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/efsks:system/bin/efsks \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/moto_msm8960dt/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/qcks:system/bin/qcks \
-    vendor/motorola/moto_msm8960dt/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/moto_msm8960dt/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/motorola/moto_msm8960dt/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/moto_msm8960dt/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/moto_msm8960dt/proprietary/bin/sapd:system/bin/sapd \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    vendor/motorola/moto_msm8960dt/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    vendor/motorola/moto_msm8960dt/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/moto_msm8960dt/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/moto_msm8960dt/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/moto_msm8960dt/proprietary/lib/libsensorhubservice_jni.so:system/lib/libsensorhubservice_jni.so \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/cyttsp_8064_mtp.hex:system/etc/firmware/cyttsp_8064_mtp.hex \
-    vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3310b-13061200-16a405-obakem-p1.tdat:system/etc/firmware/synaptics-s3310b-13061200-16a405-obakem-p1.tdat \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3310b-13061201-16a405-obakem.tdat:system/etc/firmware/synaptics-s3310b-13061201-16a405-obakem.tdat \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost.tdat \

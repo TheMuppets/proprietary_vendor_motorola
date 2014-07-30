@@ -181,4 +181,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r1.tdat:system/etc/firmware/atmxt-r1.tdat \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r2.tdat:system/etc/firmware/atmxt-r2.tdat \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/melfas_45_7_15.fw:system/etc/firmware/melfas_45_7_15.fw \
+    vendor/motorola/moto_msm8960/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960/proprietary/bin/thermald:system/bin/thermald

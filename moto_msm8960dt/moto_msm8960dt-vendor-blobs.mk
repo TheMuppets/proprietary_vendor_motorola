@@ -214,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat:system/etc/firmware/synaptics-s3402-13042202-164656-obake.tdat \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
     vendor/motorola/moto_msm8960dt/proprietary/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat:system/etc/firmware/synaptics-s3402b-13071701-16cadd-obake.tdat \
+    vendor/motorola/moto_msm8960dt/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960dt/proprietary/bin/thermald:system/bin/thermald \
     vendor/motorola/moto_msm8960dt/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/moto_msm8960dt/proprietary/xt1080/bin/ap_gain.bin:system/xt1080/bin/ap_gain.bin \

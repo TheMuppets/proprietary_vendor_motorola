@@ -102,20 +102,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/bin/hvdcp:system/bin/hvdcp \
     vendor/motorola/falcon/proprietary/bin/fmconfig:system/bin/fmconfig \
     vendor/motorola/falcon/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
-    vendor/motorola/falcon/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
-    vendor/motorola/falcon/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
-    vendor/motorola/falcon/proprietary/bin/quipc_main:system/bin/quipc_main \
     vendor/motorola/falcon/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/motorola/falcon/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/falcon/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
-    vendor/motorola/falcon/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \

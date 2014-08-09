@@ -246,6 +246,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/motorola/falcon/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/motorola/falcon/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/motorola/falcon/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/motorola/falcon/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/motorola/falcon/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/motorola/falcon/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \

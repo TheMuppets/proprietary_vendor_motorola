@@ -112,12 +112,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/motorola/falcon/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/falcon/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/motorola/falcon/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/motorola/falcon/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/falcon/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/falcon/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/falcon/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/motorola/falcon/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/falcon/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/falcon/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/falcon/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \

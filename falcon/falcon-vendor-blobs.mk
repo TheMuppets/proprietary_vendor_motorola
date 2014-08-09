@@ -102,7 +102,36 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/bin/hvdcp:system/bin/hvdcp \
     vendor/motorola/falcon/proprietary/bin/fmconfig:system/bin/fmconfig \
     vendor/motorola/falcon/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
+    vendor/motorola/falcon/proprietary/bin/location-mq:system/bin/location-mq \
+    vendor/motorola/falcon/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/motorola/falcon/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/motorola/falcon/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/motorola/falcon/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/motorola/falcon/proprietary/etc/izat.conf:system/etc/izat.conf \
+    vendor/motorola/falcon/proprietary/etc/quipc.conf:system/etc/quipc.conf \
+    vendor/motorola/falcon/proprietary/etc/sap.conf:system/etc/sap.conf \
+    vendor/motorola/falcon/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
+    vendor/motorola/falcon/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+    vendor/motorola/falcon/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/motorola/falcon/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/motorola/falcon/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/motorola/falcon/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/motorola/falcon/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/motorola/falcon/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
+    vendor/motorola/falcon/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/falcon/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \

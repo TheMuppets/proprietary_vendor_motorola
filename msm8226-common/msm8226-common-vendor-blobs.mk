@@ -197,6 +197,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/motorola/msm8226-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    vendor/motorola/msm8226-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \

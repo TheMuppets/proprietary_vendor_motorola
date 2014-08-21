@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<root>
-    <public owner="Motorola" project="Atrix" creation-date="18/Mar/2011 13:43:13" key="1000707131DF17C08890A4F79DA452DA1129ABB90505710EBB03499B5EF2EB2B28710000" digest="6FA095C5B9308B3D2B6C0D1E" validation="0F0019DF4E253013CF61A99923CF5D181BB03E8C05C4A9D81C66414A04535CBD000000000F00F3F8234D791920C44F5AFB6AB7B447C93266AB34B6B2DBF207BBAA51A41600000000" validation-key="1000C8B3189F9660103D45A492DE0C5038B3A2FE268F55654E9E9DF2A7E392D0440B0000" validation-by="J:/Build/Software/Restricted/tools/android/authmaster" />
-    <!--owner:      the owner of this key                   -->
-    <!--project:    the project this key is used by         -->
-    <!--key:        the public key component                -->
-    <!--digest:     the SHA-1 hash of this key              -->
-    <!--validation: the validator's signature of the digest -->
-</root>

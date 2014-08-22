@@ -120,8 +120,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/motorola/ghost/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/motorola/ghost/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/motorola/ghost/proprietary/etc/izat.conf:system/etc/izat.conf \
+    vendor/motorola/ghost/proprietary/etc/quipc.conf:system/etc/quipc.conf \
+    vendor/motorola/ghost/proprietary/etc/sap.conf:system/etc/sap.conf \
+    vendor/motorola/ghost/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/motorola/ghost/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/ghost/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/motorola/ghost/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/motorola/ghost/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/motorola/ghost/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/motorola/ghost/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/ghost/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/ghost/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/ghost/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \

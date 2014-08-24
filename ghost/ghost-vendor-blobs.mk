@@ -67,6 +67,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/motorola/ghost/proprietary/lib/libVdlFaceDetection.so:system/lib/libVdlFaceDetection.so \
     vendor/motorola/ghost/proprietary/lib/VdlData.dat:system/lib/VdlData.dat \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_ov10820_default_video.so:system/lib/libchromatix_ais_ov10820_default_video.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_ov10820_hfr_60fps.so:system/lib/libchromatix_ais_ov10820_hfr_60fps.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_ov10820_preview.so:system/lib/libchromatix_ais_ov10820_preview.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_ov10820_zsl.so:system/lib/libchromatix_ais_ov10820_zsl.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_s5k5b3g_default_video.so:system/lib/libchromatix_ais_s5k5b3g_default_video.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_s5k5b3g_preview.so:system/lib/libchromatix_ais_s5k5b3g_preview.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_ais_s5k5b3g_zsl.so:system/lib/libchromatix_ais_s5k5b3g_zsl.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \
@@ -76,8 +83,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx091_video_hd.so:system/lib/libchromatix_imx091_video_hd.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_default_video.so:system/lib/libchromatix_imx135_default_video.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_preview.so:system/lib/libchromatix_imx135_preview.so \
-    vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_video_hd.so:system/lib/libchromatix_imx135_video_hd.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_video_hdr.so:system/lib/libchromatix_imx135_video_hdr.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_video_hd.so:system/lib/libchromatix_imx135_video_hd.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_imx135_zsl.so:system/lib/libchromatix_imx135_zsl.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_mt9e013_default_video.so:system/lib/libchromatix_mt9e013_default_video.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_mt9e013_preview.so:system/lib/libchromatix_mt9e013_preview.so \
@@ -97,10 +104,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/lib/libchromatix_ov8825_preview.so:system/lib/libchromatix_ov8825_preview.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_ov9726_default_video.so:system/lib/libchromatix_ov9726_default_video.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_ov9726_preview.so:system/lib/libchromatix_ov9726_preview.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_ov10820_default_video.so:system/lib/libchromatix_qc3a_ov10820_default_video.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_ov10820_hfr_60fps.so:system/lib/libchromatix_qc3a_ov10820_hfr_60fps.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_ov10820_preview.so:system/lib/libchromatix_qc3a_ov10820_preview.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_ov10820_zsl.so:system/lib/libchromatix_qc3a_ov10820_zsl.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_s5k5b3g_default_video.so:system/lib/libchromatix_qc3a_s5k5b3g_default_video.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_s5k5b3g_preview.so:system/lib/libchromatix_qc3a_s5k5b3g_preview.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_qc3a_s5k5b3g_zsl.so:system/lib/libchromatix_qc3a_s5k5b3g_zsl.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_default_video.so:system/lib/libchromatix_s5k3l1yx_default_video.so \
+    vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
-    vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
     vendor/motorola/ghost/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \

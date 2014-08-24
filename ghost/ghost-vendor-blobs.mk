@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/ghost/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
     vendor/motorola/ghost/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
+    vendor/motorola/ghost/proprietary/lib/libAisAdapter.so:system/lib/libAisAdapter.so \
+    vendor/motorola/ghost/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \
+    vendor/motorola/ghost/proprietary/lib/libAlAisTune.so:system/lib/libAlAisTune.so \
+    vendor/motorola/ghost/proprietary/lib/libAlAisWrap.so:system/lib/libAlAisWrap.so \
     vendor/motorola/ghost/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/ghost/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/motorola/ghost/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \

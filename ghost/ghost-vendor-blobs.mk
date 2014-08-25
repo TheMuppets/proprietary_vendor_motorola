@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/ghost/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/ghost/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/ghost/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/motorola/ghost/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/motorola/ghost/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/motorola/ghost/proprietary/lib/libAisAdapter.so:system/lib/libAisAdapter.so \
     vendor/motorola/ghost/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \

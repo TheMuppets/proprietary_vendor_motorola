@@ -1,6 +1,0 @@
-echo "!!Running a restore of userdata using: " $1
-/system/xbin/backup -r -t $1
-STATUS=$?
-echo "!!Restore completed: Status "$STATUS
-setprop mot.backup_restore.returnval $STATUS
-setprop mot.backup_restore.status "Finished"

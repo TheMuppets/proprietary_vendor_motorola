@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/melfas_45_7_15.fw:system/etc/firmware/melfas_45_7_15.fw \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/sensors.oem.so:system/lib/hw/sensors.oem.so \

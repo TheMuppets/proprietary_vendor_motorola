@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/moto_msm8960/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/moto_msm8960/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/moto_msm8960/proprietary/lib/hw/vendor-camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \

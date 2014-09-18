@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libchromatix_s5k3l1yx_preview.so:system/lib/libchromatix_s5k3l1yx_preview.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libchromatix_s5k3l1yx_video_hd.so:system/lib/libchromatix_s5k3l1yx_video_hd.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libchromatix_s5k3l1yx_zsl.so:system/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
@@ -119,6 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \

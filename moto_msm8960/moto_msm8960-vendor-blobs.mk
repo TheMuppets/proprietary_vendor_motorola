@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/moto_msm8960/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/moto_msm8960/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/moto_msm8960/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \
@@ -140,6 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
+    vendor/motorola/moto_msm8960/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960/proprietary/bin/whisperd:system/bin/whisperd \
     vendor/motorola/moto_msm8960/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
     vendor/motorola/moto_msm8960/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
@@ -181,5 +182,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r1.tdat:system/etc/firmware/atmxt-r1.tdat \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r2.tdat:system/etc/firmware/atmxt-r2.tdat \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/melfas_45_7_15.fw:system/etc/firmware/melfas_45_7_15.fw \
-    vendor/motorola/moto_msm8960/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960/proprietary/bin/thermald:system/bin/thermald

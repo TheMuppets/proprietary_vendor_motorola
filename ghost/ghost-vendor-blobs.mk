@@ -222,7 +222,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/etc/firmware/mspversion_p0.txt:system/etc/firmware/mspversion_p0.txt \
     vendor/motorola/ghost/proprietary/etc/firmware/mspversion_p1.txt:system/etc/firmware/mspversion_p1.txt \
     vendor/motorola/ghost/proprietary/etc/firmware/mspversion_p2.txt:system/etc/firmware/mspversion_p2.txt \
-    vendor/motorola/ghost/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
     vendor/motorola/ghost/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/motorola/ghost/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
     vendor/motorola/ghost/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
@@ -265,3 +264,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat \
     vendor/motorola/ghost/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
     vendor/motorola/ghost/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/motorola/ghost/proprietary/lib/libTimeService.so:system/lib/libTimeService.so

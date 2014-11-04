@@ -264,3 +264,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat:system/etc/firmware/synaptics-s3402-13040101-164656-ghost-p1a.tdat \
     vendor/motorola/ghost/proprietary/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat:system/etc/firmware/synaptics-s3402b-13050201-167746-ghost.tdat \
     vendor/motorola/ghost/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/motorola/ghost/proprietary/lib/libTimeService.so:system/lib/libTimeService.so

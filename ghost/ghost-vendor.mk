@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     MotGeoFenceSvc
 
 PRODUCT_PACKAGES += \
+    TimeService \
     libtime_genoff
 
 $(call inherit-product, vendor/motorola/ghost/ghost-vendor-blobs.mk)

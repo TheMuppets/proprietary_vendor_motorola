@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/qcom-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/qcom-common/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/motorola/qcom-common/proprietary/lib/libTimeService.so:system/lib/libTimeService.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/cyttsp_8064_mtp.hex:system/etc/firmware/cyttsp_8064_mtp.hex \
     vendor/motorola/qcom-common/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
     vendor/motorola/qcom-common/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \

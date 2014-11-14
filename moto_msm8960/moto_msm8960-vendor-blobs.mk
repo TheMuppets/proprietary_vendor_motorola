@@ -143,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960/proprietary/bin/whisperd:system/bin/whisperd \
     vendor/motorola/moto_msm8960/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
-    vendor/motorola/moto_msm8960/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
     vendor/motorola/moto_msm8960/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/motorola/moto_msm8960/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libdsprofile.so:system/lib/libdsprofile.so \

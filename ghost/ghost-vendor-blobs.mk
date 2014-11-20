@@ -132,16 +132,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ghost/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/ghost/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/ghost/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/motorola/ghost/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/motorola/ghost/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/motorola/ghost/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/ghost/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/ghost/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/ghost/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/motorola/ghost/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/motorola/ghost/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     vendor/motorola/ghost/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/motorola/ghost/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/ghost/proprietary/etc/gps.conf:system/etc/gps.conf \

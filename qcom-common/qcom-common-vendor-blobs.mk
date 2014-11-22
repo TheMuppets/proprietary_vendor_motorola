@@ -23,10 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-    vendor/motorola/qcom-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/qcom-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \

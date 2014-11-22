@@ -18,7 +18,7 @@
 
 $(call inherit-product, vendor/motorola/qcom-common/qcom-common-vendor-blobs.mk)
 
-# Prebuilt APKs
+# Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     TimeService
 

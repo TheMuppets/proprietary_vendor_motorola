@@ -152,8 +152,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/motorola/victara/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    vendor/motorola/victara/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/motorola/victara/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/victara/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/victara/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \

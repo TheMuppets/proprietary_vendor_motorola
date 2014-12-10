@@ -119,7 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/victara/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/motorola/victara/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/victara/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/motorola/victara/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/motorola/victara/proprietary/etc/quipc.conf:system/etc/quipc.conf \
@@ -132,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/victara/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/victara/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/motorola/victara/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/motorola/victara/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/motorola/victara/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
@@ -218,15 +216,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/qcks:system/bin/qcks \
     vendor/motorola/victara/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/victara/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/motorola/victara/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/victara/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/victara/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/victara/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
+    vendor/motorola/victara/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/victara/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
+    vendor/motorola/victara/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/victara/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/motorola/victara/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/victara/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:system/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
     vendor/motorola/victara/proprietary/etc/firmware/atmel-a432-14060302-0102aa-victara-p1.tdat:system/etc/firmware/atmel-a432-14060302-0102aa-victara-p1.tdat \

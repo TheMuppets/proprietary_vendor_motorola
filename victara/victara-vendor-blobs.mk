@@ -17,7 +17,24 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/adspd:system/bin/adspd \
     vendor/motorola/victara/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/motorola/victara/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Handset_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Handset_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Bluetooth_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Bluetooth_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_General_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_General_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Global_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Global_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb:system/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Global_cal.acdb:system/etc/acdbdata/victara/victara_Global_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Handset_cal.acdb:system/etc/acdbdata/victara/victara_Handset_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Bluetooth_cal.acdb:system/etc/acdbdata/victara/victara_Bluetooth_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Hdmi_cal.acdb:system/etc/acdbdata/victara/victara_Hdmi_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_General_cal.acdb:system/etc/acdbdata/victara/victara_General_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Speaker_cal.acdb:system/etc/acdbdata/victara/victara_Speaker_cal.acdb \
+    vendor/motorola/victara/proprietary/etc/acdbdata/victara/victara_Headset_cal.acdb:system/etc/acdbdata/victara/victara_Headset_cal.acdb \
     vendor/motorola/victara/proprietary/etc/firmware/aonvr1.bin:system/etc/firmware/aonvr1.bin \
     vendor/motorola/victara/proprietary/etc/firmware/aonvr2.bin:system/etc/firmware/aonvr2.bin \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.config:system/etc/firmware/left.tfa9890.config \
@@ -29,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.speaker:system/etc/firmware/left.tfa9890.speaker \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_voice_table.preset:system/etc/firmware/left.tfa9890_voice_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/victara/proprietary/bin/hvdcp:system/bin/hvdcp \
     vendor/motorola/victara/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/victara/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/victara/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -106,8 +124,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libchromatix_ar0543_common.so:system/lib/libchromatix_ar0543_common.so \
     vendor/motorola/victara/proprietary/lib/libchromatix_ar0543_snapshot.so:system/lib/libchromatix_ar0543_snapshot.so \
     vendor/motorola/victara/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/motorola/victara/proprietary/bin/thermald:system/bin/thermald \
+    vendor/motorola/victara/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/motorola/victara/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/motorola/victara/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/motorola/victara/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/victara/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
@@ -222,11 +241,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/victara/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/victara/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libqsap_sdk.so:system/vendor/lib/libqsap_sdk.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/victara/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/motorola/victara/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/motorola/victara/proprietary/bin/stm401:system/bin/stm401 \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:system/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
+    vendor/motorola/victara/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/motorola/victara/proprietary/etc/firmware/atmel-a432-14060302-0102aa-victara-p1.tdat:system/etc/firmware/atmel-a432-14060302-0102aa-victara-p1.tdat \
     vendor/motorola/victara/proprietary/etc/firmware/atmel-a432-14102902-0103aa-victara.tdat:system/etc/firmware/atmel-a432-14102902-0103aa-victara.tdat

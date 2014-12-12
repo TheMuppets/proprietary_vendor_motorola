@@ -56,7 +56,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \
     vendor/motorola/victara/proprietary/lib/libAlAisTune.so:system/lib/libAlAisTune.so \
     vendor/motorola/victara/proprietary/lib/libAlAisWrap.so:system/lib/libAlAisWrap.so \
+    vendor/motorola/victara/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
+    vendor/motorola/victara/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/motorola/victara/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
+    vendor/motorola/victara/proprietary/lib/libjscore.so:system/lib/libjscore.so \
+    vendor/motorola/victara/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/motorola/victara/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmmcamera_imx179.so:system/vendor/lib/libmmcamera_imx179.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \

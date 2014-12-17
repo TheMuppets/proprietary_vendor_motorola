@@ -44,8 +44,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.speaker:system/etc/firmware/left.tfa9890.speaker \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_music_table.preset:system/etc/firmware/left.tfa9890_music_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_n1b12.patch:system/etc/firmware/left.tfa9890_n1b12.patch \
+    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_n1c2.patch:system/etc/firmware/left.tfa9890_n1c2.patch \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:system/etc/firmware/left.tfa9890_ringtone_table.preset \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.speaker:system/etc/firmware/left.tfa9890.speaker \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_voice_table.preset:system/etc/firmware/left.tfa9890_voice_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
     vendor/motorola/victara/proprietary/bin/hvdcp:system/bin/hvdcp \

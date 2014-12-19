@@ -53,6 +53,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/victara/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/motorola/victara/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/motorola/victara/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
     vendor/motorola/victara/proprietary/lib/libAisAdapter.so:system/lib/libAisAdapter.so \
     vendor/motorola/victara/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \

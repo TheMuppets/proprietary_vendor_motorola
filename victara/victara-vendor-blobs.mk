@@ -194,6 +194,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd:system/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd \
+    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/victara/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/victara/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \

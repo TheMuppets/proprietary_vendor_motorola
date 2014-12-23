@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:system/etc/firmware/left.tfa9890_ringtone_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_voice_table.preset:system/etc/firmware/left.tfa9890_voice_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
+    vendor/motorola/victara/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    vendor/motorola/victara/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/motorola/victara/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/motorola/victara/proprietary/bin/hvdcp:system/bin/hvdcp \
     vendor/motorola/victara/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/victara/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \

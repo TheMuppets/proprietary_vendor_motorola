@@ -152,6 +152,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/motorola/victara/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/motorola/victara/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
+    vendor/motorola/victara/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/motorola/victara/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/victara/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
@@ -193,8 +195,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd:system/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd \
-    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/victara/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/victara/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -234,6 +234,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/victara/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/victara/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
+    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd:system/etc/firmware/BCM20795A0_001.001.023.0003.0022_Generic_I2C_NCD_Unsigned_configdata.ncd \
+    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/motorola/victara/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \

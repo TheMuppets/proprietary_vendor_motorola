@@ -162,6 +162,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/victara/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/motorola/victara/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
+    vendor/motorola/victara/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/victara/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/motorola/victara/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/motorola/victara/proprietary/etc/quipc.conf:system/etc/quipc.conf \
@@ -174,6 +176,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/victara/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/victara/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/motorola/victara/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/motorola/victara/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/motorola/victara/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/motorola/victara/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \

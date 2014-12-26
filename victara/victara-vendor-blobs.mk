@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/adspd:system/bin/adspd \
     vendor/motorola/victara/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/motorola/victara/proprietary/lib/libspeakerbundle.so:system/lib/libspeakerbundle.so \
     vendor/motorola/victara/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/motorola/victara/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/motorola/victara/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \

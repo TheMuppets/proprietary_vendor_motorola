@@ -347,7 +347,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/motorola/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/motorola/shamu/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libmdmcutback.so:system/vendor/lib/libmdmcutback.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \

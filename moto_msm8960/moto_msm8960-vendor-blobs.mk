@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/motorola/moto_msm8960/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
     vendor/motorola/moto_msm8960/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
+    vendor/motorola/moto_msm8960/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/motorola/moto_msm8960/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/moto_msm8960/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
@@ -107,6 +108,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/motorola/moto_msm8960/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/moto_msm8960/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/moto_msm8960/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/moto_msm8960/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -125,8 +127,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
@@ -137,11 +142,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/moto_msm8960/proprietary/bin/whisperd:system/bin/whisperd \
     vendor/motorola/moto_msm8960/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
+    vendor/motorola/moto_msm8960/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/motorola/moto_msm8960/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    vendor/motorola/moto_msm8960/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libdsprofile.so:system/lib/libdsprofile.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libdss.so:system/lib/libdss.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libdsucsd.so:system/lib/libdsucsd.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqdi.so:system/lib/libqdi.so \
@@ -150,20 +158,26 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqmi_csvt_srvc.so:system/lib/libqmi_csvt_srvc.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/motorola/moto_msm8960/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/motorola/moto_msm8960/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/motorola/moto_msm8960/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/motorola/moto_msm8960/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/motorola/moto_msm8960/proprietary/bin/sapd:system/bin/sapd \
     vendor/motorola/moto_msm8960/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/moto_msm8960/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/moto_msm8960/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/motorola/moto_msm8960/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/moto_msm8960/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/moto_msm8960/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/motorola/moto_msm8960/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/motorola/moto_msm8960/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/moto_msm8960/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+    vendor/motorola/moto_msm8960/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/moto_msm8960/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/moto_msm8960/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/moto_msm8960/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \

@@ -189,18 +189,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/motorola/victara/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/victara/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/motorola/victara/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/motorola/victara/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/motorola/victara/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/motorola/victara/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/motorola/victara/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/motorola/victara/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/motorola/victara/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/motorola/victara/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/motorola/victara/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \

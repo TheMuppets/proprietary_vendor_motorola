@@ -24,7 +24,6 @@ PRODUCT_PACKAGES += \
     imslibrary \
     qcnvitems \
     qcrilhook \
-    libHevcSwDecoder \
-    libtime_genoff
+    libHevcSwDecoder
 
 $(call inherit-product, vendor/motorola/msm8226-common/msm8226-common-vendor-blobs.mk)

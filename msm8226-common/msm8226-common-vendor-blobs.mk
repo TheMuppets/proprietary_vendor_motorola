@@ -99,8 +99,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/msm8226-common/proprietary/bin/hvdcp:system/bin/hvdcp \
-    vendor/motorola/msm8226-common/proprietary/bin/fmconfig:system/bin/fmconfig \
-    vendor/motorola/msm8226-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/motorola/msm8226-common/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/motorola/msm8226-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/motorola/msm8226-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \

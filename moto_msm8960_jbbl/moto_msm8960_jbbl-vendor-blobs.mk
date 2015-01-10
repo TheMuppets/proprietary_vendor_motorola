@@ -59,13 +59,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/hw/gps.msm8960.so:system/lib/hw/gps.msm8960.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libgps.so:system/lib/libgps.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \

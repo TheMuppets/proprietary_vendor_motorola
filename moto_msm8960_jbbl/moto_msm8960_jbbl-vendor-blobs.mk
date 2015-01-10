@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libOmxCore.so:system/lib/libOmxCore.so \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
+    vendor/motorola/moto_msm8960_jbbl/proprietary/lib/libOmxVdec.so:system/lib/libOmxVdec.so \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
     vendor/motorola/moto_msm8960_jbbl/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \

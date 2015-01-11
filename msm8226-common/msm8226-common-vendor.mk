@@ -18,10 +18,8 @@
 PRODUCT_PACKAGES += \
     com.qualcomm.location \
     com.qualcomm.services.location \
-    MotGeoFenceSvc \
     TimeService \
     qcrilmsgtunnel \
-    imslibrary \
     qcnvitems \
     qcrilhook \
     libHevcSwDecoder

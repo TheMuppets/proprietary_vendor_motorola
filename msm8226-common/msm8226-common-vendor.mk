@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     MotGeoFenceSvc \
     TimeService \
     qcrilmsgtunnel \
-    imslibrary \
     qcnvitems \
     qcrilhook \
     libHevcSwDecoder

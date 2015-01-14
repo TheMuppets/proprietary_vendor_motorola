@@ -57,8 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/motorola/qcom-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/qcom-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
-    vendor/motorola/qcom-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
-    vendor/motorola/qcom-common/proprietary/bin/refuse:system/bin/refuse \
     vendor/motorola/qcom-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/motorola/qcom-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
     vendor/motorola/qcom-common/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \

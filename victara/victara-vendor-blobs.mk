@@ -284,6 +284,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/motorola/victara/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/motorola/victara/proprietary/bin/stm401:system/bin/stm401 \
+    vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw.bin:system/etc/firmware/sensorhubfw.bin \
+    vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw_p0.bin:system/etc/firmware/sensorhubfw_p0.bin \
+    vendor/motorola/victara/proprietary/etc/firmware/sensorhubver_p0.txt:system/etc/firmware/sensorhubver_p0.txt \
+    vendor/motorola/victara/proprietary/etc/firmware/sensorhubver.txt:system/etc/firmware/sensorhubver.txt \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:system/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
     vendor/motorola/victara/proprietary/bin/time_daemon:system/bin/time_daemon \

@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter mb886 xt897 xt897c,$(TARGET_DEVICE)),)
+ifneq ($(filter mb886 xt897 xt897c xt925_jbbl,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
 

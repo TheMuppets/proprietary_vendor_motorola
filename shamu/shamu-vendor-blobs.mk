@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -385,8 +385,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.b12:system/etc/firmware/vpu.b12 \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.mbn:system/etc/firmware/vpu.mbn \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.mdt:system/etc/firmware/vpu.mdt \
+    vendor/motorola/shamu/proprietary/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml \
     vendor/motorola/shamu/proprietary/lib/librecoglib.so:system/lib/librecoglib.so \
     vendor/motorola/shamu/proprietary/lib/libsupermodel.so:system/lib/libsupermodel.so \
+    vendor/motorola/shamu/proprietary/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so \
     vendor/motorola/shamu/proprietary/vendor/firmware/aonvr1.bin:system/vendor/firmware/aonvr1.bin \
     vendor/motorola/shamu/proprietary/vendor/firmware/aonvr2.bin:system/vendor/firmware/aonvr2.bin \
     vendor/motorola/shamu/proprietary/vendor/firmware/bcm20795_firmware.ncd:system/vendor/firmware/bcm20795_firmware.ncd \

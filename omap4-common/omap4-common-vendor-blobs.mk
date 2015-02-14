@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_openssl.so:system/lib/libdataencrypt_openssl.so \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_tpa.so:system/lib/libdataencrypt_tpa.so \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_utils.so:system/lib/libdataencrypt_utils.so \
+    vendor/motorola/omap4-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/omap4-common/proprietary/lib/libhdcp.so:system/lib/libhdcp.so \
     vendor/motorola/omap4-common/proprietary/lib/libhdmi.so:system/lib/libhdmi.so \
     vendor/motorola/omap4-common/proprietary/lib/libmot_atcmd.so:system/lib/libmot_atcmd.so \
@@ -75,4 +76,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/motorola/omap4-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+    vendor/motorola/omap4-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/motorola/omap4-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so

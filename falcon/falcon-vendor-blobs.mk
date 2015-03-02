@@ -51,4 +51,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/lib/libchromatix_ar0543_hfr_60.so:system/lib/libchromatix_ar0543_hfr_60.so \
     vendor/motorola/falcon/proprietary/lib/libchromatix_ar0543_preview.so:system/lib/libchromatix_ar0543_preview.so \
     vendor/motorola/falcon/proprietary/lib/libchromatix_ar0543_snapshot.so:system/lib/libchromatix_ar0543_snapshot.so \
+    vendor/motorola/falcon/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/motorola/falcon/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so

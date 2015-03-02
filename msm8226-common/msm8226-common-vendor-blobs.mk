@@ -163,7 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8226-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/motorola/msm8226-common/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/motorola/msm8226-common/proprietary/etc/firmware/aps-Falc-01300000-0130-falcon.tdat:system/etc/firmware/aps-Falc-01300000-0130-falcon.tdat \
     vendor/motorola/msm8226-common/proprietary/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat \
     vendor/motorola/msm8226-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \

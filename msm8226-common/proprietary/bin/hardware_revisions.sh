@@ -10,13 +10,14 @@
 # files in the userdata partition, one for each type of device.  The format of
 # these lines are as follows:
 #
-# MOTHWREV-vX
-# type=XXXXX
-# vendor=XXXXX
-# hardware-rev=XXXXX
-# date-lot-code=XXXXX
-# firmware-rev=XXXXX
-# extra-info=XXXXX
+# MOTHREV-vX
+# hw_name=XXXXX
+# vendor_id=XXXXX
+# hw_rev=XXXXX
+# date=XXXXX
+# lot_code=XXXXX
+# fw_rev=XXXXX
+# (components may also add additional fields to the ones above)
 #
 # The extact format of each field will be device-specific, but should be
 # consistent across a particular hardware platform. Note that each revision
@@ -42,18 +43,21 @@ OUT_PATH_PERM=0755
 PATH_RAM=/sys/ram
 PATH_NVM=/sys/block/mmcblk0/device
 PATH_SDCARD=/sys/block/mmcblk1/device
-# Current 8960 touchsceen is only on i2c-3 bus
-PATH_TOUCH=`ls -d /sys/bus/i2c/devices/5-*`
+PATH_TOUCH="/sys/bus/i2c/drivers/"`cd /sys/bus/i2c/drivers && ls */?-*/ic_ver | grep -o .*/`
 PATH_DISPLAY=/sys/hardware_revisions/display
 PATH_PMIC=/sys/hardware_revisions/pmic
 
 # Product-specific overrides
 [ -e /system/etc/hardware_revisions.conf ] && . /system/etc/hardware_revisions.conf
 
+#
+# Clear out all revision data in this directory. If in the future we decide
+# to remove a component, we want to make sure any old files are not present.
+rm /data/hardware_revisions/*
 
 #
 # Append one piece of revision data to a given file. If a value is blank,
-# then "NOT_APPLICABLE" is written.
+# then "NOT_AVAILABLE" is written.
 #
 # $1 - tag
 # $2 - value
@@ -61,7 +65,7 @@ PATH_PMIC=/sys/hardware_revisions/pmic
 write_one_revision_data()
 {
     if [ -z "${2}" ]; then
-        VALUE=NOT_APPLICABLE
+        VALUE=NOT_AVAILABLE
     else
         VALUE="${2}"
     fi
@@ -70,30 +74,39 @@ write_one_revision_data()
 }
 
 #
-# Generate a hardware revision file
+# Generate the common data contained for
+# all hardware peripherals
 #
-# $1 - name
-# $2 - type
+# $1 - file to write to
+# $2 - name
 # $3 - vendor ID
 # $4 - hardware revision
-# $5 - date/lot code
-# $6 - firmware revision
-# $7 - extra information
-create_revision_data()
+# $5 - date
+# $6 - lot code
+# $7 - firmware revision
+create_common_revision_data()
 {
-    FILE="${OUT_PATH}/${1}"
+    FILE="${1}"
+    echo "MOTHREV-v2" > ${FILE}
 
-    echo "MOTHWREV-v1" > ${FILE}
+    write_one_revision_data "hw_name" "${2}" ${FILE}
+    write_one_revision_data "vendor_id" "${3}" ${FILE}
+    write_one_revision_data "hw_rev" "${4}" ${FILE}
+    write_one_revision_data "date" "${5}" ${FILE}
+    write_one_revision_data "lot_code" "${6}" ${FILE}
+    write_one_revision_data "fw_rev" "${7}" ${FILE}
 
-    write_one_revision_data "type" "${2}" ${FILE}
-    write_one_revision_data "vendorID" "${3}" ${FILE}
-    write_one_revision_data "hardware-rev" "${4}" ${FILE}
-    write_one_revision_data "date-lot-code" "${5}" ${FILE}
-    write_one_revision_data "firmware-rev" "${6}" ${FILE}
-    write_one_revision_data "extra-info" "${7}" ${FILE}
+}
 
-    chown ${OUT_USR}.${OUT_GRP} ${FILE}
-    chmod ${OUT_PERM} ${FILE}
+#
+# Applies the appropriate file permissions to the
+# hardware revision data file.
+#
+# $1 - file to write to
+apply_revision_data_perms()
+{
+    chown ${OUT_USR}.${OUT_GRP} "${1}"
+    chmod ${OUT_PERM} "${1}"
 }
 
 mkdir -p ${OUT_PATH}
@@ -104,52 +117,59 @@ chmod ${OUT_PATH_PERM} ${OUT_PATH}
 #
 # Compile ram
 #
+FILE="${OUT_PATH}/ram"
+HNAME=
+VEND=
+HREV=
+DATE=
+FREV=
+LOT_CODE=
+INFO=
 if [ -d "${PATH_RAM}" ] ; then
-    TYPE=`cat ${PATH_RAM}/type`
+    HNAME=`cat ${PATH_RAM}/type`
     VEND=`cat ${PATH_RAM}/info`
     VEND="${VEND%%:*:*}"
-    INFO="$(cat ${PATH_RAM}/mr5),$(cat ${PATH_RAM}/mr6),$(cat ${PATH_RAM}/mr5),\
-$(cat ${PATH_RAM}/mr5)"
-    create_revision_data "ram" "${TYPE}" "${VEND}" "" "" "" "${INFO}"
+    INFO="$(cat ${PATH_RAM}/mr5),$(cat ${PATH_RAM}/mr6),$(cat ${PATH_RAM}/mr7),\
+$(cat ${PATH_RAM}/mr8)"
 fi
+create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "" "" "" ""
+write_one_revision_data "config_info" "${INFO}" "${FILE}"
+apply_revision_data_perms "${FILE}"
 
 
 #
 # Compile nvm
 #
+FILE="${OUT_PATH}/nvm"
+HNAME=
+VEND=
+HREV=
+DATE=
+FREV=
+LOT_CODE=
 if [ -d "${PATH_NVM}" ] ; then
-    TYPE=`cat ${PATH_NVM}/type`
+    HNAME=`cat ${PATH_NVM}/type`
     VEND=`cat ${PATH_NVM}/manfid`
     HREV=`cat ${PATH_NVM}/name`
     DATE=`cat ${PATH_NVM}/date`
     FREV="$(cat ${PATH_NVM}/hwrev),$(cat ${PATH_NVM}/fwrev)"
-    INFO="$(cat ${PATH_NVM}/cid),$(cat ${PATH_NVM}/csd)"
-    create_revision_data "nvm" "${TYPE}" "${VEND}" "${HREV}" "${DATE}" "${FREV}" "${INFO}"
+    LOT_CODE="$(cat ${PATH_NVM}/csd)"
 fi
-
-
-#
-# Compile sdcard
-#
-if [ -d "${PATH_SDCARD}" ] ; then
-    TYPE=`cat ${PATH_SDCARD}/type`
-    VEND=`cat ${PATH_SDCARD}/manfid`
-    HREV=`cat ${PATH_SDCARD}/name`
-    DATE=`cat ${PATH_SDCARD}/date`
-    FREV="$(cat ${PATH_SDCARD}/hwrev),$(cat ${PATH_SDCARD}/fwrev)"
-    INFO="$(cat ${PATH_SDCARD}/cid),$(cat ${PATH_SDCARD}/csd)"
-    create_revision_data "sdcard" "${TYPE}" "${VEND}" "${HREV}" "${DATE}" "${FREV}" "${INFO}"
-fi
+create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+apply_revision_data_perms "${FILE}"
 
 
 #
 # Compile ap
 #
+FILE="${OUT_PATH}/ap"
+HNAME=
+VEND=
+HREV=
+DATE=
+FREV=
+LOT_CODE=
 if [ -e "/proc/cpuinfo" ]; then
-    TYPE=
-    VEND=
-    HREV=
-    INFO=
     PREVIFS="$IFS"
     IFS="
 "
@@ -157,48 +177,55 @@ if [ -e "/proc/cpuinfo" ]; then
         KEY="${CPU%:*}"
         VAL="${CPU#*: }"
         case "${KEY}" in
-            Processor*) TYPE="${VAL}" ;;
+            Processor*) HNAME="${VAL}" ;;
             *implementer*) VEND="${VAL}" ;;
             *variant*) HREV="${VAL}" ;;
             *part*) HREV="${HREV},${VAL}" ;;
             *revision*) HREV="${HREV},${VAL}" ;;
-            *Serial*) INFO="${VAL}" ;;
         esac
     done
     IFS="$PREVIFS"
-    create_revision_data "ap" "${TYPE}" "${VEND}" "${HREV}" "" "" "${INFO}"
 fi
+create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
+apply_revision_data_perms "${FILE}"
+
 
 #
 # copy pmic data
 #
 if [ -e "/sys/hardware_revisions/pmic" ]; then
     cat /sys/hardware_revisions/pmic > ${OUT_PATH}/pmic
-    chown ${OUT_USR}.${OUT_GRP} ${OUT_PATH}/pmic
-    chmod ${OUT_PERM} ${OUT_PATH}/pmic
+else
+    create_common_revision_data "${OUT_PATH}/pmic" "" "" "" "" "" ""
 fi
+apply_revision_data_perms "${OUT_PATH}/pmic"
+
 
 #
 # copy display data
 #
 if [ -e /sys/hardware_revisions/display ]; then
     cat /sys/hardware_revisions/display > ${OUT_PATH}/display
-    chown ${OUT_USR}.${OUT_GRP} ${OUT_PATH}/display
-    chmod ${OUT_PERM} ${OUT_PATH}/display
+else
+    create_common_revision_data "${OUT_PATH}/display" "" "" "" "" "" ""
 fi
+apply_revision_data_perms "${OUT_PATH}/display"
+
 
 #
 # Compile touchscreen
 #
+FILE="${OUT_PATH}/touchscreen"
+HNAME=
+VEND=
+HREV=
+DATE=
+FREV=
+LOT_CODE=
 if [ -e "${PATH_TOUCH}/name" ]; then
-    VEND=
-    HREV=
-    DATE=
-    FREV=
-    INFO=
-    TYPE=`cat ${PATH_TOUCH}/name`
+    HNAME=`cat ${PATH_TOUCH}/name`
     ICVER=`cat -e ${PATH_TOUCH}/ic_ver`
-    case "${TYPE}" in
+    case "${HNAME}" in
         melfas*)
             VEND="Melfas"
             HREV="${ICVER##*'HW Revision:'}"
@@ -229,13 +256,11 @@ if [ -e "${PATH_TOUCH}/name" ]; then
             VEND="${VEND%%\$*}"
             FREV="${ICVER##*'Build ID: '}"
             FREV="${FREV%%\$*}"
-            INFO="${ICVER##*'Config ID: '}"
-            INFO="${INFO%%\$*}"
-            ;;
-        *)
-            INFO="not supported by current version $0"
+            LOT_CODE="${ICVER##*'Config ID: '}"
+            LOT_CODE="${LOT_CODE%%\$*}"
             ;;
     esac
-    create_revision_data "touchscreen" "${TYPE}" "${VEND}" "${HREV}" "${DATE}" "${FREV}" "${INFO}"
 fi
+create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+apply_revision_data_perms "${FILE}"
 

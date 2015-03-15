@@ -30,6 +30,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/motorola/condor/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/motorola/condor/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
+    vendor/motorola/condor/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so\
+    vendor/motorola/condor/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so\
+    vendor/motorola/condor/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so\
+    vendor/motorola/condor/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so\
     vendor/motorola/condor/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/condor/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     vendor/motorola/condor/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
@@ -71,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/motorola/condor/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/condor/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/motorola/condor/proprietary/app/TimeService.apk:system/app/TimeService.apk \
     vendor/motorola/condor/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/motorola/condor/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/motorola/condor/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
@@ -158,9 +161,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/bin/tcmd:system/bin/tcmd \
     vendor/motorola/condor/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/motorola/condor/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/motorola/condor/proprietary/app/qcrilmsgtunnel.apk:system/app/qcrilmsgtunnel.apk \
-    vendor/motorola/condor/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
-    vendor/motorola/condor/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/motorola/condor/proprietary/vendor/lib/rfsa/adsp/libadsp_denoise_skel.so:system/vendor/lib/rfsa/adsp/libadsp_denoise_skel.so \
     vendor/motorola/condor/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:system/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_ar0261.so:system/vendor/lib/libmmcamera_ar0261.so \
@@ -216,9 +216,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/motorola/condor/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/condor/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/motorola/condor/proprietary/app/com.qualcomm.location.apk:system/app/com.qualcomm.location.apk \
-    vendor/motorola/condor/proprietary/app/com.qualcomm.services.location.apk:system/app/com.qualcomm.services.location.apk \
-    vendor/motorola/condor/proprietary/app/MotGeoFenceSvc.apk:system/app/MotGeoFenceSvc.apk \
     vendor/motorola/condor/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/motorola/condor/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/motorola/condor/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \

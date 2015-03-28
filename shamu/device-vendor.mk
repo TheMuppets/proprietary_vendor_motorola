@@ -18,14 +18,26 @@ $(call inherit-product, vendor/motorola/shamu/shamu-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
+    atfwd \
+    ims \
+    RCSBootstraputil \
+    RcsImsBootstraputil \
+    RcsService \
     TimeService
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
-    org.simalliance.openmobileapi
+    com.motorola.ims.rcsmanager \
+    com.verizon.hardware.telephony.ehrpd \
+    com.verizon.hardware.telephony.lte \
+    com.verizon.ims \
+    org.simalliance.openmobileapi \
+    rcsimssettings \
+    rcsservice
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
+    BuaContactAdapter \
     TriggerEnroll \
     TriggerTrainingService
 

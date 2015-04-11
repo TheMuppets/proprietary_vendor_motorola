@@ -271,6 +271,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/qcks:system/bin/qcks \
     vendor/motorola/victara/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/victara/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/motorola/victara/proprietary/bin/rild.mmi:system/bin/rild.mmi \
     vendor/motorola/victara/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/motorola/victara/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/victara/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \

@@ -24,4 +24,21 @@ PRODUCT_PACKAGES += \
     TimeService \
     libtime_genoff
 
+PRODUCT_PACKAGES += \
+    TriggerEnroll \
+    TriggerTrainingService
+
+PRODUCT_PACKAGES += \
+    org.simalliance.openmobileapi
+
+PRODUCT_PACKAGES += \
+    qcrilmsgtunnel \
+    qcnvitems \
+    qcrilhook
+
+PRODUCT_PACKAGES += \
+    atfwd \
+    rcsimssettings \
+    rcsservice
+
 $(call inherit-product, vendor/motorola/quark/quark-vendor-blobs.mk)

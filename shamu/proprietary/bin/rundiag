@@ -1,9 +1,0 @@
-#!/system/bin/sh
-pwd > log
-echo ARGS:$* >> log
-echo SDCARD: >> log
-ls -l /sdcard/diag_logs >> log
-echo MD5: >> log
-md5 /sdcard/diag_logs/*cfg >> log
-echo RUN: >> log
-diag_mdlog $* >> log &

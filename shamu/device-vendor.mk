@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     BuaContactAdapter \
+    CNEService \
     TriggerEnroll \
     TriggerTrainingService
 

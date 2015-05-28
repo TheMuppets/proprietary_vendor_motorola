@@ -230,10 +230,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/shamu/proprietary/bin/cnd:system/bin/cnd \
+    vendor/motorola/shamu/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/motorola/shamu/proprietary/bin/diag_klog:system/bin/diag_klog \
     vendor/motorola/shamu/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
-    vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V15_audio.cfg:system/etc/diag/mdm/FIT_V15_audio.cfg \
-    vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V15.cfg:system/etc/diag/mdm/FIT_V15.cfg \
+    vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_1.cfg:system/etc/diag/mdm/FIT_V16_1.cfg \
+    vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg:system/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg \
+    vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_3_audio.cfg:system/etc/diag/mdm/FIT_V16_3_audio.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/sensors_qxdm.cfg:system/etc/diag/mdm/sensors_qxdm.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/sensors_qxdm.cfg:system/etc/diag/sensors_qxdm.cfg \
     vendor/motorola/shamu/proprietary/bin/qseecomd:system/bin/qseecomd \
@@ -325,6 +329,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \

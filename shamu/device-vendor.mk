@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     RCSBootstraputil \
     RcsImsBootstraputil \
     RcsService \
-    TimeService
+    TimeService \
+    VZWAPNLib
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
@@ -37,10 +38,14 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
+    appdirectedsmspermission \
+    AppDirectedSMSProxy \
     BuaContactAdapter \
     CNEService \
+    MotoSignatureApp \
     TriggerEnroll \
-    TriggerTrainingService
+    TriggerTrainingService \
+    VZWAPNService
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \

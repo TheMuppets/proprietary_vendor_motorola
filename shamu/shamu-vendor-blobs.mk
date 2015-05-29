@@ -376,6 +376,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/shamu/proprietary/bin/usbhub:system/bin/usbhub \
     vendor/motorola/shamu/proprietary/bin/usbhub_init:system/bin/usbhub_init \
+    vendor/motorola/shamu/proprietary/etc/permissions/com.motorola.DirectedSMSProxy.xml:system/etc/permissions/com.motorola.DirectedSMSProxy.xml \
+    vendor/motorola/shamu/proprietary/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/motorola/shamu/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
     vendor/motorola/shamu/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
     vendor/motorola/shamu/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \

@@ -169,12 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/motorola/victara/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/victara/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/victara/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/motorola/victara/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/victara/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/victara/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/victara/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/victara/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/victara/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/victara/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/victara/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \

@@ -330,7 +330,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/quark/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/quark/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/motorola/quark/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/motorola/quark/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/quark/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/motorola/quark/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/quark/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \

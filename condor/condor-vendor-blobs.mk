@@ -251,6 +251,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+	vendor/motorola/condor/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/motorola/condor/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/condor/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/condor/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \

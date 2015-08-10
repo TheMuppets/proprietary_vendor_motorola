@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/condor/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/motorola/condor/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
+	vendor/motorola/condor/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/motorola/condor/proprietary/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
     vendor/motorola/condor/proprietary/bin/dropboxd:system/bin/dropboxd \
     vendor/motorola/condor/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
@@ -124,6 +125,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/condor/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/condor/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+	vendor/motorola/condor/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/motorola/condor/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/motorola/condor/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/motorola/condor/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/condor/proprietary/bin/location-mq:system/bin/location-mq \
@@ -165,7 +168,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:system/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_ar0261.so:system/vendor/lib/libmmcamera_ar0261.so \
     vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_common.so:system/vendor/lib/libchromatix_ar0261_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_preview.so:system/vendor/lib/libchromatix_ar0261_preview.so \
+    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_snapshot.so:system/vendor/lib/libchromatix_ar0261_snapshot.so \
     vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_default_video.so:system/vendor/lib/libchromatix_ar0261_default_video.so \
     vendor/motorola/condor/proprietary/lib/libmmcamera_ar0543.so:system/lib/libmmcamera_ar0543.so \
     vendor/motorola/condor/proprietary/lib/libchromatix_ar0543_common.so:system/lib/libchromatix_ar0543_common.so \
@@ -248,6 +251,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/motorola/condor/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+	vendor/motorola/condor/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/motorola/condor/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/condor/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/condor/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \

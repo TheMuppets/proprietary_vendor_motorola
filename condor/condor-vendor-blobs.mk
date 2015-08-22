@@ -206,6 +206,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ov10820_zsl.so:system/vendor/lib/libchromatix_ov10820_zsl.so \
     vendor/motorola/condor/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/condor/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/motorola/condor/proprietary/lib/libOmxVdec.so:system/lib/libOmxVdec.so \
     vendor/motorola/condor/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/condor/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \

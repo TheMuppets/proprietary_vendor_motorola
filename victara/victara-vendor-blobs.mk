@@ -294,6 +294,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/motorola/victara/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/motorola/victara/proprietary/bin/stm401:system/bin/stm401 \
+    vendor/motorola/victara/proprietary/etc/firmware/cy8c20247_24lkxi.hex:system/etc/firmware/cy8c20247_24lkxi.hex \
     vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw.bin:system/etc/firmware/sensorhubfw.bin \
     vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw_p0.bin:system/etc/firmware/sensorhubfw_p0.bin \
     vendor/motorola/victara/proprietary/etc/firmware/sensorhubver_p0.txt:system/etc/firmware/sensorhubver_p0.txt \

@@ -1,0 +1,5 @@
+# Script to start "com.motorola.android.dropboxhelper.DropBoxHelper" on the device
+#
+base=/system
+export CLASSPATH=$base/framework/com.motorola.android.dropboxhelper.jar
+exec app_process $base/bin com.motorola.android.dropboxhelper.DropBoxHelper "$@"

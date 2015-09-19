@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -53,5 +53,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/peregrine/proprietary/lib/libchromatix_ar0543_snapshot.so:system/lib/libchromatix_ar0543_snapshot.so \
     vendor/motorola/peregrine/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/motorola/peregrine/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so \
-    vendor/motorola/peregrine/proprietary/etc/firmware/aps-Falc-01300000-0130-falcon.tdat:system/etc/firmware/aps-Falc-01300000-0130-falcon.tdat \
-    vendor/motorola/peregrine/proprietary/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat
+    vendor/motorola/peregrine/proprietary/etc/firmware/aps-Falc-01300000-0130-peregrine.tdat:system/etc/firmware/aps-Falc-01300000-0130-peregrine.tdat \
+    vendor/motorola/peregrine/proprietary/etc/firmware/synaptics-s2316-13091704-175833-peregrine.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-peregrine.tdat

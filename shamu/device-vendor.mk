@@ -20,25 +20,19 @@ $(call inherit-product, vendor/motorola/shamu/shamu-vendor-blobs.mk)
 PRODUCT_PACKAGES += \
     atfwd \
     ims \
-    RCSBootstraputil \
-    RcsImsBootstraputil \
-    RcsService \
     TimeService \
     VZWAPNLib
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
-    com.motorola.ims.rcsmanager \
     com.verizon.hardware.telephony.ehrpd \
     com.verizon.hardware.telephony.lte \
     com.verizon.ims \
-    org.simalliance.openmobileapi \
     rcsimssettings \
     rcsservice
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
-    appdirectedsmspermission \
     AppDirectedSMSProxy \
     BuaContactAdapter \
     CNEService \

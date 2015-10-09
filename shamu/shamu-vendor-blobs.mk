@@ -296,7 +296,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/motorola/shamu/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/shamu/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/motorola/shamu/proprietary/etc/permissions/com.motorola.ims.rcsmanager.xml:system/etc/permissions/com.motorola.ims.rcsmanager.xml \
     vendor/motorola/shamu/proprietary/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml \
     vendor/motorola/shamu/proprietary/etc/permissions/com.verizon.hardware.telephony.lte.xml:system/etc/permissions/com.verizon.hardware.telephony.lte.xml \
     vendor/motorola/shamu/proprietary/etc/permissions/com.verizon.ims.xml:system/etc/permissions/com.verizon.ims.xml \
@@ -350,7 +349,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/shamu/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
-    vendor/motorola/shamu/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/motorola/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/shamu/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \

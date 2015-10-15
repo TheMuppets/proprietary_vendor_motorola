@@ -221,7 +221,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/bin/ks:system/bin/ks \
     vendor/motorola/msm8960dt-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/msm8960dt-common/proprietary/bin/qcks:system/bin/qcks \
-    vendor/motorola/msm8960dt-common/proprietary/bin/qdumpd:system/bin/qdumpd \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960dt-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/msm8960dt-common/proprietary/bin/rild:system/bin/rild \

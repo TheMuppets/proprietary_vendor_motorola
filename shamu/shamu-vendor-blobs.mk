@@ -352,11 +352,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/shamu/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    vendor/motorola/shamu/proprietary/lib/libxml2.so:system/lib/libxml2.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libmdmcutback.so:system/vendor/lib/libmdmcutback.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/libsysutils_local.so:system/vendor/lib/libsysutils_local.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/motorola/shamu/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/shamu/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \

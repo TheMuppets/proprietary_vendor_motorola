@@ -326,6 +326,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/quark/proprietary/bin/qcks:system/bin/qcks \
     vendor/motorola/quark/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/quark/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/motorola/quark/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/quark/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/motorola/quark/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/quark/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \

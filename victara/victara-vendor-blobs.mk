@@ -153,23 +153,28 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/motorola/victara/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/motorola/victara/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/motorola/victara/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/motorola/victara/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
+    vendor/motorola/victara/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
+    vendor/motorola/victara/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
+    vendor/motorola/victara/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
+    vendor/motorola/victara/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
+    vendor/motorola/victara/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    vendor/motorola/victara/proprietary/lib/librpmb.so:system/lib/librpmb.so \
+    vendor/motorola/victara/proprietary/lib/libssd.so:system/lib/libssd.so \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:system/vendor/firmware/widevine.b01 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b02:system/vendor/firmware/widevine.b02 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b03:system/vendor/firmware/widevine.b03 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.mdt:system/vendor/firmware/widevine.mdt \
-    vendor/motorola/victara/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-    vendor/motorola/victara/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
     vendor/motorola/victara/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/motorola/victara/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/victara/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/motorola/victara/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     vendor/motorola/victara/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/motorola/victara/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/motorola/victara/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \

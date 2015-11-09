@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/osprey/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/osprey/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
     vendor/motorola/osprey/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
-    vendor/motorola/osprey/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/motorola/osprey/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/osprey/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/osprey/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \

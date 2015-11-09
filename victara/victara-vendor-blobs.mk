@@ -285,7 +285,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/motorola/victara/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/victara/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
-    vendor/motorola/victara/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/motorola/victara/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/victara/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/victara/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \

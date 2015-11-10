@@ -94,9 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/otus/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/otus/proprietary/lib/hw/camera.msm8610.so:system/lib/hw/camera.msm8610.so \
-    vendor/motorola/otus/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/motorola/otus/proprietary/lib/hw/keystore.qcom.so:system/lib/hw/keystore.qcom.so \
-    vendor/motorola/otus/proprietary/lib/hw/power.msm8610.so:system/lib/hw/power.msm8610.so \
     vendor/motorola/otus/proprietary/lib/hw/sensorhub.msm8610.so:system/lib/hw/sensorhub.msm8610.so \
     vendor/motorola/otus/proprietary/lib/hw/sensors.msm8610.so:system/lib/hw/sensors.msm8610.so \
     vendor/motorola/otus/proprietary/lib/libactions_irservice_stm.so:system/lib/libactions_irservice_stm.so \

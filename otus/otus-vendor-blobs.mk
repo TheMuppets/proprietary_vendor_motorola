@@ -120,7 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
     vendor/motorola/otus/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/otus/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/motorola/otus/proprietary/lib/libOmxVdec.so:system/lib/libOmxVdec.so \
     vendor/motorola/otus/proprietary/lib/libpkip.so:system/lib/libpkip.so \
     vendor/motorola/otus/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/otus/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \

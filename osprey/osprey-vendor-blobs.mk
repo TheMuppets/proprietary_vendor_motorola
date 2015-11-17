@@ -23,10 +23,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/osprey/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/osprey/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/osprey/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
+    vendor/motorola/osprey/proprietary/bin/garden_app:system/bin/garden_app \
+    vendor/motorola/osprey/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/motorola/osprey/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/osprey/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/osprey/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/osprey/proprietary/bin/location-mq:system/bin/location-mq \
+    vendor/motorola/osprey/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/motorola/osprey/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/osprey/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/osprey/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \

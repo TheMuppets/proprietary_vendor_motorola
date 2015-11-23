@@ -78,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/victara/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/motorola/victara/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/motorola/victara/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/motorola/victara/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/motorola/victara/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -251,7 +250,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/victara/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/victara/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
-    vendor/motorola/victara/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/motorola/victara/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \

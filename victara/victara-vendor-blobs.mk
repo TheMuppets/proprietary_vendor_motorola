@@ -152,7 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/motorola/victara/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/motorola/victara/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/motorola/victara/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
     vendor/motorola/victara/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/motorola/victara/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/victara/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
@@ -170,7 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/motorola/victara/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/victara/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/victara/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/victara/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \

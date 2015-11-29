@@ -49,6 +49,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/osprey/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
+    vendor/motorola/osprey/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    vendor/motorola/osprey/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/motorola/osprey/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/motorola/osprey/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/motorola/osprey/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/osprey/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \

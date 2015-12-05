@@ -156,7 +156,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/victara/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/victara/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/victara/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/motorola/victara/proprietary/lib/librpmb.so:system/lib/librpmb.so \
     vendor/motorola/victara/proprietary/lib/libssd.so:system/lib/libssd.so \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \

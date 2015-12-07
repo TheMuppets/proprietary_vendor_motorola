@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/etc/msap.conf:system/etc/msap.conf \
     vendor/motorola/otus/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/otus/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/otus/proprietary/etc/thermal-engine-otus.conf:system/etc/thermal-engine-otus.conf \
     vendor/motorola/otus/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/otus/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/otus/proprietary/lib/hw/camera.msm8610.so:system/lib/hw/camera.msm8610.so \

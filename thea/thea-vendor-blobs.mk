@@ -22,7 +22,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/thea/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     vendor/motorola/thea/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     vendor/motorola/thea/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-    vendor/motorola/thea/proprietary/bin/sensord:system/bin/sensord \
-    vendor/motorola/thea/proprietary/lib/hw/sensors.MSM8226.so:system/lib/hw/sensors.MSM8226.so \
     vendor/motorola/thea/proprietary/etc/firmware/synaptics-s2716-14061501-18a02a-thea.tdat:system/etc/firmware/synaptics-s2716-14061501-18a02a-thea.tdat \
     vendor/motorola/thea/proprietary/etc/firmware/synaptics-s3310b-14101602-1acbd5-thea.tdat:system/etc/firmware/synaptics-s3310b-14101602-1acbd5-thea.tdat

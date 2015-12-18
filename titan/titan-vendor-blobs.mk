@@ -22,8 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/titan/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     vendor/motorola/titan/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     vendor/motorola/titan/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-    vendor/motorola/titan/proprietary/bin/sensord:system/bin/sensord \
-    vendor/motorola/titan/proprietary/lib/hw/sensors.MSM8226.so:system/lib/hw/sensors.MSM8226.so \
     vendor/motorola/titan/proprietary/etc/firmware/BLU_synaptics-s2716-00000000-18a02a-titan.tdat:system/etc/firmware/BLU_synaptics-s2716-00000000-18a02a-titan.tdat \
     vendor/motorola/titan/proprietary/etc/firmware/synaptics-s2716-14061501-18a02a-titan.tdat:system/etc/firmware/synaptics-s2716-14061501-18a02a-titan.tdat \
     vendor/motorola/titan/proprietary/etc/firmware/synaptics-s3310b-14101602-1acbd5-titan.tdat:system/etc/firmware/synaptics-s3310b-14101602-1acbd5-titan.tdat

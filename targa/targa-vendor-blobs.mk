@@ -16,7 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/targa/proprietary/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.kl \
-    vendor/motorola/targa/proprietary/lib/hw/gps.targa.so:system/lib/hw/gps.targa.so \
+    vendor/motorola/targa/proprietary/lib/hw/gps.vendor.so:system/lib/hw/gps.vendor.so \
     vendor/motorola/targa/proprietary/lib/hw/sensors.targa.so:system/lib/hw/sensors.targa.so \
     vendor/motorola/targa/proprietary/lib/libnbgm_9.0.1.so:system/lib/libnbgm_9.0.1.so \
     vendor/motorola/targa/proprietary/etc/omapcam/module2/cid1040_ov7739_sensor_config_dcc.bin:system/etc/omapcam/module2/cid1040_ov7739_sensor_config_dcc.bin \

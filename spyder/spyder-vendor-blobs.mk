@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/spyder/proprietary/etc/mspfirmware/mspfirmware.bin:system/etc/mspfirmware/mspfirmware.bin \
     vendor/motorola/spyder/proprietary/etc/mspfirmware/version.txt:system/etc/mspfirmware/version.txt \
     vendor/motorola/spyder/proprietary/usr/keylayout/cy8c201xx.kl:system/usr/keylayout/cy8c201xx.kl \
-    vendor/motorola/spyder/proprietary/lib/hw/gps.spyder.so:system/lib/hw/gps.spyder.so \
+    vendor/motorola/spyder/proprietary/lib/hw/gps.vendor.so:system/lib/hw/gps.vendor.so \
     vendor/motorola/spyder/proprietary/lib/hw/sensorhub.spyder.so:system/lib/hw/sensorhub.spyder.so \
     vendor/motorola/spyder/proprietary/lib/hw/sensors.spyder.so:system/lib/hw/sensors.spyder.so \
     vendor/motorola/spyder/proprietary/lib/libsensorhub_jni.so:system/lib/libsensorhub_jni.so \

@@ -23,6 +23,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/falcon/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     vendor/motorola/falcon/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
     vendor/motorola/falcon/proprietary/bin/akmd8963:system/bin/akmd8963 \
-    vendor/motorola/falcon/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so \
     vendor/motorola/falcon/proprietary/etc/firmware/aps-Falc-01300000-0130-falcon.tdat:system/etc/firmware/aps-Falc-01300000-0130-falcon.tdat \
     vendor/motorola/falcon/proprietary/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat

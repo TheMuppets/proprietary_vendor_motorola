@@ -24,4 +24,20 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/peregrine/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
     vendor/motorola/peregrine/proprietary/bin/akmd8963:system/bin/akmd8963 \
     vendor/motorola/peregrine/proprietary/etc/firmware/aps-Falc-01300000-0130-falcon.tdat:system/etc/firmware/aps-Falc-01300000-0130-falcon.tdat \
-    vendor/motorola/peregrine/proprietary/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat
+    vendor/motorola/peregrine/proprietary/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat:system/etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat \
+    vendor/motorola/peregrine/proprietary/lib/hw/camera.msm8226.so:system/lib/hw/camera.msm8226.so \
+    vendor/motorola/peregrine/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/motorola/peregrine/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/motorola/peregrine/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so

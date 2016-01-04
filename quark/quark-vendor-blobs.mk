@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/quark/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/motorola/quark/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/motorola/quark/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
+    vendor/motorola/quark/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/quark/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/quark/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
     vendor/motorola/quark/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
@@ -50,10 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/quark/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:system/etc/firmware/left.tfa9890_ringtone_table.preset \
     vendor/motorola/quark/proprietary/etc/firmware/left.tfa9890_voice_table.preset:system/etc/firmware/left.tfa9890_voice_table.preset \
     vendor/motorola/quark/proprietary/etc/firmware/VRGain.bin:system/etc/firmware/VRGain.bin \
-    vendor/motorola/quark/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-    vendor/motorola/quark/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/motorola/quark/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/motorola/quark/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/quark/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/quark/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/quark/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \

@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/umts_spyder/proprietary/lib/librds_util.so:system/lib/librds_util.so \
     vendor/motorola/umts_spyder/proprietary/lib/libril_rds.so:system/lib/libril_rds.so \
     vendor/motorola/umts_spyder/proprietary/lib/moto-ril-multimode.so:system/lib/moto-ril-multimode.so \
-    vendor/motorola/umts_spyder/proprietary/lib/hw/gps.umts_spyder.so:system/lib/hw/gps.umts_spyder.so \
+    vendor/motorola/umts_spyder/proprietary/lib/hw/gps.vendor.so:system/lib/hw/gps.vendor.so \
     vendor/motorola/umts_spyder/proprietary/lib/hw/sensorhub.umts_spyder.so:system/lib/hw/sensorhub.umts_spyder.so \
     vendor/motorola/umts_spyder/proprietary/lib/hw/sensors.umts_spyder.so:system/lib/hw/sensors.umts_spyder.so \
     vendor/motorola/umts_spyder/proprietary/lib/libsensorhub_jni.so:system/lib/libsensorhub_jni.so \

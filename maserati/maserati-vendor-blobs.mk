@@ -16,7 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/maserati/proprietary/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.kl \
-    vendor/motorola/maserati/proprietary/lib/hw/gps.maserati.so:system/lib/hw/gps.maserati.so \
+    vendor/motorola/maserati/proprietary/lib/hw/gps.vendor.so:system/lib/hw/gps.vendor.so \
     vendor/motorola/maserati/proprietary/lib/hw/sensors.maserati.so:system/lib/hw/sensors.maserati.so \
     vendor/motorola/maserati/proprietary/lib/libnbgm_9.0.1.so:system/lib/libnbgm_9.0.1.so \
     vendor/motorola/maserati/proprietary/etc/omapcam/module2/cid1044_mt9m114_sensor_config_dcc.bin:system/etc/omapcam/module2/cid1044_mt9m114_sensor_config_dcc.bin \

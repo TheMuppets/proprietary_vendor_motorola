@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/thea/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
     vendor/motorola/thea/proprietary/etc/firmware/synaptics-s2716-14061501-18a02a-thea.tdat:system/etc/firmware/synaptics-s2716-14061501-18a02a-thea.tdat \
     vendor/motorola/thea/proprietary/etc/firmware/synaptics-s3310b-14101602-1acbd5-thea.tdat:system/etc/firmware/synaptics-s3310b-14101602-1acbd5-thea.tdat \
-    vendor/motorola/thea/proprietary/lib/hw/camera.msm8226.so:system/lib/hw/camera.msm8226.so \
+    vendor/motorola/thea/proprietary/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
     vendor/motorola/thea/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/thea/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/motorola/thea/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \

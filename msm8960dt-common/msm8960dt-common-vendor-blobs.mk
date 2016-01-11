@@ -179,11 +179,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/motorola/msm8960dt-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \

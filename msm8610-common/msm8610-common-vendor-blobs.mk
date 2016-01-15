@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/motorola/msm8610-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/motorola/msm8610-common/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \

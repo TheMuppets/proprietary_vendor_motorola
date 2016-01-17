@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/ap_gain_mmul.bin:system/bin/ap_gain_mmul.bin \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/mm-qcamera-daemon.exec:system/bin/mm-qcamera-daemon.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
@@ -88,9 +88,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/whisperd:system/bin/whisperd \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/whisperd.exec:system/bin/whisperd.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/mpdecision.exec:system/bin/mpdecision.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libconfigdb.so:system/lib/libconfigdb.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libdsprofile.so:system/lib/libdsprofile.so \
@@ -111,18 +111,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/qdumpd:system/bin/qdumpd \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/qdumpd.exec:system/bin/qdumpd.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/qmuxd.exec:system/bin/qmuxd.exec \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/rmt_storage.exec:system/bin/rmt_storage.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsarqmictrl.so:system/lib/libsarqmictrl.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/sensors.qcom.exec:system/bin/sensors.qcom.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/hw/sensorhub.msm8960.so:system/lib/hw/sensorhub.msm8960.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/hw/sensors.oem.so:system/lib/hw/sensors.oem.so \
@@ -130,4 +130,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsensorhub_jni.so:system/lib/libsensorhub_jni.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/bin/thermald:system/bin/thermald
+    vendor/motorola/msm8960_jbbl-common/proprietary/bin/thermald.exec:system/bin/thermald.exec

@@ -123,10 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-    vendor/motorola/msm8960dt-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/msm8960dt-common/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/motorola/msm8960dt-common/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/motorola/msm8960dt-common/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/msm8960dt-common/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/motorola/msm8960dt-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
@@ -134,13 +131,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/msm8960dt-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/motorola/msm8960dt-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/msm8960dt-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \

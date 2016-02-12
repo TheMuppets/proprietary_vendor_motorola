@@ -182,8 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960dt-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/motorola/msm8960dt-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8960dt-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
-    vendor/motorola/msm8960dt-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
-    vendor/motorola/msm8960dt-common/proprietary/bin/mount_ext4.sh:system/bin/mount_ext4.sh \
     vendor/motorola/msm8960dt-common/proprietary/bin/msp430:system/bin/msp430 \
     vendor/motorola/msm8960dt-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8960dt-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \

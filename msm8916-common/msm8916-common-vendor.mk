@@ -13,8 +13,6 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
-    MotGeoFenceSvc \
     TimeService \
     qcrilmsgtunnel \
     qcnvitems \

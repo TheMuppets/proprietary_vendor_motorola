@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     DSI Module configuration XML file
+     Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+     Qualcomm Technologies Proprietary and Confidential.
+-->
+
+<list name="dsi_config">
+   <!-- Configuration for fusion4.5 PCIe -->
+   <listitem name="fusion4_5_pcie">
+
+     <data name="qos_enabled" type="int"> 0 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+       <data type="string"> rmnet_mhi0 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for MSM8994  -->
+   <listitem name="msm8994">
+
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for dpm_2_0 targets -->
+   <listitem name="dpm_2_0">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+     </list>
+   </listitem>
+
+   <!-- Configuration for Jolokia -->
+   <listitem name="jolokia">
+     <data name="qos_enabled" type="int"> 1 </data>
+     <data name="rmnet_data_enabled" type="int"> 1 </data>
+     <data name="phys_net_dev" type="string"> rmnet0 </data>
+
+     <data name="single_qmux_channel_enabled" type="int"> 1 </data>
+     <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
+
+     <data name="num_dsi_handles" type="int"> 8 </data>
+     <list name="device_names">
+       <data type="string"> rmnet_data0 </data>
+       <data type="string"> rmnet_data1 </data>
+       <data type="string"> rmnet_data2 </data>
+       <data type="string"> rmnet_data3 </data>
+       <data type="string"> rmnet_data4 </data>
+       <data type="string"> rmnet_data5 </data>
+       <data type="string"> rmnet_data6 </data>
+       <data type="string"> rmnet_data7 </data>
+     </list>
+
+     <list name="control_port_names">
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+       <data type="string"> rmnet0 </data>
+     </list>
+   </listitem>
+</list>
+

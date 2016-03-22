@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/otus/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/motorola/otus/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/motorola/otus/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/otus/proprietary/lib/libspeakerbundle.so:system/lib/libspeakerbundle.so \
     vendor/motorola/otus/proprietary/lib/libSTML0Updater.so:system/lib/libSTML0Updater.so \
     vendor/motorola/otus/proprietary/lib/soundfx/libmmieffectswrapper.so:system/lib/soundfx/libmmieffectswrapper.so \

@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/lib/libmmcamera_ar0543.so:system/lib/libmmcamera_ar0543.so \
     vendor/motorola/condor/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/motorola/condor/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/motorola/condor/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/condor/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/motorola/condor/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/motorola/condor/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \

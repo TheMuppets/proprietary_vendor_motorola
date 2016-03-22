@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Prebuilt libraries that are needed to build open-source libraries
+# Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := vendor/motorola/msm8610-common/proprietary/vendor/lib/libtime_genoff.so:obj/lib/libtime_genoff.so
 
 PRODUCT_COPY_FILES += \
@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8610-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/msm8610-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/msm8610-common/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+    vendor/motorola/msm8610-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
     vendor/motorola/msm8610-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/msm8610-common/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/msm8610-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \

@@ -23,8 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/osprey/proprietary/etc/firmware/synaptics-boe-s2726-15111801-1f711a-osprey.tdat:system/etc/firmware/synaptics-boe-s2726-15111801-1f711a-osprey.tdat \
-    vendor/motorola/osprey/proprietary/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-osprey.tdat:system/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-osprey.tdat \
+    vendor/motorola/osprey/proprietary/etc/firmware/synaptics-boe-s2726-15100905-1f711a-osprey.tdat:system/etc/firmware/synaptics-boe-s2726-15100905-1f711a-osprey.tdat \
+    vendor/motorola/osprey/proprietary/etc/firmware/synaptics-inx-s2726br_t-15091801-1dc9a8-osprey.tdat:system/etc/firmware/synaptics-inx-s2726br_t-15091801-1dc9a8-osprey.tdat \
     vendor/motorola/osprey/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/osprey/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
     vendor/motorola/osprey/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \

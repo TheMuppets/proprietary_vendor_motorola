@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/otus/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/otus/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/otus/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/motorola/otus/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/motorola/otus/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/motorola/otus/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
@@ -42,13 +41,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/otus/proprietary/etc/firmware/synaptics-inx-s2316-15020302-175833-otus.tdat:system/etc/firmware/synaptics-inx-s2316-15020302-175833-otus.tdat \
     vendor/motorola/otus/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/otus/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/motorola/otus/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/motorola/otus/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/motorola/otus/proprietary/etc/msap.conf:system/etc/msap.conf \
-    vendor/motorola/otus/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/otus/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/otus/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/motorola/otus/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/otus/proprietary/lib/hw/camera.vendor.msm8610.so:system/lib/hw/camera.vendor.msm8610.so \
     vendor/motorola/otus/proprietary/lib/hw/sensorhub.msm8610.so:system/lib/hw/sensorhub.msm8610.so \
     vendor/motorola/otus/proprietary/lib/hw/sensors.msm8610.so:system/lib/hw/sensors.msm8610.so \

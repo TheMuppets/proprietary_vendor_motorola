@@ -22,14 +22,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/condor/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/condor/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/condor/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
-    vendor/motorola/condor/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/motorola/condor/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/motorola/condor/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     vendor/motorola/condor/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/motorola/condor/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/motorola/condor/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    vendor/motorola/condor/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/motorola/condor/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/motorola/condor/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/motorola/condor/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -39,18 +33,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/etc/firmware/synaptics-s2316t-13101703-175833-condor.tdat:system/etc/firmware/synaptics-s2316t-13101703-175833-condor.tdat \
     vendor/motorola/condor/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/condor/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/motorola/condor/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/motorola/condor/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/condor/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/condor/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/motorola/condor/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/condor/proprietary/lib/hw/camera.vendor.msm8610.so:system/lib/hw/camera.vendor.msm8610.so \
     vendor/motorola/condor/proprietary/lib/hw/sensors.msm8610.so:system/lib/hw/sensors.msm8610.so \
     vendor/motorola/condor/proprietary/lib/libchromatix_ar0543_common.so:system/lib/libchromatix_ar0543_common.so \
     vendor/motorola/condor/proprietary/lib/libchromatix_ar0543_default_video.so:system/lib/libchromatix_ar0543_default_video.so \
     vendor/motorola/condor/proprietary/lib/libchromatix_ar0543_preview.so:system/lib/libchromatix_ar0543_preview.so \
     vendor/motorola/condor/proprietary/lib/libchromatix_ar0543_snapshot.so:system/lib/libchromatix_ar0543_snapshot.so \
-    vendor/motorola/condor/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/motorola/condor/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/condor/proprietary/lib/libmmcamera_ar0543.so:system/lib/libmmcamera_ar0543.so \
     vendor/motorola/condor/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -60,27 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/motorola/condor/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/motorola/condor/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_common.so:system/vendor/lib/libchromatix_ar0261_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_default_video.so:system/vendor/lib/libchromatix_ar0261_default_video.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ar0261_snapshot.so:system/vendor/lib/libchromatix_ar0261_snapshot.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx132_common.so:system/vendor/lib/libchromatix_imx132_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx132_preview.so:system/vendor/lib/libchromatix_imx132_preview.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:system/vendor/lib/libchromatix_imx132_snapshot.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx132_video.so:system/vendor/lib/libchromatix_imx132_video.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx135_common.so:system/vendor/lib/libchromatix_imx135_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx135_default_video.so:system/vendor/lib/libchromatix_imx135_default_video.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:system/vendor/lib/libchromatix_imx135_hfr_60.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_common.so:system/vendor/lib/libchromatix_imx179_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_default_video.so:system/vendor/lib/libchromatix_imx179_default_video.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_hfr_120.so:system/vendor/lib/libchromatix_imx179_hfr_120.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_hfr_60.so:system/vendor/lib/libchromatix_imx179_hfr_60.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_hfr_90.so:system/vendor/lib/libchromatix_imx179_hfr_90.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_preview.so:system/vendor/lib/libchromatix_imx179_preview.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_imx179_snapshot.so:system/vendor/lib/libchromatix_imx179_snapshot.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ov10820_common.so:system/vendor/lib/libchromatix_ov10820_common.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libchromatix_ov10820_zsl.so:system/vendor/lib/libchromatix_ov10820_zsl.so \
     vendor/motorola/condor/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/motorola/condor/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -94,17 +62,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_ar0261.so:system/vendor/lib/libmmcamera_ar0261.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_imx132_eeprom.so:system/vendor/lib/libmmcamera_imx132_eeprom.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_imx179.so:system/vendor/lib/libmmcamera_imx179.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_ov10820.so:system/vendor/lib/libmmcamera_ov10820.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/motorola/condor/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \

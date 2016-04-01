@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/motorola/qcom-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-    vendor/motorola/qcom-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/motorola/qcom-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/motorola/qcom-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
     vendor/motorola/qcom-common/proprietary/lib/libmercury.so:system/lib/libmercury.so \

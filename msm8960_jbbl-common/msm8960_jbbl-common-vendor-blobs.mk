@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
     vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \

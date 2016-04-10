@@ -125,15 +125,18 @@ DATE=
 FREV=
 LOT_CODE=
 INFO=
+SIZE=
 if [ -d "${PATH_RAM}" ] ; then
     HNAME=`cat ${PATH_RAM}/type`
     VEND=`cat ${PATH_RAM}/info`
     VEND="${VEND%%:*:*}"
     INFO="$(cat ${PATH_RAM}/mr5),$(cat ${PATH_RAM}/mr6),$(cat ${PATH_RAM}/mr7),\
 $(cat ${PATH_RAM}/mr8)"
+    SIZE=`cat ${PATH_RAM}/size`
 fi
 create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "" "" "" ""
 write_one_revision_data "config_info" "${INFO}" "${FILE}"
+write_one_revision_data "size" "${SIZE}" "${FILE}"
 apply_revision_data_perms "${FILE}"
 
 

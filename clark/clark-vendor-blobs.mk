@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.gallery.xml:system/etc/permissions/com.motorola.gallery.xml \
-    vendor/motorola/clark/proprietary/lib/hw/camera.msm8992.so:system/lib/hw/camera.msm8992.so \
+    vendor/motorola/clark/proprietary/lib/hw/camera.vendor.msm8992.so:system/lib/hw/camera.vendor.msm8992.so \
     vendor/motorola/clark/proprietary/lib/libmot_lux_standardization.so:system/lib/libmot_lux_standardization.so \
     vendor/motorola/clark/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/clark/proprietary/lib/libAisAdapter.so:system/lib/libAisAdapter.so \

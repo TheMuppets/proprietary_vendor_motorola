@@ -578,7 +578,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat:system/etc/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat \
     vendor/motorola/clark/proprietary/etc/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat:system/etc/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat \
     vendor/motorola/clark/proprietary/etc/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat:system/etc/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat \
-    vendor/motorola/clark/proprietary/bin/init.mmi.touch.sh:system/bin/init.mmi.touch.sh \
     vendor/motorola/clark/proprietary/bin/motosh:system/bin/motosh \
     vendor/motorola/clark/proprietary/etc/firmware/sensorhubfw.bin:system/etc/firmware/sensorhubfw.bin \
     vendor/motorola/clark/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \

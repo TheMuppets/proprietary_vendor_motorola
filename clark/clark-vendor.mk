@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/motorola/clark/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/clark/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/motorola/clark/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/clark/proprietary/bin/cnd:system/bin/cnd \
     vendor/motorola/clark/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/clark/proprietary/bin/diag_klog:system/bin/diag_klog \

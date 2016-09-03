@@ -42,6 +42,7 @@ OUT_PATH_PERM=0755
 # Default paths to hardware information
 PATH_RAM=/sys/ram
 PATH_NVM=/sys/block/mmcblk0/device
+PATH_STORAGE=/sys/storage
 PATH_SDCARD=/sys/block/mmcblk1/device
 PATH_TOUCH="/sys/bus/i2c/drivers/"`cd /sys/bus/i2c/drivers && ls */?-*/ic_ver | grep -o .*/`
 PATH_DISPLAY=/sys/class/graphics/fb0
@@ -152,7 +153,11 @@ FREV=
 LOT_CODE=
 if [ -d "${PATH_NVM}" ] ; then
     HNAME=`cat ${PATH_NVM}/type`
-    VEND=`cat ${PATH_NVM}/manfid`
+    if [ -d "${PATH_STORAGE}" ] ; then
+        VEND=`cat ${PATH_STORAGE}/vendor`
+    else
+        VEND=`cat ${PATH_NVM}/manfid`
+    fi
     HREV=`cat ${PATH_NVM}/name`
     DATE=`cat ${PATH_NVM}/date`
     if [ -e ${PATH_NVM}/device_version -a -e ${PATH_NVM}/firmware_version ] ; then
@@ -161,8 +166,19 @@ if [ -d "${PATH_NVM}" ] ; then
         FREV="$(cat ${PATH_NVM}/hwrev),$(cat ${PATH_NVM}/fwrev)"
     fi
     LOT_CODE="$(cat ${PATH_NVM}/csd)"
+else
+    if [ -d "${PATH_STORAGE}" ] ; then
+        HNAME=`cat ${PATH_STORAGE}/type`
+        VEND=`cat ${PATH_STORAGE}/vendor`
+        HREV=`cat ${PATH_STORAGE}/model`
+        FREV=`cat ${PATH_STORAGE}/fw`
+        SIZE=`cat ${PATH_STORAGE}/size`
+    fi
 fi
 create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+if [ -d "${PATH_STORAGE}" ] ; then
+write_one_revision_data "size" "${SIZE}" "${FILE}"
+fi
 apply_revision_data_perms "${FILE}"
 
 

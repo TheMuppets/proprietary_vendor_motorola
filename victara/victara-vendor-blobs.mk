@@ -266,7 +266,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/victara/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/victara/proprietary/bin/radish:system/bin/radish \
-    vendor/motorola/victara/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/victara/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/motorola/victara/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/victara/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
@@ -274,7 +273,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/victara/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
     vendor/motorola/victara/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
-    vendor/motorola/victara/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/victara/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/victara/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \

@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8226-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/msm8226-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
-    vendor/motorola/msm8226-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/msm8226-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/msm8226-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8226-common/proprietary/bin/location-mq:system/bin/location-mq \

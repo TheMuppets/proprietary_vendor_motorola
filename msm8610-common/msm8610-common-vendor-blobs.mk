@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := vendor/motorola/msm8610-common/proprietary/vendor/lib/libtime_genoff.so:obj/lib/libtime_genoff.so
-
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8610-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/motorola/msm8610-common/proprietary/bin/batt_health:system/bin/batt_health \

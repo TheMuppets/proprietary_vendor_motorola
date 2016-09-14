@@ -16,7 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8610-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/motorola/msm8610-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8610-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/motorola/msm8610-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/msm8610-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/msm8610-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/msm8610-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \

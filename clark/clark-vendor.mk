@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/bin/ssr_setup:system/bin/ssr_setup \
     vendor/motorola/clark/proprietary/bin/test_diag:system/bin/test_diag \
     vendor/motorola/clark/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/motorola/clark/proprietary/bin/usb_uicc_client:system/bin/usb_uicc_client \
     vendor/motorola/clark/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/motorola/clark/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/motorola/clark/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
@@ -67,18 +66,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/Bluetooth_audio_V1.cfg:system/etc/diag_mdlog/Bluetooth_audio_V1.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/Bluetooth_V1.cfg:system/etc/diag_mdlog/Bluetooth_V1.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/Connection_Issues_V8_wifi.cfg:system/etc/diag_mdlog/Connection_Issues_V8_wifi.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/Connection_Issues_V9.cfg:system/etc/diag_mdlog/Connection_Issues_V9.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/Connection_Issues_V9_wifi.cfg:system/etc/diag_mdlog/Connection_Issues_V9_wifi.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/default.cfg:system/etc/diag_mdlog/default.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/default.opts:system/etc/diag_mdlog/default.opts \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V18_1.cfg:system/etc/diag_mdlog/FIT_V18_1.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V18_2_volte_full_ip.cfg:system/etc/diag_mdlog/FIT_V18_2_volte_full_ip.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V18_3_audio.cfg:system/etc/diag_mdlog/FIT_V18_3_audio.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_SUPL_V5.cfg:system/etc/diag_mdlog/GNSS_SUPL_V5.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_V4.cfg:system/etc/diag_mdlog/GNSS_V4.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/Vzw_Connection_Issues_V1.cfg:system/etc/diag_mdlog/Vzw_Connection_Issues_V1.cfg \
-    vendor/motorola/clark/proprietary/etc/diag_mdlog/WLAN_V1.cfg:system/etc/diag_mdlog/WLAN_V1.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/Connection_Issues_V10.cfg:system/etc/diag_mdlog/Connection_Issues_V10.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_1.cfg:system/etc/diag_mdlog/FIT_V19_1.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_2_volte_full_ip.cfg:system/etc/diag_mdlog/FIT_V19_2_volte_full_ip.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_3_audio.cfg:system/etc/diag_mdlog/FIT_V19_3_audio.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_OTDOA_V1.cfg:system/etc/diag_mdlog/GNSS_OTDOA_V1.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_SUPL_V6.cfg:system/etc/diag_mdlog/GNSS_SUPL_V6.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_V5.cfg:system/etc/diag_mdlog/GNSS_V5.cfg \
     vendor/motorola/clark/proprietary/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/clark/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/motorola/clark/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
@@ -142,7 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/motorola/clark/proprietary/etc/firmware/vrgain.bin:system/etc/firmware/vrgain.bin \
     vendor/motorola/clark/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/motorola/clark/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.gallery.xml:system/etc/permissions/com.motorola.gallery.xml \
@@ -153,9 +146,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/motorola/clark/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/user_bhd_psy.conf:system/etc/user_bhd_psy.conf \
-    vendor/motorola/clark/proprietary/etc/user_dbg_bhd_psy.conf:system/etc/user_dbg_bhd_psy.conf \
     vendor/motorola/clark/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/motorola/clark/proprietary/framework/com.motorola.motosignature.jar:system/framework/com.motorola.motosignature.jar \
     vendor/motorola/clark/proprietary/framework/com.verizon.ims.jar:system/framework/com.verizon.ims.jar \
@@ -211,8 +202,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/motorola/clark/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/clark/proprietary/vendor/bin/slim_ap_daemon:system/vendor/bin/slim_ap_daemon \
-    vendor/motorola/clark/proprietary/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw \
-    vendor/motorola/clark/proprietary/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw \
+    vendor/motorola/clark/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/motorola/clark/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/motorola/clark/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/motorola/clark/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/motorola/clark/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \

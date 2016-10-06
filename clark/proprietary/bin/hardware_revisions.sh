@@ -44,7 +44,7 @@ PATH_RAM=/sys/ram
 PATH_NVM=/sys/block/mmcblk0/device
 PATH_SDCARD=/sys/block/mmcblk1/device
 PATH_TOUCH="/sys/bus/i2c/drivers/"`cd /sys/bus/i2c/drivers && ls */?-*/ic_ver | grep -o .*/`
-PATH_DISPLAY=/sys/hardware_revisions/display
+PATH_DISPLAY=/sys/class/graphics/fb0
 PATH_PMIC=/sys/hardware_revisions/pmic
 
 # Product-specific overrides
@@ -125,15 +125,18 @@ DATE=
 FREV=
 LOT_CODE=
 INFO=
+SIZE=
 if [ -d "${PATH_RAM}" ] ; then
     HNAME=`cat ${PATH_RAM}/type`
     VEND=`cat ${PATH_RAM}/info`
     VEND="${VEND%%:*:*}"
     INFO="$(cat ${PATH_RAM}/mr5),$(cat ${PATH_RAM}/mr6),$(cat ${PATH_RAM}/mr7),\
 $(cat ${PATH_RAM}/mr8)"
+    SIZE=`cat ${PATH_RAM}/size`
 fi
 create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "" "" "" ""
 write_one_revision_data "config_info" "${INFO}" "${FILE}"
+write_one_revision_data "size" "${SIZE}" "${FILE}"
 apply_revision_data_perms "${FILE}"
 
 
@@ -208,12 +211,18 @@ apply_revision_data_perms "${OUT_PATH}/pmic"
 #
 # copy display data
 #
-if [ -e /sys/hardware_revisions/display ]; then
-    cat /sys/hardware_revisions/display > ${OUT_PATH}/display
-else
-    create_common_revision_data "${OUT_PATH}/display" "" "" "" "" "" ""
+FILE="${OUT_PATH}/display"
+HNAME=
+VEND=
+HREV=
+if [ -e "${PATH_DISPLAY}" ]; then
+    HNAME=`cat ${PATH_DISPLAY}/panel_name`
+    VEND=`cat ${PATH_DISPLAY}/panel_supplier`
+    HREV=`cat ${PATH_DISPLAY}/panel_ver`
 fi
-apply_revision_data_perms "${OUT_PATH}/display"
+
+create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
+apply_revision_data_perms "${FILE}"
 
 
 #

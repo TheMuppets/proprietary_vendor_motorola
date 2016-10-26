@@ -19,5 +19,4 @@ LOCAL_PATH:=vendor/motorola/omap4-common/imgtec
 # Imgtec blobs from omapzoom.org must be added from
 # http://omapzoom.org/?p=device/ti/proprietary-open.git;a=blob_plain;f=omap4/sgx.tgz;hb=7eef6aa6ef73ce97a9283a89d24a11c0606fd622
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/vendor/bin/pvrsrvctl_SGX540_120:/system/vendor/bin/pvrsrvctl_SGX540_120 \
-	$(LOCAL_PATH)/etc/powervr.ini:/system/etc/powervr.ini
+	$(LOCAL_PATH)/vendor/bin/pvrsrvctl_SGX540_120:/system/vendor/bin/pvrsrvctl_SGX540_120

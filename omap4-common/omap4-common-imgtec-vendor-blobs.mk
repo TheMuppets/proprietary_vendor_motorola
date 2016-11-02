@@ -21,7 +21,6 @@ LOCAL_PATH:=vendor/motorola/omap4-common/imgtec
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/bin/pvrsrvinit:/system/vendor/bin/pvrsrvinit \
 	$(LOCAL_PATH)/vendor/bin/pvrsrvctl_SGX540_120:/system/vendor/bin/pvrsrvctl_SGX540_120 \
-	$(LOCAL_PATH)/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
 	$(LOCAL_PATH)/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
 	$(LOCAL_PATH)/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
 	$(LOCAL_PATH)/vendor/lib/hw/gralloc.omap4430.so:/system/vendor/lib/hw/gralloc.omap4430.so \

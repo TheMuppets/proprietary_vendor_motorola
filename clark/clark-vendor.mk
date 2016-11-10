@@ -67,12 +67,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/Bluetooth_audio_V1.cfg:system/etc/diag_mdlog/Bluetooth_audio_V1.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/Bluetooth_V1.cfg:system/etc/diag_mdlog/Bluetooth_V1.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/Connection_Issues_V10.cfg:system/etc/diag_mdlog/Connection_Issues_V10.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/default.cfg:system/etc/diag_mdlog/default.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/default.opts:system/etc/diag_mdlog/default.opts \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_1.cfg:system/etc/diag_mdlog/FIT_V19_1.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_2_volte_full_ip.cfg:system/etc/diag_mdlog/FIT_V19_2_volte_full_ip.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/FIT_V19_3_audio.cfg:system/etc/diag_mdlog/FIT_V19_3_audio.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_OTDOA_V1.cfg:system/etc/diag_mdlog/GNSS_OTDOA_V1.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_SUPL_V6.cfg:system/etc/diag_mdlog/GNSS_SUPL_V6.cfg \
     vendor/motorola/clark/proprietary/etc/diag_mdlog/GNSS_V5.cfg:system/etc/diag_mdlog/GNSS_V5.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/Vzw_Connection_Issues_V1.cfg:system/etc/diag_mdlog/Vzw_Connection_Issues_V1.cfg \
+    vendor/motorola/clark/proprietary/etc/diag_mdlog/WLAN_V1.cfg:system/etc/diag_mdlog/WLAN_V1.cfg \
     vendor/motorola/clark/proprietary/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd:system/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/clark/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/motorola/clark/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
@@ -201,13 +205,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/lib/soundfx/libmmieffectswrapper.so:system/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/clark/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/motorola/clark/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/motorola/clark/proprietary/vendor/bin/slim_ap_daemon:system/vendor/bin/slim_ap_daemon \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-    vendor/motorola/clark/proprietary/vendor/bin/slim_ap_daemon:system/vendor/bin/slim_ap_daemon \
     vendor/motorola/clark/proprietary/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw \
     vendor/motorola/clark/proprietary/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw \
     vendor/motorola/clark/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
@@ -372,17 +376,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/motorola/clark/proprietary/vendor/lib/libflash_sky81296.so:system/vendor/lib/libflash_sky81296.so \
     vendor/motorola/clark/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/motorola/clark/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/motorola/clark/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/motorola/clark/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/motorola/clark/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
     vendor/motorola/clark/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/motorola/clark/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/motorola/clark/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/motorola/clark/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/motorola/clark/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/motorola/clark/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/motorola/clark/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/motorola/clark/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \

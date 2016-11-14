@@ -36,6 +36,7 @@ LOCAL_SRC_FILES := proprietary/app/atfwd/atfwd.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -46,6 +47,7 @@ LOCAL_SRC_FILES := proprietary/app/DMConfigUpdate/DMConfigUpdate.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -56,6 +58,7 @@ LOCAL_SRC_FILES := proprietary/app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -66,6 +69,7 @@ LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -76,6 +80,7 @@ LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -83,9 +88,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -93,9 +99,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := VZWAPNLib
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/app/VZWAPNLib/VZWAPNLib.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -106,6 +113,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/AppDirectedSMSProxy/AppDirectedSMSProxy.
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -114,9 +122,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := BuaContactAdapter
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/BuaContactAdapter/BuaContactAdapter.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -128,6 +137,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -139,6 +149,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/ConnMO/ConnMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -150,6 +161,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/CQATest/CQATest.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -161,6 +173,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/DCMO/DCMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -172,6 +185,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -183,6 +197,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -191,9 +206,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := GCS
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -205,6 +221,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/LifetimeData/LifetimeData.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -213,9 +230,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := MotoSignatureApp
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/MotoSignatureApp/MotoSignatureApp.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -227,6 +245,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/SprintDM/SprintDM.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -235,9 +254,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TriggerEnroll
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/TriggerEnroll/TriggerEnroll.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -246,9 +266,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TriggerTrainingService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/TriggerTrainingService/TriggerTrainingService.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -257,9 +278,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := VZWAPNService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/VZWAPNService/VZWAPNService.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -268,6 +290,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.verizon.hardware.telephony.ehrpd
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/framework/com.verizon.hardware.telephony.ehrpd.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
@@ -277,6 +300,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.verizon.hardware.telephony.lte
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/framework/com.verizon.hardware.telephony.lte.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
@@ -286,6 +310,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.verizon.ims
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/framework/com.verizon.ims.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
@@ -295,6 +320,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := rcsimssettings
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/framework/rcsimssettings.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
@@ -304,6 +330,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := rcsservice
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/framework/rcsservice.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar

@@ -14,7 +14,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/osprey/proprietary/bin/akmd09912:system/bin/akmd09912 \
-    vendor/motorola/osprey/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/osprey/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/osprey/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/osprey/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \

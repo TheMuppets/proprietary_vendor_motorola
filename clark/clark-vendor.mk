@@ -140,6 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/motorola/clark/proprietary/etc/firmware/vrgain.bin:system/etc/firmware/vrgain.bin \
     vendor/motorola/clark/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/motorola/clark/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.gallery.xml:system/etc/permissions/com.motorola.gallery.xml \
@@ -150,6 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/motorola/clark/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/user_bhd_psy.conf:system/etc/user_bhd_psy.conf \
     vendor/motorola/clark/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/motorola/clark/proprietary/framework/com.motorola.motosignature.jar:system/framework/com.motorola.motosignature.jar \
@@ -552,8 +554,8 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     libtime_genoff \
-    DMConfigUpdateLight \
-    HiddenMenuLight \
+    DMConfigUpdate \
+    HiddenMenu \
     ims \
     MotoSignatureApp \
     TimeService \
@@ -564,6 +566,7 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
+    GCS \
     LifetimeData \
     qcrilmsgtunnel \
     SprintDM

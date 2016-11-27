@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <assign-permission name="com.android.permission.INJECT_OMADM_SETTINGS" uid="shell" />
+</permissions>

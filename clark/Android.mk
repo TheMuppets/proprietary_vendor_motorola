@@ -53,9 +53,9 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DMConfigUpdateLight
+LOCAL_MODULE := DMConfigUpdate
 LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/app/DMConfigUpdateLight/DMConfigUpdateLight.apk
+LOCAL_SRC_FILES := proprietary/app/DMConfigUpdate/DMConfigUpdate.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -64,9 +64,9 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HiddenMenuLight
+LOCAL_MODULE := HiddenMenu
 LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/app/HiddenMenuLight/HiddenMenuLight.apk
+LOCAL_SRC_FILES := proprietary/app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -184,6 +184,18 @@ LOCAL_MODULE := DMService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GCS
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false

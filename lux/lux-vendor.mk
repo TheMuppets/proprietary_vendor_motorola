@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lux/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/lux/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
     vendor/motorola/lux/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
+    vendor/motorola/lux/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
     vendor/motorola/lux/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/lux/proprietary/lib/libunshorten.so:system/lib/libunshorten.so \
     vendor/motorola/lux/proprietary/vendor/lib/libactuator_lc898212xd_camcorder.so:system/vendor/lib/libactuator_lc898212xd_camcorder.so \

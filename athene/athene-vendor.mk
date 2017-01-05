@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/athene/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/athene/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+    vendor/motorola/athene/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/motorola/athene/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/athene/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/motorola/athene/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \

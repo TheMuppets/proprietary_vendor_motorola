@@ -1,0 +1,4 @@
+<permissions>
+   <library name="com.motorola.imager.athene"
+       file="/system/framework/com.motorola.imager.athene" />
+</permissions>

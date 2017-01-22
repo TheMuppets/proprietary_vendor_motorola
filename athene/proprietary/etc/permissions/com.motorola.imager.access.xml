@@ -1,0 +1,5 @@
+<permissions>
+   <permission name="com.motorola.permission.ACCESS_MOT_IMAGER">
+       <group gid="camera" />
+   </permission>
+</permissions>

@@ -1053,11 +1053,9 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
-    ImagerTuning \
     SlpcService \
     SlpcSystem \
     SprintDM \
-    ColorProfiles\
     DMConfigUpdateLight \
     HiddenMenuLight \
     MotoSignatureApp \

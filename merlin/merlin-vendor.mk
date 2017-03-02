@@ -23,8 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/merlin/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/merlin/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    vendor/motorola/merlin/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/motorola/merlin/proprietary/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:system/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:system/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
@@ -45,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:system/vendor/lib/libactuator_ak7345_camcorder.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:system/vendor/lib/libactuator_ak7345_camera.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:system/vendor/lib/libactuator_ak7345.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_common_hdr.so:system/vendor/lib/libchromatix_imx214_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \

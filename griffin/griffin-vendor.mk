@@ -325,6 +325,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
     vendor/motorola/griffin/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
     vendor/motorola/griffin/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/hw/gatekeeper.msm8996.so:system/vendor/lib64/hw/gatekeeper.msm8996.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/hw/keystore.msm8996.so:system/vendor/lib64/hw/keystore.msm8996.so \
@@ -334,6 +341,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libadsp_default_listener.so:system/vendor/lib64/libadsp_default_listener.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libAlacSwDec.so:system/vendor/lib64/libAlacSwDec.so \
@@ -345,9 +353,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libavenhancements.so:system/vendor/lib64/libavenhancements.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libbt-vendor.so:system/vendor/lib64/libbt-vendor.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libcamerabgproc-jni.so:system/vendor/lib64/libcamerabgproc-jni.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libChamomilePA.so:system/vendor/lib64/libChamomilePA.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
@@ -383,6 +398,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libgpustats.so:system/vendor/lib64/libgpustats.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
@@ -403,6 +419,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libkeymasterprovision.so:system/vendor/lib64/libkeymasterprovision.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
@@ -425,6 +444,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmparser_lite.so:system/vendor/lib64/libmmparser_lite.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmparser.so:system/vendor/lib64/libmmparser.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmrtpdecoder.so:system/vendor/lib64/libmmrtpdecoder.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmrtpencoder.so:system/vendor/lib64/libmmrtpencoder.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmodalityservice_jni.so:system/vendor/lib64/libmodalityservice_jni.so \
@@ -438,6 +459,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libQBLAS-0.13.0.so:system/vendor/lib64/libQBLAS-0.13.0.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
@@ -469,6 +491,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
@@ -500,6 +525,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libscveTextRecoPostProcessing.so:system/vendor/lib64/libscveTextRecoPostProcessing.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libscveTextReco.so:system/vendor/lib64/libscveTextReco.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libscveTextReco_stub.so:system/vendor/lib64/libscveTextReco_stub.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
@@ -555,6 +585,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/mmi_wifi.so:system/vendor/lib64/mmi_wifi.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/gatekeeper.msm8996.so:system/vendor/lib/hw/gatekeeper.msm8996.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/keystore.msm8996.so:system/vendor/lib/hw/keystore.msm8996.so \
@@ -566,6 +603,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libactuator_lc898217xc.so:system/vendor/lib/libactuator_lc898217xc.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libactuator_mot_ak7371.so:system/vendor/lib/libactuator_mot_ak7371.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
@@ -573,14 +611,23 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libavenhancements.so:system/vendor/lib/libavenhancements.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_4k_ihdr_video_3a.so:system/vendor/lib/libchromatix_imx338_4k_ihdr_video_3a.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_4k_video_3a.so:system/vendor/lib/libchromatix_imx338_4k_video_3a.so \
@@ -711,6 +758,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libGPTEE.so:system/vendor/lib/libGPTEE.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libgpustats.so:system/vendor/lib/libgpustats.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
@@ -735,6 +783,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libkeymasterprovision.so:system/vendor/lib/libkeymasterprovision.so \
     vendor/motorola/griffin/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
     vendor/motorola/griffin/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/motorola/griffin/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libloc_externalDr.so:system/vendor/lib/libloc_externalDr.so \
@@ -836,6 +887,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_vstab_module.so:system/vendor/lib/libmmcamera_vstab_module.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmhttpstack.so:system/vendor/lib/libmmhttpstack.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmiipstreammmihttp.so:system/vendor/lib/libmmiipstreammmihttp.so \
@@ -848,8 +900,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmparser_lite.so:system/vendor/lib/libmmparser_lite.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmrtpdecoder.so:system/vendor/lib/libmmrtpdecoder.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmrtpencoder.so:system/vendor/lib/libmmrtpencoder.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmodalityservice_jni.so:system/vendor/lib/libmodalityservice_jni.so \
@@ -869,6 +923,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libQBLAS-0.13.0.so:system/vendor/lib/libQBLAS-0.13.0.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -903,12 +958,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/motorola/griffin/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/motorola/griffin/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
     vendor/motorola/griffin/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
     vendor/motorola/griffin/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/motorola/griffin/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libSampleAuthJNI.so:system/vendor/lib/libSampleAuthJNI.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libSampleExtAuthJNI.so:system/vendor/lib/libSampleExtAuthJNI.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libscalar.so:system/vendor/lib/libscalar.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscveBlobDescriptor.so:system/vendor/lib/libscveBlobDescriptor.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:system/vendor/lib/libscveBlobDescriptor_stub.so \
@@ -933,6 +992,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libscveTextRecoPostProcessing.so:system/vendor/lib/libscveTextRecoPostProcessing.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscveTextReco.so:system/vendor/lib/libscveTextReco.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscveTextReco_stub.so:system/vendor/lib/libscveTextReco_stub.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsensorhubservice_jni.so:system/vendor/lib/libsensorhubservice_jni.so \
@@ -1020,61 +1084,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enableAptXHD=true
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/hw/vulkan.msm8996.so:system/vendor/lib64/hw/vulkan.msm8996.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libscalar.so:system/vendor/lib64/libscalar.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/hw/vulkan.msm8996.so:system/vendor/lib/hw/vulkan.msm8996.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/qcom/binaries/msm8996/graphics/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so
 
 PRODUCT_PACKAGES += \
     libril \

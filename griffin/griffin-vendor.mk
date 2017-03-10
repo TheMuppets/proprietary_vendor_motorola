@@ -434,6 +434,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdmimgload.so:system/vendor/lib64/libmdmimgload.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmhttpstack.so:system/vendor/lib64/libmmhttpstack.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmiipstreammmihttp.so:system/vendor/lib64/libmmiipstreammmihttp.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmipstreamaal.so:system/vendor/lib64/libmmipstreamaal.so \

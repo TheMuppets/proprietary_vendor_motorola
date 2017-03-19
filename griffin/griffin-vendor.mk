@@ -433,7 +433,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdmimgload.so:system/vendor/lib64/libmdmimgload.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \
-    vendor/motorola/griffin/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmhttpstack.so:system/vendor/lib64/libmmhttpstack.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmmiipstreammmihttp.so:system/vendor/lib64/libmmiipstreammmihttp.so \
@@ -1025,11 +1024,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libwfduibcsink.so:system/vendor/lib/libwfduibcsink.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
-    vendor/motorola/griffin/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/motorola/griffin/proprietary/vendor/lib/libwvdrmengine.so:system/vendor/lib/libwvdrmengine.so \
-    vendor/motorola/griffin/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \

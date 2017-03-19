@@ -1101,8 +1101,4 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     ConnMO \
     DCMO \
-    DMService \
-    ModFmwkProxyService \
-    ModService \
-    ProjectorApp \
-    MotCameraMod
+    DMService

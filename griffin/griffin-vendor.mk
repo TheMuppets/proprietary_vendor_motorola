@@ -159,6 +159,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
+    vendor/motorola/griffin/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.actions.xml:system/etc/permissions/com.motorola.actions.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
@@ -169,6 +170,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
+    vendor/motorola/griffin/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/griffin/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/motorola/griffin/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/motorola/griffin/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
@@ -184,6 +186,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/motorola/griffin/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/motorola/griffin/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/motorola/griffin/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/motorola/griffin/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/motorola/griffin/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
     vendor/motorola/griffin/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
     vendor/motorola/griffin/proprietary/lib64/hw/sensors.iio.so:system/lib64/hw/sensors.iio.so \
@@ -1053,6 +1057,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/mmi_touch.so:system/vendor/lib/mmi_touch.so \
     vendor/motorola/griffin/proprietary/vendor/lib/mmi_vibrator.so:system/vendor/lib/mmi_vibrator.so \
     vendor/motorola/griffin/proprietary/vendor/lib/mmi_wifi.so:system/vendor/lib/mmi_wifi.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/motorola/griffin/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/motorola/griffin/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/motorola/griffin/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
@@ -1101,4 +1106,7 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     ConnMO \
     DCMO \
-    DMService
+    DMService \
+    QtiTetherService \
+    com.qualcomm.location
+

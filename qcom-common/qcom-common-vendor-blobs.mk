@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/motorola/qcom-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/motorola/qcom-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
@@ -53,6 +54,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/motorola/qcom-common/proprietary/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
     vendor/motorola/qcom-common/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    vendor/motorola/qcom-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/motorola/qcom-common/proprietary/bin/aplogd:system/bin/aplogd \
     vendor/motorola/qcom-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
     vendor/motorola/qcom-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \

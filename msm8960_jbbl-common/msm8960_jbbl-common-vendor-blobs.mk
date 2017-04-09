@@ -76,17 +76,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/motorola/msm8960_jbbl-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/whisperd.exec:system/bin/whisperd.exec \
     vendor/motorola/msm8960_jbbl-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \
     vendor/motorola/msm8960_jbbl-common/proprietary/bin/mpdecision.exec:system/bin/mpdecision.exec \

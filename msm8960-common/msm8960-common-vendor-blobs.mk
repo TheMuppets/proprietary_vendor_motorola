@@ -108,7 +108,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/motorola/msm8960-common/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     vendor/motorola/msm8960-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/motorola/msm8960-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/msm8960-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/msm8960-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -131,13 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8960-common/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/motorola/msm8960-common/proprietary/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     vendor/motorola/msm8960-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b00:system/etc/firmware/vidc.b00 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b01:system/etc/firmware/vidc.b01 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b02:system/etc/firmware/vidc.b02 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.b03:system/etc/firmware/vidc.b03 \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc.mdt:system/etc/firmware/vidc.mdt \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/motorola/msm8960-common/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/motorola/msm8960-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8960-common/proprietary/bin/whisperd:system/bin/whisperd \
     vendor/motorola/msm8960-common/proprietary/lib/libmoto_netutil.so:system/lib/libmoto_netutil.so \

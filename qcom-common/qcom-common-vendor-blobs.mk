@@ -17,6 +17,8 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/qcom-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/qcom-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/motorola/qcom-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
+    vendor/motorola/qcom-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/qcom-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/motorola/qcom-common/proprietary/etc/firmware/dxhdcp2.b00:system/etc/firmware/dxhdcp2.b00 \

@@ -97,7 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/hw/camera.vendor.msm8953.so:system/lib/hw/camera.vendor.msm8953.so \
     vendor/motorola/addison/proprietary/lib/hw/camera.rc.so:system/lib/hw/camera.rc.so \
     vendor/motorola/addison/proprietary/lib/hw/fingerprint.msm8953.so:system/lib/hw/fingerprint.msm8953.so \
-    vendor/motorola/addison/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/motorola/addison/proprietary/lib/hw/sensorhub.msm8953.so:system/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/lib/hw/sensors.addison.so:system/lib/hw/sensors.addison.so \
     vendor/motorola/addison/proprietary/lib/hw/sensors.iio.so:system/lib/hw/sensors.iio.so \
@@ -112,17 +111,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
     vendor/motorola/addison/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/motorola/addison/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
-    vendor/motorola/addison/proprietary/lib/libgnsspps.so:system/lib/libgnsspps.so \
-    vendor/motorola/addison/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/addison/proprietary/lib/libiio.so:system/lib/libiio.so \
     vendor/motorola/addison/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/addison/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
     vendor/motorola/addison/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/addison/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/addison/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/addison/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/motorola/addison/proprietary/lib/libloc_pla.so:system/lib/libloc_pla.so \
-    vendor/motorola/addison/proprietary/lib/libloc_stub.so:system/lib/libloc_stub.so \
     vendor/motorola/addison/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/addison/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/addison/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \

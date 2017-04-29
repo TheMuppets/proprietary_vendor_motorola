@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<permissions>
-    <feature name="com.motorola.triggerenroll.ap_v1" />
-    <feature name="com.motorola.triggerenroll.dsp_v1" />
-
-    <permission name="com.motorola.audiomonitor.permission.LOCAL">
-        <group gid="media" />
-    </permission>
-</permissions>

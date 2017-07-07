@@ -276,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/motorola/victara/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/motorola/victara/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/motorola/victara/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \

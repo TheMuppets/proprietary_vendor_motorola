@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/bin/adspd:system/bin/adspd \
     vendor/motorola/addison/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-    vendor/motorola/addison/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/addison/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/addison/proprietary/bin/cnd:system/bin/cnd \
     vendor/motorola/addison/proprietary/bin/energy-awareness:system/bin/energy-awareness \

@@ -1,4 +1,5 @@
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,14 +40,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/omap4-common/proprietary/etc/smc_pa_pk_4_ipa.bin:system/etc/smc_pa_pk_4_ipa.bin \
     vendor/motorola/omap4-common/proprietary/etc/firmware/ap_bt_data.bin:system/etc/firmware/ap_bt_data.bin \
     vendor/motorola/omap4-common/proprietary/usr/idc/Motorola_Mobility_Motorola_HD_Dock.idc:system/usr/idc/Motorola_Mobility_Motorola_HD_Dock.idc \
-    vendor/motorola/omap4-common/proprietary/usr/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
     vendor/motorola/omap4-common/proprietary/lib/hw/alsa.omap4.so:system/lib/hw/alsa.omap4.so \
     vendor/motorola/omap4-common/proprietary/lib/libaudio_ext.so:system/lib/libaudio_ext.so \
     vendor/motorola/omap4-common/proprietary/lib/libbattd.so:system/lib/libbattd.so \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_openssl.so:system/lib/libdataencrypt_openssl.so \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_tpa.so:system/lib/libdataencrypt_tpa.so \
     vendor/motorola/omap4-common/proprietary/lib/libdataencrypt_utils.so:system/lib/libdataencrypt_utils.so \
-    vendor/motorola/omap4-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/omap4-common/proprietary/lib/libhdcp.so:system/lib/libhdcp.so \
     vendor/motorola/omap4-common/proprietary/lib/libhdmi.so:system/lib/libhdmi.so \
     vendor/motorola/omap4-common/proprietary/lib/libmot_atcmd.so:system/lib/libmot_atcmd.so \
@@ -73,6 +72,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/omap4-common/proprietary/etc/omapcam/module1_ee/cid1039_ov8820_ipipe_ee_dcc.bin:system/etc/omapcam/module1_ee/cid1039_ov8820_ipipe_ee_dcc.bin \
     vendor/motorola/omap4-common/proprietary/etc/omapcam/module1_ee/cid1039_ov8820_ducati_nsf_ldc.bin:system/etc/omapcam/module1_ee/cid1039_ov8820_ducati_nsf_ldc.bin \
     vendor/motorola/omap4-common/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/motorola/omap4-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/motorola/omap4-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \

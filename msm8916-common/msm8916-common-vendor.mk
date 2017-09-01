@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/msm8916-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/motorola/msm8916-common/proprietary/bin/radish:system/bin/radish \
-    vendor/motorola/msm8916-common/proprietary/bin/rild:system/bin/rild \
     vendor/motorola/msm8916-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/msm8916-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/motorola/msm8916-common/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
@@ -192,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
-    libril \
     libHevcSwDecoder \
     TimeService \
     qcrilmsgtunnel \

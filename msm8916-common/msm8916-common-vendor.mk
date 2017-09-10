@@ -17,10 +17,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-    vendor/motorola/msm8916-common/proprietary/bin/batt_health:system/bin/batt_health \
     vendor/motorola/msm8916-common/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/motorola/msm8916-common/proprietary/bin/dbvc_atvc_property_set:system/bin/dbvc_atvc_property_set \
-    vendor/motorola/msm8916-common/proprietary/bin/hardware_revisions.sh:system/bin/hardware_revisions.sh \
     vendor/motorola/msm8916-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/msm8916-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/motorola/msm8916-common/proprietary/bin/imscmservice:system/bin/imscmservice \

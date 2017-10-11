@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
-    vendor/motorola/msm8226-common/proprietary/vendor/bin/qmi_motext_hook:system/vendor/bin/qmi_motext_hook \
+    vendor/motorola/msm8226-common/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/motorola/msm8226-common/proprietary/vendor/bin/radish:system/vendor/bin/radish \

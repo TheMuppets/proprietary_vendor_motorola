@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+<!-- RW permissions to local tcmd socket owned by group 'mot_tcmd'  -->
+    <permission name="com.motorola.android.permission.TCMD_LOCAL" >
+        <group gid="mot_tcmd" />
+    </permission>
+
+    <assign-permission name="android.permission.WRITE_SECURE_SETTINGS" uid="mot_tcmd" />
+    <assign-permission name="android.permission.SEND_SMS" uid="mot_tcmd" />
+    <assign-permission name="android.permission.CALL_PHONE" uid="mot_tcmd" />
+</permissions>

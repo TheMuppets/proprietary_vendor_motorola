@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2009 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+-->
+<permissions>
+    <library name="com.motorola.calendarcommon"
+             file="/system/framework/com.motorola.calendarcommon.jar"/>
+</permissions>
+

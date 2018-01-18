@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <assign-permission name="com.motorola.permission.INJECT_DM_SETTINGS" uid="shell" />
+</permissions>

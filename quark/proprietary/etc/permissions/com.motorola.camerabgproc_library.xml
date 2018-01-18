@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2014 Motorola Mobility
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Mobility Confidential Restricted.
+-->
+<permissions>
+    <library name="com.motorola.camerabgproc"
+            file="/system/framework/com.motorola.camerabgproc.jar"/>
+</permissions>

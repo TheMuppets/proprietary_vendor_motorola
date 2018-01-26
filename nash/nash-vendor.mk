@@ -33,6 +33,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/nash/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/nash/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/nash/proprietary/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
+    vendor/motorola/nash/proprietary/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
+    vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
+    vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/nash/proprietary/etc/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
+    vendor/motorola/nash/proprietary/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/nash/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
@@ -122,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/libjni_trueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_trueportrait.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libjni_truescanner_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_truescanner_v2.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libjni_ubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_ubifocus.so \
+    vendor/motorola/nash/proprietary/lib64/libmodhw.so:system/lib64/libmodhw.so \
     vendor/motorola/nash/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/motorola/nash/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/motorola/nash/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
@@ -164,6 +171,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/motorola/nash/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/motorola/nash/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
+    vendor/motorola/nash/proprietary/vendor/bin/mods_camd:$(TARGET_COPY_OUT_VENDOR)/bin/mods_camd \
     vendor/motorola/nash/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/motorola/nash/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/motorola/nash/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
@@ -574,6 +582,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
+    vendor/motorola/nash/proprietary/vendor/lib/libmodmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmodmanager.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmot_gpu_mapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_gpu_mapper.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
@@ -807,6 +816,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/motorola/nash/proprietary/vendor/lib64/libmodmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmodmanager.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/motorola/nash/proprietary/vendor/lib64/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptizoom.so \
@@ -924,10 +934,13 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
+    MotCameraMod \
     QtiTelephonyService \
     datastatusnotification \
     ims \
     radioconfig \
+    ModService \
+    ProjectorApp \
     qcrilmsgtunnel \
     TimeService \
     colorservice \

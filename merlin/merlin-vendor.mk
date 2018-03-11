@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:system/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/merlin/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/merlin/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
     vendor/motorola/merlin/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/merlin/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
     vendor/motorola/merlin/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \

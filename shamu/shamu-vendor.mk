@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/motorola/shamu/proprietary/etc/thermal-engine-shamu.conf:system/etc/thermal-engine-shamu.conf \
     vendor/motorola/shamu/proprietary/lib/hw/audio.motvr.default.so:system/lib/hw/audio.motvr.default.so \
-    vendor/motorola/shamu/proprietary/lib/hw/sound_trigger.primary.shamu.so:system/lib/hw/sound_trigger.primary.shamu.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/hw/sound_trigger.primary.shamu.so:system/vendor/lib/hw/sound_trigger.primary.shamu.so \
     vendor/motorola/shamu/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \
     vendor/motorola/shamu/proprietary/lib/libadspd.so:system/lib/libadspd.so \
     vendor/motorola/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
@@ -106,7 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/lib/librecoglib.so:system/lib/librecoglib.so \
     vendor/motorola/shamu/proprietary/lib/libsupermodel.so:system/lib/libsupermodel.so \
     vendor/motorola/shamu/proprietary/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so \
-    vendor/motorola/shamu/proprietary/lib/soundfx/libspeakerbundle.so:system/lib/soundfx/libspeakerbundle.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/soundfx/libspeakerbundle.so:system/vendor/lib/soundfx/libspeakerbundle.so \
     vendor/motorola/shamu/proprietary/vendor/firmware/VRGain.bin:system/vendor/firmware/VRGain.bin \
     vendor/motorola/shamu/proprietary/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw \
     vendor/motorola/shamu/proprietary/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw \
@@ -135,18 +135,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
     vendor/motorola/shamu/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
     vendor/motorola/shamu/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
+    vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.music.config:system/vendor/firmware/left.boost.music.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.music.eq:system/vendor/firmware/left.boost.music.eq \
+    vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.ringtone.config:system/vendor/firmware/left.boost.ringtone.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.ringtone.eq:system/vendor/firmware/left.boost.ringtone.eq \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.speaker:system/vendor/firmware/left.boost.speaker \
+    vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.voice.config:system/vendor/firmware/left.boost.voice.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost.voice.eq:system/vendor/firmware/left.boost.voice.eq \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost_music_table.preset:system/vendor/firmware/left.boost_music_table.preset \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost_n1b12.patch:system/vendor/firmware/left.boost_n1b12.patch \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost_n1c2.patch:system/vendor/firmware/left.boost_n1c2.patch \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost_ringtone_table.preset:system/vendor/firmware/left.boost_ringtone_table.preset \
     vendor/motorola/shamu/proprietary/vendor/firmware/left.boost_voice_table.preset:system/vendor/firmware/left.boost_voice_table.preset \
+    vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.music.config:system/vendor/firmware/right.boost.music.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.music.eq:system/vendor/firmware/right.boost.music.eq \
+    vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.ringtone.config:system/vendor/firmware/right.boost.ringtone.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.ringtone.eq:system/vendor/firmware/right.boost.ringtone.eq \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.speaker:system/vendor/firmware/right.boost.speaker \
+    vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.voice.config:system/vendor/firmware/right.boost.voice.config \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost.voice.eq:system/vendor/firmware/right.boost.voice.eq \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost_music_table.preset:system/vendor/firmware/right.boost_music_table.preset \
     vendor/motorola/shamu/proprietary/vendor/firmware/right.boost_n1b12.patch:system/vendor/firmware/right.boost_n1b12.patch \

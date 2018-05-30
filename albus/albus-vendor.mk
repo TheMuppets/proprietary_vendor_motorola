@@ -177,7 +177,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/albus/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
     vendor/motorola/albus/proprietary/lib/motorola.hardware.mods_camera.provider@2.4.so:system/lib/motorola.hardware.mods_camera.provider@2.4.so \
     vendor/motorola/albus/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/motorola/albus/proprietary/vendor/bin/adspd:system/vendor/bin/adspd \
     vendor/motorola/albus/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/motorola/albus/proprietary/vendor/bin/akmd09912:system/vendor/bin/akmd09912 \
     vendor/motorola/albus/proprietary/vendor/bin/ATFWD-daemon:system/vendor/bin/ATFWD-daemon \

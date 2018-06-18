@@ -925,6 +925,7 @@ PRODUCT_PACKAGES += \
     ims \
     radioconfig \
     ModService \
+    ModFmwkProxyService \
     ProjectorApp \
     qcrilmsgtunnel \
     TimeService \

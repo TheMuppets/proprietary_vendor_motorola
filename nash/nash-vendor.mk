@@ -923,8 +923,8 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     ims \
     radioconfig \
-    ModService \
     ModFmwkProxyService \
+    ModService \
     ProjectorApp \
     qcrilmsgtunnel \
     TimeService \

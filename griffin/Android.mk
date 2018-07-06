@@ -226,7 +226,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := MotCameraMod
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/app/MotCameraMod/MotCameraMod.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -355,7 +355,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := ModService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/ModService/ModService.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -367,7 +367,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := ProjectorApp
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/ProjectorApp/ProjectorApp.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false

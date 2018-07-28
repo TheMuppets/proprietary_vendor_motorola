@@ -34,34 +34,29 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/nash/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/nash/proprietary/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
+    vendor/motorola/nash/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
     vendor/motorola/nash/proprietary/vendor/etc/permissions/com.motorola.camera2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml:system/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/radioconfiginterface.xml:system/etc/permissions/radioconfiginterface.xml \
-    vendor/motorola/nash/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/motorola/nash/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
+    vendor/motorola/nash/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
+    vendor/motorola/nash/proprietary/vendor/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_libpermissions.xml \
+    vendor/motorola/nash/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
+    vendor/motorola/nash/proprietary/vendor/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/telephonyservice.xml \
     vendor/motorola/nash/proprietary/vendor/etc/zaf/zaf_imx386.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386.json \
     vendor/motorola/nash/proprietary/vendor/etc/zaf/zaf_imx386_mono.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386_mono.json \
     vendor/motorola/nash/proprietary/vendor/etc/zaf/zaf_mot_s5k2l7sa.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_mot_s5k2l7sa.json \
-    vendor/motorola/nash/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/motorola/nash/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/motorola/nash/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/motorola/nash/proprietary/vendor/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_VENDOR)/framework/QtiTelephonyServicelibrary.jar \
+    vendor/motorola/nash/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/motorola/nash/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/motorola/nash/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/motorola/nash/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/motorola/nash/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/motorola/nash/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/motorola/nash/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/motorola/nash/proprietary/framework/qti-vzw-ims-internal.jar:system/framework/qti-vzw-ims-internal.jar \
+    vendor/motorola/nash/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
     vendor/motorola/nash/proprietary/vendor/lib/hw/libSonyDefocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSonyDefocus.so \
     vendor/motorola/nash/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/motorola/nash/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
@@ -91,18 +86,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib/libjni_ubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_ubifocus.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
     vendor/motorola/nash/proprietary/lib/librcc.so:system/lib/librcc.so \
-    vendor/motorola/nash/proprietary/vendor/lib/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsd_sdk_display.so \
-    vendor/motorola/nash/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
     vendor/motorola/nash/proprietary/vendor/lib/libseestraight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseestraight.so \
     vendor/motorola/nash/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/motorola/nash/proprietary/vendor/lib/libtruescanner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtruescanner.so \
-    vendor/motorola/nash/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
-    vendor/motorola/nash/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
-    vendor/motorola/nash/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
-    vendor/motorola/nash/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/motorola/nash/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/motorola/nash/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
-    vendor/motorola/nash/proprietary/lib64/com.motorola.mod@1.0.so:system/lib64/com.motorola.mod@1.0.so \
+    vendor/motorola/nash/proprietary/vendor/lib64/com.motorola.mod@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.mod@1.0.so \
     vendor/motorola/nash/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/motorola/nash/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/motorola/nash/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -133,14 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/libjni_ubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_ubifocus.so \
     vendor/motorola/nash/proprietary/lib64/libmodhw.so:system/lib64/libmodhw.so \
     vendor/motorola/nash/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/motorola/nash/proprietary/vendor/lib64/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsd_sdk_display.so \
-    vendor/motorola/nash/proprietary/vendor/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
-    vendor/motorola/nash/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
-    vendor/motorola/nash/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
-    vendor/motorola/nash/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
-    vendor/motorola/nash/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/motorola/nash/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/motorola/nash/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/motorola/nash/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/motorola/nash/proprietary/vendor/bin/DR_AP_Service:$(TARGET_COPY_OUT_VENDOR)/bin/DR_AP_Service \
@@ -919,14 +900,14 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
-    QtiTelephonyService \
-    datastatusnotification \
     ims \
-    radioconfig \
+    uceShimService \
+    CNEService \
     ModFmwkProxyService \
     ModService \
     ProjectorApp \
     qcrilmsgtunnel \
+    QtiTelephonyService \
+    datastatusnotification \
     TimeService \
-    colorservice \
     ReferenceFeature

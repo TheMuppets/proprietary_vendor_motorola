@@ -6,5 +6,8 @@
 
     <!-- Feature for 2017 products. -->
     <feature name="com.motorola.motodisplay.6.0"/>
+
+    <!-- Add restriction to not reinstall MotoDisplay for work profile-->
+    <disallowed-managed-profile package="com.motorola.motodisplay"/>
 </permissions>
 

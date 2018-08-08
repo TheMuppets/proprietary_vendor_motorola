@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Motorola Mobility Inc.
+ * Copyright (C) 2016-2018 Motorola Mobility Inc.
  * All Rights Reserved.
  * Motorola Mobility Confidential Restricted.
  */
@@ -48,8 +48,8 @@
   "AEC_STABLE_PDAF_EXIT":                   8.0,
   "AEC_STABLE_CAF_ENTER":                   1.0,
   "AEC_STABLE_CAF_EXIT":                    3.0,
-  "AEC_STABLE_VIDEO_PDAF_ENTER":            2.5,
-  "AEC_STABLE_VIDEO_PDAF_EXIT":             4.0,
+  "AEC_STABLE_VIDEO_PDAF_ENTER":            1.0,
+  "AEC_STABLE_VIDEO_PDAF_EXIT":             3.0,
   "AEC_STABLE_VIDEO_CAF_ENTER":             0.5,
   "AEC_STABLE_VIDEO_CAF_EXIT":              1.5,
 
@@ -73,7 +73,11 @@
   "ZAF_CAF_POINT_LIGHT_SY_TH":              50,
   "ZAF_CAF_DARK_REGION_TH":                 4,
 
-  "ZAF_PDAF_PARAM_SIGNAGE_DAC":             false,
+  "ZAF_CAF_VALIDATE_ENABLE":                2,
+  "ZAF_CAF_VALIDATE_GYRO_MLT":              0.1,
+  "ZAF_CAF_VALIDATE_STD_EXP_IDX":           5.0,
+
+  "ZAF_PDAF_PARAM_SIGNAGE_DAC":             true,
   "ZAF_PDAF_PARAM_USE_CAL_RANGE":           false,
   "ZAF_PDAF_PARAM_CAL_BIT_SHIFT":           6,
   "ZAF_PDAF_PARAM_CONF_SCALE":              0.25,
@@ -81,26 +85,46 @@
 
   "ZAF_PDAF_PARAM_CONF_HIGH_TH":            190.0,
   "ZAF_PDAF_PARAM_CONF_LOW_TH":             160.0,
-  "ZAF_PDAF_PARAM_CONF_VIDEO_HIGH_TH":      160.0,
-  "ZAF_PDAF_PARAM_CONF_VIDEO_LOW_TH":       70.0,
+  "ZAF_PDAF_PARAM_CONF_VIDEO_HIGH_TH":      190.0,
+  "ZAF_PDAF_PARAM_CONF_VIDEO_LOW_TH":       160.0,
   "ZAF_PDAF_PARAM_CONF_MIN_LP":             115,
   "ZAF_PDAF_PARAM_CONF_MAX_LP":             884,
   "ZAF_PDAF_PARAM_ROI_SML":                 16,
   "ZAF_PDAF_PARAM_ROI_MDM":                 32,
-  "ZAF_PDAF_PARAM_ROI_SML_MIN_BLOB":        2,
-  "ZAF_PDAF_PARAM_ROI_MDM_MIN_BLOB":        2,
+  "ZAF_PDAF_PARAM_ROI_SML_MIN_BLOB":        3,
+  "ZAF_PDAF_PARAM_ROI_MDM_MIN_BLOB":        3,
   "ZAF_PDAF_PARAM_ROI_LRG_MIN_BLOB":        4,
   "ZAF_PDAF_PARAM_ROI_SML_MAX_BLOB":        3,
   "ZAF_PDAF_PARAM_ROI_MDM_MAX_BLOB":        3,
   "ZAF_PDAF_PARAM_ROI_LRG_MAX_BLOB":        6,
-  "ZAF_PDAF_PARAM_WGHT_DEF_ROI_ATC":        3.0,
-  "ZAF_PDAF_PARAM_WGHT_DEF_ROI_ATW":        1.0,
+  "ZAF_PDAF_PARAM_WGHT_DEF_ROI_ATC":        1.0,
+  "ZAF_PDAF_PARAM_WGHT_DEF_ROI_ATW":        0.5,
   "ZAF_PDAF_PARAM_WGHT_TTF_ROI_ATC":        1.0,
   "ZAF_PDAF_PARAM_WGHT_TTF_ROI_ATW":        0.5,
 
   "ZAF_PDAF_PARAM_HIGHGAIN_DISABLE":        true,
   "ZAF_PDAF_PARAM_HIGHGAIN_ENTER":          18.0,
   "ZAF_PDAF_PARAM_HIGHGAIN_EXIT":           14.0,
+
+  "ZAF_PDAF_PARAM_CAMERA_IGNORE_AEC_LOW":   false,
+  "ZAF_PDAF_PARAM_CAMERA_IGNORE_AEC_HIGH":  false,
+
+  "ZAF_PDAF_PARAM_VIDEO_SPEED_UP_2":        5,
+  "ZAF_PDAF_PARAM_VIDEO_SPEED_UP_3":        5,
+  "ZAF_PDAF_PARAM_VIDEO_IGNORE_AEC_LOW":    true,
+  "ZAF_PDAF_PARAM_VIDEO_IGNORE_AEC_HIGH":   true,
+  "ZAF_PDAF_PARAM_VIDEO_GYRO_MULTITUDE":    2.5,
+
+  "ZAF_PDAF_TREND_ENABLE":                  true,
+  "ZAF_PDAF_TREND_ENABLE_DELAY":            true,
+  "ZAF_PDAF_TREND_ENABLE_DELAY_RANGE":      true,
+  "ZAF_PDAF_TREND_ENABLE_OSC_RESET":        true,
+  "ZAF_PDAF_TREND_COUNT":                   15,
+  "ZAF_PDAF_TREND_DELAY":                   10,
+  "ZAF_PDAF_TREND_DELAY_RANGE":             5,
+  "ZAF_PDAF_TREND_RANGE_SCALE_BASE":        0.1,
+  "ZAF_PDAF_TREND_RANGE_SCALE_GYRO":        1.5,
+  "ZAF_PDAF_TREND_RANGE_SCALE_DELAY":       0.2,
 
   "ZAF_PDAF_OSC_DTC_ENABLE":                true,
   "ZAF_PDAF_OSC_DTC_RATH_TH":               1.0,

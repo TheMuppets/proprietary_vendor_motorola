@@ -4,4 +4,5 @@ service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcse
     # /data is mounted.
     class late_start
     user system
-    group system input fingerp
+    # fingerp:9015
+    group system input 9015

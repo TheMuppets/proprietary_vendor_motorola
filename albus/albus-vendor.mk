@@ -89,29 +89,29 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/albus/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin \
     vendor/motorola/albus/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/albus/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
-    vendor/motorola/albus/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/cneapiclient.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.cameraone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.cameraone.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.hardware.dtv.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.location.sdk.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qualcomm.location.vzw_library.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qualcomm.location.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.quicinc.cne.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/ConnectivityExt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/ConnectivityExt.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/embms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/embms.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/imscm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/imscm.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/ims.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/izat.xt.srv.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/mot_dtv_permissions.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
-    vendor/motorola/albus/proprietary/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/cneapiclient.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.cameraone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.cameraone.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.hardware.dtv.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.location.sdk.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.qualcomm.location.vzw_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qualcomm.location.vzw_library.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qualcomm.location.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.quicinc.cne.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/ConnectivityExt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/ConnectivityExt.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/embms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/embms.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/imscm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/imscm.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/ims.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/izat.xt.srv.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/mot_dtv_permissions.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
+    vendor/motorola/albus/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/motorola/albus/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/albus/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
     vendor/motorola/albus/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \

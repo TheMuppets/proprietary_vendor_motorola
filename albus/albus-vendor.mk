@@ -1264,7 +1264,6 @@ PRODUCT_PACKAGES += \
     ModFmwkProxyService \
     ModService \
     ProjectorApp \
-    QtiTetherService \
     atfwd \
     com.qualcomm.location \
     qcrilmsgtunnel \

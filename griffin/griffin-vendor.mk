@@ -1073,14 +1073,13 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libsdm-disp-vndapis \
     libthermalclient \
-    libtime_genoff \
     libloc_api_v02 \
+    libtime_genoff \
     MotCameraMod \
     QtiTelephonyService \
     ims \
     CNEService \
     ConnMO \
-    DCMO \
     DMService \
     HotwordEnrollmentOKGoogleCS47L35 \
     HotwordEnrollmentTGoogleCS47L35 \

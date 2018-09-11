@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/etc/permissions/com.motorola.camera2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/nash/proprietary/etc/permissions/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.moto-premium.xml:system/etc/permissions/com.motorola.moto-premium.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.motorola.motodisplay.xml:system/etc/permissions/com.motorola.motodisplay.xml \
     vendor/motorola/nash/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \

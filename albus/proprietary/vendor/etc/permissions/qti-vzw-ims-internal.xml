@@ -6,5 +6,5 @@
  -->
 <permissions>
     <library name="com.qti.vzw.ims.internal"
-          file="/system/vendor/framework/qti-vzw-ims-internal.jar"/>
+          file="/vendor/framework/qti-vzw-ims-internal.jar"/>
 </permissions>

@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/dbvc_atvc_property_set:system/vendor/bin/dbvc_atvc_property_set \
     vendor/motorola/victara/proprietary/vendor/bin/efsks:system/vendor/bin/efsks \
     vendor/motorola/victara/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
-    vendor/motorola/victara/proprietary/vendor/bin/hardware_revisions.sh:system/vendor/bin/hardware_revisions.sh \
     vendor/motorola/victara/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/victara/proprietary/vendor/bin/hvdcp:system/vendor/bin/hvdcp \
     vendor/motorola/victara/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
@@ -124,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/motorola/victara/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/motorola/victara/proprietary/lib/soundfx/libspeakerbundle.so:system/lib/soundfx/libspeakerbundle.so \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:system/vendor/firmware/widevine.b01 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b02:system/vendor/firmware/widevine.b02 \

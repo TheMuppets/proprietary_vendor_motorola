@@ -1078,7 +1078,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     MotCameraMod \
     QtiTelephonyService \
-    ims \
     CNEService \
     ConnMO \
     DMService \
@@ -1091,6 +1090,7 @@ PRODUCT_PACKAGES += \
     SprintDM \
     atfwd \
     com.qualcomm.location \
+    ims \
     qcrilmsgtunnel \
     TimeService \
     qcrilhook \

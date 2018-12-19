@@ -31,6 +31,18 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.quicinc.cne.api@1.1
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.api@1.1.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.api@1.1.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.quicinc.cne.constants@1.0
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so
@@ -55,10 +67,10 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.quicinc.cne.server@1.0
+LOCAL_MODULE := com.quicinc.cne.constants@2.1
 LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.server@1.0.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.server@1.0.so
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.constants@2.1.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.constants@2.1.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -71,6 +83,30 @@ LOCAL_MODULE := com.quicinc.cne.server@2.0
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.server@2.0.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.quicinc.cne.server@2.1
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.server@2.1.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.server@2.1.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.quicinc.cne.server@2.2
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/com.quicinc.cne.server@2.2.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/com.quicinc.cne.server@2.2.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -197,57 +233,10 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := uceShimService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ModFmwkProxyService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ModService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/priv-app/ModService/ModService.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ProjectorApp
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/priv-app/ProjectorApp/ProjectorApp.apk
-LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
@@ -301,6 +290,42 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ModFmwkProxyService
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES := proprietary/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ModService
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES := proprietary/priv-app/ModService/ModService.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ProjectorApp
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES := proprietary/priv-app/ProjectorApp/ProjectorApp.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 

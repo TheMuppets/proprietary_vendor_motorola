@@ -1,0 +1,9 @@
+/*
+ * Copyright (C) 2016-2018 Motorola Mobility Inc.
+ * All Rights Reserved.
+ * Motorola Mobility Confidential Restricted.
+ */
+{
+  "ZAF_BASE_SENSOR_NAME":                   "imx386",
+  "ZAF_SUPPORTED_PDAF":                     false
+}

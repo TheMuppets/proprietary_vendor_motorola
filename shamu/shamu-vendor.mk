@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     vendor/motorola/shamu/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/motorola/shamu/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/shamu/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/motorola/shamu/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/motorola/shamu/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
+    vendor/motorola/shamu/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
     vendor/motorola/shamu/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/shamu/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/shamu/proprietary/bin/qmuxd:system/bin/qmuxd \
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/shamu/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
-    vendor/motorola/shamu/proprietary/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/motorola/shamu/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/motorola/shamu/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/motorola/shamu/proprietary/bin/usbhub:system/bin/usbhub \
     vendor/motorola/shamu/proprietary/bin/usbhub_init:system/bin/usbhub_init \
@@ -90,14 +90,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/lib/libadspd.so:system/lib/libadspd.so \
     vendor/motorola/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/motorola/shamu/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
-    vendor/motorola/shamu/proprietary/priv-app/DMService/lib/arm/libdmengine.so:system/priv-app/DMService/lib/arm/libdmengine.so \
     vendor/motorola/shamu/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/motorola/shamu/proprietary/priv-app/DMService/lib/arm/libdmjavaplugin.so:system/priv-app/DMService/lib/arm/libdmjavaplugin.so \
     vendor/motorola/shamu/proprietary/lib/libflacencoder.so:system/lib/libflacencoder.so \
     vendor/motorola/shamu/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
-    vendor/motorola/shamu/proprietary/app/ims/lib/arm/libimscamera_jni.so:system/app/ims/lib/arm/libimscamera_jni.so \
     vendor/motorola/shamu/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/motorola/shamu/proprietary/app/ims/lib/arm/libimsmedia_jni.so:system/app/ims/lib/arm/libimsmedia_jni.so \
     vendor/motorola/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/motorola/shamu/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
     vendor/motorola/shamu/proprietary/vendor/lib/soundfx/libspeakerbundle.so:system/vendor/lib/soundfx/libspeakerbundle.so \
@@ -339,8 +335,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/motorola/shamu/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
-    vendor/motorola/shamu/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/motorola/shamu/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/motorola/shamu/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \

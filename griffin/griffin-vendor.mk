@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -588,21 +588,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Hdmi_cal.acdb \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Headset_cal.acdb \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Speaker_cal.acdb \
-    vendor/motorola/griffin/proprietary/etc/camera/imx338_chromatix.xml:system/etc/camera/imx338_chromatix.xml \
-    vendor/motorola/griffin/proprietary/etc/camera/mot_imx214_chromatix.xml:system/etc/camera/mot_imx214_chromatix.xml \
-    vendor/motorola/griffin/proprietary/etc/camera/msm8996_mot_camera.xml:system/etc/camera/msm8996_mot_camera.xml \
-    vendor/motorola/griffin/proprietary/etc/camera/ov5693_chromatix.xml:system/etc/camera/ov5693_chromatix.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/camera/imx338_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx338_chromatix.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/camera/mot_imx214_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_imx214_chromatix.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/camera/msm8996_mot_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8996_mot_camera.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/camera/ov5693_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5693_chromatix.xml \
     vendor/motorola/griffin/proprietary/vendor/firmware/SAMSUNG-KLUBG4G1CE-B0B1-32G.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/SAMSUNG-KLUBG4G1CE-B0B1-32G.fw \
     vendor/motorola/griffin/proprietary/vendor/firmware/SAMSUNG-KLUCG4J1CB-B0B1-64G.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/SAMSUNG-KLUCG4J1CB-B0B1-64G.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
-    vendor/motorola/griffin/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/griffin/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/griffin/proprietary/vendor/firmware/florida-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/florida-dsp2-aov-frontend.wmfw \
     vendor/motorola/griffin/proprietary/vendor/firmware/florida-dsp3-aov-control.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/florida-dsp3-aov-control.wmfw \
     vendor/motorola/griffin/proprietary/vendor/firmware/florida-dsp4-speaker-protect-calibration.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/florida-dsp4-speaker-protect-calibration.bin \
@@ -621,53 +613,53 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/firmware/synaptics-s3528so1-15121701-1e29b4-sheridan.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-s3528so1-15121701-1e29b4-sheridan.tdat \
     vendor/motorola/griffin/proprietary/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
     vendor/motorola/griffin/proprietary/vendor/firmware/vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vrgain.bin \
-    vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
-    vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml \
-    vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.hw.sensorhub.xml:system/etc/permissions/com.motorola.hw.sensorhub.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/permissions/com.motorola.aov.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.aov.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/permissions/com.motorola.cameraone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.cameraone.xml \
+    vendor/motorola/griffin/proprietary/vendor/etc/permissions/com.motorola.hw.sensorhub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.hw.sensorhub.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.mod.protocols.xml:system/etc/permissions/com.motorola.mod.protocols.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/com.motorola.mod.xml:system/etc/permissions/com.motorola.mod.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/privapp-permissions-com.motorola.modservice.xml:system/etc/permissions/privapp-permissions-com.motorola.modservice.xml \
     vendor/motorola/griffin/proprietary/etc/permissions/privapp-permissions-com.motorola.projectormod.xml:system/etc/permissions/privapp-permissions-com.motorola.projectormod.xml \
-    vendor/motorola/griffin/proprietary/etc/thermal-engine-griffin.conf:system/etc/thermal-engine-griffin.conf \
-    vendor/motorola/griffin/proprietary/etc/thermal-engine-sheridan.conf:system/etc/thermal-engine-sheridan.conf \
-    vendor/motorola/griffin/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
+    vendor/motorola/griffin/proprietary/vendor/etc/thermal-engine-griffin.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-griffin.conf \
+    vendor/motorola/griffin/proprietary/vendor/etc/thermal-engine-sheridan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sheridan.conf \
+    vendor/motorola/griffin/proprietary/vendor/lib/com.motorola.mod@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.mod@1.0.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/vr.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vr.msm8996.so \
-    vendor/motorola/griffin/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \
-    vendor/motorola/griffin/proprietary/lib/libAlAisTune.so:system/lib/libAlAisTune.so \
-    vendor/motorola/griffin/proprietary/lib/libAlAisWrap.so:system/lib/libAlAisWrap.so \
-    vendor/motorola/griffin/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libAlAisLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisLib.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libAlAisTune.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisTune.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libAlAisWrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisWrap.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_fpc_tac_shared.so \
     vendor/motorola/griffin/proprietary/vendor/lib/lib_motsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_motsensorlistener.so \
-    vendor/motorola/griffin/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
-    vendor/motorola/griffin/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
-    vendor/motorola/griffin/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/motorola/griffin/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
-    vendor/motorola/griffin/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
-    vendor/motorola/griffin/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/lib_mottof.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_mottof.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libadvalgcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadvalgcore.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgprocservice.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom_fingerprints_service.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libfamily_photo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfamily_photo.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libiio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiio.so \
-    vendor/motorola/griffin/proprietary/lib/libjscore.so:system/lib/libjscore.so \
-    vendor/motorola/griffin/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
-    vendor/motorola/griffin/proprietary/lib/libmbs.so:system/lib/libmbs.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmbs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmbs.so \
     vendor/motorola/griffin/proprietary/lib/libmodmanager_system.so:system/lib/libmodmanager_system.so \
-    vendor/motorola/griffin/proprietary/lib/libmorpho_image_stabilizer4.so:system/lib/libmorpho_image_stabilizer4.so \
-    vendor/motorola/griffin/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
-    vendor/motorola/griffin/proprietary/lib/libmot_lux_standardization.so:system/lib/libmot_lux_standardization.so \
-    vendor/motorola/griffin/proprietary/lib/libmotimager_utils.so:system/lib/libmotimager_utils.so \
-    vendor/motorola/griffin/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmorpho_image_stabilizer4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_image_stabilizer4.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmotimager_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotimager_utils.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
-    vendor/motorola/griffin/proprietary/lib/motorola.hardware.camera.device@1.0.so:system/lib/motorola.hardware.camera.device@1.0.so \
-    vendor/motorola/griffin/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
-    vendor/motorola/griffin/proprietary/lib/motorola.hardware.mods_camera.provider@2.4.so:system/lib/motorola.hardware.mods_camera.provider@2.4.so \
-    vendor/motorola/griffin/proprietary/lib64/com.motorola.mod@1.0.so:system/lib64/com.motorola.mod@1.0.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/motorola.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.device@1.0.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/motorola.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.provider@2.4.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/motorola.hardware.mods_camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.mods_camera.provider@2.4.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/com.motorola.mod@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.mod@1.0.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/hw/vr.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vr.msm8996.so \
-    vendor/motorola/griffin/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
-    vendor/motorola/griffin/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_fpc_tac_shared.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom_fingerprints_service.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libiio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiio.so \
     vendor/motorola/griffin/proprietary/lib64/libmodhw.so:system/lib64/libmodhw.so \
     vendor/motorola/griffin/proprietary/lib64/libmodmanager_system.so:system/lib64/libmodmanager_system.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
-    vendor/motorola/griffin/proprietary/lib64/motorola.hardware.camera.device@1.0.so:system/lib64/motorola.hardware.camera.device@1.0.so \
-    vendor/motorola/griffin/proprietary/lib64/motorola.hardware.camera.provider@2.4.so:system/lib64/motorola.hardware.camera.provider@2.4.so \
-    vendor/motorola/griffin/proprietary/lib64/motorola.hardware.mods_camera.provider@2.4.so:system/lib64/motorola.hardware.mods_camera.provider@2.4.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/motorola.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.device@1.0.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/motorola.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.provider@2.4.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/motorola.hardware.mods_camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.mods_camera.provider@2.4.so \
     vendor/motorola/griffin/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/griffin/proprietary/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.provider@2.4-service \
     vendor/motorola/griffin/proprietary/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.mods_camera.provider@2.4-service \
@@ -683,6 +675,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_QHD_546_p.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_smd_QHD_546_p.xml \
     vendor/motorola/griffin/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/griffin/proprietary/vendor/lib/libpn548ad_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn548ad_fw.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/full/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/full/libbinder.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/full/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/full/libcutils.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/camera.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8996.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8996.so \
     vendor/motorola/griffin/proprietary/vendor/lib/hw/libcamera_mods_legacy_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libcamera_mods_legacy_hal.so \

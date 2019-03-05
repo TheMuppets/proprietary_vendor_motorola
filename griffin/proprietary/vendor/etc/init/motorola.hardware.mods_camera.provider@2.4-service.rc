@@ -1,7 +1,0 @@
-service mot_modcamera-provider-2-4 /vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service
-    class hal
-    user cameraserver
-    group audio camera input drmrpc
-    ioprio rt 4
-    capabilities SYS_NICE
-    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks

@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-    vendor/motorola/shamu/proprietary/etc/qcril.db:system/etc/qcril.db \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_1.cfg:system/etc/diag/mdm/FIT_V16_1.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg:system/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_3_audio.cfg:system/etc/diag/mdm/FIT_V16_3_audio.cfg \
@@ -84,6 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/motorola/shamu/proprietary/etc/permissions/rcsimssettings.xml:system/etc/permissions/rcsimssettings.xml \
     vendor/motorola/shamu/proprietary/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml \
+    vendor/motorola/shamu/proprietary/etc/ril/qcril.db:system/etc/ril/qcril.db \
     vendor/motorola/shamu/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/motorola/shamu/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/motorola/shamu/proprietary/lib/libadspd-jni.so:system/lib/libadspd-jni.so \

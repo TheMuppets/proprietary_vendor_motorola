@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hannah/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/hannah/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/hannah/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
-    vendor/motorola/hannah/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/motorola/hannah/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/motorola/hannah/proprietary/lib/libimgTuner_jni.so:system/lib/libimgTuner_jni.so \
     vendor/motorola/hannah/proprietary/lib/libimg_utils.so:system/lib/libimg_utils.so \
@@ -1015,6 +1014,4 @@ PRODUCT_PACKAGES += \
     libts_face_beautify_hal \
     QtiTelephonyService \
     datastatusnotification \
-    ims \
-    qcrilmsgtunnel \
     TimeService

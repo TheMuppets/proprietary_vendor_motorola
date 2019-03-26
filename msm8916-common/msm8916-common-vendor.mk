@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/msm8916-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/msm8916-common/proprietary/lib/libmot_sensorlistener.so:system/lib/libmot_sensorlistener.so \
-    vendor/motorola/msm8916-common/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/msm8916-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/motorola/msm8916-common/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
     vendor/motorola/msm8916-common/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
@@ -68,7 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/vendor/framework/imscmd.jar:system/vendor/framework/imscmd.jar \
     vendor/motorola/msm8916-common/proprietary/vendor/framework/rcsimssettings.jar:system/vendor/framework/rcsimssettings.jar \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/libadropbox.so:system/vendor/lib/libadropbox.so \
-    vendor/motorola/msm8916-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/motorola/msm8916-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -206,7 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/motorola/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
+    vendor/motorola/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:system/vendor/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
     vendor/motorola/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \

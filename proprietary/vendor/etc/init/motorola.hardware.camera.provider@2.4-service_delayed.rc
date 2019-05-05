@@ -10,4 +10,3 @@ service motcamera-provider-2-4 /vendor/bin/hw/motorola.hardware.camera.provider@
     capabilities SYS_NICE
     writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
     disabled
-    onrestart restart cameraserver

@@ -1165,5 +1165,4 @@ PRODUCT_PACKAGES += \
     TimeService \
     colorservice \
     QtiTelephonyServicelibrary \
-    qcrilhook \
-    qti-telephony-common
+    qcrilhook

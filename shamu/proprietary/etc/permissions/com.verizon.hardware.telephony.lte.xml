@@ -1,5 +1,0 @@
-<!-- This is the standard set of telephony features for a LTE capable phone. -->
-
-<permissions>
-    <feature name="com.verizon.hardware.telephony.lte"/>
-</permissions>

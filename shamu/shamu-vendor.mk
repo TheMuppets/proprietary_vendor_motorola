@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/shamu/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/motorola/shamu/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
-    vendor/motorola/shamu/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/motorola/shamu/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/shamu/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/shamu/proprietary/bin/qseecomd:system/bin/qseecomd \
@@ -37,8 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
     vendor/motorola/shamu/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/motorola/shamu/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/motorola/shamu/proprietary/bin/usbhub:system/bin/usbhub \
-    vendor/motorola/shamu/proprietary/bin/usbhub_init:system/bin/usbhub_init \
     vendor/motorola/shamu/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
@@ -50,10 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_3_audio.cfg:system/etc/diag/mdm/FIT_V16_3_audio.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/sensors_qxdm.cfg:system/etc/diag/mdm/sensors_qxdm.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/sensors_qxdm.cfg:system/etc/diag/sensors_qxdm.cfg \
-    vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.b00:system/etc/firmware/vpu.b00 \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.b01:system/etc/firmware/vpu.b01 \

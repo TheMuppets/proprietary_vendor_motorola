@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_3_audio.cfg:system/etc/diag/mdm/FIT_V16_3_audio.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/sensors_qxdm.cfg:system/etc/diag/mdm/sensors_qxdm.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/sensors_qxdm.cfg:system/etc/diag/sensors_qxdm.cfg \
+    vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.b00:system/etc/firmware/vpu.b00 \
     vendor/motorola/shamu/proprietary/etc/firmware/vpu.b01:system/etc/firmware/vpu.b01 \

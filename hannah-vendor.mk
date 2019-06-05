@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hannah/proprietary/lib/libqvrcamera_client.so:system/lib/libqvrcamera_client.so \
     vendor/motorola/hannah/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/motorola/hannah/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
-    vendor/motorola/hannah/proprietary/lib/libslpcsystem_jni.so:system/lib/libslpcsystem_jni.so \
     vendor/motorola/hannah/proprietary/lib/motorola.hardware.camera.device@1.0.so:system/lib/motorola.hardware.camera.device@1.0.so \
     vendor/motorola/hannah/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
     vendor/motorola/hannah/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
@@ -60,7 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hannah/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/motorola/hannah/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/motorola/hannah/proprietary/vendor/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.so \
-    vendor/motorola/hannah/proprietary/lib64/libslpcsystem_jni.so:system/lib64/libslpcsystem_jni.so \
     vendor/motorola/hannah/proprietary/lib64/vendor.egistec.hardware.fingerprint@2.0.so:system/lib64/vendor.egistec.hardware.fingerprint@2.0.so \
     vendor/motorola/hannah/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/motorola/hannah/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
@@ -97,7 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hannah/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/hannah/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/motorola/hannah/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/motorola/hannah/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
+    vendor/motorola/hannah/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/motorola/hannah/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/motorola/hannah/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/hannah/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
@@ -175,7 +173,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hannah/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/hannah/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/hannah/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
-    vendor/motorola/hannah/proprietary/vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar \
     vendor/motorola/hannah/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/motorola/hannah/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/motorola/hannah/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \

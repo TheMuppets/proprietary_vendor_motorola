@@ -1,4 +1,4 @@
 service perf-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
     class hal
     user root
-    group system root readproc
+    group root readproc

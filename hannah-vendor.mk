@@ -1245,4 +1245,5 @@ PRODUCT_PACKAGES += \
     colorservice \
     QtiTelephonyServicelibrary \
     WfdCommon \
-    qcrilhook
+    qcrilhook \
+    qti-telephony-common

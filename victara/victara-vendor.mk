@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:system/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
+    vendor/motorola/victara/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
     vendor/motorola/victara/proprietary/lib/libAisAdapter.so:system/lib/libAisAdapter.so \
     vendor/motorola/victara/proprietary/lib/libAlAisLib.so:system/lib/libAlAisLib.so \
     vendor/motorola/victara/proprietary/lib/libAlAisTune.so:system/lib/libAlAisTune.so \

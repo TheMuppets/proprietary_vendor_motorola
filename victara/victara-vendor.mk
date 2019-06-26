@@ -124,7 +124,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so \
     vendor/motorola/victara/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/motorola/victara/proprietary/bin/rild:system/vendor/bin/hw/rild \
+    vendor/motorola/victara/proprietary/vendor/bin/hw/rild:system/vendor/bin/hw/rild \
     vendor/motorola/victara/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:system/vendor/firmware/widevine.b01 \

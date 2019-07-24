@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/motorola/victara/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
     vendor/motorola/victara/proprietary/vendor/bin/qcks:system/vendor/bin/qcks \
-    vendor/motorola/victara/proprietary/vendor/bin/qmi_motext_hook:system/vendor/bin/qmi_motext_hook \
+    vendor/motorola/victara/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/victara/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/motorola/victara/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/motorola/victara/proprietary/vendor/bin/radish:system/vendor/bin/radish \

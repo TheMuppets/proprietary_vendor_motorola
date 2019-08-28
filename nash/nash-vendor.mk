@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
     vendor/motorola/nash/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
     vendor/motorola/nash/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/motorola/nash/proprietary/lib/libwfdtalsa.so:system/lib/libwfdtalsa.so \
     vendor/motorola/nash/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
     vendor/motorola/nash/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
     vendor/motorola/nash/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \

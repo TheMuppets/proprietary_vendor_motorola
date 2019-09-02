@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_624.xml \
     vendor/motorola/lake/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml \
     vendor/motorola/lake/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_n_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_n_1080p_624.xml \
+    vendor/motorola/lake/proprietary/vendor/firmware/aw869x_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw869x_haptic.bin \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -48,6 +49,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-diag.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-diag.wmfw \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-prot.wmfw \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-rcv-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-rcv-cali.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-rcv-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-rcv-prot.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali-na.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali-na.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot-na.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot-na.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/himax-boe-hx83112a-0a05-208-lake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-boe-hx83112a-0a05-208-lake.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/himax-boe-hx83112a-lake.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-boe-hx83112a-lake.csv \
+    vendor/motorola/lake/proprietary/vendor/firmware/himax-tianmah-hx83112a-0500-208-lake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-tianmah-hx83112a-0500-208-lake.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/himax-tianmah-hx83112a-lake.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-tianmah-hx83112a-lake.csv \
+    vendor/motorola/lake/proprietary/vendor/firmware/marley-dsp1-ultrasound.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/marley-dsp1-ultrasound.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.wmfw \
+    vendor/motorola/lake/proprietary/vendor/firmware/marley-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-frontend.wmfw \
+    vendor/motorola/lake/proprietary/vendor/firmware/marley-dsp2-aov-vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-vrgain.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/marley-dsp3-aov-control.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp3-aov-control.wmfw \
+    vendor/motorola/lake/proprietary/vendor/firmware/novatek_ts-tianman-NT36672A-181127-0b-lake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts-tianman-NT36672A-181127-0b-lake.bin \
     vendor/motorola/lake/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/lake/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
     vendor/motorola/lake/proprietary/vendor/lib/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.sdm660.so \

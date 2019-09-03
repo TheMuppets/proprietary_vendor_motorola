@@ -1,0 +1,19 @@
+# Egistec fingerprint feature
+on post-fs-data
+	mkdir /persist/egis 0770 system system
+	chmod 0660 /sys/devices/platform/egis_input/navigation_event
+	chmod 0660 /sys/devices/platform/egis_input/navigation_enable
+	chmod 0660 /sys/devices/soc/0.et320/etspi_enable
+	chown system system /sys/devices/platform/egis_input/navigation_enable
+	chown system system /sys/devices/platform/egis_input/navigation_event
+	chown system system /sys/devices/soc/0.et320/etspi_enable
+# Egistec fingerprint fp daemon start
+# service etsd /system/bin/etsd
+#	user system
+#	group system input
+#	class late_start
+
+on post-fs-data
+# service-ets
+on property:ro.vendor.hw.fps=false
+    stop ets_hal

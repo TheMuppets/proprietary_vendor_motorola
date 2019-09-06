@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter payton evert chef beckham,$(TARGET_DEVICE)),)
+ifneq ($(filter payton evert chef beckham lake,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.hardware.fm@1.0

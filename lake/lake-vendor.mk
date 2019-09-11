@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml \
     vendor/motorola/lake/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_n_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_n_1080p_624.xml \
     vendor/motorola/lake/proprietary/vendor/firmware/aw869x_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw869x_haptic.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/aw869x_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw869x_rtp.bin \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -50,6 +51,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/lake/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx0.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx1.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx2.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx3.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx4.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx5.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx6.bin \
+    vendor/motorola/lake/proprietary/vendor/firmware/crus_sp_rx7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crus_sp_rx7.bin \
     vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-diag.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-diag.wmfw \
     vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-prot.wmfw \
     vendor/motorola/lake/proprietary/vendor/firmware/cs35l41-dsp1-rcv-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-rcv-cali.bin \

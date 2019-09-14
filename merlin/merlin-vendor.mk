@@ -16,13 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Handset_cal.acdb:system/etc/acdbdata/Handset_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
-    vendor/motorola/merlin/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/merlin/proprietary/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:system/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:system/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
@@ -39,6 +32,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/merlin/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
     vendor/motorola/merlin/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:system/vendor/etc/acdbdata/Bluetooth_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/General_cal.acdb:system/vendor/etc/acdbdata/General_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Global_cal.acdb:system/vendor/etc/acdbdata/Global_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:system/vendor/etc/acdbdata/Handset_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:system/vendor/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:system/vendor/etc/acdbdata/Headset_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:system/vendor/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:system/vendor/lib/libactuator_ak7345_camcorder.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:system/vendor/lib/libactuator_ak7345_camera.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:system/vendor/lib/libactuator_ak7345.so \

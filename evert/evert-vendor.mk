@@ -400,7 +400,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/evert/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/motorola/evert/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/motorola/evert/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
-    vendor/motorola/evert/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/motorola/evert/proprietary/vendor/lib/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideobokeh.so \
     vendor/motorola/evert/proprietary/vendor/lib/libzaf_algs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzaf_algs.so \
     vendor/motorola/evert/proprietary/vendor/lib/libzaf_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzaf_core.so \
@@ -431,7 +430,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/evert/proprietary/vendor/lib64/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn553_fw.so \
     vendor/motorola/evert/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/motorola/evert/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
-    vendor/motorola/evert/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/motorola/evert/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/motorola/evert/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so
 

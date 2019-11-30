@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+<!--Copyright (c) 2015-2018 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <AndsfPolicy><Andsf>
@@ -180,7 +180,7 @@
 					<!-- Threshold for PERAM -->
 					<PERAM_THR>1</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
-					<PERAM_CNT_THR>10</PERAM_CNT_THR>
+					<PERAM_CNT_THR>20</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
 					<PERAM_UBCNT_THR>1000</PERAM_UBCNT_THR>
 					<!-- CQE throughput Threshold-->

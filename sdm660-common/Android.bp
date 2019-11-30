@@ -20,176 +20,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.fm@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/vendor.qti.hardware.fm@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/vendor.qti.hardware.fm@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.api@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.api@1.1.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.api@1.1.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.constants@2.1.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.constants@2.1.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.server@2.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.server@2.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.server@2.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.server@2.1.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.server@2.1.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.server@2.2",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.quicinc.cne.server@2.2.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.quicinc.cne.server@2.2.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdsi_netctrl",
 	owner: "motorola",
 	strip: {
@@ -357,15 +187,23 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-android_app_import {
-	name: "CNEService",
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.fm@1.0",
 	owner: "motorola",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
+	strip: {
+		none: true,
 	},
-	privileged: true,
+	target: {
+		android_arm: {
+			srcs: ["proprietary/product/lib/vendor.qti.hardware.fm@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	product_specific: true,
 }
 
 android_app_import {
@@ -380,20 +218,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "CneApp",
 	owner: "motorola",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "QtiTelephonyService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -413,14 +240,37 @@ android_app_import {
 }
 
 android_app_import {
-	name: "datastatusnotification",
+	name: "QtiTelephonyService",
 	owner: "motorola",
-	apk: "proprietary/vendor/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "motorola",
+	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 dex_import {

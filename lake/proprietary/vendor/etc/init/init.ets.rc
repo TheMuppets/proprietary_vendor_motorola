@@ -7,6 +7,9 @@ on post-fs-data
 	chown system system /sys/devices/platform/egis_input/navigation_enable
 	chown system system /sys/devices/platform/egis_input/navigation_event
 	chown system system /sys/devices/soc/0.et320/etspi_enable
+	restorecon /sys/devices/platform/egis_input/navigation_enable
+	restorecon /sys/devices/platform/egis_input/navigation_event
+	restorecon /sys/devices/soc/0.et320/etspi_enable
 # Egistec fingerprint fp daemon start
 # service etsd /system/bin/etsd
 #	user system

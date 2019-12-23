@@ -87,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
     vendor/motorola/sdm632-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
     vendor/motorola/sdm632-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/motorola/sdm632-common/proprietary/lib/libwfdtalsa.so:system/lib/libwfdtalsa.so \
     vendor/motorola/sdm632-common/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
     vendor/motorola/sdm632-common/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
     vendor/motorola/sdm632-common/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \

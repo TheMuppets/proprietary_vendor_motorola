@@ -181,6 +181,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/motorola/nash/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/nash/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/nash/proprietary/vendor/bin/vl53l1_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon \
     vendor/motorola/nash/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
     vendor/motorola/nash/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/motorola/nash/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
@@ -493,6 +494,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/motorola/nash/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/motorola/nash/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
+    vendor/motorola/nash/proprietary/vendor/lib/libmcf-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmcf-qc-fd-offline.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmdmcutback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmcutback.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/motorola/nash/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
@@ -936,6 +938,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
+    vendor/motorola/nash/proprietary/vendor/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvl53l1_daemon.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \

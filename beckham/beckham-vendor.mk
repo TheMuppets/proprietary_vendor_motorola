@@ -58,6 +58,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/beckham/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/beckham/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/beckham/proprietary/vendor/firmware/moon-dsp1-ultrasound.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/moon-dsp1-ultrasound.bin \
+    vendor/motorola/beckham/proprietary/vendor/firmware/moon-dsp1-ultrasound.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/moon-dsp1-ultrasound.wmfw \
+    vendor/motorola/beckham/proprietary/vendor/firmware/moon-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/moon-dsp2-aov-frontend.wmfw \
+    vendor/motorola/beckham/proprietary/vendor/firmware/moon-dsp2-aov-vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/moon-dsp2-aov-vrgain.bin \
+    vendor/motorola/beckham/proprietary/vendor/firmware/moon-dsp3-aov-control.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/moon-dsp3-aov-control.wmfw \
+    vendor/motorola/beckham/proprietary/vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-dvt1a.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-dvt1a.tdat \
+    vendor/motorola/beckham/proprietary/vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-evt.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-evt.tdat \
+    vendor/motorola/beckham/proprietary/vendor/firmware/synaptics-smd-s3706b-18060602-29dc70-beckham.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-smd-s3706b-18060602-29dc70-beckham.tdat \
+    vendor/motorola/beckham/proprietary/vendor/firmware/synaptics-tianma-s3706a-18060801-29dce7-beckham.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-tianma-s3706a-18060801-29dce7-beckham.tdat \
     vendor/motorola/beckham/proprietary/vendor/lib/com.motorola.mod@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.mod@1.0_vendor.so \
     vendor/motorola/beckham/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/beckham/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \

@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/motorola/evert/proprietary/vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-auo-ft5x46-03-0001-evert.bin \
+    vendor/motorola/evert/proprietary/vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-djn-ft5x46-15-0001-evert.bin \
+    vendor/motorola/evert/proprietary/vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-auo-gt9xx-600a-0001-evert.bin \
+    vendor/motorola/evert/proprietary/vendor/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin \
+    vendor/motorola/evert/proprietary/vendor/firmware/marley-dsp1-ultrasound.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.wmfw \
+    vendor/motorola/evert/proprietary/vendor/firmware/marley-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-frontend.wmfw \
+    vendor/motorola/evert/proprietary/vendor/firmware/marley-dsp2-aov-vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-vrgain.bin \
+    vendor/motorola/evert/proprietary/vendor/firmware/marley-dsp3-aov-control.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp3-aov-control.wmfw \
     vendor/motorola/evert/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/evert/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/motorola/evert/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
@@ -429,4 +437,3 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     ims
-

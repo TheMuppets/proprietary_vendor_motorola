@@ -42,6 +42,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotCamera2",
+	owner: "motorola",
+	apk: "proprietary/priv-app/MotCamera2/MotCamera2.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "ProjectorApp",
 	owner: "motorola",
 	apk: "proprietary/priv-app/ProjectorApp/ProjectorApp.apk",

@@ -464,6 +464,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib64/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.iio.so
 
 PRODUCT_PACKAGES += \
+    MotoSignatureApp \
     ModFmwkProxyService \
     ModService \
     MotCamera2 \

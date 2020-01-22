@@ -20,6 +20,16 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/app/MotoSignatureApp/MotoSignatureApp.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "ModFmwkProxyService",
 	owner: "motorola",
 	apk: "proprietary/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk",

@@ -1035,6 +1035,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
+    MotoSignatureApp \
     CNEService \
     ModFmwkProxyService \
     ModService \

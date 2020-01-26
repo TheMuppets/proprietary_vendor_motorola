@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/river/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
+    vendor/motorola/river/proprietary/vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.audio.adspd@1.0-service \
     vendor/motorola/river/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/river/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/river/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -25,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/river/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/river/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
     vendor/motorola/river/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
+    vendor/motorola/river/proprietary/vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.audio.adspd@1.0-service.rc \
     vendor/motorola/river/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_624.xml \
     vendor/motorola/river/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_624.xml \
     vendor/motorola/river/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml \
@@ -98,7 +100,19 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/river/proprietary/vendor/firmware/marley-dsp2-aov-vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-vrgain.bin \
     vendor/motorola/river/proprietary/vendor/firmware/marley-dsp3-aov-control.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp3-aov-control.wmfw \
     vendor/motorola/river/proprietary/vendor/firmware/novatek_ts-tianman-NT36672A-181127-0b-river.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts-tianman-NT36672A-181127-0b-river.bin \
+    vendor/motorola/river/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
+    vendor/motorola/river/proprietary/vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.audio.adspd@1.0-impl.so \
+    vendor/motorola/river/proprietary/vendor/lib/motorola.hardware.audio.adspd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.audio.adspd@1.0.so \
+    vendor/motorola/river/proprietary/vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.audio.adspd@1.0_vendor.so \
     vendor/motorola/river/proprietary/vendor/lib64/libets_fp_et5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_fp_et5.so \
     vendor/motorola/river/proprietary/vendor/lib64/libets_teeclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_teeclient.so \
     vendor/motorola/river/proprietary/vendor/lib64/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn553_fw.so \
-    vendor/motorola/river/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@2.0.so
+    vendor/motorola/river/proprietary/vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.audio.adspd@1.0-impl.so \
+    vendor/motorola/river/proprietary/vendor/lib64/motorola.hardware.audio.adspd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.audio.adspd@1.0.so \
+    vendor/motorola/river/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@2.0.so \
+    vendor/motorola/river/proprietary/vendor/lib64/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libtinyalsa.so
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleCS47L35 \
+    HotwordEnrollmentTGoogleCS47L35 \
+    HotwordEnrollmentXGoogleCS47L35

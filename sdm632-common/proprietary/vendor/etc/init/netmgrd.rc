@@ -15,8 +15,8 @@ on boot
 
     #Assign TCP buffer thresholds to be ceiling value of technology maximums
     #Increased technology maximums should be reflected here.
-    write /proc/sys/net/core/rmem_max  134217728
-    write /proc/sys/net/core/wmem_max  33554432
+    write /proc/sys/net/core/rmem_max  16777216
+    write /proc/sys/net/core/wmem_max  8388608
 
 # msm specific files that need to be created on /data
 on post-fs-data

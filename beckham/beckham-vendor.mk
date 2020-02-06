@@ -444,4 +444,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ModFmwkProxyService \
     ModService \
-    ProjectorApp
+    ProjectorApp \
+    ims

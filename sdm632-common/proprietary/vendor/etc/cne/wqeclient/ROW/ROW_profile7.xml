@@ -84,10 +84,10 @@
 				<CQE_Thresholds Id="128">
                     <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIAddThreshold units="dbm">-85,-85</RSSIAddThreshold>
+					<RSSIAddThreshold units="dbm">-87,-88</RSSIAddThreshold>
 					<!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIDropThreshold units="dbm">-85,-85</RSSIDropThreshold>
+					<RSSIDropThreshold units="dbm">-87,-88</RSSIDropThreshold>
 					<!-- Interval over whcih RSSI values are averaged -->
 					<RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
 					<!-- RSSI threshold below which MAC hysteresis timer is not started -->
@@ -98,7 +98,7 @@
 					<!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
 					<MACHysteresisTimer units="secs">120</MACHysteresisTimer>
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
-					<MACStatsAveragingAlpha>1</MACStatsAveragingAlpha>
+					<MACStatsAveragingAlpha>0.55</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
 					<RMP_THR>1</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->

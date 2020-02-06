@@ -216,7 +216,7 @@
 					<!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
 					<!-- such as retry, multi-retry, fail and  ack fail metric -->
 					<!-- when average RSSI is greater than RSSIModelThreshold -->
-                    <MACMibThreshold2a>1</MACMibThreshold2a>
+                    <MACMibThreshold2a>0.42</MACMibThreshold2a>
 					<!-- The weightage that given to retry metric in computation of CQE -->
 					<!-- when average RSSI is greater than RSSIModelThreshold -->
 					<RetryMetricWeight2a>0.0597</RetryMetricWeight2a>
@@ -226,7 +226,7 @@
 					<!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
 					<!-- such as retry, multi-retry, fail and  ack fail metric -->
 					<!-- when average RSSI is less than or equal to RSSIModelThreshold -->
-					<MACMibThreshold2b>1</MACMibThreshold2b>
+					<MACMibThreshold2b>0.21</MACMibThreshold2b>
 					<!-- The weightage that given to retry metric in computation of CQE -->
 					<!-- when average RSSI is less than or equal to RSSIModelThreshold -->
 					<RetryMetricWeight2b>0.1366</RetryMetricWeight2b>

@@ -43,13 +43,13 @@
     <Config1>
 
          <TargetInfo
-             Target="msm8953"
+             Target="sdm660"
              NumClusters="2"
              TotalNumCores="8"
-             SocIds="293,304"
+             SocIds="317,324,345,346"
              SynCore="1"
-             MinCoreOnline="0"
-             GovInstanceType="1" />
+             CoreCtlCpu="4"
+             MinCoreOnline="0" />
 
          <ClustersInfo Id="0" NumCores="4" Type="little" />
          <ClustersInfo Id="1" NumCores="4" Type="big" />
@@ -59,31 +59,45 @@
     <Config2>
 
          <TargetInfo
-             Target="sdm450"
+             Target="sdm630"
              NumClusters="2"
              TotalNumCores="8"
-             SocIds="338,351"
+             SocIds="318,327"
              SynCore="1"
-             MinCoreOnline="0"
-             GovInstanceType="1" />
+             MinCoreOnline="0" />
 
-         <ClustersInfo Id="0" NumCores="4" Type="little" />
-         <ClustersInfo Id="1" NumCores="4" Type="big" />
+         <ClustersInfo Id="0" NumCores="4" Type="big" />
+         <ClustersInfo Id="1" NumCores="4" Type="little" />
 
     </Config2>
+
     <Config3>
-
          <TargetInfo
-             Target="sdm632"
+             Target="sdm658"
              NumClusters="2"
-             TotalNumCores="8"
-             SocIds="349,350"
+             TotalNumCores="6"
+             SocIds="325,326"
              SynCore="1"
-             MinCoreOnline="0"
-             GovInstanceType="1" />
+             CoreCtlCpu="4"
+             MinCoreOnline="0" />
 
-         <ClustersInfo Id="0" NumCores="4" Type="little" />
+         <ClustersInfo Id="0" NumCores="2" Type="little" />
          <ClustersInfo Id="1" NumCores="4" Type="big" />
 
     </Config3>
+
+    <Config4>
+         <TargetInfo
+             Target="sdm455"
+             NumClusters="2"
+             TotalNumCores="8"
+             SocIds="385"
+             SynCore="1"
+             MinCoreOnline="0" />
+
+         <ClustersInfo Id="0" NumCores="4" Type="big" />
+         <ClustersInfo Id="1" NumCores="4" Type="little" />
+
+    </Config4>
+
 </TargetConfig>

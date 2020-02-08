@@ -13,27 +13,27 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/beckham/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/beckham/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/beckham/proprietary/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.aov.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.aov.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.mod.protocols.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.protocols.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.mod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.mod_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_config.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.mod_v2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_v2.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/privapp-permissions-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.modservice.xml \
-    vendor/motorola/beckham/proprietary/etc/permissions/privapp-permissions-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.projectormod.xml \
-    vendor/motorola/beckham/proprietary/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml \
-    vendor/motorola/beckham/proprietary/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml \
+    vendor/motorola/beckham/proprietary/system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.aov.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.aov.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.mod.protocols.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.protocols.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.mod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.mod_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_config.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.mod_v2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_v2.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/privapp-permissions-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.modservice.xml \
+    vendor/motorola/beckham/proprietary/system/etc/permissions/privapp-permissions-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.projectormod.xml \
+    vendor/motorola/beckham/proprietary/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml \
+    vendor/motorola/beckham/proprietary/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml \
     vendor/motorola/beckham/proprietary/vendor/etc/zaf/zaf_imx386.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386.json \
     vendor/motorola/beckham/proprietary/vendor/etc/zaf/zaf_imx386_mono.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386_mono.json \
     vendor/motorola/beckham/proprietary/vendor/etc/zaf/zaf_mot_s5k2l7sa.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_mot_s5k2l7sa.json \
-    vendor/motorola/beckham/proprietary/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.motorola.motosignature.jar \
-    vendor/motorola/beckham/proprietary/lib/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmodmanager_system.so \
-    vendor/motorola/beckham/proprietary/lib64/libmodhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodhw.so \
-    vendor/motorola/beckham/proprietary/lib64/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodmanager_system.so \
-    vendor/motorola/beckham/proprietary/lib64/libvibratorhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvibratorhw.so \
-    vendor/motorola/beckham/proprietary/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/motorola.hardware.vibrator@1.0.so \
+    vendor/motorola/beckham/proprietary/system/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.motorola.motosignature.jar \
+    vendor/motorola/beckham/proprietary/system/lib/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmodmanager_system.so \
+    vendor/motorola/beckham/proprietary/system/lib64/libmodhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodhw.so \
+    vendor/motorola/beckham/proprietary/system/lib64/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodmanager_system.so \
+    vendor/motorola/beckham/proprietary/system/lib64/libvibratorhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvibratorhw.so \
+    vendor/motorola/beckham/proprietary/system/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \

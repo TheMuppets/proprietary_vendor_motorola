@@ -6,9 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/hannah-common
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/hannah-common/proprietary/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdualcameraddm.so \
-    vendor/motorola/hannah-common/proprietary/lib/libjni_dualcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_dualcamera.so \
-    vendor/motorola/hannah-common/proprietary/lib/libqvrcamera_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvrcamera_client.so \
+    vendor/motorola/hannah-common/proprietary/system/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdualcameraddm.so \
+    vendor/motorola/hannah-common/proprietary/system/lib/libjni_dualcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_dualcamera.so \
+    vendor/motorola/hannah-common/proprietary/system/lib/libqvrcamera_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvrcamera_client.so \
     vendor/motorola/hannah-common/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/hannah-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/hannah-common/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \

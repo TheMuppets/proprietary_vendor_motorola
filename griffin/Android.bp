@@ -253,16 +253,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MotCameraMod",
-	owner: "motorola",
-	apk: "proprietary/app/MotCameraMod/MotCameraMod.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "DMService",
 	owner: "motorola",
 	apk: "proprietary/priv-app/DMService/DMService.apk",

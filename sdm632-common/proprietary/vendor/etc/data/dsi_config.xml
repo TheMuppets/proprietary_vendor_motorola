@@ -1059,7 +1059,7 @@
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
      <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
 
-     <data name="num_dsi_handles" type="int"> 11 </data>
+     <data name="num_dsi_handles" type="int"> 17 </data>
      <list name="device_names">
        <data type="string"> rmnet_data0 </data>
        <data type="string"> rmnet_data1 </data>
@@ -1072,6 +1072,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
 
      <list name="control_port_names">
@@ -1086,6 +1092,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
    </listitem>
 
@@ -1099,7 +1111,7 @@
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
      <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
 
-     <data name="num_dsi_handles" type="int"> 11 </data>
+     <data name="num_dsi_handles" type="int"> 17 </data>
      <list name="device_names">
        <data type="string"> rmnet_data0 </data>
        <data type="string"> rmnet_data1 </data>
@@ -1112,6 +1124,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
 
      <list name="control_port_names">
@@ -1126,6 +1144,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
    </listitem>
 
@@ -1139,7 +1163,7 @@
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
      <data name="single_qmux_channel_name" type="string"> rmnet0 </data>
 
-     <data name="num_dsi_handles" type="int"> 11 </data>
+     <data name="num_dsi_handles" type="int"> 17 </data>
      <list name="device_names">
        <data type="string"> rmnet_data0 </data>
        <data type="string"> rmnet_data1 </data>
@@ -1152,6 +1176,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
 
      <list name="control_port_names">
@@ -1166,6 +1196,12 @@
        <data type="string"> rmnet_data8 </data>
        <data type="string"> rmnet_data9 </data>
        <data type="string"> rmnet_data10 </data>
+       <data type="string"> rmnet_data11 </data>
+       <data type="string"> rmnet_data12 </data>
+       <data type="string"> rmnet_data13 </data>
+       <data type="string"> rmnet_data14 </data>
+       <data type="string"> rmnet_data15 </data>
+       <data type="string"> rmnet_data16 </data>
      </list>
    </listitem>
 </list>

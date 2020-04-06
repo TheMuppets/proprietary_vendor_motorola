@@ -32,7 +32,6 @@ property Name is called. -->
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
 
                 <!--Vendor Properties -->
-                <Prop Name="vendor.iop.enable_iop" Value="0" />
                 <Prop Name="vendor.iop.enable_uxe" Value="0" />
                 <Prop Name="vendor.perf.iop_v3.enable" Value="0" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="0" />

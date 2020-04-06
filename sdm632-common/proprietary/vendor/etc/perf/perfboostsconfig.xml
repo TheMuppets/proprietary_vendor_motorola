@@ -91,6 +91,28 @@
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm632"
             Resources="0x40800100, 0x40C, 0x40800000, 0x446,0x40C00000, 0x2"  />
 
+    <!--MTP boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+
+        <!-- Type="", MTP boost -->
+
+        <Config
+            Id="0x00001086" Enable="true"
+            Resources="0x40C00000, 0x1, 0x40804100, 0xFFF, 0x40800100, 1400, 0x42C10000, 0x1" />
+
+    <!--PackageInstall boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- Type="", Package Install boost -->
+
+        <Config
+            Id="0x00001088" Enable="true"
+            Resources="0x40C00000, 0x1, 0x40804100, 0xFFF, 0x40800100, 0xFFF" />
+
     <!--Rotation latency boost-->
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->

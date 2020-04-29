@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     vendor/motorola/shamu/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/motorola/shamu/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/motorola/shamu/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
     vendor/motorola/shamu/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/motorola/shamu/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
     vendor/motorola/shamu/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \

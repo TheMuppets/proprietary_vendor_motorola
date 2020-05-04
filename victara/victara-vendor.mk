@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/motorola/victara/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/motorola/victara/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/victara/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
     vendor/motorola/victara/proprietary/lib/hw/camera.vendor.msm8974.so:system/lib/hw/camera.vendor.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:system/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:system/lib/hw/sensors.msm8974.so \
@@ -99,7 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libAlAisWrap.so:system/lib/libAlAisWrap.so \
     vendor/motorola/victara/proprietary/vendor/lib/libadropbox.so:system/vendor/lib/libadropbox.so \
     vendor/motorola/victara/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
-    vendor/motorola/victara/proprietary/lib/libbson.so:system/lib/libbson.so \
     vendor/motorola/victara/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
     vendor/motorola/victara/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
     vendor/motorola/victara/proprietary/lib/libchromatix_ar0543_common.so:system/lib/libchromatix_ar0543_common.so \

@@ -1,1 +1,1 @@
---filemsm=/system/etc/diag_mdlog/Connection_Issues_V10.cfg --output=/data/diag_mdlog/logs --optimized --size=50 --number=19
+--filemsm=/system/etc/diag_mdlog/Connection_Issues_V11.cfg --output=/data/diag_mdlog/logs --optimized --size=50 --number=19

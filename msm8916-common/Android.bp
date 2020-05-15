@@ -77,16 +77,6 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "TimeService",
-	owner: "motorola",
-	apk: "proprietary/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
 dex_import {
 	name: "imscmlibrary",
 	owner: "motorola",

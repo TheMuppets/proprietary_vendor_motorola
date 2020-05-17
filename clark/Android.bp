@@ -224,14 +224,3 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "ims",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-

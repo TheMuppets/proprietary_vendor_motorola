@@ -86,6 +86,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "ims",
+	owner: "motorola",
+	apk: "proprietary/app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+       },
+}
+
+android_app_import {
 	name: "AppDirectedSMSProxy",
 	owner: "motorola",
 	apk: "proprietary/priv-app/AppDirectedSMSProxy/AppDirectedSMSProxy.apk",

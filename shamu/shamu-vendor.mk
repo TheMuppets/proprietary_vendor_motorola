@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     VZWAPNLib \
     atfwd \
+    ims \
     AppDirectedSMSProxy \
     BuaContactAdapter \
     CNEService \

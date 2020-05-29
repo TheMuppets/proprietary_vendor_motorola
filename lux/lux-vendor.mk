@@ -19,40 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/lux
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/lux/proprietary/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_SYSTEM)/bin/mm-qcamera-daemon \
-    vendor/motorola/lux/proprietary/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.music.config:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.music.config \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.music.eq:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.music.eq \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.ringtone.config:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.ringtone.config \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.ringtone.eq:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.ringtone.eq \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.speaker:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.speaker \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.voice.config:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.voice.config \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890.voice.eq:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.voice.eq \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890_music_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_music_table.preset \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890_n1b12.patch:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_n1b12.patch \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_n1c2.patch \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_ringtone_table.preset \
-    vendor/motorola/lux/proprietary/etc/firmware/left.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_voice_table.preset \
-    vendor/motorola/lux/proprietary/etc/firmware/synaptics-lgd-s332u-15102102-1fb0fc-lux.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-lgd-s332u-15102102-1fb0fc-lux.tdat \
-    vendor/motorola/lux/proprietary/etc/firmware/synaptics-s3346b-15011402-1b5aff-lux.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-s3346b-15011402-1b5aff-lux.tdat \
-    vendor/motorola/lux/proprietary/etc/firmware/synaptics-tdi-s3346lt-15063001-1debdd-lux.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-tdi-s3346lt-15063001-1debdd-lux.tdat \
-    vendor/motorola/lux/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/lux/proprietary/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/lux/proprietary/lib/libAisAdapter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAisAdapter.so \
-    vendor/motorola/lux/proprietary/lib/libAlAisLib.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAlAisLib.so \
-    vendor/motorola/lux/proprietary/lib/libAlAisTune.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAlAisTune.so \
-    vendor/motorola/lux/proprietary/lib/libAlAisWrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAlAisWrap.so \
-    vendor/motorola/lux/proprietary/lib/libadvalgcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadvalgcore.so \
-    vendor/motorola/lux/proprietary/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamerabgprocservice.so \
-    vendor/motorola/lux/proprietary/lib/libjscore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjscore.so \
-    vendor/motorola/lux/proprietary/lib/libjustshoot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjustshoot.so \
-    vendor/motorola/lux/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-qcamera.so \
-    vendor/motorola/lux/proprietary/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_interface.so \
-    vendor/motorola/lux/proprietary/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_lux_standardization.so \
-    vendor/motorola/lux/proprietary/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmjpeg_interface.so \
-    vendor/motorola/lux/proprietary/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmot-qc-fd-offline.so \
-    vendor/motorola/lux/proprietary/lib/libmotocalibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmotocalibration.so \
-    vendor/motorola/lux/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
+    vendor/motorola/lux/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -60,6 +27,39 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/lux/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/motorola/lux/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.music.config:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.music.config \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.music.eq:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.music.eq \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.ringtone.config:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.ringtone.config \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.ringtone.eq:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.ringtone.eq \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.speaker:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.speaker \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.voice.config:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.voice.config \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890.voice.eq:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.voice.eq \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890_music_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_music_table.preset \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890_n1b12.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_n1b12.patch \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_n1c2.patch \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_ringtone_table.preset \
+    vendor/motorola/lux/proprietary/vendor/firmware/left.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_voice_table.preset \
+    vendor/motorola/lux/proprietary/vendor/firmware/synaptics-lgd-s332u-15102102-1fb0fc-lux.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-lgd-s332u-15102102-1fb0fc-lux.tdat \
+    vendor/motorola/lux/proprietary/vendor/firmware/synaptics-s3346b-15011402-1b5aff-lux.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-s3346b-15011402-1b5aff-lux.tdat \
+    vendor/motorola/lux/proprietary/vendor/firmware/synaptics-tdi-s3346lt-15063001-1debdd-lux.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-tdi-s3346lt-15063001-1debdd-lux.tdat \
+    vendor/motorola/lux/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/motorola/lux/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8916.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libAisAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAisAdapter.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libAlAisLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisLib.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libAlAisTune.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisTune.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libAlAisWrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisWrap.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libadvalgcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadvalgcore.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgprocservice.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lux_standardization.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
+    vendor/motorola/lux/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/motorola/lux/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
     vendor/motorola/lux/proprietary/vendor/lib/libactuator_lc898212xd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd.so \
     vendor/motorola/lux/proprietary/vendor/lib/libactuator_lc898212xd_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898212xd_camcorder.so \

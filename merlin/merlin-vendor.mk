@@ -18,23 +18,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/merlin
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/merlin/proprietary/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_SYSTEM)/bin/mm-qcamera-daemon \
-    vendor/motorola/merlin/proprietary/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
-    vendor/motorola/merlin/proprietary/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
-    vendor/motorola/merlin/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/merlin/proprietary/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/merlin/proprietary/lib/libadvalgcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadvalgcore.so \
-    vendor/motorola/merlin/proprietary/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamerabgproc-jni.so \
-    vendor/motorola/merlin/proprietary/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamerabgprocservice.so \
-    vendor/motorola/merlin/proprietary/lib/libjscore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjscore.so \
-    vendor/motorola/merlin/proprietary/lib/libjustshoot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjustshoot.so \
-    vendor/motorola/merlin/proprietary/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_interface.so \
-    vendor/motorola/merlin/proprietary/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_lux_standardization.so \
-    vendor/motorola/merlin/proprietary/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmjpeg_interface.so \
-    vendor/motorola/merlin/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-qcamera.so \
-    vendor/motorola/merlin/proprietary/lib/libmotocalibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmotocalibration.so \
-    vendor/motorola/merlin/proprietary/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmot-qc-fd-offline.so \
-    vendor/motorola/merlin/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
+    vendor/motorola/merlin/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -42,6 +26,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/merlin/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
+    vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
+    vendor/motorola/merlin/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/motorola/merlin/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8916.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libadvalgcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadvalgcore.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgproc-jni.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgprocservice.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lux_standardization.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \

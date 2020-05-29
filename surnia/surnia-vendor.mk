@@ -18,17 +18,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/surnia
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/surnia/proprietary/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_SYSTEM)bin/mm-qcamera-daemon \
-    vendor/motorola/surnia/proprietary//etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat \
-    vendor/motorola/surnia/proprietary//etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat \
-    vendor/motorola/surnia/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/surnia/proprietary/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/surnia/proprietary/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_SYSTEM)lib/libmmcamera_interface.so \
-    vendor/motorola/surnia/proprietary/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_SYSTEM)lib/libmmcamera_lux_standardization.so \
-    vendor/motorola/surnia/proprietary/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_SYSTEM)lib/libmmjpeg_interface.so \
-    vendor/motorola/surnia/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)lib/libmm-qcamera.so \
-    vendor/motorola/surnia/proprietary/lib/libmotocalibration.so:$(TARGET_COPY_OUT_SYSTEM)lib/libmotocalibration.so \
-    vendor/motorola/surnia/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)lib/libqomx_core.so \
+    vendor/motorola/surnia/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -36,6 +26,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/surnia/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/motorola/surnia/proprietary/vendor/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat \
+    vendor/motorola/surnia/proprietary/vendor/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat \
+    vendor/motorola/surnia/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/motorola/surnia/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8916.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lux_standardization.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64245gwz_camcorder.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64245gwz_camera.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64245gwz.so \

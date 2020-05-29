@@ -37,17 +37,18 @@ cc_prebuilt_library_shared {
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "motorola",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	soc_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "motorola",
-	apk: "proprietary/priv-app/ims/ims.apk",
+	apk: "proprietary/system/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -69,7 +70,7 @@ android_app_import {
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "motorola",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -101,12 +102,14 @@ dex_import {
 dex_import {
 	name: "qcrilhook",
 	owner: "motorola",
-	jars: ["proprietary/framework/qcrilhook.jar"],
+	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
+	soc_specific: true,
 }
 
 dex_import {
 	name: "qcnvitems",
 	owner: "motorola",
-	jars: ["proprietary/framework/qcnvitems.jar"],
+	jars: ["proprietary/vendor/framework/qcnvitems.jar"],
+	soc_specific: true,
 }
 

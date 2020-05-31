@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcrilhook.jar \
     vendor/motorola/clark/proprietary/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qti-telephony-common.jar \
     vendor/motorola/clark/proprietary/lib/hw/audio.motvr.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/audio.motvr.default.so \
-    vendor/motorola/clark/proprietary/lib/hw/camera.vendor.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8992.so \
     vendor/motorola/clark/proprietary/lib/hw/sensors.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.msm8992.so \
     vendor/motorola/clark/proprietary/lib/libAisAdapter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAisAdapter.so \
     vendor/motorola/clark/proprietary/lib/libAlAisLib.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAlAisLib.so \
@@ -165,8 +164,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/lib/libjustshoot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjustshoot.so \
     vendor/motorola/clark/proprietary/lib/libmbs.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmbs.so \
     vendor/motorola/clark/proprietary/lib/libmdmcutback.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdmcutback.so \
-    vendor/motorola/clark/proprietary/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_interface.so \
-    vendor/motorola/clark/proprietary/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmjpeg_interface.so \
     vendor/motorola/clark/proprietary/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmot-qc-fd-offline.so \
     vendor/motorola/clark/proprietary/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmot_lux_standardization.so \
     vendor/motorola/clark/proprietary/lib/libmot_sensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmot_sensorlistener.so \
@@ -174,7 +171,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/lib/libmotext_inf.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmotext_inf.so \
     vendor/motorola/clark/proprietary/lib/libqcomfm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqcomfm_jni.so \
     vendor/motorola/clark/proprietary/lib/libqmimotext.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmimotext.so \
-    vendor/motorola/clark/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
     vendor/motorola/clark/proprietary/lib/libunshorten.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libunshorten.so \
     vendor/motorola/clark/proprietary/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/clark/proprietary/lib64/hw/sensorhub.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensorhub.msm8992.so \

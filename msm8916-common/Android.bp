@@ -19,21 +19,6 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libHevcSwDecoder",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libHevcSwDecoder.so"],
-		},
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "motorola",
@@ -76,13 +61,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-dex_import {
-	name: "imscmlibrary",
-	owner: "motorola",
-	jars: ["proprietary/vendor/framework/imscmlibrary.jar"],
-	soc_specific: true,
 }
 
 dex_import {

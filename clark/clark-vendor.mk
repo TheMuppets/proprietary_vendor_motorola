@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/motorola/clark/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
     vendor/motorola/clark/proprietary/vendor/lib/libTimeService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTimeService.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libWVStreamControlAPI_L1.so \
     vendor/motorola/clark/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/motorola/clark/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/motorola/clark/proprietary/vendor/lib/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbmapper.so \
@@ -418,7 +417,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/motorola/clark/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/motorola/clark/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libwvdrm_L1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvdrm_L1.so \
     vendor/motorola/clark/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/motorola/clark/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/motorola/clark/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fastrpc_shell_0 \

@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/motorola/victara/proprietary/bin/stm401:$(TARGET_COPY_OUT_SYSTEM)/bin/stm401 \
     vendor/motorola/victara/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/motorola/victara/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/VRGain.bin \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pfp.fw \

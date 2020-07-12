@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 #
 # Copyright (c) 2013-2016, Motorola LLC  All rights reserved.
 #

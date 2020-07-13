@@ -22,29 +22,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/motorola/clark/proprietary/vendor/bin/adspd:$(TARGET_COPY_OUT_VENDOR)/bin/adspd \
     vendor/motorola/clark/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/motorola/clark/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
     vendor/motorola/clark/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/motorola/clark/proprietary/vendor/bin/dbvc_atvc_property_set:$(TARGET_COPY_OUT_VENDOR)/bin/dbvc_atvc_property_set \
     vendor/motorola/clark/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
     vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog-getlogs:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-getlogs \
-    vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog-wrap:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-wrap \
-    vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
     vendor/motorola/clark/proprietary/vendor/bin/diag_qshrink4_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/diag_qshrink4_daemon \
     vendor/motorola/clark/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
-    vendor/motorola/clark/proprietary/vendor/bin/hardware_revisions.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hardware_revisions.sh \
     vendor/motorola/clark/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
     vendor/motorola/clark/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/motorola/clark/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/motorola/clark/proprietary/vendor/bin/mm-pp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-daemon \
     vendor/motorola/clark/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
-    vendor/motorola/clark/proprietary/vendor/bin/motosh:$(TARGET_COPY_OUT_VENDOR)/bin/motosh \
     vendor/motorola/clark/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
-    vendor/motorola/clark/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/motorola/clark/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/motorola/clark/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/motorola/clark/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/motorola/clark/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
-    vendor/motorola/clark/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/motorola/clark/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/clark/proprietary/vendor/bin/rfs_access:$(TARGET_COPY_OUT_VENDOR)/bin/rfs_access \
     vendor/motorola/clark/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
@@ -73,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/Vzw_Connection_Issues_V2.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/Vzw_Connection_Issues_V2.cfg \
     vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/WLAN_V1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/WLAN_V1.cfg \
     vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.cfg \
-    vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/default.opts:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.opts \
     vendor/motorola/clark/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM20795A2_001.003.025.0005.0048_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/clark/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
     vendor/motorola/clark/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
@@ -126,7 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/firmware/right.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/right.tfa9890_n1c2.patch \
     vendor/motorola/clark/proprietary/vendor/firmware/right.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/right.tfa9890_ringtone_table.preset \
     vendor/motorola/clark/proprietary/vendor/firmware/right.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/right.tfa9890_voice_table.preset \
-    vendor/motorola/clark/proprietary/vendor/firmware/sensorhubfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubfw.bin \
+    vendor/motorola/clark/proprietary/vendor/etc/firmware/sensorhubfw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/sensorhubfw.bin \
     vendor/motorola/clark/proprietary/vendor/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat \
     vendor/motorola/clark/proprietary/vendor/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat \
     vendor/motorola/clark/proprietary/vendor/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat \
@@ -137,7 +129,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/firmware/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b04 \
     vendor/motorola/clark/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
     vendor/motorola/clark/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
-    vendor/motorola/clark/proprietary/vendor/firmware/vrgain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vrgain.bin \
+    vendor/motorola/clark/proprietary/etc/firmware/vrgain.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/vrgain.bin \
     vendor/motorola/clark/proprietary/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.camera.xml \
     vendor/motorola/clark/proprietary/etc/permissions/com.motorola.gallery.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.gallery.xml \
@@ -145,12 +137,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/motorola/clark/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
-    vendor/motorola/clark/proprietary/vendor/etc/user_bhd_psy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/user_bhd_psy.conf \
+    vendor/motorola/clark/proprietary/vendor/etc/user_dbg_bhd_psy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/user_dbg_bhd_psy.conf \
     vendor/motorola/clark/proprietary/framework/org.simalliance.openmobileapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/org.simalliance.openmobileapi.jar \
     vendor/motorola/clark/proprietary/framework/qcnvitems.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcnvitems.jar \
     vendor/motorola/clark/proprietary/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcrilhook.jar \
     vendor/motorola/clark/proprietary/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qti-telephony-common.jar \
-    vendor/motorola/clark/proprietary/vendor/lib/hw/audio.motvr.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.motvr.default.so \
     vendor/motorola/clark/proprietary/vendor/lib/hw/sensors.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.msm8992.so \
     vendor/motorola/clark/proprietary/vendor/lib/libAisAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAisAdapter.so \
     vendor/motorola/clark/proprietary/vendor/lib/libAlAisLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlAisLib.so \
@@ -169,24 +160,29 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
     vendor/motorola/clark/proprietary/vendor/lib/libmot_sensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_sensorlistener.so \
     vendor/motorola/clark/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
     vendor/motorola/clark/proprietary/vendor/lib/libqcomfm_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcomfm_jni.so \
     vendor/motorola/clark/proprietary/vendor/lib/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmimotext.so \
     vendor/motorola/clark/proprietary/vendor/lib/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunshorten.so \
-    vendor/motorola/clark/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/clark/proprietary/vendor/lib64/hw/sensorhub.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensorhub.msm8992.so \
     vendor/motorola/clark/proprietary/vendor/lib64/hw/sensors.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.msm8992.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libadropbox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadropbox.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadspd.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libmdmcutback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmcutback.so \
-    vendor/motorola/clark/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libqcomfm_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcomfm_jni.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmimotext.so \
     vendor/motorola/clark/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
+    vendor/motorola/clark/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
     vendor/motorola/clark/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog-wrap:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-wrap \
+    vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
     vendor/motorola/clark/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
+    vendor/motorola/clark/proprietary/vendor/bin/hardware_revisions.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hardware_revisions.sh \
+    vendor/motorola/clark/proprietary/vendor/bin/motosh:$(TARGET_COPY_OUT_VENDOR)/bin/motosh \
+    vendor/motorola/clark/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/motorola/clark/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
+    vendor/motorola/clark/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/motorola/clark/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/default.opts:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.opts \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile0.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile1.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile2.conf \
@@ -200,6 +196,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/motorola/clark/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/clark/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
+    vendor/motorola/clark/proprietary/vendor/lib/hw/audio.motvr.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.motvr.default.so \
     vendor/motorola/clark/proprietary/vendor/lib/hw/keystore.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8992.so \
     vendor/motorola/clark/proprietary/vendor/lib/lib-rcsjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rcsjni.so \
     vendor/motorola/clark/proprietary/vendor/lib/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-sec-disp.so \
@@ -373,6 +370,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/motorola/clark/proprietary/vendor/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder.so \
     vendor/motorola/clark/proprietary/vendor/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder.so \
+    vendor/motorola/clark/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotext_inf.so \
     vendor/motorola/clark/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
     vendor/motorola/clark/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
     vendor/motorola/clark/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
@@ -424,6 +422,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/motorola/clark/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/motorola/clark/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/motorola/clark/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/clark/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/motorola/clark/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/motorola/clark/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
@@ -499,6 +498,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib64/libmm-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-qdcm.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libmmcamera2_sensor_debug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_sensor_debug.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so \
+    vendor/motorola/clark/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotocalibration.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \

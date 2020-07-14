@@ -22,13 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/motorola/clark/proprietary/vendor/bin/adspd:$(TARGET_COPY_OUT_VENDOR)/bin/adspd \
     vendor/motorola/clark/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/motorola/clark/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/motorola/clark/proprietary/vendor/bin/dbvc_atvc_property_set:$(TARGET_COPY_OUT_VENDOR)/bin/dbvc_atvc_property_set \
     vendor/motorola/clark/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
     vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog-getlogs:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-getlogs \
     vendor/motorola/clark/proprietary/vendor/bin/diag_qshrink4_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/diag_qshrink4_daemon \
     vendor/motorola/clark/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
-    vendor/motorola/clark/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
     vendor/motorola/clark/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/motorola/clark/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/motorola/clark/proprietary/vendor/bin/mm-pp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-daemon \
@@ -222,7 +220,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/motorola/clark/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/motorola/clark/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
-    vendor/motorola/clark/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/motorola/clark/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
     vendor/motorola/clark/proprietary/vendor/lib/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a4xx.so \
     vendor/motorola/clark/proprietary/vendor/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgproc-jni.so \
@@ -461,7 +458,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
-    vendor/motorola/clark/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a3xx.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a4xx.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerabgproc-jni.so \

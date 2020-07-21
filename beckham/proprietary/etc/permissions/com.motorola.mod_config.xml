@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <allow-in-power-save package="com.motorola.modservice.fmwkwrapper" />
+    <allow-in-power-save package="com.motorola.modservice" />
+</config>

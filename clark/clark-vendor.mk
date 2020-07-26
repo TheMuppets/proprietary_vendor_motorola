@@ -133,6 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/motorola/clark/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml \
+    vendor/motorola/clark/proprietary/vendor/etc/thermal-engine-clark.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-clark.conf \
     vendor/motorola/clark/proprietary/vendor/etc/user_dbg_bhd_psy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/user_dbg_bhd_psy.conf \
     vendor/motorola/clark/proprietary/framework/org.simalliance.openmobileapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/org.simalliance.openmobileapi.jar \
     vendor/motorola/clark/proprietary/framework/qcnvitems.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcnvitems.jar \
@@ -178,6 +179,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
     vendor/motorola/clark/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/motorola/clark/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/clark/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/clark/proprietary/vendor/etc/diag_mdlog/default.opts:$(TARGET_COPY_OUT_VENDOR)/etc/diag_mdlog/default.opts \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile0.conf \
     vendor/motorola/clark/proprietary/vendor/etc/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile1.conf \
@@ -534,6 +536,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
+    vendor/motorola/clark/proprietary/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/motorola/clark/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \

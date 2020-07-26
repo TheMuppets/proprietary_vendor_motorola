@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
     vendor/motorola/clark/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
     vendor/motorola/clark/proprietary/etc/firmware/vrgain.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/vrgain.bin \
+    vendor/motorola/clark/proprietary//vendor/etc/perfd-preset-values:$(TARGET_COPY_OUT_SYSTEM)//vendor/etc/perfd-preset-values \
     vendor/motorola/clark/proprietary/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.omadm.service.xml \
     vendor/motorola/clark/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/motorola/clark/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml \

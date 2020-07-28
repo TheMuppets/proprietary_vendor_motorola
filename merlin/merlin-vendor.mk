@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,59 +30,50 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/merlin/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8916.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/hw/camera.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8916.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libadvalgcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadvalgcore.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgproc-jni.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libcamerabgprocservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgprocservice.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lux_standardization.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_default_video.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_120fps.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_60fps.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_90fps.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_liveshot.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_common_hdr.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_common.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_default_video.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_hfr_120fps.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_hfr_60fps.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_liveshot.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_preview_night.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_preview.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_snapshot_night.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_preview_night.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_snapshot.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_snapshot_night.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_new_ircf_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_new_ircf_video_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_preview.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_snapshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_snapshot.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_snapshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_video_hdr.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_common.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_common_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_common_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_default_video.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_hfr_120.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_hfr_60.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_hfr_90.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_liveshot.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_preview_night.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_liveshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_liveshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_preview.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_preview_night.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_snapshot.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_snapshot_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_snapshot_night.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_snapshot.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k3m2_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_video_hdr.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_common.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_default_video.so \
@@ -95,22 +87,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_default_video.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_hfr_60fps.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_liveshot.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_preview_night.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_preview.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_snapshot_night.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_preview_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_preview_night.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_snapshot.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_front_KT_snapshot_night.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_front_KT_snapshot_night.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_hfr_60fps.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_liveshot.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_preview.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libchromatix_s5k5e2_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e2_snapshot.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libjscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjscore.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libjustshoot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjustshoot.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
-    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_is.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
@@ -122,6 +117,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_hdr_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_lib.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_imx214.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx214.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lux_standardization.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_s5k3m2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3m2.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_s5k5e2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e2.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
@@ -129,7 +126,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_vstab_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vstab_module.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_wavelet_lib.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmot-qc-fd-offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot-qc-fd-offline.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libmotocalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotocalibration.so \
     vendor/motorola/merlin/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so

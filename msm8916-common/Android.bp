@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,17 +20,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "ims",
 	owner: "motorola",
 	apk: "proprietary/system/priv-app/ims/ims.apk",
@@ -39,17 +28,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
 }
 
 android_app_import {
@@ -63,10 +41,32 @@ android_app_import {
 	privileged: true,
 }
 
-dex_import {
-	name: "qti-vzw-ims-internal",
+android_app_import {
+	name: "QtiTelephonyService",
 	owner: "motorola",
-	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
+	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "motorola",
+	apk: "proprietary/vendor/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/QtiTelephonyServicelibrary.jar"],
 	soc_specific: true,
 }
 
@@ -78,9 +78,9 @@ dex_import {
 }
 
 dex_import {
-	name: "qcrilhook",
+	name: "imscmd",
 	owner: "motorola",
-	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
+	jars: ["proprietary/vendor/framework/imscmd.jar"],
 	soc_specific: true,
 }
 
@@ -88,6 +88,34 @@ dex_import {
 	name: "qcnvitems",
 	owner: "motorola",
 	jars: ["proprietary/vendor/framework/qcnvitems.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/qti-telephony-common.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qti-vzw-ims-internal",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "rcsimssettings",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/rcsimssettings.jar"],
 	soc_specific: true,
 }
 

@@ -52,5 +52,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/ocean/proprietary/vendor/firmware/novatek_ts-csot-NT36672A-180919-07-ocean.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts-csot-NT36672A-180919-07-ocean.bin \
     vendor/motorola/ocean/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
     vendor/motorola/ocean/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/motorola/ocean/proprietary/vendor/lib/hw/audio.primary.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8953.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog_vendor.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
+    vendor/motorola/ocean/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/motorola/ocean/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
 

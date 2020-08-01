@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/clark/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
     vendor/motorola/clark/proprietary/vendor/bin/diag_mdlog-getlogs:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog-getlogs \
     vendor/motorola/clark/proprietary/vendor/bin/diag_qshrink4_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/diag_qshrink4_daemon \
+    vendor/motorola/clark/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
     vendor/motorola/clark/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
     vendor/motorola/clark/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/motorola/clark/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \

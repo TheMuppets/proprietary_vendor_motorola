@@ -74,8 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/channel/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_dsbj_hd_570.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_dsbj_hd_570.xml \
     vendor/motorola/channel/proprietary/vendor/firmware/aw8624_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_haptic.bin \
     vendor/motorola/channel/proprietary/vendor/firmware/aw8624_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp.bin \
-    vendor/motorola/channel/proprietary/vendor/firmware/aw8624_rtp_lighthouse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp_lighthouse.bin \
-    vendor/motorola/channel/proprietary/vendor/firmware/aw8624_rtp_silk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp_silk.bin \
     vendor/motorola/channel/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/channel/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/motorola/channel/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \

@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-boe-s2726-15111801-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/vendor/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics-inx-s2726br_t-15111103-1f711a-merlin.tdat \
     vendor/motorola/merlin/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/merlin/proprietary/vendor/lib/hw/camera.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8916.so \
+    vendor/motorola/merlin/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8916.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
     vendor/motorola/merlin/proprietary/vendor/lib/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so \

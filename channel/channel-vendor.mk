@@ -19,27 +19,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/channel/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/att/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/att/Speaker_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl/Speaker_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/bl_s/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/bl_s/Speaker_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Bluetooth_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/General_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Global_cal.acdb \
@@ -47,27 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Hdmi_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Headset_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Speaker_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common_s/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common_s/Speaker_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Speaker_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Bluetooth_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/General_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Global_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Handset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Hdmi_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Headset_cal.acdb \
-    vendor/motorola/channel/proprietary/vendor/etc/acdbdata/na_tmo/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na_tmo/Speaker_cal.acdb \
     vendor/motorola/channel/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/motorola/channel/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_568.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_568.xml \
     vendor/motorola/channel/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_569.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_569.xml \

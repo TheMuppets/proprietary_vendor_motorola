@@ -101,8 +101,8 @@ dex_import {
 dex_import {
 	name: "qti-telephony-common",
 	owner: "motorola",
-	jars: ["proprietary/vendor/framework/qti-telephony-common.jar"],
-	soc_specific: true,
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	product_specific: true,
 }
 
 dex_import {

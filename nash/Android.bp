@@ -326,3 +326,9 @@ android_app_import {
 	privileged: true,
 }
 
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/framework/com.motorola.motosignature.jar"],
+}
+

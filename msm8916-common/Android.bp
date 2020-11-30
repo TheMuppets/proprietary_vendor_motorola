@@ -99,13 +99,6 @@ dex_import {
 }
 
 dex_import {
-	name: "qti-telephony-common",
-	owner: "motorola",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "qti-vzw-ims-internal",
 	owner: "motorola",
 	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],

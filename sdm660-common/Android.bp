@@ -293,6 +293,7 @@ prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }

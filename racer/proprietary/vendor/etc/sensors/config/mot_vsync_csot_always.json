@@ -1,0 +1,26 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": ["400", "440"],
+    "panel": ["csot_gdx_667_1080p_dsc_cmd", "csot_lsi_667_1080p_dsc_cmd"]
+  },
+  "mot_vsync":{
+    "owner": "mot_vsync",
+    ".params":{
+      "owner": "mot_vsync",
+      "vsync_gpio_delay_60Hz_us":{ "type": "int", "ver": "10101010",
+        "data": "2000"
+      },
+      "vsync_gpio_delay_90Hz_us":{ "type": "int", "ver": "10101010",
+        "data": "7200"
+      },
+      "vsync_trig_cnt":{ "type": "int", "ver": "10101010",
+        "data": "7"
+      },
+      "panel":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      }
+    }
+  }
+}

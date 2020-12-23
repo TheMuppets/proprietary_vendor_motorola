@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2017, definitions for moredump3: leman/ramen platform
+-->
+
+<moredump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.samsung.com ..\Moredump.xsd">
+
+  <target name="leman" aka="mxl250" idat="51000000" chipid="A4" firmware="80000000"
+          comment="http://confluence/display/MXL250/Maxwell250+Memory+Map">
+    <!-- Define the mmap range - DO NOT CHANGE THIS -->
+    <mmap startAddr="80000000" endAddr="805FFFFF" dev="/dev/mx_0_mmap"/>
+
+    <bb>
+      <!-- Fix this: SSB-30790                                                   /dev/mx_0_r7_gdb -->
+      <cpu name="CortexR7" xml="cortexR7.xml" t32API="20001" t32GDB="30001" dev="/dev/mx_0_r4_gdb">
+        <extraXml name ="GIC" xml="periph_gic_registers.xml"/>
+      </cpu>
+      <subsystem name="btwl" xml="peri_registers.xml"/>
+    </bb>
+
+    <memory>
+      <region startAddr="00000000" endAddr="0000FFFF" name="ITCM" comment="64K"/>
+      <region startAddr="10000000" endAddr="1000FFFF" name="DTCM" comment="64K"/>
+      <region startAddr="52008000" endAddr="520083FF" name="KARAM" comment="1K"/>
+      <region startAddr="60000000" endAddr="60047FFF" name="RAMS" comment="288KB" />
+      <region startAddr="80000000" endAddr="805FFFFF" name="DRAM" comment="6MB" />
+      <region startAddr="82000000" endAddr="8209FFFF" name="SMAPPER0" comment="640KB" />
+      <region startAddr="82100000" endAddr="8219FFFF" name="SMAPPER1" comment="640KB" />
+      <region startAddr="82200000" endAddr="8229FFFF" name="SMAPPER2" comment="640KB" />
+      <region startAddr="82300000" endAddr="8239FFFF" name="SMAPPER3" comment="640KB" />
+
+      <extraXml name="A-BOX mailbox" xml="mb_wlbt2abox_registers.xml"/>
+      <extraXml name="AP mailbox" xml="mb_ap2wlbt_registers.xml"/>
+      <extraXml name="APM mailbox" xml="mb_apm2wlbt_registers.xml"/>
+      <extraXml name="Sensor hub mailbox" xml="mb_shub2wlbt_registers.xml"/>
+      <extraXml name="Cellular mailbox" xml="mb_cp2wlbt_registers.xml"/>
+      <extraXml name="GNSS mailbox" xml="mb_wlbt2gnss_registers.xml"/>
+    </memory>
+  </target>
+
+  <rfchips bt_speedy="56002000" wl_speedy="50130000" zippy="56100000">
+    <!-- Both of these point to the same xml, it is up to the build system to deploy the correct xml -->
+    <rfchip name="jar" idat="0000" chipid="B1" interface="speedy" comment="S612">
+    </rfchip>
+    <rfchip name="hopper" idat ="0000" chipid ="B2" interface ="zippy" comment="S620">
+    </rfchip>
+  </rfchips>
+</moredump>

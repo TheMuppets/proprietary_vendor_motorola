@@ -1,0 +1,5 @@
+service adspd_hidl /vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
+    class hal
+    user audio
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio media input

@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/victara/proprietary/vendor/bin/radish:$(TARGET_COPY_OUT_VENDOR)/bin/radish \
     vendor/motorola/victara/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/motorola/victara/proprietary/bin/stm401:$(TARGET_COPY_OUT_SYSTEM)/bin/stm401 \
     vendor/motorola/victara/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/VRGain.bin \
@@ -52,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/cy8c20247_24lkxi.hex:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cy8c20247_24lkxi.hex \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.config:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.config \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.eq:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.eq \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.speaker:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.speaker \
@@ -61,10 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_n1c2.patch \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_ringtone_table.preset \
     vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_voice_table.preset \
-    vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/sensorhubfw.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/sensorhubfw_p0.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/sensorhubfw_p0.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/sensorhubver.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/sensorhubver.txt \
-    vendor/motorola/victara/proprietary/etc/firmware/sensorhubver_p0.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/sensorhubver_p0.txt \
     vendor/motorola/victara/proprietary/etc/firmware/venus.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b00 \
     vendor/motorola/victara/proprietary/etc/firmware/venus.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b01 \
     vendor/motorola/victara/proprietary/etc/firmware/venus.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b02 \
@@ -108,6 +102,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmotocalibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/vendor/lib/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmimotext.so \
     vendor/motorola/victara/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
+    vendor/motorola/victara/proprietary/vendor/bin/stm401:$(TARGET_COPY_OUT_VENDOR)/bin/stm401 \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_Bluetooth_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_General_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_Global_cal.acdb \
@@ -123,6 +118,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/firmware/atmel-a432-14102902-0103aa-victara.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/atmel-a432-14102902-0103aa-victara.tdat \
+    vendor/motorola/victara/proprietary/vendor/firmware/cy8c20247_24lkxi.hex:$(TARGET_COPY_OUT_VENDOR)/firmware/cy8c20247_24lkxi.hex \
+    vendor/motorola/victara/proprietary/vendor/firmware/sensorhubfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubfw.bin \
+    vendor/motorola/victara/proprietary/vendor/firmware/sensorhubfw_p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubfw_p0.bin \
+    vendor/motorola/victara/proprietary/vendor/firmware/sensorhubver.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubver.txt \
+    vendor/motorola/victara/proprietary/vendor/firmware/sensorhubver_p0.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubver_p0.txt \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \

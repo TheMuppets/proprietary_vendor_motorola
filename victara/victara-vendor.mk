@@ -19,9 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/victara
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/victara/proprietary/vendor/bin/adspd:$(TARGET_COPY_OUT_VENDOR)/bin/adspd \
     vendor/motorola/victara/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/motorola/victara/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/motorola/victara/proprietary/vendor/bin/dbvc_atvc_property_set:$(TARGET_COPY_OUT_VENDOR)/bin/dbvc_atvc_property_set \
     vendor/motorola/victara/proprietary/vendor/bin/efsks:$(TARGET_COPY_OUT_VENDOR)/bin/efsks \
     vendor/motorola/victara/proprietary/bin/gpsone_daemon:$(TARGET_COPY_OUT_SYSTEM)/bin/gpsone_daemon \
@@ -41,31 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/victara/proprietary/vendor/bin/radish:$(TARGET_COPY_OUT_VENDOR)/bin/radish \
     vendor/motorola/victara/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/motorola/victara/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/motorola/victara/proprietary/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
-    vendor/motorola/victara/proprietary/etc/firmware/VRGain.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/VRGain.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pfp.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pm4.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/aonvr1.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/aonvr1.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/aonvr2.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/aonvr2.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.config:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.config \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.eq:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.eq \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890.speaker:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890.speaker \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_music_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_music_table.preset \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_n1b12.patch:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_n1b12.patch \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_n1c2.patch \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_ringtone_table.preset \
-    vendor/motorola/victara/proprietary/etc/firmware/left.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/left.tfa9890_voice_table.preset \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b00 \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b01 \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b02 \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.b03:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b03 \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.b04:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b04 \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.mbn:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.mbn \
-    vendor/motorola/victara/proprietary/etc/firmware/venus.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.mdt \
     vendor/motorola/victara/proprietary/etc/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf \
     vendor/motorola/victara/proprietary/etc/izat.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/izat.conf \
     vendor/motorola/victara/proprietary/etc/quipc.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/quipc.conf \
@@ -102,7 +75,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/lib/libmotocalibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmotocalibration.so \
     vendor/motorola/victara/proprietary/vendor/lib/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmimotext.so \
     vendor/motorola/victara/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
+    vendor/motorola/victara/proprietary/vendor/bin/adspd:$(TARGET_COPY_OUT_VENDOR)/bin/adspd \
     vendor/motorola/victara/proprietary/vendor/bin/stm401:$(TARGET_COPY_OUT_VENDOR)/bin/stm401 \
+    vendor/motorola/victara/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_Bluetooth_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_General_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara/victara_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara/victara_Global_cal.acdb \
@@ -117,12 +92,36 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb \
+    vendor/motorola/victara/proprietary/vendor/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd \
+    vendor/motorola/victara/proprietary/vendor/firmware/VRGain.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/VRGain.bin \
+    vendor/motorola/victara/proprietary/vendor/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pfp.fw \
+    vendor/motorola/victara/proprietary/vendor/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pm4.fw \
+    vendor/motorola/victara/proprietary/vendor/firmware/aonvr1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aonvr1.bin \
+    vendor/motorola/victara/proprietary/vendor/firmware/aonvr2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aonvr2.bin \
     vendor/motorola/victara/proprietary/vendor/firmware/atmel-a432-14102902-0103aa-victara.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/atmel-a432-14102902-0103aa-victara.tdat \
+    vendor/motorola/victara/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/motorola/victara/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/motorola/victara/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
     vendor/motorola/victara/proprietary/vendor/firmware/cy8c20247_24lkxi.hex:$(TARGET_COPY_OUT_VENDOR)/firmware/cy8c20247_24lkxi.hex \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890.config:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.config \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890.eq:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.eq \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890.speaker:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890.speaker \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890_music_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_music_table.preset \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890_n1b12.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_n1b12.patch \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890_n1c2.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_n1c2.patch \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890_ringtone_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_ringtone_table.preset \
+    vendor/motorola/victara/proprietary/vendor/firmware/left.tfa9890_voice_table.preset:$(TARGET_COPY_OUT_VENDOR)/firmware/left.tfa9890_voice_table.preset \
     vendor/motorola/victara/proprietary/vendor/firmware/sensorhubfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubfw.bin \
     vendor/motorola/victara/proprietary/vendor/firmware/sensorhubfw_p0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubfw_p0.bin \
     vendor/motorola/victara/proprietary/vendor/firmware/sensorhubver.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubver.txt \
     vendor/motorola/victara/proprietary/vendor/firmware/sensorhubver_p0.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/sensorhubver_p0.txt \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b00 \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b01 \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b02 \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b03 \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b04 \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
+    vendor/motorola/victara/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \

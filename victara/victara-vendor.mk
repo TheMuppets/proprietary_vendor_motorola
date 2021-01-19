@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/etc/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/a330_pm4.fw \
     vendor/motorola/victara/proprietary/etc/firmware/aonvr1.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/aonvr1.bin \
     vendor/motorola/victara/proprietary/etc/firmware/aonvr2.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/aonvr2.bin \
-    vendor/motorola/victara/proprietary/etc/firmware/atmel-a432-14102902-0103aa-victara.tdat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/atmel-a432-14102902-0103aa-victara.tdat \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/motorola/victara/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -123,6 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb \
     vendor/motorola/victara/proprietary/vendor/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb \
+    vendor/motorola/victara/proprietary/vendor/firmware/atmel-a432-14102902-0103aa-victara.tdat:$(TARGET_COPY_OUT_VENDOR)/firmware/atmel-a432-14102902-0103aa-victara.tdat \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
     vendor/motorola/victara/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \

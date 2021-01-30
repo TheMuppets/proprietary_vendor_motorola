@@ -301,7 +301,7 @@ android_app_import {
 	name: "ModService",
 	owner: "motorola",
 	apk: "proprietary/priv-app/ModService/ModService.apk",
-	presigned: true,
+        certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},

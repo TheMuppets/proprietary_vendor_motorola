@@ -735,6 +735,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/lib64/libvibratorhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvibratorhw.so \
     vendor/motorola/nash/proprietary/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/nash/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
+    vendor/motorola/nash/proprietary/vendor/bin/hw/motorola.hardware.health@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.health@1.0-service \
     vendor/motorola/nash/proprietary/vendor/bin/mods_camd:$(TARGET_COPY_OUT_VENDOR)/bin/mods_camd \
     vendor/motorola/nash/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/nash/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -747,6 +748,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/nash/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/nash/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/motorola/nash/proprietary/vendor/etc/init/motorola.hardware.health@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@1.0-service.rc \
     vendor/motorola/nash/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
     vendor/motorola/nash/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/motorola/nash/proprietary/vendor/etc/perf/perf-profile2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile2.conf \
@@ -1090,6 +1092,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
     vendor/motorola/nash/proprietary/vendor/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvl53l1_daemon.so \
+    vendor/motorola/nash/proprietary/vendor/lib64/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@1.0.so \
     vendor/motorola/nash/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
     vendor/motorola/nash/proprietary/vendor/lib64/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.iio.so \
     vendor/motorola/nash/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \

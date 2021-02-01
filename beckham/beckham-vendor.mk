@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
+    vendor/motorola/beckham/proprietary/vendor/bin/hw/motorola.hardware.health@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.health@1.0-service \
     vendor/motorola/beckham/proprietary/vendor/bin/mods_camd:$(TARGET_COPY_OUT_VENDOR)/bin/mods_camd \
     vendor/motorola/beckham/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/beckham/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
@@ -47,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
+    vendor/motorola/beckham/proprietary/vendor/etc/init/motorola.hardware.health@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@1.0-service.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml \
     vendor/motorola/beckham/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml \
     vendor/motorola/beckham/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
@@ -418,6 +420,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib/libzaf_algs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzaf_algs.so \
     vendor/motorola/beckham/proprietary/vendor/lib/libzaf_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzaf_core.so \
     vendor/motorola/beckham/proprietary/vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.audio.eqservice@1.0_vendor.so \
+    vendor/motorola/beckham/proprietary/vendor/lib/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.health@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.iio.so \
     vendor/motorola/beckham/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/beckham/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
@@ -453,6 +456,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
+    vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.iio.so
 
 PRODUCT_PACKAGES += \

@@ -9,6 +9,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/evert/proprietary/vendor/etc/zaf/zaf_imx386.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386.json \
     vendor/motorola/evert/proprietary/vendor/etc/zaf/zaf_imx386_mono.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386_mono.json \
     vendor/motorola/evert/proprietary/vendor/etc/zaf/zaf_mot_s5k2l7sa.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_mot_s5k2l7sa.json \
+    vendor/motorola/evert/proprietary/vendor/firmware/MotorolaCapSense.hex:$(TARGET_COPY_OUT_VENDOR)/firmware/MotorolaCapSense.hex \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.rx.ext.config.0:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.rx.ext.config.0 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.rx.ext.config.1:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.rx.ext.config.1 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.rx.ext.config.2:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.rx.ext.config.2 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.rx.ext.config.3:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.rx.ext.config.3 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.tx.ext.config.0:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.tx.ext.config.0 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.tx.ext.config.1:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.tx.ext.config.1 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.tx.ext.config.2:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.tx.ext.config.2 \
+    vendor/motorola/evert/proprietary/vendor/firmware/opalum.tx.ext.config.3:$(TARGET_COPY_OUT_VENDOR)/firmware/opalum.tx.ext.config.3 \
     vendor/motorola/evert/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/evert/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/evert/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
@@ -38,17 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/evert/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml \
     vendor/motorola/evert/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml \
     vendor/motorola/evert/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_5_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_0.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_5_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_1.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
-    vendor/motorola/evert/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/motorola/evert/proprietary/vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-auo-ft5x46-03-0001-evert.bin \
     vendor/motorola/evert/proprietary/vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-djn-ft5x46-15-0001-evert.bin \
     vendor/motorola/evert/proprietary/vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-auo-gt9xx-600a-0001-evert.bin \

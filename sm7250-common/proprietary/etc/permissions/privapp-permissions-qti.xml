@@ -88,6 +88,11 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.CALL_PRIVILEGED"/>
     </privapp-permissions>
 
+    <privapp-permissions package="org.codeaurora.bluetooth.batestapp">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="org.codeaurora.snapcam">
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>

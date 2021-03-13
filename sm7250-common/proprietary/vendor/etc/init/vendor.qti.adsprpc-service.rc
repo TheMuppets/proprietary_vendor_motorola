@@ -40,11 +40,3 @@ service vendor.adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
    class main
    user media
    group media
-
-service vendor.cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
-
-on property:vendor.fastrpc.disable.cdsprpcd.daemon=1
-   stop vendor.cdsprpcd

@@ -1,4 +1,4 @@
-# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2020, Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -31,6 +31,10 @@ on charger
     mount_all /vendor/etc/charger_fstab.qti --early
     enable vendor.qti-chg-policy-sh
     start vendor.qti-chg-policy-sh
+
+on property:persist.vendor.hvdcp_opti.start=2
+    rmdir /mnt/vendor/persist/hvdcp_opti
+    setprop persist.vendor.hvdcp_opti.start 0
 
 on property:persist.vendor.hvdcp_opti.start=1
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system

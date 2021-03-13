@@ -16,7 +16,7 @@
         "data": "7200"
       },
       "vsync_trig_cnt":{ "type": "int", "ver": "10101010",
-        "data": "21"
+        "data": "7"
       },
       "panel":{ "type": "int", "ver": "10101010",
         "data": "4"

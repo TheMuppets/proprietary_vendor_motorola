@@ -19,6 +19,6 @@ on fs && property:ro.boot.carrier=wndca
 on fs && property:ro.boot.carrier=retca
     setprop persist.vendor.radio.process_sups_ind 1
 
-on property:ro.vendor.product.display=* && property:ro.boot.carrier=tracfone
+on fs && property:ro.boot.carrier=tracfone
     setprop ro.build.tf_modelnumber ${ro.boot.hardware.sku}
     setprop ro.build.sw_version ${ro.build.display.id}

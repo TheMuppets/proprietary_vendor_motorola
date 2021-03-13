@@ -1,0 +1,53 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": ["400", "440"]
+  },
+  "mot_vsync":{
+    "owner": "mot_vsync",
+    ".params":{
+      "owner": "mot_vsync",
+
+      "interrupt_num":{ "type": "int", "ver": "0",
+        "data": "107"
+      },
+      "interrupt_trig_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "interrupt_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "interrupt_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "interrupt_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "vsync_det_out_gpio":{ "type": "int", "ver": "0",
+        "data": "109"
+      },
+      "vsync_det_out_gpio_ischip":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+         "data": "1"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+         "data": "/pmic/client/sensor_vddio"
+      },
+      "vsync_gpio_delay_60Hz_us":{ "type": "int", "ver": "0",
+        "data": "3000"
+      },
+      "vsync_gpio_delay_90Hz_us":{ "type": "int", "ver": "0",
+        "data": "900"
+      },
+      "vsync_trig_cnt":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "panel":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

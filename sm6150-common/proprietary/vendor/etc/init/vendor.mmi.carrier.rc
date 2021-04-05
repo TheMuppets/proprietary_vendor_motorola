@@ -1,0 +1,24 @@
+on fs && property:ro.boot.carrier=amxmx
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=reteu
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=reteu2
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=teleu
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=amxbr
+    setprop persist.vendor.radio.use_se_table_only 1
+
+on fs && property:ro.boot.carrier=wndca
+    setprop persist.vendor.radio.process_sups_ind 1
+
+on fs && property:ro.boot.carrier=retca
+    setprop persist.vendor.radio.process_sups_ind 1
+
+on fs && property:ro.boot.carrier=tracfone
+    setprop ro.build.tf_modelnumber ${ro.boot.hardware.sku}
+    setprop ro.build.sw_version ${ro.build.display.id}

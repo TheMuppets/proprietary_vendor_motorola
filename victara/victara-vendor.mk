@@ -25,10 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/victara/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/motorola/victara/proprietary/vendor/bin/radish:$(TARGET_COPY_OUT_VENDOR)/bin/radish \
     vendor/motorola/victara/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/motorola/victara/proprietary/etc/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf \
-    vendor/motorola/victara/proprietary/etc/izat.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/izat.conf \
-    vendor/motorola/victara/proprietary/etc/quipc.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/quipc.conf \
-    vendor/motorola/victara/proprietary/etc/sap.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sap.conf \
     vendor/motorola/victara/proprietary/lib/hw/camera.vendor.msm8974.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensorhub.msm8974.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensorhub.msm8974.so \
     vendor/motorola/victara/proprietary/lib/hw/sensors.msm8974.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.msm8974.so \

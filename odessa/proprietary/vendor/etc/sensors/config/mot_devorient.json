@@ -1,0 +1,16 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK","IDP"],
+    "soc_id": ["336", "347", "360","355", "365"],
+  },
+  "mot_devorient":{
+    "owner": "mot_devorient",
+    ".algo_config":{
+      "owner": "mot_devorient",
+      "flat_gpio_num":{ "type": "int", "ver": "3",
+        "data": "-1"
+      }
+    }
+  }
+}

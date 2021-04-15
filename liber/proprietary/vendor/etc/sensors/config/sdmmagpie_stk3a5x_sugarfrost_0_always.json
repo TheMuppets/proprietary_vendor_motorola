@@ -1,0 +1,178 @@
+{
+  "config": {
+     "hw_platform": ["HDK", "MTP", "Dragon", "Surf", "IDP"],
+     "soc_id": ["361", "339", "365"],
+     "ro.vendor.hw.frontcolor": ["Sugarfrost"]
+  },
+  "stk3a5x_0_platform":{
+    "owner": "sns_stk3a5x",
+    ".als":{
+      "owner": "sns_stk3a5x",
+      ".fac_cal":{
+        "owner": "sns_stk3a5x",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "100.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "5000.0"
+        },
+        "target_lux":{ "type": "flt", "ver": "0",
+          "data": "400.0"
+        },
+        "default_scale":{ "type": "flt", "ver": "10101010",
+          "data": "100.0"
+        }
+      }
+    },
+    ".ps":{
+      "owner": "sns_stk3a5x",
+      ".fac_cal":{
+        "owner": "sns_stk3a5x",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "16451.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "16377.0"
+        },
+        "ctir_config":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "cover":{ "type": "flt", "ver": "0",
+          "data": "16518.0"
+        },
+        "uncover":{ "type": "flt", "ver": "0",
+          "data": "16149.0"
+        },
+        "default_near_threshold":{ "type": "flt", "ver": "10101010",
+          "data": "16451.0"
+        },
+        "default_far_threshold":{ "type": "flt", "ver": "10101010",
+          "data": "16377.0"
+        },
+        "default_factor":{ "type": "flt", "ver": "10101010",
+          "data": "1000.0"
+        },
+        "delta2":{ "type": "flt", "ver": "10101010",
+          "data": "550.0"
+        },
+        "delta3":{ "type": "flt", "ver": "10101010",
+          "data": "750.0"
+        },
+        "factor":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "high_coeff":{ "type": "flt", "ver": "10101010",
+          "data": "0.82"
+        },
+        "low_coeff":{ "type": "flt", "ver": "10101010",
+          "data": "0.62"
+        },
+        "default_cover":{ "type": "flt", "ver": "10101010",
+          "data": "16518.0"
+        },
+        "default_uncover":{ "type": "flt", "ver": "10101010",
+          "data": "16149.0"
+        }
+      }
+    }
+  },
+  "stk3a5x_0_private":{
+    "owner": "sns_stk3a5x",
+    ".config":{
+      "owner": "sns_stk3a5x",
+      "wait":{ "type": "int", "ver": "10101010",
+        "data": "32"
+      },
+      "prst_ps":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "gain_ps":{ "type": "int", "ver": "10101010",
+        "data": "3"
+      },
+      "gain_ps_dx16":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "it_ps":{ "type": "int", "ver": "10101010",
+        "data": "2"
+      },
+      "irdr_led":{ "type": "int", "ver": "10101010",
+        "data": "8"
+      },
+      "prst_als":{ "type": "int", "ver": "10101010",
+        "data": "0"
+      },
+      "gain_als":{ "type": "int", "ver": "10101010",
+        "data": "2"
+      },
+      "gain_als_dx128":{ "type": "int", "ver": "10101010",
+        "data": "0"
+      },
+      "gain_c":{ "type": "int", "ver": "10101010",
+        "data": "2"
+      },
+      "gain_c_dx128":{ "type": "int", "ver": "10101010",
+        "data": "0"
+      },
+      "it_als":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "ps_ps0":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "ps_ps1":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "ps_ps2":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      },
+      "ps_ps3":{ "type": "int", "ver": "10101010",
+        "data": "1"
+      }
+    },
+    ".als_coefficient":{
+      "owner": "sns_stk3a5x",
+      "als_offset":{ "type": "int", "ver": "10101010",
+        "data": "5"
+      },
+      "ratio_c":{ "type": "int", "ver": "10101010",
+        "data": "9"
+      },
+      "ratio_d":{ "type": "int", "ver": "10101010",
+        "data": "23"
+      },
+      "ratio_a":{ "type": "int", "ver": "10101010",
+        "data": "45"
+      },
+      "window_c":{ "type": "flt", "ver": "10101010",
+        "data": "1.058"
+      },
+      "window_d":{ "type": "flt", "ver": "10101010",
+        "data": "0.189"
+      },
+      "window_a":{ "type": "flt", "ver": "10101010",
+        "data": "0.090"
+      },
+      "window_h":{ "type": "flt", "ver": "10101010",
+        "data": "0.050"
+      },
+      "min_c_data":{ "type": "int", "ver": "10101010",
+        "data": "100"
+      },
+      "min_g_data":{ "type": "int", "ver": "10101010",
+        "data": "0"
+      },
+      "max_als_data":{ "type": "int", "ver": "10101010",
+        "data": "64000"
+      },
+      "min_als_data":{ "type": "int", "ver": "10101010",
+        "data": "1500"
+      },
+      "ratio_h":{ "type": "int", "ver": "10101010",
+        "data": "70"
+      },
+      "flag_opt":{ "type": "int", "ver": "10101010",
+        "data": "0"
+      }
+    }
+  }
+}

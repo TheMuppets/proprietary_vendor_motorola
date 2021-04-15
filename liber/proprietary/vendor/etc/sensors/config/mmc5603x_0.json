@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["355", "365"]
+  },
+  "mmc5603x_0":{
+    "owner": "sns_mmc5603nj",
+    ".mag":{
+      "owner": "sns_mmc5603nj",
+      ".config":{
+        "owner": "sns_mmc5603nj",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

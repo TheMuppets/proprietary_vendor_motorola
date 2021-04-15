@@ -1,0 +1,11 @@
+version=6
+file=hw_platform=/sys/devices/soc0/hw_platform
+file=platform_subtype=/sys/devices/soc0/platform_subtype
+file=platform_subtype_id=/sys/devices/soc0/platform_subtype_id
+file=platform_version=/sys/devices/soc0/platform_version
+file=soc_id=/sys/devices/soc0/soc_id
+file=revision=/sys/devices/soc0/revision
+file=output=/mnt/vendor/persist/sensors/registry/registry
+property=ro.vendor.hw.device=/mnt/vendor/persist/sensors/registry/hw_device
+property=ro.vendor.hw.hwrev=/mnt/vendor/persist/sensors/registry/hw_rev
+property=ro.vendor.hw.revision=/mnt/vendor/persist/sensors/registry/hw_revision

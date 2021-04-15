@@ -1,0 +1,40 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK","IDP"],
+    "soc_id": ["336", "347", "360","355", "365"],
+  },
+  "mot_drop":{
+    "owner": "mot_drop",
+    ".params":{
+      "owner": "mot_drop",
+      "first_accel":{ "type": "flt", "ver": "0",
+        "data": "40"
+      },
+      "acc_count":{ "type": "int", "ver": "0",
+        "data": "20"
+      },
+      "suspect_variance":{ "type": "flt", "ver": "0",
+        "data": "10.0"
+      },
+      "detect_variance":{ "type": "flt", "ver": "0",
+        "data": "0.2"
+      },
+      "detect_accel":{ "type": "flt", "ver": "0",
+        "data": "1.8"
+      },
+      "impact_accel":{ "type": "flt", "ver": "0",
+        "data": "3000"
+      },
+      "impact_variance":{ "type": "flt", "ver": "0",
+        "data": "10000"
+      },
+      "wait_time":{ "type": "int", "ver": "0",
+        "data": "500"
+      },
+      "alpha":{ "type": "flt", "ver": "0",
+        "data": "0.37"
+      }
+    }
+  }
+}

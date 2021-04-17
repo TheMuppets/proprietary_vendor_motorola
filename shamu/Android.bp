@@ -23,16 +23,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "DMConfigUpdate",
-	owner: "motorola",
-	apk: "proprietary/app/DMConfigUpdate/DMConfigUpdate.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "HiddenMenu",
 	owner: "motorola",
 	apk: "proprietary/app/HiddenMenu/HiddenMenu.apk",

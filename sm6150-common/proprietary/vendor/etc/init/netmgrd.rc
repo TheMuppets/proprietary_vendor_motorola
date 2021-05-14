@@ -22,6 +22,10 @@ on boot
     #Reduce the pressure on the reassemly cache by discarding orphan fragments quicker
     write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 10
 
+on property:ro.product.device=hanoip
+    #Carrier ANATEL want to keep timeout as 60
+    write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 60
+
 # msm specific files that need to be created on /data
 on post-fs-data
     #Create NETMGR daemon log dir

@@ -156,6 +156,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_mot_ov5695.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_ov5695.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_mot_s5k3p8sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mot_s5k3p8sp.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_optizoom_lib.so \
+    vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_ov5695_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5695_eeprom.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
@@ -163,6 +164,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_s5k3p3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3p3.so \
+    vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_s5k3p3_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3p3_eeprom.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stillmore_lib.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sw2d_lib.so \
     vendor/motorola/montana/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_thread_services.so \

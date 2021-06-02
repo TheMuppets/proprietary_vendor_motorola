@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK","IDP"],
+    "soc_id": ["336", "347", "360","355"]
+  },
+  "tmd3702":{
+    "owner": "sns_tmd3702",
+    ".prox":{
+      "owner": "sns_tmd3702",
+      ".config":{
+        "owner": "sns_tmd3702",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

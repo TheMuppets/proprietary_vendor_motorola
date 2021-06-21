@@ -203,6 +203,16 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/app/MotoSignatureApp/MotoSignatureApp.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -247,6 +257,19 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotCamera2",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/MotCamera2/MotCamera2.apk",
+	overrides: ["Camera2"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/ims/ims.apk",
@@ -268,6 +291,13 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/com.motorola.motosignature.jar"],
+	soc_specific: true,
 }
 
 dex_import {

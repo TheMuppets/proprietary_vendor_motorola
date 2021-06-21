@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sdm632-common
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/sdm632-common/proprietary/vendor/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motosignature.xml \
     vendor/motorola/sdm632-common/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/motorola/sdm632-common/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
     vendor/motorola/sdm632-common/proprietary/lib/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-iopd-client_system.so \
@@ -26,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/motorola/sdm632-common/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
@@ -69,9 +71,67 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libBulkSNPE.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libBulkSNPE.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libEvPlusAndroidLib.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libEvPlusAndroidLib.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libPlatformValidatorShared.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libSNPE.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSNPE.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libSNPE_G.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSNPE_G.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbg-postproc-jni.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libbs-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbs-depth.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libc++_shared.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++_shared.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libcalculator.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcalculator.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libcalculator_domains.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcalculator_domains.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcamerax_extension_jni.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-ASIA.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-LATAM.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-US.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-channel_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-channel_ASIA.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-channel_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-channel_LATAM.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-channel_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-channel_US.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-lake_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-lake_ASIA.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-lake_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-lake_LATAM.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-lake_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-lake_US.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-ocean_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-ocean_ASIA.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-ocean_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-ocean_LATAM.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-ocean_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-ocean_US.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-river_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-river_ASIA.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-river_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-river_LATAM.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libfn-beauty-vfb-river_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-river_US.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgif.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libhta.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libhta.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjpeg.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/liblenovo_panorama_qc.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama_qc.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_easy_hdr.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmorpho_image_stab5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_image_stab5.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_sensor_fusion.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-cinemagraph-engine.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmot-remosaic-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-remosaic-util.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-util.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmp-dis-v4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmp-dis-v4.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmp-dis-v5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmp-dis-v5.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmp-superres.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmp-superres.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmpbase.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libnnp.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnnp.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libqc-clearsight.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-clearsight.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libqc-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-depth.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libqc-focus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-focus.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libqc-offline-fd-local.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-offline-fd-local.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsnpe_adsp.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsnpe_adsp.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsnpe_dsp_domains.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsnpe_dsp_domains_system.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsnpe_dsp_domains_v2.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsnpe_dsp_domains_v2_system.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsymphony-cpu.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libubifocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libubifocus.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libyuv.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libyuv.so \
+    vendor/motorola/sdm632-common/proprietary/product/lib64/libzxing-core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libzxing-core.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/motorola/sdm632-common/proprietary/product/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.camera.device@1.0.so \
@@ -490,6 +550,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
+    vendor/motorola/sdm632-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/motorola/sdm632-common/proprietary/vendor/lib64/liblog_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog_vendor.so \
@@ -675,12 +736,15 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     vendor.qti.hardware.fm@1.0 \
+    MotoSignatureApp \
     CneApp \
     TimeService \
     QtiTelephonyService \
     datastatusnotification \
+    MotCamera2 \
     ims \
     qcrilmsgtunnel \
+    com.motorola.motosignature \
     QtiTelephonyServicelibrary \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \

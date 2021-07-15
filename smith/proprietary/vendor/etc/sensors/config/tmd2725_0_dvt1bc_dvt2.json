@@ -1,0 +1,70 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": [ "400" ],
+    "ro.vendor.hw.revision": ["dvt1b", "dvt1c", "dvt2"]
+  },
+  "tmd2725_0_platform":{
+    "owner": "sns_tmd2725",
+    ".als":{
+      "owner": "sns_tmd2725",
+      ".custom_cal":{
+        "owner": "sns_tmd2725",
+        "l0_factor":{ "type": "flt", "ver": "1",
+          "data": "1000.0"
+        },
+        "l1_factor":{ "type": "flt", "ver": "1",
+          "data": "148.0"
+        },
+        "l2_factor":{ "type": "flt", "ver": "1",
+          "data": "150.0"
+        },
+        "l3_factor":{ "type": "flt", "ver": "1",
+          "data": "0.0"
+        },
+        "d_factor":{ "type": "flt", "ver": "1",
+          "data": "140.0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tmd2725",
+      ".def_config":{
+        "owner": "sns_tmd2725",
+        "ptime":{ "type": "flt", "ver": "1",
+          "data": "20000.0"
+        },
+        "ppulse_len":{ "type": "flt", "ver": "1",
+          "data": "2.0"
+        },
+        "ppulse":{ "type": "flt", "ver": "1",
+          "data": "12.0"
+        },
+        "pgain":{ "type": "flt", "ver": "1",
+          "data": "1000.0"
+        },
+        "pldrive":{ "type": "flt", "ver": "1",
+          "data": "110.0"
+        },
+        "ppers":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        },
+        "pupper_thrs":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+        },
+        "plower_thrs":{ "type": "flt", "ver": "1",
+        "data": "255.0"
+        },
+        "poffset_sign":{ "type": "flt", "ver": "1",
+          "data": "0.0"
+        },
+        "poffset_L":{ "type": "flt", "ver": "1",
+          "data": "50.0"
+        },
+        "pBinSearch":{ "type": "flt", "ver": "1",
+          "data": "4.0"
+        }
+      }
+    }
+  }
+}

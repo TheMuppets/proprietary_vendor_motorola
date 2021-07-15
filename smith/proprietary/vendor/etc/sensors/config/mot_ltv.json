@@ -1,0 +1,52 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["400"]
+  },
+  "mot_ltv":{
+    "owner": "mot_ltv",
+    ".params":{
+      "owner": "mot_ltv",
+      "sample_rate_hz":{ "type": "int", "ver": "0",
+        "data": "25"
+      },
+      "report_rate_hz":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "min_accel_rotation_d":{ "type": "flt", "ver": "0",
+        "data": "19.0"
+      },
+      "accel_fast_alpha":{ "type": "flt", "ver": "0",
+        "data": "0.25"
+      },
+      "accel_slow_alpha":{ "type": "flt", "ver": "0",
+        "data": "0.0625"
+      },
+      "land_conv_cnt":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "min_accel_rotation_wake_d":{ "type": "flt", "ver": "0",
+        "data": "8.0"
+      },
+      "non_accel_rotation_ff_d":{ "type": "flt", "ver": "0",
+        "data": "4.0"
+      },
+      "rearm_non_rotation_d":{ "type": "flt", "ver": "0",
+        "data": "8.0"
+      },
+      "rearm_min_accel_rotation_d":{ "type": "flt", "ver": "0",
+        "data": "30.0"
+      },
+      "rearm_forced_accel_rotation_d":{ "type": "flt", "ver": "0",
+        "data": "80.0"
+      },
+      "rearm_conv_cnt":{ "type": "int", "ver": "0",
+        "data": "40"
+      },
+      "raw_accel_margin_mss":{ "type": "flt", "ver": "0",
+        "data": "4.2"
+      }
+    }
+  }
+}

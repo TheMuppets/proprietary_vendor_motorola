@@ -1,0 +1,79 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["400"]
+  },
+  "mot_chopchop_closed":{
+    "owner": "mot_chopchop",
+    ".params":{
+      "owner": "mot_chopchop",
+      "max_gyro_rotation":{ "type": "flt", "ver": "0",
+        "data": "108.0"
+      },
+      "max_chop_duration_ms":{ "type": "int", "ver": "0",
+        "data": "350"
+      },
+      "first_accel_threshold":{ "type": "flt", "ver": "0",
+        "data": "37.0"
+      },
+      "second_accel_threshold":{ "type": "flt", "ver": "0",
+        "data": "30.0"
+      },
+      "min_magnitude_percentage":{ "type": "flt", "ver": "0",
+        "data": "0.3"
+      },
+      "max_xy_percentage":{ "type": "flt", "ver": "0",
+        "data": "0.35"
+      }
+    },
+    ".params2":{
+      "owner": "mot_chopchop",
+      "gyro_contrib_factor":{ "type": "flt", "ver": "0",
+        "data": "1.962"
+      },
+      "max_gyro_xy":{ "type": "flt", "ver": "0",
+        "data": "18.331"
+      },
+      "max_y_gyro_accum":{ "type": "flt", "ver": "0",
+        "data": "49.375"
+      },
+      "peak1_prominence_thres":{ "type": "flt", "ver": "0",
+        "data": "20.779"
+      },
+      "peak1_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "56.582"
+      },
+      "rebound_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "20.215"
+      },
+      "peak2_prominence_thres":{ "type": "flt", "ver": "0",
+        "data": "50.307"
+      },
+      "peak2_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "43.002"
+      },
+      "rebound_timeout_ms":{ "type": "int", "ver": "0",
+        "data": "142"
+      },
+      "chop2_timeout_ms":{ "type": "int", "ver": "0",
+        "data": "345"
+      },
+      "cooldown_len_ms":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "gyro_delay_ms":{ "type": "int", "ver": "0",
+        "data": "30"
+      },
+      "gyro_stable_thres":{ "type": "flt", "ver": "0",
+        "data": "7.155"
+      },
+      "exit_gyro_stable_to_chop_max_delay_ms":{ "type": "int", "ver": "0",
+        "data": "575"
+      },
+      "gyro_stable_max_cnt":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    }
+  }
+}

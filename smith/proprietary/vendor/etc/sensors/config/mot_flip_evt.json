@@ -1,0 +1,26 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["400"],
+    "ro.vendor.hw.revision": ["evt1", "evt2"]
+  },
+  "mot_flip":{
+    "owner": "mot_flip",
+    ".params":{
+      "owner": "mot_flip",
+      "use_gpio_switch":{ "type": "int", "ver": "1000",
+        "data": "1"
+      },
+      "switch_gpio":{ "type": "int", "ver": "1000",
+        "data": "107"
+      },
+      "switch_gpio_ischip":{ "type": "int", "ver": "1000",
+        "data": "1"
+      },
+      "switch_gpio_high_when_open":{ "type": "int", "ver": "1000",
+        "data": "0"
+      }
+    }
+  }
+}

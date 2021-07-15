@@ -1,0 +1,79 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["400"]
+  },
+  "mot_chopchop":{
+    "owner": "mot_chopchop",
+    ".params":{
+      "owner": "mot_chopchop",
+      "max_gyro_rotation":{ "type": "flt", "ver": "0",
+        "data": "108.0"
+      },
+      "max_chop_duration_ms":{ "type": "int", "ver": "0",
+        "data": "350"
+      },
+      "first_accel_threshold":{ "type": "flt", "ver": "0",
+        "data": "28.0"
+      },
+      "second_accel_threshold":{ "type": "flt", "ver": "0",
+        "data": "17.0"
+      },
+      "min_magnitude_percentage":{ "type": "flt", "ver": "0",
+        "data": "0.3"
+      },
+      "max_xy_percentage":{ "type": "flt", "ver": "0",
+        "data": "0.35"
+      }
+    },
+    ".params2":{
+      "owner": "mot_chopchop",
+      "gyro_contrib_factor":{ "type": "flt", "ver": "0",
+        "data": "3.236"
+      },
+      "max_gyro_xy":{ "type": "flt", "ver": "0",
+        "data": "11.897"
+      },
+      "max_y_gyro_accum":{ "type": "flt", "ver": "0",
+        "data": "75.0"
+      },
+      "peak1_prominence_thres":{ "type": "flt", "ver": "0",
+        "data": "29.413"
+      },
+      "peak1_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "57.4"
+      },
+      "rebound_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "23.3"
+      },
+      "peak2_prominence_thres":{ "type": "flt", "ver": "0",
+        "data": "38.2"
+      },
+      "peak2_abs_thres":{ "type": "flt", "ver": "0",
+        "data": "30.0"
+      },
+      "rebound_timeout_ms":{ "type": "int", "ver": "0",
+        "data": "175"
+      },
+      "chop2_timeout_ms":{ "type": "int", "ver": "0",
+        "data": "392"
+      },
+      "cooldown_len_ms":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "gyro_delay_ms":{ "type": "int", "ver": "0",
+        "data": "65"
+      },
+      "gyro_stable_thres":{ "type": "flt", "ver": "0",
+        "data": "5.5"
+      },
+      "exit_gyro_stable_to_chop_max_delay_ms":{ "type": "int", "ver": "0",
+        "data": "467"
+      },
+      "gyro_stable_max_cnt":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    }
+  }
+}

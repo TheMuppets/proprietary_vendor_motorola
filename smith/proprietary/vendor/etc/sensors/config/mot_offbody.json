@@ -1,0 +1,43 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["400"]
+  },
+  "mot_offbody":{
+    "owner": "mot_offbody",
+    ".params":{
+      "owner": "mot_offbody",
+      "alpha":{ "type": "flt", "ver": "0",
+        "data": "0.10"
+      },
+      "var_lt":{ "type": "flt", "ver": "0",
+        "data": "0.01"
+      },
+      "var_ht":{ "type": "flt", "ver": "0",
+        "data": "0.09"
+      },
+      "th_cnt":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "st_alpha":{ "type": "flt", "ver": "0",
+        "data": "0.10"
+      },
+      "st_var_ht":{ "type": "flt", "ver": "0",
+        "data": "5.0"
+      },
+      "theta_exit":{ "type": "flt", "ver": "0",
+        "data": "2.0"
+      },
+      "theta_low":{ "type": "flt", "ver": "0",
+        "data": "180.0"
+      },
+      "theta_high":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "qual_mode":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

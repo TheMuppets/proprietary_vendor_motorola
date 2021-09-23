@@ -92,3 +92,4 @@ tgkill: 1
 gettid: 1
 sched_yield: 1
 flock: 1
+umask: 1

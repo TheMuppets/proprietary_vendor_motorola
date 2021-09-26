@@ -6,17 +6,4 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),beckham)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := MotCamera2
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/system/priv-app/MotCamera2/MotCamera2.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/$(LOCAL_SRC_FILES)
-include $(BUILD_PREBUILT)
-
 endif

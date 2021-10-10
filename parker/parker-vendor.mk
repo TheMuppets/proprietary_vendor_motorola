@@ -157,6 +157,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/parker/proprietary/vendor/firmware/goodix_cfg_group2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group2.bin \
     vendor/motorola/parker/proprietary/vendor/firmware/goodix_cfg_group2_parker.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group2_parker.bin \
     vendor/motorola/parker/proprietary/vendor/firmware/goodix_cfg_group2_qtpro.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group2_qtpro.bin \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/motorola/parker/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/motorola/parker/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/motorola/parker/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/motorola/parker/proprietary/vendor/firmware/marley-dsp1-ultrasound.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.bin \

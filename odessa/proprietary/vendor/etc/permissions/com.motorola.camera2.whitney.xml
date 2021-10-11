@@ -7,4 +7,5 @@
 
 <permissions>
     <feature name="com.motorola.camera2.whitney" />
+    <feature name="com.google.lens.feature.CAMERA_INTEGRATION" />
 </permissions>

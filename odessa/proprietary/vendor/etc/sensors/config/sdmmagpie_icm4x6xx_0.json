@@ -20,7 +20,7 @@
         "data": "0"
       },
       "max_bus_speed_khz":{ "type": "int", "ver": "0",
-        "data": "24000"
+        "data": "9600"
       },
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"

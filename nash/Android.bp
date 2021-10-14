@@ -295,6 +295,7 @@ android_app_import {
 	name: "MotCamera2",
 	owner: "motorola",
 	apk: "proprietary/priv-app/MotCamera2/MotCamera2.apk",
+	overrides: ["Camera2"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

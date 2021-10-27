@@ -236,17 +236,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "datastatusnotification",
-	owner: "motorola",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",

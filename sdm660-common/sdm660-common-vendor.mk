@@ -647,7 +647,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     TimeService \
     QtiTelephonyService \
-    datastatusnotification \
     qcrilmsgtunnel \
     QtiTelephonyServicelibrary \
     com.qualcomm.qti.imscmservice-V2.0-java \

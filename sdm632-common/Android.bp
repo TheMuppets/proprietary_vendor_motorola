@@ -270,6 +270,160 @@ android_app_import {
 	product_specific: true,
 }
 
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/qcrilhook.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.1-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
+	product_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "motorola",

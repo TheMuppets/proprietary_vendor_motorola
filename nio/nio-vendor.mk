@@ -702,9 +702,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/motorola/nio/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
     vendor/motorola/nio/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
-    vendor/motorola/nio/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
-    vendor/motorola/nio/proprietary/vendor/lib/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadspd.so \
-    vendor/motorola/nio/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/motorola/nio/proprietary/vendor/lib/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction.so \
     vendor/motorola/nio/proprietary/vendor/lib/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_image.so \
     vendor/motorola/nio/proprietary/vendor/lib/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_video.so \

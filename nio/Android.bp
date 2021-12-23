@@ -204,6 +204,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "IfaaService",
+	owner: "motorola",
+	apk: "proprietary/system_ext/app/IfaaService/IfaaService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",

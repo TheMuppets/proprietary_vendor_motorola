@@ -6,9 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/nio
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/nio/proprietary/etc/permissions/moto-ims-ext.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-ims-ext.xml \
-    vendor/motorola/nio/proprietary/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-telephony.xml \
+    vendor/motorola/nio/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
     vendor/motorola/nio/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/motorola/nio/proprietary/system_ext/framework/moto-telephony.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/moto-telephony.jar \
     vendor/motorola/nio/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/motorola/nio/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/motorola/nio/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
@@ -1600,8 +1600,6 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    moto-ims-ext \
-    moto-telephony \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
@@ -1614,9 +1612,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants-V1.0-java \
     com.quicinc.cne.constants-V2.0-java \
     com.quicinc.cne.constants-V2.1-java \
-    qcom-moto-ims-ext \
-    qcom-moto-telephony-ext \
-    qti-telephony-common \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.data.factory-V2.1-java \

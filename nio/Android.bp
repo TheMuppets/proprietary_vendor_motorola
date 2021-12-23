@@ -268,18 +268,6 @@ dex_import {
 }
 
 dex_import {
-	name: "moto-ims-ext",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-ims-ext.jar"],
-}
-
-dex_import {
-	name: "moto-telephony",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-telephony.jar"],
-}
-
-dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.0-java",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
@@ -360,27 +348,6 @@ dex_import {
 	name: "com.quicinc.cne.constants-V2.1-java",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcom-moto-ims-ext",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qcom-moto-ims-ext.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcom-moto-telephony-ext",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qcom-moto-telephony-ext.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
 }
 

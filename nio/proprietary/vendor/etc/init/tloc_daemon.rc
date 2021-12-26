@@ -1,0 +1,16 @@
+#********************************************************************
+#Copyright (c) 2019 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#********************************************************************
+
+#Create the directories used by tlocd
+on post-fs-data
+    mkdir /data/vendor/tloc 0700 system drmrpc
+
+#start tloc daemon
+service vendor.tlocd /vendor/bin/tloc_daemon
+    class late_start
+    user system
+    group drmrpc gps net_raw
+

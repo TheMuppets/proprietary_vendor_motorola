@@ -1136,6 +1136,7 @@ PRODUCT_PACKAGES += \
     IfaaService \
     QtiTelephonyService \
     SoterService \
+    atfwd \
     datastatusnotification \
     WfdService \
     dpmserviceapp \

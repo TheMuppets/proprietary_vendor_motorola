@@ -1,0 +1,7 @@
+# Copyright (c) 2019 Lenovo MBG, Inc.
+# All Rights Reserved.
+#
+service zui-alarm-hal-1-0 /vendor/bin/hw/vendor.zuialarm.hardware.alarm@1.0-service
+    class hal
+    user system
+    group system

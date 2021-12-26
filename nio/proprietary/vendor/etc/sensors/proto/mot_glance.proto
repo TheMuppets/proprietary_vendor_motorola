@@ -1,0 +1,61 @@
+// @file mot_glance.proto
+//
+// Defines standard message types for the Mot_Glance
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std.proto";
+import "sns_std_sensor.proto";
+
+// Mot_Glance Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_glance"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Sensor output event:
+// Mot_Glance use mot_glance_event for it's output event
+
+enum mot_glance_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // From client, name is string matched to "mot_glance_config" msg below
+  MOT_GLANCE_MSGID_MOT_GLANCE_CONFIG = 512;
+
+  // From Algo, name is string matched to "mot_glance_event" msg below
+  MOT_GLANCE_MSGID_MOT_GLANCE_EVENT = 772;
+}
+
+enum mot_glance_event_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_GLANCE_EVENT_TYPE_UNKNOWN           = 0x00;
+  MOT_GLANCE_EVENT_TYPE_EXIT_STOWED       = 0x01;
+  MOT_GLANCE_EVENT_TYPE_EXIT_FLATUP       = 0x02;
+  MOT_GLANCE_EVENT_TYPE_EXIT_FLATDOWN     = 0x04;
+  MOT_GLANCE_EVENT_TYPE_IR_GESTURE        = 0x08;
+  MOT_GLANCE_EVENT_TYPE_MOVEMENT_GESTURE  = 0x10;
+  MOT_GLANCE_EVENT_TYPE_USOUND_GESTURE    = 0x20;
+  MOT_GLANCE_EVENT_TYPE_USOUND_ON_REQ     = 0x40;
+  MOT_GLANCE_EVENT_TYPE_USOUND_OFF_REQ    = 0x80;
+}
+
+message mot_glance_event
+{
+  // The state which generated the glance event
+  required mot_glance_event_type state = 1 [default = MOT_GLANCE_EVENT_TYPE_UNKNOWN];
+}
+
+// Configuration Message
+// Used to either request for a new configuration of the Mot_Glance Sensor or
+// alter an already existing configuration
+message mot_glance_config
+{
+  // Bitmask of mot_glance_event_type(s) indicating which gestures are monitored for this request
+  required uint32 gestures_enabled = 1 [default = 0];
+
+}

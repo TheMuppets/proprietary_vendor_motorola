@@ -1,0 +1,19 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["356"],
+  },
+  "mot_devorient":{
+    "owner": "mot_devorient",
+    ".algo_config":{
+      "owner": "mot_devorient",
+      "flat_gpio_num":{ "type": "int", "ver": "3",
+        "data": "60"
+      },
+      "faceup_gpio_num":{ "type": "int", "ver": "0",
+        "data": "69"
+      }
+    }
+  }
+}

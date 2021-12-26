@@ -1,0 +1,52 @@
+// @file mot_ltv.proto
+//
+// Defines message types for the Motorola Lift to View Gesture Sensor.
+//
+// Copyright (c) 2017-2018 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_ltv detects the that the device was lifted into a viewing position
+// This is actually a special trigger sensor, but it is treated as
+// on-change in SEE.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_ltv"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_ltv_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_LTV_MSGID_MOT_LTV_EVENT = 772;
+}
+
+enum mot_ltv_trig_type
+{
+  option (nanopb_enumopt).long_names = false;
+  MOT_LTV_TRIG_TYPE_NONE    = 0;
+  MOT_LTV_TRIG_TYPE_LIFTED  = 1;
+  MOT_LTV_TRIG_TYPE_RECALL  = 2;
+}
+
+message mot_ltv_event
+{
+  // Event output
+  required mot_ltv_trig_type trig_type = 1; // trigger type
+  required uint32 confidence = 2;           // 0-100 percentage confidence of trigger
+  required uint32 landing_delta_ms = 3;     // time diff of events in landing window
+}
+
+// Stream events:
+//
+// The mot_ltv_event message is used to publish updated state
+//
+// This sensor does not publish configuration events.
+

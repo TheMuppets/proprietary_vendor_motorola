@@ -1,0 +1,55 @@
+// @file mot_stowed.proto
+//
+// Defines message types for the Motorola Stowed Sensor.
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot Stowed monitors light and proximity events among possible other inputs
+// and estimates if the device is in-pocket, purse etc, aka stowed.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_stowed"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs for Mot Stowed Sensor
+enum mot_stowed_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_STOWED_MSGID_MOT_STOWED_FORCE_PROX_ON_REQ = 767;
+
+  MOT_STOWED_MSGID_MOT_STOWED_EVENT = 772;
+
+  // sent after being stowed for a period of time
+  MOT_STOWED_MSGID_MOT_DEL_STOWED_EVENT = 773;
+}
+
+enum mot_stowed_event_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // These values selected to match values used in DSP register
+  MOT_STOWED_EVENT_TYPE_NOT_STOWED    = 0;
+  MOT_STOWED_EVENT_TYPE_STOWED        = 1;
+  MOT_STOWED_EVENT_TYPE_UNKNOWN       = 3;
+}
+
+message mot_stowed_event
+{
+  // Mot Stowed state
+  required mot_stowed_event_type state = 1 [default = MOT_STOWED_EVENT_TYPE_NOT_STOWED];
+}
+
+// Stream events:
+//
+// The mot_stowed_event message is used to publish the updated state
+//
+// This sensor does not publish configuration events.

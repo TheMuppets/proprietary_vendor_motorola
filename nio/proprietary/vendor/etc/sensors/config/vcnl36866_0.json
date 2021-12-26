@@ -1,0 +1,225 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": ["400", "440", "356"]
+  },
+  "vcnl36866_0":{
+    "owner": "sns_vcnl36866",
+    ".proximity":{
+      "owner": "sns_vcnl36866",
+      ".config":{
+        "owner": "sns_vcnl36866",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".ambient_light":{
+      "owner": "sns_vcnl36866",
+      ".config":{
+        "owner": "sns_vcnl36866",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "vcnl36866_0_platform":{
+    "owner": "sns_vcnl36866",
+    ".config":{
+      "owner": "sns_vcnl36866",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "96"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "122"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".proximity":{
+      "owner": "sns_vcnl36866",
+      ".fac_cal":
+      {
+        "owner": "sns_vcnl36866",
+        "near_threshold":{ "type": "flt", "ver": "0",
+            "data": "1200.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+            "data": "1044.0"
+        }
+      }
+    },
+    ".ambient_light":{
+      "owner": "sns_vcnl36866",
+      ".fac_cal":
+      {
+        "owner": "sns_vcnl36866",
+        "scale":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+        }
+      }
+    },
+    ".placement":{
+      "owner": "sns_vcnl36866",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".custom_param":{
+      "owner": "sns_vcnl36866",
+      "lux_thd1":{ "type": "flt", "ver": "0",
+        "data": "0.5"
+      },
+      "lux_thd2":{ "type": "flt", "ver": "0",
+        "data": "5.0"
+      },
+      "lux_coef1":{ "type": "flt", "ver": "0",
+        "data": "0.230"
+      },
+      "lux_coef2":{ "type": "flt", "ver": "0",
+        "data": "0.155"
+      },
+      "lux_coef3":{ "type": "flt", "ver": "0",
+        "data": "0.123"
+      },
+      "ps_pers":{ "type": "flt", "ver": "0",
+        "data": "48.0"
+      },
+      "ps_period":{ "type": "flt", "ver": "0",
+        "data": "56.0"
+      },
+      "ps_hg":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "ps_mps":{ "type": "flt", "ver": "0",
+        "data": "4096.0"
+      },
+      "ps_it":{ "type": "flt", "ver": "0",
+        "data": "32768.0"
+      },
+      "ps_sun_light_level":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".moto_param":{
+      "owner": "sns_vcnl36866",
+      "ps_max_high_thres":{ "type": "flt", "ver": "0",
+        "data": "2730.0"
+      },
+      "ps_xtalk_low":{ "type": "flt", "ver": "0",
+        "data": "140.0"
+      },
+      "ps_xtalk_high":{ "type": "flt", "ver": "0",
+        "data": "220.0"
+      },
+      "ps_fast_recal_hyst":{ "type": "flt", "ver": "0",
+        "data": "100.0"
+      },
+      "fac_lux_scale":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "fac_lux_target":{ "type": "flt", "ver": "0",
+        "data": "500.0"
+      },
+      "def_lux_scale":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      }
+    }
+  }
+}

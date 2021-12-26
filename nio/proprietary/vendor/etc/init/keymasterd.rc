@@ -1,0 +1,11 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on late-fs
+     start vendor.keymasterd
+
+service vendor.keymasterd /vendor/bin/keymasterd
+     class core
+     user system
+     group system

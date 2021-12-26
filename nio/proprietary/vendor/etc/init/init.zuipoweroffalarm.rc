@@ -1,0 +1,26 @@
+# Copyright (c) 2019, Lenovo MBG inc.
+# All rights reserved.
+
+on boot
+    # change permission for bootalarm
+    # vendor.zuialarm.hardware.alarm@1.0-service will RW bootalarm as system user;
+    # power_off_alarm will read bootalarm as root user.
+    # So bootalarm should define linux permisson: owner root, group system.
+    chmod 0660 /sys/class/rtc/rtc0/bootalarm
+    chown root system /sys/class/rtc/rtc0/bootalarm
+
+service vendor.zui_power_off_alarm /vendor/bin/zui_power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
+# start zui_power_off_alarm when shutdown charging.
+# for Lenovo projects
+on property:vendor.sys.shutdown_charging=1
+    start vendor.zui_power_off_alarm
+
+# for moto non-qcom projects
+on charger
+    start vendor.zui_power_off_alarm
+

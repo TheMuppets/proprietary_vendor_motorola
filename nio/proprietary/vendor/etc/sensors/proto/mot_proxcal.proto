@@ -1,0 +1,47 @@
+// @file mot_proxcal.proto
+//
+// Defines message types for the Motorola Proximity Sensor Recalibration Algorithm.
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot Proximity Sensor Recalibration
+// Sends a recalibrate request to the Proximity Sensor driver when it is
+// requested by the AP or favorable conditions are detected
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_proxcal"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+// - MOT_PROXCAL_MSGID_MOT_PROXCAL_CONFIG is used by the AP to trigger a
+//      recalibration (for In-Call Forced Proximity Recalibration AKA "Double Pump")
+// - MOT_PROXCAL_MSGID_MOT_PROXCAL_UNLOCK_CONFIG is used by the AP to trigger a
+//      recalibration, but only if the device is in portrait mode (for Screen
+//      Unlock Proximity Recalibration)
+
+// Message IDs for Mot ProxCal Algorithm
+enum mot_proxcal_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // From AP, no payload
+  MOT_PROXCAL_MSGID_MOT_PROXCAL_CONFIG = 693;
+
+  // From AP, no payload
+  MOT_PROXCAL_MSGID_MOT_PROXCAL_UNLOCK_CONFIG = 694;
+}
+
+// Stream events:
+//
+// Sends SNS_PROXIMITY_MSGID_SNS_PROXIMITY_RECAL_CONFIG messages to the prox
+// driver (as defined in sns_proximity.proto)
+//
+// This sensor does not publish configuration events.
+//
+// This sensor does not support test events

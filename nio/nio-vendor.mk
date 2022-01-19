@@ -123,6 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/motorola/nio/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/motorola/nio/proprietary/vendor/bin/init.mmi.block_perm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.block_perm.sh \
+    vendor/motorola/nio/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/motorola/nio/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/motorola/nio/proprietary/vendor/bin/keymasterd:$(TARGET_COPY_OUT_VENDOR)/bin/keymasterd \
     vendor/motorola/nio/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \

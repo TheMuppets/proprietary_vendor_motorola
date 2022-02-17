@@ -209,6 +209,34 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+dex_import {
+	name: "moto-telephony",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti-hta",
 	owner: "motorola",

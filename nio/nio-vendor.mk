@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
     vendor/motorola/nio/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
-    vendor/motorola/nio/proprietary/system_ext/framework/moto-telephony.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/moto-telephony.jar \
     vendor/motorola/nio/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/motorola/nio/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/motorola/nio/proprietary/product/etc/permissions/com.motorola.camera3.content.ai.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.content.ai.xml \
@@ -32,9 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/motorola/nio/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/motorola/nio/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/motorola/nio/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
-    vendor/motorola/nio/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
-    vendor/motorola/nio/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
     vendor/motorola/nio/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/motorola/nio/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/motorola/nio/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
@@ -1150,6 +1146,10 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    moto-telephony \
+    com.qti.dpmframework \
+    dpmapi \
+    qcrilhook \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
     c2_manifest_vendor \

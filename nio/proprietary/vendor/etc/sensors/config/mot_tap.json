@@ -1,0 +1,52 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK","IDP"],
+    "soc_id": ["336", "347", "360","355","356"],
+  },
+  "mot_tap":{
+    "owner": "mot_tap",
+    ".params":{
+      "owner": "mot_tap",
+      "prod_idx":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "double_only":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "use_stowed":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "idle_timeout_s":{ "type": "int", "ver": "0",
+        "data": "30"
+      },
+      "tap_window_ms":{ "type": "int", "ver": "0",
+        "data": "320"
+      },
+      "cor_thr":{ "type": "flt", "ver": "0",
+        "data": "70.0"
+      },
+      "cor_spike_thr":{ "type": "flt", "ver": "0",
+        "data": "15.0"
+      },
+      "flat_up_deg":{ "type": "flt", "ver": "0",
+        "data": "10.0"
+      },
+      "flat_up_ang_limit_deg":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "facing_down_deg":{ "type": "flt", "ver": "0",
+        "data": "35.0"
+      },
+      "sigz_mag_low_thr":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      },
+      "sigz_mag_high_thr":{ "type": "flt", "ver": "0",
+        "data": "50.0"
+      },
+      "sigz_min_peak_thr":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      }
+    }
+  }
+}

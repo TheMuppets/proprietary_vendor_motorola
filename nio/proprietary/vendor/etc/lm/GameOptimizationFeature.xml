@@ -106,12 +106,6 @@
                 </Trigger>
 
                 <Trigger>
-                    <Primary>true</Primary>
-                    <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
-                    <AsyncType>-1</AsyncType>
-                </Trigger>
-
-                <Trigger>
                    <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_HEADROOM_REGULATOR</AsyncId>
                    <AsyncType>-1</AsyncType>
@@ -200,12 +194,6 @@
                    <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
                    <AsyncType>1</AsyncType>
-                </Trigger>
-
-                <Trigger>
-                   <Primary>true</Primary>
-                   <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
-                   <AsyncType>-1</AsyncType>
                 </Trigger>
 
                 <Trigger>

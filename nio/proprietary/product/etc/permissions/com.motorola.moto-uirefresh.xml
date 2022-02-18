@@ -2,4 +2,5 @@
 <permissions>
     <feature name="com.motorola.moto" />
     <feature name="com.motorola.moto.uirefresh" />
+    <disallowed-managed-profile package="com.motorola.moto"/>
 </permissions>

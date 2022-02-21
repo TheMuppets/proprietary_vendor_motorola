@@ -1,0 +1,52 @@
+// @file mot_vsync.proto
+//
+// Defines message types for the Motorola Vsync State Sensor.
+//
+// Copyright (c) 2019 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_vsync detects the panel vsync and generates a delayed gpio output along with panel status.
+// This is an on-change sensor.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_vsync"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_vsync_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_VSYNC_MSGID_MOT_VSYNC_EVENT = 772;
+}
+
+enum mot_vsync_state {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_VSYNC_STATE_PANEL_UNKNOWN = 0;
+  MOT_VSYNC_STATE_PANEL_ON = 1;
+  MOT_VSYNC_STATE_PANEL_OFF = 2;
+}
+
+message mot_vsync_event
+{
+  // Event output
+  required mot_vsync_state vsync_state = 1 [default = MOT_VSYNC_STATE_PANEL_UNKNOWN];
+
+  // Panel frequency detected by driver
+  required uint32 det_freq_hz = 2 [default = 0];
+}
+
+// Stream events:
+//
+// The mot_vsync_event message is used to publish updated state
+//
+// This sensor does not publish configuration events.
+

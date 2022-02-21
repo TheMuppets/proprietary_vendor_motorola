@@ -1,0 +1,62 @@
+// @file mot_probe.proto
+//
+// Defines message types for the Motorola's HW probing utilities
+//
+// Copyright (c) 2019 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// mot_probe defines request and response types to be used by drivers so that
+// users can probe sensor registers from the command line using sns_mot_client
+
+// Message IDs
+enum mot_probe_msgid {
+    option (nanopb_enumopt).long_names = false;
+
+    MOT_PROBE_MSGID_MOT_PROBE_REQ = 778;
+    MOT_PROBE_MSGID_MOT_PROBE_RESP = 779;
+}
+
+enum mot_probe_constants {
+    option (nanopb_enumopt).long_names = false;
+
+    MOT_PROBE_MAX_RD_SIZE = 64;
+}
+
+message mot_probe_req
+{
+    // Are we requesting a register read or write?
+    required bool is_read = 1 [default = true];
+
+    // What's the address of the register we want to read?
+    required uint32 reg_addr = 2;
+
+    // What's the SUID of the sensor we're probing?
+    required uint64 suid_high = 3;
+    required uint64 suid_low = 4;
+
+    // If this is a write: What value should we write?
+    optional uint32 wr_value = 5;
+
+    // If the driver controls multiple physical sensors, we need to disambiguate
+    // which sensor we want.
+    // i2c: give the device's i2c address
+    // spi: give the device's chip select value
+    optional uint32 devaddr = 6;
+
+    // How many registers should I read (starting at reg_addr)?
+    // Default is 1
+    optional uint32 rd_size = 7;
+}
+
+message mot_probe_resp
+{
+    // Did it work?
+    required bool success = 1;
+
+    // If we're responding to a read, what did we get?
+    optional uint32 rd_value = 2;
+}

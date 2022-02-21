@@ -1,0 +1,37 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["356"]
+  },
+  "mot_ftm":{
+    "owner": "mot_ftm",
+    ".params":{
+      "owner": "mot_ftm",
+      "motion_gate_ms":{ "type": "int", "ver": "0",
+        "data": "4000"
+      },
+      "unmute_movement_ms":{ "type": "int", "ver": "0",
+        "data": "4000"
+      },
+      "max_gesture_dur_ms":{ "type": "int", "ver": "0",
+        "data": "1700"
+      },
+      "accel_var_alpha":{ "type": "flt", "ver": "0",
+        "data": "0.80"
+      },
+      "arming_low_var":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      },
+      "trigger_low_var":{ "type": "flt", "ver": "0",
+        "data": "0.10"
+      },
+      "z_mag_pct":{ "type": "flt", "ver": "0",
+        "data": "0.93"
+      },
+      "gyro_thresh_rad":{ "type": "flt", "ver": "0",
+        "data": "20.0"
+      }
+    }
+  }
+}

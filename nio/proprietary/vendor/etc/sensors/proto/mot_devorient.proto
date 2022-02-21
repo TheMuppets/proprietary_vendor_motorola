@@ -1,0 +1,106 @@
+// @file mot_devorient.proto
+//
+// Defines the API for Motorola DevOrient algorithm.
+//
+// Copyright (c) 2017, Motorola.
+// All rights reserved.
+// Confidential and Proprietary - Motorola, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Attribute requirements:
+// The DevOrient algorithm publishes:
+// 1. SNS_STD_SENSOR_ATTRID_TYPE attribute value is "mot_devorient_core",
+//    "mot_disprot", "mot_flatup", or "mot_flatdown".
+// 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS is 1.0
+// 3. SNS_STD_SENSOR_ATTRID_RANGES are 0 to 16 or 0 to 2.  These are enum
+//    values that correspond to mot_devorient_flat_state and
+//    mot_devorient_disp_state.
+// 4. SNS_STD_SENSOR_ATTRID_RATES is 1.0
+// 5. See sns_std_sensor.proto for other attributes.
+
+// Handling stream requests:
+// 1. The DevOrient algorithm supports on-change mode
+// 2. The DevOrient algorithm handles the
+//    SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG request for
+//    all stream enable/update requests.
+// 3. The Sensor reports an initial sample for each request,
+//    followed by samples for each transition.
+
+// Message IDs for Motorola DevOrient Sensor
+enum mot_devorient_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Uses message: mot_devorient_core_event
+  MOT_DEVORIENT_MSGID_MOT_DEVORIENT_CORE_EVENT  = 456;
+
+  // Uses message: mot_devorient_disprot_event
+  MOT_DEVORIENT_MSGID_MOT_DEVORIENT_DISPROT_EVENT = 457;
+
+  // Uses message: mot_devorient_flatup_event
+  MOT_DEVORIENT_MSGID_MOT_DEVORIENT_FLATUP_EVENT = 458;
+
+  // Uses message: mot_devorient_flatdown_event
+  MOT_DEVORIENT_MSGID_MOT_DEVORIENT_FLATDOWN_EVENT = 459;
+}
+
+enum mot_devorient_flat_state {
+  option (nanopb_enumopt).long_names = false;
+
+  // These values selected to match values used in DSP register
+  MOT_DEVORIENT_FLAT_UNKNOWN = 0;
+  MOT_DEVORIENT_FLAT_UP = 1;
+  MOT_DEVORIENT_FLAT_DOWN = 2;
+}
+
+enum mot_devorient_disp_state {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_DEVORIENT_DISP_PORTRAIT = 0;
+  MOT_DEVORIENT_DISP_CCW_LANDSCAPE = 1;
+  MOT_DEVORIENT_DISP_PORTRAIT_INV = 2;
+  MOT_DEVORIENT_DISP_CW_LANDSCAPE = 3;
+  MOT_DEVORIENT_DISP_UNKNOWN = 16;
+}
+
+// Events types for DevOrient Sensor
+message mot_devorient_core_event
+{
+  required mot_devorient_disp_state disp_state = 1 [default = MOT_DEVORIENT_DISP_UNKNOWN];
+  required mot_devorient_flat_state flat_state = 2 [default = MOT_DEVORIENT_FLAT_UNKNOWN];
+  required sns_std_sensor_sample_status status = 3 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+}
+
+message mot_devorient_disprot_event
+{
+  required mot_devorient_disp_state disp_state = 1 [default = MOT_DEVORIENT_DISP_UNKNOWN];
+  required sns_std_sensor_sample_status status = 2 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+}
+
+message mot_devorient_flatup_event
+{
+  required bool flatup = 1 [default = false];
+  required sns_std_sensor_sample_status status = 2 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+}
+
+message mot_devorient_flatdown_event
+{
+  required bool flatdown = 1 [default = false];
+  required sns_std_sensor_sample_status status = 2 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+}
+
+// Handling stream events:
+// 1. The DevOrient algorithm publishes events
+//    using mot_devorient_core_event, mot_devorient_disprot_event,
+//    mot_devorient_flatup_event, and mot_devorient_flatdown_event messages.
+// 2. Each stream event publishes an accuracy field:
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_HIGH to mark samples when they are valid.
+// 3. DevOrient algorithm does not publish configuration events.
+
+// Handling self-test requests:
+//    Not supported
+
+// Handling test events:
+//    Not Supported

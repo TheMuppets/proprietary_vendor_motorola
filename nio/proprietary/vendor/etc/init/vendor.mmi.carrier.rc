@@ -1,0 +1,52 @@
+on fs && property:ro.boot.carrier=amxmx
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=reteu
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=reteu2
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=teleu
+    setprop persist.vendor.radio.suppress_ussd_rel 1
+
+on fs && property:ro.boot.carrier=amxbr
+    setprop persist.vendor.radio.use_se_table_only 1
+
+on fs && property:ro.boot.carrier=wndca
+    setprop persist.vendor.radio.process_sups_ind 1
+
+on fs && property:ro.boot.carrier=retca
+    setprop persist.vendor.radio.process_sups_ind 1
+
+on fs && property:ro.boot.carrier=tracfone
+    setprop ro.build.tf_modelnumber ${ro.boot.hardware.sku}
+    setprop ro.build.sw_version ${ro.build.display.id}
+
+on fs && property:ro.boot.carrier=att
+    setprop persist.vendor.ims.dropset_feature 0
+    setprop ro.mot.enable_att_messaging_ps_feature true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs_att true
+
+on fs && property:ro.boot.carrier=attpre
+    setprop persist.vendor.ims.dropset_feature 0
+    setprop ro.mot.enable_att_messaging_ps_feature true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs_att true
+
+on fs && property:ro.boot.carrier=cricket
+    setprop persist.vendor.ims.dropset_feature 0
+    setprop ro.mot.enable_att_messaging_ps_feature true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs_att true
+
+on fs && property:ro.boot.carrier=tmo
+    setprop ro.mot.enable_tmo_messaging_ps_feature true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs_up true
+
+on fs && property:ro.boot.carrier=metropcs
+    setprop ro.mot.enable_tmo_messaging_ps_feature true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs true
+    setprop ro.mot.enable_summit_rcs_ps_feature_mtkrcs_up true

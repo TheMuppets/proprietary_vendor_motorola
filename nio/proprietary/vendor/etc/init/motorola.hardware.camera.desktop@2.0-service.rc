@@ -1,0 +1,5 @@
+service vendor.mot.camera.desktop-hal-2-0 /vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
+    class hal
+    user system
+    group system input uhid
+    priority -10

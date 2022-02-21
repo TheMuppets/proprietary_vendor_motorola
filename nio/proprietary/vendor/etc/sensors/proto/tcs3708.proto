@@ -1,0 +1,23 @@
+// @file tcs3708.proto
+//
+// Defines additional pb APIs needed for the tcs3708 under OLED solution
+//
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// Message IDs
+enum tcs3708_msgid {
+    option (nanopb_enumopt).long_names = false;
+
+    TCS3708_MSGID_TCS3708_ALS_MASTERCAL_REQUEST = 360;
+    TCS3708_MSGID_TCS3708_ALS_MASTERCAL_EVENT = 361;
+}
+
+// Message to sensor
+message tcs3708_als_mastercal_event
+{
+    required uint32 chunk_id = 1;
+    required uint32 again = 2;
+    repeated float raw_data = 3;
+}

@@ -1,0 +1,50 @@
+// @file mot_camgest.proto
+//
+// Defines message types for the Motorola Camera Gesture Sensor.
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_camgest detects the twist gesture to trigger the camera
+// This is actually a special trigger sensor, but it is treated as
+// on-change in SEE.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_camgest"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_camgest_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_CAMGEST_MSGID_MOT_CAMGEST_EVENT = 772;
+}
+
+enum mot_camgest_y_orient {
+  option (nanopb_enumopt).long_names = false;
+  MOT_CAMGEST_Y_ORIENT_UNKNOWN = 0;
+  MOT_CAMGEST_Y_ORIENT_DOWN = 1;
+  MOT_CAMGEST_Y_ORIENT_FLAT = 2;
+  MOT_CAMGEST_Y_ORIENT_UP = 3;
+}
+
+message mot_camgest_event
+{
+  // Event output
+  required uint32 duration_ms = 1;
+  optional mot_camgest_y_orient y_orient = 2;
+}
+
+// Stream events:
+//
+// The mot_camgest_event message is used to publish updated state
+//
+// This sensor does not publish configuration events.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <modprotocol name="HID"/>
+    <modprotocol name="BATTERY"/>
+    <modprotocol name="LIGHTS"/>
+    <modprotocol name="LOOPBACK"/>
+    <modprotocol name="FIRMWARE"/>
+    <modprotocol name="USB_EXT"/>
+    <modprotocol name="CAMERA_EXT"/>
+    <modprotocol name="MODS_DISPLAY"/>
+    <modprotocol name="PTP"/>
+    <modprotocol name="MODS_AUDIO"/>
+    <modprotocol name="RAW"/>
+    <modprotocol name="VENDOR"/>
+</permissions>

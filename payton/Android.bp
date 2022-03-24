@@ -6,6 +6,28 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/system/app/MotoSignatureApp/MotoSignatureApp.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "MotCamera2",
+	owner: "motorola",
+	apk: "proprietary/system/priv-app/MotCamera2/MotCamera2.apk",
+	overrides: ["Camera2"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/ims/ims.apk",
@@ -15,5 +37,11 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/com.motorola.motosignature.jar"],
 }
 

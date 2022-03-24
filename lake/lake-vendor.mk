@@ -6,6 +6,57 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/lake
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/lake/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/lake/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libSNPE.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libSNPE.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libSNPE_G.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libSNPE_G.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libarcsoft_dualcam_refocus.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libarcsoft_supernight.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbg-postproc-jni.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libbs-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbs-depth.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libc++.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libc++.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libc++_shared.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libc++_shared.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libcalculator.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcalculator.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libcalculator_domains.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcalculator_domains.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcamerax_extension_jni.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libgif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libgif.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libhta.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libhta.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libjpeg.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/liblenovo_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/liblenovo_panorama.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/liblenovo_panorama_noqc.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/liblenovo_panorama_noqc.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf-jni.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf-qc-fd-offline_local.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf-qc-fd-offline_local.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmmcamera_faceproc2.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_cinema_graph.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_defocusface.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_defocusface.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_easy_hdr.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_image_stab5.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_image_stab5.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_panorama_gp3.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_sensor_fusion.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_super_resolution.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_super_resolution.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmot-cinemagraph-engine.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmot-remosaic-util.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmot-remosaic-util.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmot-util.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmot-util.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-dis-v4.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-dis-v4.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-dis-v5.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-dis-v5.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmpbase.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libnnp.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libnnp.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-clearsight.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-clearsight.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-depth.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-focus.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-focus.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-offline-fd-local.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-offline-fd-local.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-snpe.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-snpe.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_adsp.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_adsp.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_system.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2_system.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libsymphony-cpu.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsymphony-cpu.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libubifocus.so \
+    vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libzxing-core.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libzxing-core.so \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
@@ -502,4 +553,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
 PRODUCT_PACKAGES += \
-    ims
+    MotoSignatureApp \
+    MotCamera2 \
+    ims \
+    com.motorola.motosignature

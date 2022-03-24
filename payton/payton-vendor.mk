@@ -13,9 +13,107 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/payton/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/payton/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/payton/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/motorola/payton/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/payton/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/payton/proprietary/vendor/etc/zaf/zaf_imx386.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386.json \
     vendor/motorola/payton/proprietary/vendor/etc/zaf/zaf_imx386_mono.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386_mono.json \
     vendor/motorola/payton/proprietary/vendor/etc/zaf/zaf_mot_s5k2l7sa.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_mot_s5k2l7sa.json \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libBulkSNPE.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libBulkSNPE.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libDepthBokehEffect.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libDepthBokehEffect.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libMobileOcrEngine.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libMobileOcrEngine.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libMotDoF.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libMotDoF.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libSNPE.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libSNPE.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libSNPE_G.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libSNPE_G.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libalg-common.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libalg-common.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libarcsoft_agegender_estimation.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libarcsoft_agegender_estimation.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libarcsoft_beautyshot.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libarcsoft_dualcam_refocus.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libas-agegender.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libas-agegender.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libas-beauty.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libas-beauty.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libas-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libas-depth.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libas-supernight.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libas-supernight.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbacktrace.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbacktrace.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbase.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbg-postproc-jni.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbg-postproc.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbg-postproc.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbs-depth-rt.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbs-depth-rt.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libbs-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libbs-depth.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libc++.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libc++.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libc++_shared.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libc++_shared.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libcalculator.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcalculator.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libcalculator_domains.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcalculator_domains.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libclearsight.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libclearsight.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libcutils.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libcutils.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libdualcameraddm.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libdualcameraddm.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libfn-beauty.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libfn-beauty.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libfoundation.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libfoundation.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libfp-relighting-intf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libfp-relighting-intf.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libfp-relighting.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libfp-relighting.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libfp-scenedetect.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libfp-scenedetect.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libgif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libgif.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libjni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libjni.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libjpeg.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/liblenovo_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/liblenovo_panorama.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/liblzma.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/liblzma.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf-base.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf-base.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf-common.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf-common.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf-jni.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmcf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmcf.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_cinema_graph.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_defocusface.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_defocusface.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_easy_hdr.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_image_stab5.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_image_stab5.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_image_stabilizer4.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_image_stabilizer4.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_panorama_gp3.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_sensor_fusion.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmorpho_super_resolution.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmorpho_super_resolution.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-depth.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-dis-v4.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-dis-v4.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-dis-v5.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-dis-v5.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-dis.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-dis.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-hdr.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-hdr.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-refiner.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-refiner.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmp-superres.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmp-superres.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmpbase.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-bestshot-video.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-bestshot-video.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-bestshot.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-bestshot.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-bgFaceAnalysis.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-bgFaceAnalysis.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-blur.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-blur.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-composition.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-composition.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-depth.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-drsd.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-drsd.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-flasheyes.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-flasheyes.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-framestat.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-framestat.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-imagerefiner.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-imagerefiner.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-motion.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-motion.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-selectivecolor.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-selectivecolor.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libmt-watermark.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libmt-watermark.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libopenssh.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libopenssh.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-clearsight-intf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-clearsight-intf.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-clearsight.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-clearsight.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-depth-intf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-depth-intf.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-depth.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-depth.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-facedetect.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-facedetect.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-focus-intf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-focus-intf.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-focus.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-focus.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libqc-snpe.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libqc-snpe.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libremosaic_wrapper.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libremosaiclib.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libremosaiclib.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_adsp.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_adsp.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_system.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsnpe_dsp_domains_v2_system.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libss-aicamera.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libss-aicamera.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsymphony-cpu.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsymphony-cpu.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libsymphonypower.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libsymphonypower.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libunwind.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libunwind.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libutils.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libutils.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libyuv.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libyuv.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libzx-barcode.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libzx-barcode.so \
+    vendor/motorola/payton/proprietary/system/priv-app/MotCamera2/lib/arm64/libzxing-core.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libzxing-core.so \
     vendor/motorola/payton/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/payton/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/payton/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
@@ -426,4 +524,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/payton/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
-    ims
+    MotoSignatureApp \
+    MotCamera2 \
+    ims \
+    com.motorola.motosignature

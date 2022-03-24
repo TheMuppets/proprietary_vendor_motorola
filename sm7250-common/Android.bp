@@ -291,45 +291,6 @@ dex_import {
 }
 
 dex_import {
-	name: "moto-ims-ext",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-ims-ext.jar"],
-}
-
-dex_import {
-	name: "moto-settings",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-settings.jar"],
-}
-
-dex_import {
-	name: "moto-telephony",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-telephony.jar"],
-}
-
-dex_import {
-	name: "qcom-moto-ims-ext",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qcom-moto-ims-ext.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcom-moto-telephony-ext",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qcom-moto-telephony-ext.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.hardware.capabilityconfigstore-V1.0-java",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar"],

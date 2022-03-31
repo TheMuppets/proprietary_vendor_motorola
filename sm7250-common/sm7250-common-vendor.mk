@@ -944,7 +944,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     com.qualcomm.qti.gpudrivers.lito.api30 \
     QtiTelephonyService \
-    datastatusnotification \
     uceShimService \
     WfdService \
     dpmserviceapp \

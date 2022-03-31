@@ -1284,7 +1284,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     MotCamera3 \
     QtiTelephonyService \
-    datastatusnotification \
     uceShimService \
     WfdService \
     dpmserviceapp \

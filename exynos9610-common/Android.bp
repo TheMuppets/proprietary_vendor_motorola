@@ -117,3 +117,17 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/vendor/framework/com.motorola.motosignature.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+

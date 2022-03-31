@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/exynos9610-common/proprietary/vendor/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motosignature.xml \
-    vendor/motorola/exynos9610-common/proprietary/vendor/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.motorola.motosignature.jar \
     vendor/motorola/exynos9610-common/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/motorola/exynos9610-common/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/motorola/exynos9610-common/proprietary/lib64/libmedia_ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_ims.so \
@@ -59,7 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libtscv.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtscv.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libzxing-core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libzxing-core.so \
     vendor/motorola/exynos9610-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/motorola/exynos9610-common/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
     vendor/motorola/exynos9610-common/proprietary/system_ext/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so \
     vendor/motorola/exynos9610-common/proprietary/system_ext/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so \
     vendor/motorola/exynos9610-common/proprietary/system_ext/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so \
@@ -79,7 +77,9 @@ PRODUCT_PACKAGES += \
     MotCamera2 \
     ShannonDataService \
     ShannonNetworkService \
-    ShannonQualifiedNetworksService
+    ShannonQualifiedNetworksService \
+    com.motorola.motosignature \
+    com.android.hotwordenrollment.common.util
 PRODUCT_COPY_FILES += \
     vendor/motorola/exynos9610-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/motorola/exynos9610-common/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \

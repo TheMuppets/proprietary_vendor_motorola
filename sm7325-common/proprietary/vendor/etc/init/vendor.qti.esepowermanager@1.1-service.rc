@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2017-2018, 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+on boot && property:ro.vendor.hw.nfc=ese_nq
+    start qti_esepowermanager_service_1_1
+
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    interface vendor.qti.esepowermanager@1.0::IEsePowerManager default
+    interface vendor.qti.esepowermanager@1.1::IEsePowerManager default
+    class hal
+    user system
+    group nfc system
+    disabled

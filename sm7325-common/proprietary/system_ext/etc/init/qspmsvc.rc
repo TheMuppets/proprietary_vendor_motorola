@@ -1,0 +1,15 @@
+#==============================================================================
+#       qspmsvc.rc
+#
+#  Copyright (c) 2019 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#===============================================================================
+service vendor.qspmsvc /system_ext/bin/qspmsvc
+    class main
+    user system
+    group system
+    disabled
+
+on property:sys.boot_completed=1
+    start vendor.qspmsvc

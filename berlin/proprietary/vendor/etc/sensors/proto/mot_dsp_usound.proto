@@ -1,0 +1,37 @@
+// @file mot_dsp_usound.proto
+//
+// Defines message types for the Motorola DSP Ultrasound (approach) Sensor.
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_dsp_usound detects the approach of the user via ultrasound.
+// This is actually a special trigger sensor, but it is treated as
+// on-change in SEE.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_dsp_usound"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_dsp_usound_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // This message has no payload
+  MOT_DSP_USOUND_MSGID_MOT_DSP_USOUND_APPROACH_EVENT = 772;
+}
+
+// Stream events:
+//
+// The mot_dsp_usound_event message indicates a detected event
+//
+// This sensor does not publish configuration events.
+

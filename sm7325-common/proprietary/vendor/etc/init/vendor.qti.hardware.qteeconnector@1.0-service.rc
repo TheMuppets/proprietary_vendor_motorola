@@ -1,0 +1,10 @@
+on boot && property:ro.vendor.hw.nfc=ese_nq
+    start qteeconnector-hal-1-0
+
+service qteeconnector-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+    interface vendor.qti.hardware.qteeconnector@1.0::IAppConnector default
+    interface vendor.qti.hardware.qteeconnector@1.0::IGPAppConnector default
+    class hal
+    user system
+    group system
+    disabled

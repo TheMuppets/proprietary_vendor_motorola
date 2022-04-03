@@ -1,0 +1,54 @@
+// @file mot_flip.proto
+//
+// Defines message types for the Motorola Flip State Sensor.
+//
+// Copyright (c) 2018 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_flip detects the current state of the devices flip from an inductive sensor.
+// This is an on-change sensor.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_flip"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_flip_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_FLIP_MSGID_MOT_FLIP_EVENT = 772;
+}
+
+enum mot_flip_state {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_FLIP_STATE_UNKNOWN = 0;
+  MOT_FLIP_STATE_OPEN = 1;
+  MOT_FLIP_STATE_CLOSED = 2;
+}
+
+message mot_flip_event
+{
+  // Event output
+  required mot_flip_state flip_state = 1 [default = MOT_FLIP_STATE_UNKNOWN];
+
+  // Running count of open/closed events since registration at boot
+  optional uint32 event_count = 2 [default = 0];
+
+  // Integer representing the cause of the new event (see the driver for the enum)
+  optional int32 cause = 3 [default = 0];
+}
+
+// Stream events:
+//
+// The mot_flip_event message is used to publish updated state
+//
+// This sensor does not publish configuration events.

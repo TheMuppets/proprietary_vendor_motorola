@@ -1,0 +1,63 @@
+// @file sns_mot_factory_cal.proto
+//
+// Defines test API message types for more test command.
+//
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_mot_factory_cal_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Test config request to a physical Sensor
+  SNS_MOT_FACTORY_CAL_MSGID_SNS_PHYSICAL_SENSOR_TEST_CONFIG = 575;
+
+  // Test event message from a physical Sensor
+  SNS_MOT_FACTORY_CAL_MSGID_SNS_PHYSICAL_SENSOR_TEST_EVENT  = 1055;
+}
+
+// Supported mot_factory_cal types for physical sensors
+enum sns_mot_factory_cal_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // read.
+  SNS_MOT_FACTORY_CAL_TYPE_RD= 0;
+
+  // Set.
+  SNS_MOT_FACTORY_CAL_TYPE_SET = 1;
+
+  // Read bias.
+  SNS_MOT_FACTORY_CAL_TYPE_RD_BIAS = 2;
+
+  // Proximity sensor threshold calibration
+  SNS_MOT_FACTORY_CAL_TYPE_PROX_CAL = 3;
+
+  // Restore calibration's golden value
+  SNS_MOT_FACTORY_CAL_TYPE_UNDO_CAL = 4;
+
+  //Interrupt line test
+  SNS_MOT_FACTORY_IRQ_LINE_TEST = 5;
+}
+
+message sns_mot_factory_cal_config
+{
+  // Requested test type.
+  required sns_mot_factory_cal_type test_type = 1;
+  repeated float target_val = 2 [(nanopb).max_count = 5];
+}
+
+message sns_mot_factory_cal_event
+{
+  // Result if the test execution was successful:
+  // true for success
+  // false for failure
+  required bool test_passed = 1 [default = true];
+  required sns_mot_factory_cal_type test_type = 2 [default = SNS_MOT_FACTORY_CAL_TYPE_RD_BIAS];
+  repeated float data_val = 3;
+}
+

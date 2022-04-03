@@ -1,0 +1,17 @@
+<!--
+  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+<!-- DIAG-HAL service-->
+    <hal format="hidl">
+        <name>vendor.qti.diaghal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>Idiag</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

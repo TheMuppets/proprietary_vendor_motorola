@@ -6,10 +6,58 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/exynos9610-common
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/exynos9610-common/proprietary/vendor/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/exynos9610-common/proprietary/vendor/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.motorola.motosignature.jar \
     vendor/motorola/exynos9610-common/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/motorola/exynos9610-common/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/motorola/exynos9610-common/proprietary/lib64/libmedia_ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_ims.so \
     vendor/motorola/exynos9610-common/proprietary/lib64/libmediaadaptor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmediaadaptor.so \
+    vendor/motorola/exynos9610-common/proprietary/product/etc/permissions/com.motorola.camera2.content.ai.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera2.content.ai.xml \
+    vendor/motorola/exynos9610-common/proprietary/product/etc/permissions/com.motorola.camera2.hallasan.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera2.hallasan.xml \
+    vendor/motorola/exynos9610-common/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera2.xml \
+    vendor/motorola/exynos9610-common/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
+    vendor/motorola/exynos9610-common/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera2.xml \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libFNVfbEngineHAL.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libaicamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaicamera.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libarcsoft_dualcam_refocus_hallasan.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_dualcam_refocus_hallasan.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_supernight.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbg-postproc-jni.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libbs-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbs-depth.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcamerax_extension_jni.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-ASIA.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-LATAM.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-US.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-kane_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-kane_ASIA.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-kane_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-kane_LATAM.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfn-beauty-vfb-kane_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-kane_US.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libfoundation.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfoundation.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libgg-tensorflow-lite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-tensorflow-lite.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgif.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjpeg.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmcf-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-base.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmcf-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-jni.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmegface.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmegface.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_cinema_graph.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_defocusface.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_defocusface.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_easy_hdr.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_image_stab5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_image_stab5.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_sensor_fusion.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_super_resolution.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_super_resolution.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-cinemagraph-engine.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmot-remosaic-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-remosaic-util.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-util.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmp-dis-v4.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmp-dis-v4.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmp-dis-v5.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmp-dis-v5.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmpbase.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libnnp.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnnp.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libqc-clearsight.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-clearsight.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libqc-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-depth.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libqc-focus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-focus.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libtscv.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtscv.so \
+    vendor/motorola/exynos9610-common/proprietary/product/lib64/libzxing-core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libzxing-core.so \
     vendor/motorola/exynos9610-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/exynos9610-common/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
     vendor/motorola/exynos9610-common/proprietary/system_ext/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so \
@@ -22,10 +70,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/exynos9610-common/proprietary/system_ext/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 
 PRODUCT_PACKAGES += \
+    MotoSignatureApp \
     ShannonIms \
     OemRilService \
+    MotCamera2AI \
     HotwordEnrollmentOKGoogleWM8280 \
     HotwordEnrollmentXGoogleWM8280 \
+    MotCamera2 \
     ShannonDataService \
     ShannonNetworkService \
     ShannonQualifiedNetworksService

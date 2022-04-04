@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HydraMeta.xsd">
-    <metadata version="498054416" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
+    <metadata version="498096576" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
         <source_control id="$Id$" time="$DateTime$" change="$Change$" author="$Author$" />
         <enum_def enum_name="unifiCSROnlyMIBShield">
             <enum_entry enum_label="open" enum_value="1" />
@@ -301,7 +301,12 @@
             <enum_entry enum_label="LEMAN_S620_P615_MIMO" enum_value="80" />
             <enum_entry enum_label="NEUS_S620_A716U_DUALFEM" enum_value="81" />
             <enum_entry enum_label="LEMAN_S620_G715U_DUALFEM" enum_value="82" />
-        </enum_def>
+            <enum_entry enum_label="LEMAN_S620_M315F" enum_value="83" />
+            <enum_entry enum_label="LEMAN_S620_M215F" enum_value="84" />
+            <enum_entry enum_label="LEMAN_S620_P610_MIMO" enum_value="94" />
+	    <enum_entry enum_label="LEMAN_S620_M317F" enum_value="99"/>
+            <enum_entry enum_label="LEMAN_S620_M415F" enum_value="100" />
+    </enum_def>
         <enum_def enum_name="unifiDebugModulesIndex">
         <!-- MODULE_IDS_RESERVED is used to tell apart compressed debug words. -->
             <enum_entry enum_label="MODULE_IDS_COMPRESSED_DEBUG" enum_value="0" />
@@ -502,6 +507,15 @@
             <enum_entry enum_label="SCAN_FLAG_DISABLE_SCAN"              enum_value="0x0002" />
             <enum_entry enum_label="SCAN_FLAG_ENABLE_NCHO"               enum_value="0x0004" />
             <enum_entry enum_label="SCAN_FLAG_ENABLE_MAC_RANDOMIZATION"  enum_value="0x0008" />
+        </enum_def>
+        <enum_def enum_name="unifiRSSIAvgType">
+            <enum_entry enum_label="RSSI_AVG_TYPE_ALL_FRAMES"     enum_value="0" />
+            <enum_entry enum_label="RSSI_AVG_TYPE_MAX_VALUE"      enum_value="1" />
+        </enum_def>
+        <enum_def enum_name="unifiAntennaSelection">
+            <enum_entry enum_label="ANTENNA0_2G4"                 enum_value="0" />
+            <enum_entry enum_label="ANTENNA1_2G4"                 enum_value="1" />
+            <enum_entry enum_label="ANTENNA_PREFER_STRONGER"      enum_value="2" />
         </enum_def>
         <config_element name="unifiConnectionTypeTableIndex" psid="0">
             <description_user>Index by modulation, 11b, 11g, 11n, 11ac</description_user>
@@ -800,6 +814,18 @@
             <description_user>table index</description_user>
             <type>unifiFrameRXCountersTableIndexEnum</type>
             <nature>software</nature>
+        </config_element>
+        <config_element name="dot11MinPowerCapabilityOverride" psid="113">
+            <description_user>Golden Certification MIB don't delete, change PSID or name: Override for the advertised power in an Association Request.</description_user>
+            <type>int16</type>
+            <range_min>-127</range_min><range_max>127</range_max>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="dot11MaxNetworkPowerCapabilityOverride" psid="114">
+            <description_user>Golden Certification MIB don't delete, change PSID or name: Override for the regulatory domain max power used in calculating network power cap.</description_user>
+            <type>int16</type>
+            <range_min>-127</range_min><range_max>127</range_max>
+            <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="dot11ACKFailureCount" psid="148">
             <description_user>This counter shall increment when an ACK is not received when expected.</description_user>
@@ -1199,7 +1225,7 @@
             <units>&#x00b5;s</units>
             <access_rights>read_only</access_rights>
             <type>uint32</type>
-            <range_max>2147483647</range_max><default>100</default>
+            <range_max>2147483647</range_max><default>0</default>
             <function_list>
                 <function type="get" function_name="mibuint32get" is_for_vif="true"></function>
                 <function type="set" function_name="mibuint32set" is_for_vif="true"></function>
@@ -1262,6 +1288,16 @@
         <config_element name="unifiForceFixedDurationSchedule" psid="2546">
             <description_user>For schedules with fixed duration e.g. scan, unsync VIF, the schedule will be forced after this time to avoid VIF starving </description_user>
             <units>TU</units>
+            <type>uint16</type>
+            <default>0</default>
+            <nature>software</nature><module>macrame</module>
+        </config_element>
+        <config_element name="unifiAntennaSelectionOption" psid="2459">
+            <description_user>Select how antennas will be allocated for SISO/RSDB scenarios. Only valid for multi-radio platforms. WARNING: Changing this value after system start-up will have no effect.
+            If the value is set to 0, antenna0 is used for 2G4 and antenna1 is used for 5G.
+            If the value is set to 1, antenna1 is used for 2G4 and antenna0 is used for 5G.
+            If the value is set to 2, the antenna with the strongest RSSI average will be preferred over the other antenna.
+            Also see unifiAntennaSelection.</description_user>
             <type>uint16</type>
             <default>0</default>
             <nature>software</nature><module>macrame</module>
@@ -1362,10 +1398,16 @@
             <default>1000</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiExtendedCapabilitiesSoftAp" psid="2024">
+            <description_user>Extended capabilities for SoftAp. Bit field definition and coding follows IEEE 802.11 Extended Capability Information Element, with spare subfields for capabilities that are independent from chip/firmware implementation.</description_user>
+            <type>octet_string</type>
+            <range_min>9</range_min><range_max>9</range_max><default>{ 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00 }</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
         <config_element name="unifiExtendedCapabilities" psid="2031">
             <description_user>Extended capabilities. Bit field definition and coding follows IEEE 802.11 Extended Capability Information Element, with spare subfields for capabilities that are independent from chip/firmware implementation.</description_user>
             <type>octet_string</type>
-            <range_min>9</range_min><range_max>9</range_max><default>{ 0x01, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x40, 0x80 }</default>
+            <range_min>9</range_min><range_max>9</range_max><default>{ 0x05, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x40, 0x80 }</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiExtendedCapabilitiesDisabled" psid="2036">
@@ -1514,6 +1556,12 @@
             <type>boolean</type>
             <default>false</default>
             <nature>software</nature><module>macrame</module>
+        </config_element>
+        <config_element name="unifiMLMESTAKeepAliveFailure" psid="2842">
+            <description_user>Link lost by keep alive failure. 0 = Disabled. This is required by MCD.</description_user>
+            <type>boolean</type>
+            <default>false</default>
+            <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiMLMESTAKeepAliveTimeout" psid="2502">
             <description_user>Golden Certification MIB don't delete, change PSID or name: Timeout before disconnecting in seconds. 0 = Disabled. Capped to greater than 6 seconds.</description_user>
@@ -1665,6 +1713,13 @@
             <description_user>Activate Directed Multicast Service (DMS)</description_user>
             <type>boolean</type>
             <default>false</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiMLMEInactivityNewAlgorithmActivated" psid="2105">
+            <description_user>If enabled, the new algorithm which uses the timestamp of Sync frames (Beacon and Probe Response) would be used in logic to evaluate inactivity.
+            If disabled, the old inactivity mechanism of any RX/TX timestamp and transmission of Null/QoS Null frame would be used in inactivity logic.</description_user>
+            <type>boolean</type>
+            <default>true</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiMLMEStationInactivityTimeOut" psid="2098">
@@ -2198,6 +2253,22 @@
             <type>uint32</type>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiRSSITypeToUse" psid="2193">
+            <description_user>Define which type of RSSI averaging will be used internally, e.g. for determining roaming thresholds.
+            If the value is set to 0, then the average RSSI for all frame types will be used.
+            If the value is set to 1, then the maximum RSSI between the beacon-only and non-beacon-only averages will be used.
+            Only used for VIFs of type STA.
+            Also see unifiRSSIAvgType.</description_user>
+            <type>uint16</type>
+            <default>0</default>
+            <nature>software</nature><module>macrame</module>
+        </config_element>
+        <config_element name="unifiNumRSSIAverageSample" psid="2194">
+            <description_user>The amount of samples used for calculating the average RSSI value. WARNING: Changing this value after system start-up will have no effect.</description_user>
+            <type>uint16</type>
+            <default>16</default>
+            <nature>software</nature><module>macrame</module>
+        </config_element>
         <config_element name="unifiRxDataRate" psid="2196">
             <description_user>The bit rate of the last received frame on this VIF.</description_user>
             <description_internal>Request is made per-VIF and only support for STA VIF type.</description_internal>
@@ -2350,6 +2421,9 @@
             <type>uint16</type>
             <units>TU</units>
             <default>60</default>
+            <function_list>
+                <function type="set" function_name="mibuint32set" is_for_vif="false" ></function>
+            </function_list>
             <nature>software</nature><module>macrame</module>
         </config_element>
         <config_element name="unifiUartConfigure" psid="2110">
@@ -2423,6 +2497,12 @@
         </config_element>
         <config_element name="unifiLastBssRSSI" psid="2201">
             <description_user>Last BSS RSSI. See unifiRSSI description.</description_user>
+            <type>int16</type>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiBeaconCu" psid="2296">
+            <description_user>Provides a channel utilization of peer, value 255=100% channel utilization.</description_user>
+            <access_rights>read_only</access_rights>
             <type>int16</type>
             <nature>software</nature><module>mlme</module>
         </config_element>
@@ -3254,7 +3334,7 @@
                 <default index1="31"> 0xE000 </default>
                 <default index1="32"> 0x00FF </default>
                 <default index1="33"> 0x00FF </default>
-                <default index1="34"> 0x00FF </default>
+                <default index1="34"> 0xE004 </default>
                 <default index1="35"> 0xE001 </default>
                 <default index1="36"> 0x0000 </default>
                 <default index1="37"> 0xE004 </default>
@@ -3480,7 +3560,7 @@
              0x67,0x16,0xCB,0x16,0x50,0x0E,0x00}</default>
     <default index1="9">{0x41,0x4D,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x12,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x12,0x00}</default>
     <default index1="10">{0x41,0x4E,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -3576,9 +3656,9 @@
              0x5D,0x16,0xF3,0x16,0x50,0x0E,0x00}</default>
     <default index1="26">{0x42,0x48,0x03,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x14,0x10,
-             0x82,0x14,0xD2,0x14,0x14,0x14,0x12,
-             0x67,0x16,0xCB,0x16,0x14,0x14,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x14,0x10,
+             0x82,0x14,0xD2,0x14,0x50,0x14,0x12,
+             0x67,0x16,0xCB,0x16,0x50,0x14,0x00}</default>
     <default index1="27">{0x42,0x49,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -3589,7 +3669,7 @@
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
              0x82,0x14,0xD2,0x14,0x50,0x14,0x02,
              0x72,0x15,0x4E,0x16,0xA0,0x14,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x14,0x00}</default>
+             0x67,0x16,0xCB,0x16,0x50,0x14,0x00}</default>
     <default index1="29">{0x42,0x4C,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -3670,9 +3750,9 @@
              0x72,0x15,0x4E,0x16,0xA0,0x14,0x02}</default>
     <default index1="43">{0x43,0x46,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x28,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x28,0x18,0x02,
-             0x72,0x15,0x4E,0x16,0x28,0x18,0x02}</default>
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x18,0x02,
+             0x72,0x15,0x4E,0x16,0x50,0x18,0x02}</default>
     <default index1="44">{0x43,0x47,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -3720,10 +3800,10 @@
              0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="52">{0x43,0x52,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x14,0x18,0x02,
-             0x72,0x15,0x62,0x16,0x14,0x18,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x1E,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x18,0x02,
+             0x72,0x15,0x62,0x16,0x50,0x18,0x02,
+             0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="53">{0x43,0x55,0x01,
              0x62,0x09,0xA8,0x09,0x28,0x1E,0x00,
              0x32,0x14,0x82,0x14,0x50,0x17,0x00,
@@ -3788,10 +3868,10 @@
              0x5E,0x15,0x26,0x16,0xA0,0x1E,0x02}</default>
     <default index1="64">{0x45,0x43,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x14,0x18,0x02,
-             0x72,0x15,0x62,0x16,0x14,0x18,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x1E,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x18,0x02,
+             0x72,0x15,0x62,0x16,0x50,0x18,0x02,
+             0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="65">{0x45,0x45,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x10,
@@ -3800,8 +3880,8 @@
              0x67,0x16,0xCB,0x16,0x50,0x0E,0x00}</default>
     <default index1="66">{0x45,0x47,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x28,0x14,0x00,
-             0x82,0x14,0xD2,0x14,0x28,0x14,0x02}</default>
+             0x32,0x14,0x82,0x14,0x50,0x14,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x14,0x02}</default>
     <default index1="67">{0x45,0x48,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -3954,10 +4034,10 @@
              0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="94">{0x47,0x55,0x01,
              0x62,0x09,0xA8,0x09,0x28,0x1E,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x14,0x18,0x02,
-             0x72,0x15,0x62,0x16,0x14,0x18,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x1E,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x18,0x02,
+             0x72,0x15,0x62,0x16,0x50,0x18,0x02,
+             0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="95">{0x47,0x57,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -4005,7 +4085,7 @@
              0x67,0x16,0xCB,0x16,0x50,0x0E,0x00}</default>
     <default index1="103">{0x49,0x44,0x03,
              0x62,0x09,0xB2,0x09,0x14,0x14,0x00,
-             0x67,0x16,0xCB,0x16,0x14,0x17,0x00}</default>
+             0x67,0x16,0xCB,0x16,0x50,0x17,0x00}</default>
     <default index1="104">{0x49,0x45,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x10,
@@ -4043,8 +4123,8 @@
              0x67,0x16,0xCB,0x16,0x50,0x14,0x00}</default>
     <default index1="110">{0x49,0x52,0x03,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x28,0x14,0x00,
-             0x82,0x14,0xD2,0x14,0x28,0x14,0x02,
+             0x32,0x14,0x82,0x14,0x50,0x14,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x14,0x02,
              0x72,0x15,0x62,0x16,0xA0,0x1B,0x02,
              0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="111">{0x49,0x53,0x02,
@@ -4084,7 +4164,7 @@
              0x32,0x14,0x82,0x14,0x50,0x17,0x00,
              0x82,0x14,0xD2,0x14,0x50,0x14,0x02,
              0x72,0x15,0x4E,0x16,0xA0,0x1E,0x02,
-             0x67,0x16,0xCB,0x16,0x28,0x17,0x00}</default>
+             0x67,0x16,0xCB,0x16,0x50,0x17,0x00}</default>
     <default index1="118">{0x4B,0x47,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -4169,10 +4249,10 @@
              0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="132">{0x4C,0x4B,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x14,0x18,0x02,
-             0x72,0x15,0x62,0x16,0x14,0x18,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x1E,0x00}</default>
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x18,0x02,
+             0x72,0x15,0x62,0x16,0x50,0x18,0x02,
+             0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="133">{0x4C,0x52,0x00,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -4510,8 +4590,8 @@
              0x67,0x16,0xCB,0x16,0x50,0x0E,0x00}</default>
     <default index1="192">{0x52,0x53,0x02,
              0x60,0x09,0xB3,0x09,0x28,0x14,0x00,
-             0x1E,0x14,0xE6,0x14,0x28,0x17,0x10,
-             0x5E,0x15,0x5D,0x16,0x14,0x1E,0x02,
+             0x1E,0x14,0xE6,0x14,0x50,0x17,0x10,
+             0x5E,0x15,0x5D,0x16,0x50,0x1E,0x02,
              0x67,0x16,0xCB,0x16,0x50,0x0E,0x00}</default>
     <default index1="193">{0x52,0x55,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
@@ -4615,10 +4695,10 @@
              0x72,0x15,0x4E,0x16,0xA0,0x14,0x02}</default>
     <default index1="212">{0x53,0x56,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x14,0x11,0x00,
-             0x82,0x14,0xD2,0x14,0x14,0x17,0x02,
+             0x32,0x14,0x82,0x14,0x50,0x11,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x17,0x02,
              0x72,0x15,0x62,0x16,0xA0,0x1B,0x02,
-             0x67,0x16,0xCB,0x16,0x14,0x1E,0x00}</default>
+             0x67,0x16,0xCB,0x16,0x50,0x1E,0x00}</default>
     <default index1="213">{0x53,0x58,0x00,
              0x62,0x09,0xA8,0x09,0x28,0x14,0x00,
              0x32,0x14,0x82,0x14,0x50,0x14,0x00,
@@ -4656,9 +4736,9 @@
              0x67,0x16,0xCB,0x16,0x50,0x14,0x00}</default>
     <default index1="219">{0x54,0x47,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x28,0x14,0x00,
-             0x82,0x14,0xD2,0x14,0x28,0x14,0x02,
-             0x72,0x15,0x4E,0x16,0x28,0x1B,0x02,
+             0x32,0x14,0x82,0x14,0x50,0x14,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x14,0x02,
+             0x72,0x15,0x4E,0x16,0x50,0x1B,0x02,
              0x67,0x16,0xCB,0x16,0x50,0x14,0x00}</default>
     <default index1="220">{0x54,0x48,0x01,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
@@ -4803,9 +4883,9 @@
              0x67,0x16,0xCB,0x16,0x50,0x1B,0x00}</default>
     <default index1="246">{0x57,0x53,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
-             0x32,0x14,0x82,0x14,0x28,0x14,0x00,
-             0x82,0x14,0xD2,0x14,0x28,0x14,0x02,
-             0x72,0x15,0x62,0x16,0x28,0x1B,0x02,
+             0x32,0x14,0x82,0x14,0x50,0x14,0x00,
+             0x82,0x14,0xD2,0x14,0x50,0x14,0x02,
+             0x72,0x15,0x62,0x16,0x50,0x1B,0x02,
              0x67,0x16,0xA3,0x16,0x28,0x1B,0x00}</default>
     <default index1="247">{0x58,0x4B,0x02,
              0x62,0x09,0xB2,0x09,0x28,0x14,0x00,
@@ -4869,7 +4949,7 @@
           <!-- end of unifiOperatingClassTable -->
           <config_element name="unifiScanParametersTableIndex" psid="0">
               <type>integer</type>
-              <range_min>1</range_min><range_max>20</range_max>
+              <range_min>1</range_min><range_max>24</range_max>
               <description_user>Index for unifiScanParametersTable. Index is a Scan_Type as defined in FAPI. </description_user>
           </config_element>
           <config_element name="unifiScanParameters" psid="2154">
@@ -4937,58 +5017,74 @@
                   >= 1 VIFS:      2      flags     24TU           58TU          102TU -->
             <default index1="9">{ 0x02,  0x09,     0x44,0x00,     0x92,0x00,    0x75,0x00,    0x00,
                                   0x02,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x00}</default>
+            <!-- Single Channel scan
+                     0 VIFS:      6      false     70TU           232TU         232TU
+                  >= 1 VIFS:      6      false     70TU           232TU         232TU -->
+            <default index1="10">{0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00,
+                                  0x06,  0x00,     0x46,0x00,     0xE8,0x00,    0xE8,0x00,    0x00}</default>
             <!-- Measurement scan
                      0 VIFS       (no scan with 0 VIFS):
                   >= 1 VIFS:      3      flags     24TU           58TU          102TU  -->
-            <default index1="10">{0x03,  0x09,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,
+            <default index1="16">{0x03,  0x09,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80,
                                   0x03,  0x01,     0x18,0x00,     0x3A,0x00,    0x66,0x00,    0x80}</default>
             <!-- Soft Cached Roaming scan
                      0 VIFS NA:   4      flags     27TU           68TU          117TU
                   >= 1 VIFS:      4      flags     27TU           68TU          117TU         Any_RA    -->
-            <default index1="11">{0x04,  0x0C,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,
+            <default index1="17">{0x04,  0x0C,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,
                                   0x04,  0x04,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04}</default>
             <!-- Soft All Roaming scan
                      0 VIFS NA:   4      flags     27TU           68TU          117TU
                   >= 1 VIFS:      4      flags     27TU           68TU          117TU         Any_RA    -->
-            <default index1="12">{0x04,  0x09,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,
+            <default index1="18">{0x04,  0x09,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04,
                                   0x04,  0x01,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x04}</default>
             <!-- Hard Cached Roaming scan
                      0 VIFS NA:   8      flags     39TU           98TU          117TU
                   >= 1 VIFS:      8      flags     39TU           98TU          117TU         Any_RA    -->
-            <default index1="13">{0x08,  0x08,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,
+            <default index1="19">{0x08,  0x08,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,
                                   0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04}</default>
             <!-- Hard All Roaming scan
                      0 VIFS NA:   8      flags     39TU           98TU          117TU
                   >= 1 VIFS:      8      flags     39TU           98TU          117TU         Any_RA    -->
-            <default index1="14">{0x08,  0x08,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,
+            <default index1="20">{0x08,  0x08,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04,
                                   0x08,  0x00,     0x27,0x00,     0x62,0x00,    0x75,0x00,    0x04}</default>
             <!-- OBSS Internal scan
                      0 VIFS NA:   3      flags     5TU            20TU          100TU
                   >= 1 VIFS       3      flags     5TU            20TU          100TU -->
-            <default index1="15">{0x03,  0x09,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,
+            <default index1="21">{0x03,  0x09,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00,
                                   0x03,  0x01,     0x05,0x00,     0x14,0x00,    0x64,0x00,    0x00}</default>
             <!-- NAN scan
                      0 VIFS NA:   3      flags     N/A            N/A           200TU
                   >= 1 VIFS:      3      flags     N/A            N/A           200TU         Passive    -->
-            <default index1="16">{0x03,  0x08,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,
+            <default index1="22">{0x03,  0x08,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01,
                                   0x03,  0x00,     0x00,0x00,     0x00,0x00,    0xC8,0x00,    0x01}</default>
             <!-- FTM Neighbour scan
                      0 VIFS NA:   4      flags     27TU           68TU          117TU
                   >= 1 VIFS:      4      flags     27TU           68TU          117TU   -->
-            <default index1="17">{0x04,  0x08,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,
+            <default index1="23">{0x04,  0x08,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00,
                                   0x04,  0x00,     0x1B,0x00,     0x44,0x00,    0x75,0x00,    0x00}</default>
             <!-- Dummy Entry -->
-            <default index1="18">{0x00,  0x09,     0x02,0x03,     0x04,0x05,    0x06,0x07,    0x08,
+            <default index1="24">{0x00,  0x09,     0x02,0x03,     0x04,0x05,    0x06,0x07,    0x08,
                                   0x09,  0x08,     0x07,0x06,     0x05,0x04,    0x03,0x02,    0x01}</default>  </default_list>
             <nature>software</nature>
           </config_element>
-
+         <config_element name="unifiP2PLegacyProbeResponseActivated" psid="2599">
+            <description_user>Golden Certification MIB don't delete. When activated, P2P-GO responds to legacy Probe Request.</description_user>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature><module>mlme</module>
+         </config_element>
          <config_element name="dot11TDLSPeerUAPSDBufferSTAActivated" psid="2587">
            <description_user>Activate TDLS peer U-APSD.</description_user>
            <type>boolean</type>
            <default>true</default>
            <nature>software</nature><module>mlme</module>
           </config_element>
+        <config_element name="unifiIncludePMKIDForPSK" psid="2610">
+          <description_user>Include PMKID in frame if security type WPA2-PSK.</description_user>
+           <type>boolean</type>
+           <default>false</default>
+           <nature>software</nature><module>mlme</module>
+        </config_element>
         <config_element name="dot11TDLSPeerUAPSDIndicationWindow" psid="53">
             <description_user>The minimum time after the last TPU SP, before a RAME_TPU_SP indication can be issued.</description_user>
             <type>uint16</type>
@@ -5065,8 +5161,16 @@
            <default>true</default>
            <nature>software</nature><module>mlme</module>
           </config_element>
+         <config_element name="unifiWiFiSharingChannels" psid="2581">
+            <description_user>Default host allowed channels during Wifi Sharing. Defined in a uint64 represented by the octet string.
+                First byte of the octet string maps to LSB. Bits 0-13 representing 2.4G channels. Mapping defined in ChannelisationRules.</description_user>
+            <type>octet_string</type>
+            <range_min>8</range_min><range_max>8</range_max><default>{ 0xFF, 0xDF, 0xFF, 0xFF, 0x7F, 0x00, 0x00, 0x00 }</default>
+            <access_rights>read_only</access_rights>
+            <nature>software</nature><module>mlme</module>
+         </config_element>
          <config_element name="unifiWiFiSharing5GHzChannel" psid="2582">
-            <description_user>Applicable 5GHz Primary Channels mask. Defined in a uint64 represented by the octet string.
+            <description_user>Deprecated. Applicable 5GHz Primary Channels mask. Defined in a uint64 represented by the octet string.
             First byte of the octet string maps to LSB. Bits 0-13 representing 2.4G channels are always set to 0. Mapping defined in ChannelisationRules; i.e. Bit 14 maps to channel 36.</description_user>
             <type>octet_string</type>
             <range_min>8</range_min><range_max>8</range_max><default>{ 0x00, 0xC0, 0xFF, 0xFF, 0x7F, 0x00, 0x00, 0x00 }</default>
@@ -5269,6 +5373,16 @@
             <type>uint16</type>
             <nature>software</nature><module>macrame</module>
         </config_element>
+        <config_element name="unifiUseHostListenInterval" psid="2476">
+            <description_user>Listen interval of beacons when in single-vif as set by host.</description_user>
+            <range_min>0</range_min><range_max>65535</range_max><default>0</default>
+            <units>DTIM intervals</units>
+            <type>uint16</type>
+            <function_list>
+                <function type="set" function_name="mibuint16set" is_for_vif="false"></function>
+            </function_list>
+            <nature>software</nature><module>macrame</module>
+        </config_element>
         <config_element name="unifiListenInterval" psid="2519">
             <description_user>Association request listen interval parameter in beacon intervals. Not used for any other purpose.</description_user>
             <range_min>0</range_min><range_max>100</range_max><default>10</default>
@@ -5300,7 +5414,7 @@
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiHtCapabilitiesSoftAp" psid="2028">
-            <description_user>HT capabilities of the chip. See SC-503520-SP for further details. NOTE: Greenfield has been disabled due to interoperability issues wuth SGI.</description_user>
+            <description_user>HT capabilities for softAP to disallow MIMO when customer want to control MIMO/ SISO mode (see SC-508764-DD for further details). NOTE: Greenfield has been disabled due to interoperability issues with setting SGI.</description_user>
             <type>octet_string</type>
             <range_min>21</range_min><range_max>21</range_max><default>{ 0xef, 0x0a, 0x17, 0xff, 0xff, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 } </default>
             <nature>software</nature><module>mlme</module>
@@ -5329,16 +5443,40 @@
             <default>10</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiFrameResponseLongTimeOut" psid="2101"><!-- conmgr -->
+            <description_user>Timeout, in TU, to wait for a frame(Auth, Assoc, ReAssoc) after TX Cfm trasnmission_status == Successful for SAE</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>10000</range_max><default>5000</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
         <config_element name="unifiFrameResponseCfmFailureTimeOut" psid="2085">
             <description_user>Timeout, in TU, to wait to retry a frame (Auth, Assoc, ReAssoc) after TX Cfm trasnmission_status != Successful | TxLifetime.</description_user>
             <type>uint16</type>
             <default>40</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
-        <config_element name="unifiConnectionFailureTimeout" psid="2081">
-            <description_user>Timeout, in TU, for a frame retry before giving up.</description_user>
+        <config_element name="unifiInitialConnectionFailureTimeout" psid="2102">
+            <description_user>Timeout, in milliseconds, for a frame retry before giving up for initial connection.</description_user>
             <type>uint16</type>
-            <range_min>0</range_min><range_max>20000</range_max><default>10000</default>
+            <range_min>0</range_min><range_max>20000</range_max><default>3000</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifRetryAuthForSpecialAps" psid="2103">
+            <description_user>How long, in milliseconds, before ConnectionFailureTimeout to send authentication frame for special aps.</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>20000</range_max><default>500</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiConnectionFailureTimeout" psid="2081">
+            <description_user>Timeout, in milliseconds, for a frame retry before giving up.</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>20000</range_max><default>2000</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiAssocComebackTimeout" psid="2104">
+            <description_user>Timeout, in TU, for a association comeback limit before giving up.</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>20000</range_max><default>3000</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiConnectingProbeTimeout" psid="2082">
@@ -5385,14 +5523,23 @@
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiBaConfig" psid="2225">
-            <description_user>Block Ack Configuration. It is composed of A-MSDU supported, TX MPDU per A-MPDU, RX Buffer size, TX Buffer size and Block Ack Timeout. </description_user>
-            <!--
+            <description_user>Block Ack Configuration. It is composed of A-MSDU supported, TX MPDU per A-MPDU, RX Buffer size, TX Buffer size and Block Ack Timeout. Indexed by unifiAccessClassIndex.
+                <!--
                 a_msdu_supported = (bool)   BA_MIB_A_MSDU_IN_A_MPDU_SUPPORTED_POS & BA_MIB_A_MSDU_IN_A_MPDU_SUPPORTED_MASK);
                 rx_buffer_size   = (uint8)  BA_MIB_RX_BUFFER_SIZE_POS             & BA_MIB_RX_BUFFER_SIZE_MASK);
+                tx_buffer_size   = (uint8)  BA_MIB_TX_BUFFER_SIZE_POS             & BA_MIB_TX_BUFFER_SIZE_MASK
                 timeout          = (uint16) BA_MIB_TIMEOUT_POS                    & BA_MIB_TIMEOUT_MASK << 8);
-            -->
+                -->
+            </description_user>
+            <access_rights>read_write</access_rights>
             <type>uint32</type>
-            <default>0x3fff01</default>
+            <table_name>unifiBaConfigTable</table_name>
+            <default_list>
+                <default index1="1">0x3fff00</default> <!-- AC_BK -->
+                <default index1="2">0x3fff01</default> <!-- AC_BE -->
+                <default index1="3">0x3fff01</default> <!-- AC_VI -->
+                <default index1="4">0x3fff00</default> <!-- AC_VO -->
+            </default_list>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiBaTxMaxNumber" psid="2226">
@@ -5440,6 +5587,12 @@
             <default>true</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiIgmpOffloadActivated" psid="2489">
+            <description_user>Activate IGMP IPv4 Offloading.</description_user>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
         <config_element name="unifiMaxClient" psid="2550">
             <description_user>Restricts the maximum number of associated STAs for SoftAP.</description_user>
             <type>uint16</type>
@@ -5462,14 +5615,14 @@
         <!-- GO protection during scan -->
         <config_element name="unifiGOScanAbsenceDuration" psid="2548">
             <description_user>Duration of the Absence time to use when protecting P2PGO VIFs from scan operations. A value of 0 disables the feature.</description_user>
-            <default>7</default>
+            <default>2</default>
             <units>beacon intervals</units>
            <type>uint16</type>
            <nature>software</nature><module>macrame</module>
         </config_element>
         <config_element name="unifiGOScanAbsencePeriod" psid="2549">
             <description_user>Period of the Absence/Presence times cycles to use when protecting P2PGO VIFs from scan operations.</description_user>
-            <default>14</default>
+            <default>4</default>
             <units>beacon intervals</units>
            <type>uint16</type>
            <nature>software</nature><module>macrame</module>
@@ -5477,14 +5630,14 @@
         <!-- AP protection during scan -->
         <config_element name="unifiAPScanAbsenceDuration" psid="2480">
             <description_user>Duration of the Absence time to use when protecting AP VIFs from scan operations. A value of 0 disables the feature.</description_user>
-            <default>7</default>
+            <default>2</default>
             <units>beacon intervals</units>
            <type>uint16</type>
            <nature>software</nature><module>macrame</module>
         </config_element>
         <config_element name="unifiAPScanAbsencePeriod" psid="2481">
             <description_user>Period of the Absence/Presence times cycles to use when protecting AP VIFs from scan operations.</description_user>
-            <default>14</default>
+            <default>4</default>
             <units>beacon intervals</units>
            <type>uint16</type>
            <nature>software</nature><module>macrame</module>
@@ -5588,6 +5741,19 @@
             <default>true</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiRoamingLowLatencySoftRoamingAllowed" psid="2282">
+            <description_user>Allow Soft Roaming functionality for some chipsets when the low latency mode is enabled.</description_user>
+            <type>boolean</type>
+            <access_rights>read_only</access_rights>
+            <default>true</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+          <config_element name="unifiRoamingInP2pActivated" psid="2090">
+           <description_user>Activate Roaming in P2P.</description_user>
+           <type>boolean</type>
+           <default>false</default>
+           <nature>software</nature><module>mlme</module>
+          </config_element>
         <config_element name="unifiRoamRssiScanTrigger" psid="2050">
             <description_user>The RSSI value, in dBm, below which roaming scan shall start. </description_user>
             <type>int16</type>
@@ -5610,12 +5776,14 @@
         <config_element name="unifiRoamCachedChannelScanPeriod" psid="2052">
             <description_user>The scan period for cached channels background roaming (microseconds)</description_user>
             <type>uint32</type>
+            <units>microseconds</units>
             <range_min>1</range_min><default>20000000</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="UnifiRoamTrackingScanPeriod" psid="2299">
             <description_user>The scan period for tracking not yet suitable candidate(s)(microseconds)</description_user>
             <type>uint32</type>
+            <units>microseconds</units>
             <range_min>1</range_min><default>5000000</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
@@ -5679,6 +5847,12 @@
             <range_min>0</range_min><range_max>100</range_max><default>20</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
+        <config_element name="unifiRoamAPSelectMinDeltaFactor" psid="2322">
+            <description_user>The minimum delta value(x100) of score to be considered as eligible candidate. Please note this applies only to soft roams.</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>100</range_max><default>15</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>        
         <config_element name="unifiRoamCUWeight" psid="2303">
             <description_user>Weight of CUfactor, in percentage points, in AP selection algorithm.</description_user>
             <type>uint16</type>
@@ -5743,7 +5917,13 @@
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiRoamBSSLoadMonitoringFrequency" psid="2309">
-            <description_user>How often, in reveived beacons, should the BSS load be monitored? - used for roaming</description_user>
+            <description_user>How often, in seconds, should the BSS load be monitored? - used for roaming</description_user>
+            <type>uint16</type>
+            <range_min>0</range_min><range_max>100</range_max><default>1</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiRoamBSSCUTriggerFrequency" psid="2641">
+            <description_user>How long, in seconds, should the BSS load be high before triggering roaming?</description_user>
             <type>uint16</type>
             <range_min>0</range_min><range_max>100</range_max><default>10</default>
             <nature>software</nature><module>mlme</module>
@@ -5754,12 +5934,6 @@
             <range_min>0</range_min><range_max>100</range_max><default>10</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
-        <config_element name="unifiRoamDeauthReason" psid="2294">
-            <description_user>A deauthentication reason for which the STA will trigger a roaming scan rather than disconnect directly.</description_user>
-            <type>uint16</type>
-            <default>3</default>
-            <nature>software</nature><module>mlme</module>
-        </config_element>
         <config_element name="unifiRoamBlacklistSize" psid="2310">
             <description_user>Do not remove! Read by the host! And then passed up to the framework.</description_user>
             <type>uint16</type>
@@ -5768,46 +5942,91 @@
             <nature>software</nature><module>mlme</module>
         </config_element>
 
-        <config_element name="unifiRoamScanControl" psid="2067">
-            <description_user>NCHO: Enable MCD NCHO feature.</description_user>
+       <config_element name="unifiNchoActivated" psid="2293">
+            <description_user>Activate Network Controlled Hand Over (NCHO)</description_user>
+            <access_rights>read_only</access_rights>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature><module>mlme</module>
+       </config_element>
+        <config_element name="unifiRoamNchoScanControl" psid="2067">
+            <description_user>NCHO: Indicates which control path shall be evaluated in order to determine which channels should be scanned for NCHO scans.</description_user>
             <type>boolean</type>
             <default>false</default>
             <nature>software</nature><module>mlme</module><!-- scan --><!-- roam -->
         </config_element>
-        <config_element name="unifiRoamDfsScanMode" psid="2068">
-            <description_user>NCHO: For certification and Host use only.</description_user>
+        <config_element name="unifiRoamNchoDfsScanMode" psid="2068">
+            <description_user>NCHO: Specifies how DFS channels should be scanned for roaming. For certification and Host use only.</description_user>
             <type>uint16</type>
             <range_min>0</range_min><range_max>2</range_max><default>1</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
-        <config_element name="unifiFullRoamScanPeriod" psid="2053">
-            <description_user>NCHO: For certification and Host use only.</description_user>
+        <config_element name="unifiRoamNchoFullScanPeriod" psid="2053">
+            <description_user>NCHO: Specifies the period at which the full channel scan shall be run. For certification and Host use only.</description_user>
             <type>uint32</type>
-            <range_min>1</range_min><default>30000000</default>
+            <units>microseconds</units>
+            <range_min>1</range_min><default>120000000</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
-        <config_element name="unifiRoamScanMaxActiveChannelTime" psid="2057">
-            <description_user>NCHO: Name confusion for Host compatibility.</description_user>
+        <config_element name="unifiRoamNchoCachedScanPeriod" psid="2292">
+            <description_user>NCHO: Specifies the period at which the cached channel scan shall be run. For certification and Host use only.</description_user>
+            <type>uint32</type>
+            <units>microseconds</units>
+            <range_min>1</range_min><default>10000000</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiRoamNchoScanMaxActiveChannelTime" psid="2057">
+            <description_user>NCHO: Specifies the maximum time spent scanning a channel.</description_user>
             <type>uint16</type>
-            <range_min>1</range_min><default>120</default>
+            <units>TU</units>
+            <range_min>1</range_min><default>40</default>
             <nature>software</nature><module>mlme</module><!-- scan -->
         </config_element>
-        <config_element name="unifiRoamScanNProbe" psid="2072">
+        <config_element name="unifiRoamNchoScanNProbe" psid="2072">
             <description_user>NCHO: The number of ProbeRequest frames per channel.  </description_user>
             <type>uint16</type><default>2</default>
             <nature>software</nature><module>mlme</module><!-- scan -->
         </config_element>
-        <config_element name="unifiRoamScanHomeTime" psid="2069">
+        <config_element name="unifiRoamNchoScanHomeTime" psid="2069">
             <description_user>NCHO: The time, in TU, to spend NOT scanning during a HomeAway scan.</description_user>
             <type>uint16</type>
+            <units>TU</units>
             <range_min>40</range_min><default>45</default>
             <nature>software</nature><module>mlme</module><!-- scan -->
         </config_element>
-        <config_element name="unifiRoamScanHomeAwayTime" psid="2070">
+        <config_element name="unifiRoamNchoScanHomeAwayTime" psid="2070">
             <description_user>NCHO: The time, in TU, to spend scanning during a HomeAway scan.</description_user>
             <type>uint16</type>
+            <units>TU</units>
             <range_min>40</range_min><default>100</default>
             <nature>software</nature><module>mlme</module><!-- scan -->
+        </config_element>
+        <config_element name="unifiRoamNchoRssiDelta" psid="2075">
+            <description_user>NCHO: Specifies the RSSI delta at a potential candidate is deemed eligible.</description_user>
+            <type>uint16</type>
+            <units>dBm</units>
+            <range_min>0</range_min><range_max>127</range_max><default>10</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiRoamNchoRssiTrigger" psid="2092">
+            <description_user>The current channel Averaged RSSI value below which a NCHO scan shall start.</description_user>
+            <type>int16</type>
+            <units>dBm</units>
+            <range_min>-128</range_min><range_max>127</range_max><default>-75</default>
+            <nature>software</nature><module>mlme</module><!-- scan -->
+        </config_element>
+        <config_element name="unifiRoamNchoRssiTriggerHysteresis" psid="2093">
+            <description_user>Hysteresis value that added to unifiRoamNchoRssiTrigger will result in the RSSI value that will stop eventual NCHO scans.</description_user>
+            <type>uint16</type>
+            <units>dBm</units>
+            <range_min>0</range_min><range_max>127</range_max><default>5</default>
+            <nature>software</nature><module>mlme</module><!-- scan -->
+        </config_element>
+        <config_element name="unifiRoamSendInitFrameToGetNeighbors" psid="2525">
+            <description_user>Golden Certification MIB don't delete, change PSID or name: The firmware can send a Neighbor request/ BTM query to get AP's neighbors. This frame upsets certification setups. Setting this MIB to false inhibits sending a Neighbor request/ BTM query to get AP's neighbors.</description_user>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature><module>mlme</module>
         </config_element>
         <!-- End of roaming-relevant MIBs -->
 
@@ -6256,6 +6475,12 @@
             <description_user>RM Enabled capabilities of the chip. See SC-503520-SP for further details.</description_user>
             <type>octet_string</type>
             <range_min>5</range_min><range_max>5</range_max><default>{ 0x73, 0x00, 0x00, 0x00, 0x04 }</default>
+            <nature>software</nature><module>mlme</module>
+        </config_element>
+        <config_element name="unifiRMMaxScanCacheCount" psid="5402">
+            <description_user>Maximum count the Mlme Measurement will maintain the scan result for beacon table mode.</description_user>
+            <type>uint16</type>
+            <range_min>10</range_min><range_max>150</range_max><default>70</default>
             <nature>software</nature><module>mlme</module>
         </config_element>
         <config_element name="unifiOverrideDefaultBETXOP" psid="2365">
@@ -6884,6 +7109,16 @@ The rates are encoded in host(FAPI) format, see SC-506179, section 4.41.
             </function_list>
             <nature>hardware</nature>
         </config_element>
+        <config_element name="unifiDpdDebugIqCapture" psid="2377">
+            <description_user>For Engineering debug use only.</description_user>
+            <description_internal> When set "true" this MIB enables debug IQ capture during DPD training for debugging or testing DPD related issues </description_internal>
+            <type>boolean</type>
+            <default>false</default>
+            <function_list>
+                <function type="set" function_name="mibricechangenonfsmparams" is_for_vif="false"></function>
+            </function_list>
+            <nature>hardware</nature>
+        </config_element>
         <config_element name="unifiRxPriEnergyDetThreshold" psid="5093">
             <description_user>OBSOLETE. Energy detection threshold for primary 20MHz channel.</description_user>
             <type>uint16</type>
@@ -7023,6 +7258,9 @@ The rates are encoded in host(FAPI) format, see SC-506179, section 4.41.
         </config_element>
         <config_element name="unifiOverrideEDCAParamBE" psid="5023">
             <description_user>Deprecated</description_user><type>octet_string</type><nature>software</nature>
+        </config_element>
+        <config_element name="unifiPLM689WorkaroundTriggerARPCount" psid="2048">
+            <description_user>Deprecated</description_user><type>uint16</type><nature>software</nature><module>mlme</module>
         </config_element>
         <!-- ******************************************************************************************* -->
         <config_table table_name="dot11RSNAStatsTable" num_indices="2">
@@ -7292,6 +7530,10 @@ The rates are encoded in host(FAPI) format, see SC-506179, section 4.41.
         <config_table table_name="unifiNANDefaultScanPeriodTable" num_indices="1">
             <description_user>Table allocating a default scan period for each band</description_user>
             <index1 name="unifiBandTableIndex" />
+        </config_table>
+        <config_table table_name="unifiBaConfigTable" num_indices="1">
+            <description_user>Conceptual table for BlockAck configuration, index by Access Class.</description_user>
+            <index1 name="unifiAccessClassIndex"/>
         </config_table>
 
         <!-- ******************************************************************************************* -->

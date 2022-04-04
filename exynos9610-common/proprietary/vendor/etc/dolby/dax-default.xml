@@ -199,6 +199,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="80"/>
@@ -216,6 +217,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
@@ -233,6 +235,7 @@
         <dialog-enhancer-enable value="true" />
         <dialog-enhancer-amount value="10" />
         <dialog-enhancer-ducking value="0" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true" />
         <surround-boost value="0" />
         <volmax-boost value="96" />
@@ -263,6 +266,7 @@
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
@@ -280,10 +284,11 @@
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
-        <volume-leveler-enable value="false"/>
+        <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="7"/>
         <volume-leveler-in-target value="-320"/>
         <volume-leveler-out-target value="-320"/>
@@ -297,6 +302,7 @@
         <dialog-enhancer-enable value="true" />
         <dialog-enhancer-amount value="6" />
         <dialog-enhancer-ducking value="0" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true" />
         <surround-boost value="0" />
         <volmax-boost value="96" />
@@ -327,6 +333,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="80"/>
@@ -344,10 +351,11 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="48"/>
         <volmax-boost value="96"/>
-        <volume-leveler-enable value="false"/>
+        <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="4"/>
         <volume-leveler-in-target value="-320"/>
         <volume-leveler-out-target value="-320"/>
@@ -361,6 +369,7 @@
         <dialog-enhancer-enable value="false" />
         <dialog-enhancer-amount value="7" />
         <dialog-enhancer-ducking value="0" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true" />
         <surround-boost value="0" />
         <volmax-boost value="96" />
@@ -391,6 +400,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="48"/>
         <volmax-boost value="96"/>
@@ -408,6 +418,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="48"/>
         <volmax-boost value="96"/>
@@ -425,6 +436,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="96"/>

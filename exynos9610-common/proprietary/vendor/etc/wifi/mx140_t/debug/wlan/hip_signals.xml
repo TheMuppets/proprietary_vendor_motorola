@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="SamsungWifiHip.xsl"?>
-<!-- Copyright Samsung Electronics Co. Limited 2019. All Rights Reserved. -->
+<!-- Copyright Samsung Electronics Co. Limited 2021. All Rights Reserved. -->
 <!-- WARNING! Do not directly edit this file. -->
-<!-- This file was generated on 2019-11-29 11:41 by merge_saps.py version 1.6.1 -->
+<!-- This file was generated on 2021-04-19 21:35 by merge_saps.py version 1.6.1 -->
 <!-- Field name backward compatibility=True -->
 <!-- Data_References instead of firmware_references=False -->
 <!-- Add additional type definitions=False -->
@@ -1633,6 +1633,21 @@
       <value name="WIFI_EVENT_DRIVER_PNO_SCAN_REQUESTED" value="0x0035"/>
       <value name="WIFI_EVENT_DRIVER_PNO_SCAN_RESULT_FOUND" value="0x0036"/>
       <value name="WIFI_EVENT_DRIVER_PNO_SCAN_COMPLETE" value="0x0037"/>
+      <value name="WIFI_EVENT_FW_BTM_FRAME_REQUEST" value="0x0038"/>
+      <value name="WIFI_EVENT_FW_BTM_FRAME_RESPONSE" value="0x0039"/>
+      <value name="WIFI_EVENT_FW_NR_FRAME_REQUEST" value="0x003a"/>
+      <value name="WIFI_EVENT_FW_CONNECTION_ATTEMPT_ABORTED" value="0x003c"/>
+      <value name="WIFI_EVENT_ROAM_AUTH_TIMEOUT" value="0x003d"/>
+      <value name="WIFI_EVENT_ROAM_SCAN_RESULT" value="0x003e"/>
+      <value name="WIFI_EVENT_ROAM_RSSI_THRESHOLD" value="0x003f"/>
+      <value name="WIFI_EVENT_FW_BEACON_REPORT_REQUEST" value="0x0040"/>
+      <value name="WIFI_EVENT_FW_FTM_RANGE_REQUEST" value="0x0041"/>
+      <value name="WIFI_EVENT_FW_NAN_ROLE_TYPE" value="0x0042"/>
+      <value name="WIFI_EVENT_FW_FRAME_TRANSMIT_FAILURE" value="0x0043"/>
+      <value name="WIFI_EVENT_FW_NR_FRAME_RESPONSE" value="0x0044"/>
+      <value name="WIFI_EVENT_NAN_AVAILABILITY_UPDATE" value="0x0045"/>
+      <value name="WIFI_EVENT_NAN_ULW_UPDATE" value="0x0046"/>
+      <value name="WIFI_EVENT_NAN_TRAFFIC_UPDATE" value="0x0047"/>
       <value name="WIFI_EVENT_BLACKOUT_START" value="0x0064"/>
       <value name="WIFI_EVENT_BLACKOUT_STOP" value="0x0065"/>
       <value name="WIFI_EVENT_NAN_PUBLISH_TERMINATED" value="0x0100"/>
@@ -2337,6 +2352,52 @@
          <type>Natural32</type>
       </field>
    </type>
+   <type dvalue="MLME_CONFIGURE_MONITOR_MODE.confirm" name="MLME_CONFIGURE_MONITOR_MODE.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_CONFIGURE_MONITOR_MODE.request" name="MLME_CONFIGURE_MONITOR_MODE.request" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Channel_Frequency_Segment_0">
+         <type>Channel_Frequency</type>
+      </field>
+      <field name="Channel_Information">
+         <type>Channel_Information</type>
+      </field>
+      <field name="Channel_Frequency_Segment_1">
+         <type>Channel_Frequency</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
    <type dvalue="MLME_CONNECT.confirm" name="MLME_CONNECT.confirm" resource="SIGNAL">
       <field hidden="true" name="Data" suppress="true">
          <type>Data_Reference</type>
@@ -2449,6 +2510,58 @@
       </field>
       <field name="Association_Identifier">
          <type>Association_Id</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_DELBA.confirm" name="MLME_DELBA.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_DELBA.request" name="MLME_DELBA.request" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Peer_QSTA_Address">
+         <type>MAC_Address</type>
+      </field>
+      <field name="Sequence_Number">
+         <type>Sequence_Number</type>
+      </field>
+      <field name="User_Priority">
+         <type>Priority</type>
+      </field>
+      <field name="Reason">
+         <type>Reason_Code</type>
+      </field>
+      <field name="Direction">
+         <type>Direction</type>
       </field>
       <field name="Spare1" suppress="true">
          <type>Natural32</type>
@@ -3237,6 +3350,97 @@
          <type>Natural32</type>
       </field>
    </type>
+   <type dvalue="MLME_NAN_RANGE.confirm" name="MLME_NAN_RANGE.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_NAN_RANGE.indication" name="MLME_NAN_RANGE.indication" resource="SIGNAL">
+      <field name="NAN_TLVs">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_NAN_RANGE.request" name="MLME_NAN_RANGE.request" resource="SIGNAL">
+      <field name="NAN_TLVs">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_NAN_RANGE_CANCEL.confirm" name="MLME_NAN_RANGE_CANCEL.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_NAN_RANGE_CANCEL.request" name="MLME_NAN_RANGE_CANCEL.request" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
    <type dvalue="MLME_NAN_SERVICE.indication" name="MLME_NAN_SERVICE.indication" resource="SIGNAL">
       <field name="Information_Elements">
          <type>Data_Reference</type>
@@ -3250,19 +3454,19 @@
       <field name="Match_ID">
          <type>Natural16</type>
       </field>
-      <field name="Ranging_Measurement">
+      <field name="Spare1">
          <type>Natural32</type>
       </field>
-      <field name="rangingIndicationType">
-         <type>Ranging_Ind_Type</type>
-      </field>
-      <field name="Spare1" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare2" suppress="true">
-         <type>Natural32</type>
+      <field name="Spare2">
+         <type>Natural16</type>
       </field>
       <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare4" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare5" suppress="true">
          <type>Natural32</type>
       </field>
    </type>
@@ -4040,6 +4244,63 @@
          <type>Natural32</type>
       </field>
    </type>
+   <type dvalue="MLME_ROAMING_CHANNEL_LIST.confirm" name="MLME_ROAMING_CHANNEL_LIST.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_ROAMING_CHANNEL_LIST.indication" name="MLME_ROAMING_CHANNEL_LIST.indication" resource="SIGNAL">
+      <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Channel_Information">
+         <type>Channel_Information</type>
+      </field>
+      <field name="Protection_scope">
+         <type>Natural16</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_ROAMING_CHANNEL_LIST.request" name="MLME_ROAMING_CHANNEL_LIST.request" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
    <type dvalue="MLME_RSSI_REPORT.indication" name="MLME_RSSI_REPORT.indication" resource="SIGNAL">
       <field hidden="true" name="Data" suppress="true">
          <type>Data_Reference</type>
@@ -4091,8 +4352,11 @@
       <field name="Network_Block_ID">
          <type>Natural16</type>
       </field>
+      <field name="SNR">
+         <type>Decibels</type>
+      </field>
       <field name="Spare1" suppress="true">
-         <type>Natural32</type>
+         <type>Natural16</type>
       </field>
       <field name="Spare2" suppress="true">
          <type>Natural32</type>
@@ -4340,6 +4604,43 @@
       </field>
       <field name="Band">
          <type>Band</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SET_BSS_MAX_CHANNEL_WIDTH.confirm" name="MLME_SET_BSS_MAX_CHANNEL_WIDTH.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SET_BSS_MAX_CHANNEL_WIDTH.request" name="MLME_SET_BSS_MAX_CHANNEL_WIDTH.request" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
       </field>
       <field name="Spare1" suppress="true">
          <type>Natural32</type>
@@ -4757,6 +5058,43 @@
          <type>Natural32</type>
       </field>
    </type>
+   <type dvalue="MLME_SET_ROAMING_PARAMETERS.confirm" name="MLME_SET_ROAMING_PARAMETERS.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SET_ROAMING_PARAMETERS.request" name="MLME_SET_ROAMING_PARAMETERS.request" resource="SIGNAL">
+      <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
    <type dvalue="MLME_SET_ROAMING_TYPE.confirm" name="MLME_SET_ROAMING_TYPE.confirm" resource="SIGNAL">
       <field hidden="true" name="Data" suppress="true">
          <type>Data_Reference</type>
@@ -4792,6 +5130,52 @@
       </field>
       <field name="Spare2" suppress="true">
          <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SET_SCAN_MODE.confirm" name="MLME_SET_SCAN_MODE.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SET_SCAN_MODE.request" name="MLME_SET_SCAN_MODE.request" resource="SIGNAL">
+      <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Scan_Mode">
+         <type>Scan_Mode</type>
+      </field>
+      <field name="Max_Channel_Time_Active">
+         <type>Time_Units</type>
+      </field>
+      <field name="Home_Away_Time">
+         <type>Time_Units</type>
+      </field>
+      <field name="Home_Time">
+         <type>Time_Units</type>
+      </field>
+      <field name="Max_Channel_Time_Passive">
+         <type>Time_Units</type>
       </field>
       <field name="Spare3" suppress="true">
          <type>Natural32</type>
@@ -4883,8 +5267,28 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE2.response" name="MLME_SPARE2.response" resource="SIGNAL">
+   <type dvalue="MLME_SPARE10.confirm" name="MLME_SPARE10.confirm" resource="SIGNAL">
       <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE10.request" name="MLME_SPARE10.request" resource="SIGNAL">
+      <field name="Data">
          <type>Data_Reference</type>
       </field>
       <field name="Virtual_Interface_Index">
@@ -4900,8 +5304,45 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE3.indication" name="MLME_SPARE3.indication" resource="SIGNAL">
+   <type dvalue="MLME_SPARE11.confirm" name="MLME_SPARE11.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE11.request" name="MLME_SPARE11.request" resource="SIGNAL">
       <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE2.response" name="MLME_SPARE2.response" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
          <type>Data_Reference</type>
       </field>
       <field name="Virtual_Interface_Index">
@@ -4934,44 +5375,7 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE4.confirm" name="MLME_SPARE4.confirm" resource="SIGNAL">
-      <field hidden="true" name="Data" suppress="true">
-         <type>Data_Reference</type>
-      </field>
-      <field name="Virtual_Interface_Index">
-         <type>VIF_Index</type>
-      </field>
-      <field name="Result_Code">
-         <type>Result_Code</type>
-      </field>
-      <field name="Spare1" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare2" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare3" suppress="true">
-         <type>Natural32</type>
-      </field>
-   </type>
    <type dvalue="MLME_SPARE4.indication" name="MLME_SPARE4.indication" resource="SIGNAL">
-      <field name="Data">
-         <type>Data_Reference</type>
-      </field>
-      <field name="Virtual_Interface_Index">
-         <type>VIF_Index</type>
-      </field>
-      <field name="Spare1" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare2" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare3" suppress="true">
-         <type>Natural32</type>
-      </field>
-   </type>
-   <type dvalue="MLME_SPARE4.request" name="MLME_SPARE4.request" resource="SIGNAL">
       <field name="Data">
          <type>Data_Reference</type>
       </field>
@@ -5005,26 +5409,6 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE5.confirm" name="MLME_SPARE5.confirm" resource="SIGNAL">
-      <field hidden="true" name="Data" suppress="true">
-         <type>Data_Reference</type>
-      </field>
-      <field name="Virtual_Interface_Index">
-         <type>VIF_Index</type>
-      </field>
-      <field name="Result_Code">
-         <type>Result_Code</type>
-      </field>
-      <field name="Spare1" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare2" suppress="true">
-         <type>Natural32</type>
-      </field>
-      <field name="Spare3" suppress="true">
-         <type>Natural32</type>
-      </field>
-   </type>
    <type dvalue="MLME_SPARE5.indication" name="MLME_SPARE5.indication" resource="SIGNAL">
       <field name="Data">
          <type>Data_Reference</type>
@@ -5042,7 +5426,7 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE5.request" name="MLME_SPARE5.request" resource="SIGNAL">
+   <type dvalue="MLME_SPARE6.indication" name="MLME_SPARE6.indication" resource="SIGNAL">
       <field name="Data">
          <type>Data_Reference</type>
       </field>
@@ -5059,7 +5443,7 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE6.confirm" name="MLME_SPARE6.confirm" resource="SIGNAL">
+   <type dvalue="MLME_SPARE7.confirm" name="MLME_SPARE7.confirm" resource="SIGNAL">
       <field hidden="true" name="Data" suppress="true">
          <type>Data_Reference</type>
       </field>
@@ -5079,7 +5463,81 @@
          <type>Natural32</type>
       </field>
    </type>
-   <type dvalue="MLME_SPARE6.request" name="MLME_SPARE6.request" resource="SIGNAL">
+   <type dvalue="MLME_SPARE7.request" name="MLME_SPARE7.request" resource="SIGNAL">
+      <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE8.confirm" name="MLME_SPARE8.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE8.request" name="MLME_SPARE8.request" resource="SIGNAL">
+      <field name="Data">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE9.confirm" name="MLME_SPARE9.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_SPARE9.request" name="MLME_SPARE9.request" resource="SIGNAL">
       <field name="Data">
          <type>Data_Reference</type>
       </field>
@@ -5415,6 +5873,43 @@
          <type>Natural32</type>
       </field>
    </type>
+   <type dvalue="MLME_WIFISHARING_PERMITTED_CHANNELS.confirm" name="MLME_WIFISHARING_PERMITTED_CHANNELS.confirm" resource="SIGNAL">
+      <field hidden="true" name="Data" suppress="true">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Result_Code">
+         <type>Result_Code</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
+   <type dvalue="MLME_WIFISHARING_PERMITTED_CHANNELS.request" name="MLME_WIFISHARING_PERMITTED_CHANNELS.request" resource="SIGNAL">
+      <field name="Channels_list">
+         <type>Data_Reference</type>
+      </field>
+      <field name="Virtual_Interface_Index">
+         <type>VIF_Index</type>
+      </field>
+      <field name="Spare1" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare2" suppress="true">
+         <type>Natural32</type>
+      </field>
+      <field name="Spare3" suppress="true">
+         <type>Natural32</type>
+      </field>
+   </type>
    <type name="Message_Type" resource="TYPE" size="16">
       <value name="EAP_Message" value="0x0001"/>
       <value name="EAPOL_Key_M123" value="0x0002"/>
@@ -5678,11 +6173,6 @@
       <value name="radio_0" value="0x0001"/>
       <value name="radio_1" value="0x0002"/>
    </type>
-   <type name="Ranging_Ind_Type" resource="TYPE" size="16">
-      <value name="Continuous_Indication" value="0x0001"/>
-      <value name="Ingress" value="0x0002"/>
-      <value name="Egress" value="0x0004"/>
-   </type>
    <type name="Rate" resource="TYPE" size="16">
       <field name="HT">
          <type>HT</type>
@@ -5754,6 +6244,8 @@
       <value name="Channel_Switch_Failure" value="0x8007"/>
       <value name="Reporting_Aborted_Scanning" value="0x8008"/>
       <value name="Reporting_Aborted_Roaming" value="0x8009"/>
+      <value name="Out_of_range_Sequence_Number" value="0x800a"/>
+      <value name="Misuse_of_AMSDU" value="0x800b"/>
       <value name="NAN_Service_Terminated_Timeout" value="0x9001"/>
       <value name="NAN_Service_Terminated_User_Request" value="0x9002"/>
       <value name="NAN_Service_Terminated_Count_Reached" value="0x9003"/>
@@ -5793,6 +6285,8 @@
       <value name="Assoc_Abort" value="0x8012"/>
       <value name="Auth_No_Ack" value="0x8013"/>
       <value name="Assoc_No_Ack" value="0x8014"/>
+      <value name="Auth_Tx_Fail" value="0x8015"/>
+      <value name="Assoc_Tx_Fail" value="0x8016"/>
       <value name="Auth_Failed_Code" value="0x8100"/>
       <value name="Assoc_Failed_Code" value="0x8200"/>
       <value name="Invalid_TLV_Value" value="0x9000"/>
@@ -5838,6 +6332,10 @@
       <value name="disable_external_lna" value="0x0040"/>
    </type>
    <type name="Scan_Id" resource="TYPE" size="16"/>
+   <type name="Scan_Mode" resource="TYPE" size="16">
+      <value name="Legacy" value="0x0000"/>
+      <value name="Low_Latency" value="0x0001"/>
+   </type>
    <type name="Scan_Policy" resource="TYPE" size="8">
       <value name="Passive" value="0x01"/>
       <value name="Test_Mode" value="0x02"/>
@@ -5857,16 +6355,17 @@
       <value name="OBSS_Scan" value="0x0006"/>
       <value name="AP_Auto_Channel_Selection" value="0x0007"/>
       <value name="GScan" value="0x0009"/>
+      <value name="Single_Channel_Scan" value="0x000a"/>
       <!-- FW internal values -->
-      <value name="Measurement_Scan" value="0x000a"/>
-      <value name="Soft_Cached_Roaming_Scan" value="0x000b"/>
-      <value name="Soft_All_Roaming_Scan" value="0x000c"/>
-      <value name="Hard_Cached_Roaming_Scan" value="0x000d"/>
-      <value name="Hard_All_Roaming_Scan" value="0x000e"/>
-      <value name="OBSS_Scan_Internal" value="0x000f"/>
-      <value name="NAN_Scan" value="0x0010"/>
-      <value name="FTM_Neighbour_Scan" value="0x0011"/>
-      <value name="First_Illegal" value="0x0012"/>
+      <value name="Measurement_Scan" value="0x0010"/>
+      <value name="Soft_Cached_Roaming_Scan" value="0x0011"/>
+      <value name="Soft_All_Roaming_Scan" value="0x0012"/>
+      <value name="Hard_Cached_Roaming_Scan" value="0x0013"/>
+      <value name="Hard_All_Roaming_Scan" value="0x0014"/>
+      <value name="OBSS_Scan_Internal" value="0x0015"/>
+      <value name="NAN_Scan" value="0x0016"/>
+      <value name="FTM_Neighbour_Scan" value="0x0017"/>
+      <value name="First_Illegal" value="0x0018"/>
    </type>
    <type name="Sender_Bit" resource="TYPE" size="1" subsidiary="true"/>
    <type name="Sequence_Number" resource="TYPE" size="16">
@@ -5947,15 +6446,26 @@
       <value name="MLME_NDP_REQUEST.request" value="0x2035"/>
       <value name="MLME_NDP_RESPONSE.request" value="0x2036"/>
       <value name="MLME_NDP_TERMINATE.request" value="0x2037"/>
-      <value name="MLME_SPARE4.request" value="0x203a"/>
-      <value name="MLME_SPARE5.request" value="0x203b"/>
-      <value name="MLME_SPARE6.request" value="0x203c"/>
+      <value name="MLME_ROAMING_CHANNEL_LIST.request" value="0x203a"/>
+      <value name="MLME_SET_BSS_MAX_CHANNEL_WIDTH.request" value="0x203b"/>
+      <value name="MLME_SET_SCAN_MODE.request" value="0x203c"/>
       <value name="MLME_INSTALL_APF.request" value="0x203d"/>
       <value name="MLME_READ_APF.request" value="0x203e"/>
       <value name="MLME_SET_NUM_ANTENNAS.request" value="0x203f"/>
       <value name="MLME_ARP_DETECT.request" value="0x2040"/>
       <value name="MLME_SET_ROAMING_TYPE.request" value="0x2041"/>
       <value name="MLME_SET_BAND.request" value="0x2042"/>
+      <value name="MLME_SET_ROAMING_PARAMETERS.request" value="0x2043"/>
+      <value name="MLME_WIFISHARING_PERMITTED_CHANNELS.request" value="0x2044"/>
+      <value name="MLME_SPARE7.request" value="0x2045"/>
+      <value name="MLME_SPARE8.request" value="0x2046"/>
+      <value name="MLME_CONFIGURE_MONITOR_MODE.request" value="0x2047"/>
+      <value name="MLME_SPARE9.request" value="0x2048"/>
+      <value name="MLME_SPARE10.request" value="0x2049"/>
+      <value name="MLME_SPARE11.request" value="0x204a"/>
+      <value name="MLME_NAN_RANGE.request" value="0x204b"/>
+      <value name="MLME_NAN_RANGE_CANCEL.request" value="0x204c"/>
+      <value name="MLME_DELBA.request" value="0x204d"/>
       <value name="MLME_GET.confirm" value="0x2101"/>
       <value name="MLME_SET.confirm" value="0x2102"/>
       <value name="MLME_POWERMGT.confirm" value="0x2103"/>
@@ -6005,15 +6515,26 @@
       <value name="MLME_NDP_REQUEST.confirm" value="0x2135"/>
       <value name="MLME_NDP_RESPONSE.confirm" value="0x2136"/>
       <value name="MLME_NDP_TERMINATE.confirm" value="0x2137"/>
-      <value name="MLME_SPARE4.confirm" value="0x213a"/>
-      <value name="MLME_SPARE5.confirm" value="0x213b"/>
-      <value name="MLME_SPARE6.confirm" value="0x213c"/>
+      <value name="MLME_ROAMING_CHANNEL_LIST.confirm" value="0x213a"/>
+      <value name="MLME_SET_BSS_MAX_CHANNEL_WIDTH.confirm" value="0x213b"/>
+      <value name="MLME_SET_SCAN_MODE.confirm" value="0x213c"/>
       <value name="MLME_INSTALL_APF.confirm" value="0x213d"/>
       <value name="MLME_READ_APF.confirm" value="0x213e"/>
       <value name="MLME_SET_NUM_ANTENNAS.confirm" value="0x213f"/>
       <value name="MLME_ARP_DETECT.confirm" value="0x2140"/>
       <value name="MLME_SET_ROAMING_TYPE.confirm" value="0x2141"/>
       <value name="MLME_SET_BAND.confirm" value="0x2142"/>
+      <value name="MLME_SET_ROAMING_PARAMETERS.confirm" value="0x2143"/>
+      <value name="MLME_WIFISHARING_PERMITTED_CHANNELS.confirm" value="0x2144"/>
+      <value name="MLME_SPARE7.confirm" value="0x2145"/>
+      <value name="MLME_SPARE8.confirm" value="0x2146"/>
+      <value name="MLME_CONFIGURE_MONITOR_MODE.confirm" value="0x2147"/>
+      <value name="MLME_SPARE9.confirm" value="0x2148"/>
+      <value name="MLME_SPARE10.confirm" value="0x2149"/>
+      <value name="MLME_SPARE11.confirm" value="0x214a"/>
+      <value name="MLME_NAN_RANGE.confirm" value="0x214b"/>
+      <value name="MLME_NAN_RANGE_CANCEL.confirm" value="0x214c"/>
+      <value name="MLME_DELBA.confirm" value="0x214d"/>
       <value name="MLME_CONNECT.response" value="0x2200"/>
       <value name="MLME_CONNECTED.response" value="0x2201"/>
       <value name="MLME_REASSOCIATE.response" value="0x2202"/>
@@ -6049,7 +6570,7 @@
       <value name="MLME_CHANNEL_SWITCHED.indication" value="0x231a"/>
       <value name="MLME_SYNCHRONISED.indication" value="0x231b"/>
       <value name="MLME_BEACON_REPORTING_EVENT.indication" value="0x231c"/>
-      <value name="MLME_SPARE3.indication" value="0x231d"/>
+      <value name="MLME_ROAMING_CHANNEL_LIST.indication" value="0x231d"/>
       <value name="MLME_SPARE4.indication" value="0x231e"/>
       <value name="MLME_NDP_REQUEST.indication" value="0x231f"/>
       <value name="MLME_NDP_REQUESTED.indication" value="0x2320"/>
@@ -6057,6 +6578,8 @@
       <value name="MLME_NDP_TERMINATE.indication" value="0x2322"/>
       <value name="MLME_NDP_TERMINATED.indication" value="0x2323"/>
       <value name="MLME_SPARE5.indication" value="0x2324"/>
+      <value name="MLME_SPARE6.indication" value="0x2325"/>
+      <value name="MLME_NAN_RANGE.indication" value="0x2326"/>
       <value name="DEBUG_SPARE1.request" value="0x8000"/>
       <value name="DEBUG_SPARE2.request" value="0x8001"/>
       <value name="DEBUG_SPARE3.request" value="0x8002"/>
@@ -6888,6 +7411,18 @@
       <value name="No_BSS" value="0x0003"/>
       <value name="Unavailable_Key_Mapping" value="0x0005"/>
       <value name="Unspecified_failure" value="0x0006"/>
+      <value name="Data_retry_limit" value="0x0007"/>
+      <value name="Non_Data_retry_limit" value="0x0008"/>
+      <value name="Data_Tx_Lifetime" value="0x0009"/>
+      <value name="Non_Data_Tx_Lifetime" value="0x000a"/>
+      <value name="Data_Cancelled" value="0x000b"/>
+      <value name="Non_Data_Cancelled" value="0x000c"/>
+      <value name="Unspecified_Failure1" value="0x00010"/>
+      <value name="Unspecified_Failure2" value="0x00011"/>
+      <value name="Unspecified_Failure3" value="0x00012"/>
+      <value name="Unspecified_Failure4" value="0x00013"/>
+      <value name="Unspecified_Failure5" value="0x00014"/>
+      <value name="Unspecified_Failure6" value="0x00015"/>
    </type>
    <type name="Tx_Data_Type" resource="TYPE" size="16">
       <!-- Specify payload or frame content -->
@@ -7542,8 +8077,8 @@
       <value name="DATA_SAP_ENG_VERSION" value="0x0001"/>
       <value name="DEBUG_SAP_VERSION" value="0x0d03"/>
       <value name="DEBUG_SAP_ENG_VERSION" value="0x0001"/>
-      <value name="CONTROL_SAP_VERSION" value="0x0e03"/>
-      <value name="CONTROL_SAP_ENG_VERSION" value="0x000a"/>
+      <value name="CONTROL_SAP_VERSION" value="0x0e07"/>
+      <value name="CONTROL_SAP_ENG_VERSION" value="0x000d"/>
    </type>
    <type name="int16" resource="TYPE" signed="true" size="16"/>
    <type name="int32" resource="TYPE" signed="true" size="32"/>

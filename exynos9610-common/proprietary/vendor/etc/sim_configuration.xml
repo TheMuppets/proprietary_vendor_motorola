@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resource version="191011">
+    <!--France-->
+    <mcc value="208">
+        <!--Bouygues-->
+        <mnc value="20">
+            <item key="SMS_OVER_LTE" value="1"/>
+            <item key="SMS_OVER_WIFI" value="1"/>
+        </mnc>
+    </mcc>
+
+    <mcc value="525">
+        <mnc value="3">
+            <item key="SMS_OVER_LTE" value="1"/>
+            <item key="SMS_OVER_WIFI" value="1"/>
+        </mnc>
+    </mcc>
+
+    <!--Argentina-->
+    <mcc value="722">
+        <!--Personal-->
+        <mnc value="34,340,341">
+            <item key="SMS_OVER_LTE" value="1"/>
+            <item key="SMS_OVER_WIFI" value="1"/>
+        </mnc>
+    </mcc>
+</resource>

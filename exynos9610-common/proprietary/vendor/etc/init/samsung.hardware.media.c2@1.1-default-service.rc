@@ -1,0 +1,6 @@
+service android-hardware-media-c2-hal-1-1 /vendor/bin/hw/samsung.hardware.media.c2@1.1-default-service
+    class hal
+    user mediacodec
+    group camera mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

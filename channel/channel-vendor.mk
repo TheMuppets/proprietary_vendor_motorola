@@ -189,3 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/channel/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/channel/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
     vendor/motorola/channel/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so
+
+PRODUCT_PACKAGES += \
+    MotorolaSettingsProvider

@@ -6,7 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/lake
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/lake/proprietary/system/etc/permissions/com.motorola.camera2.denali.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.camera2.denali.xml \
     vendor/motorola/lake/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/lake/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/lake/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so \
     vendor/motorola/lake/proprietary/system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so \

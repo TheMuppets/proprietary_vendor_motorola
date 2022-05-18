@@ -88,6 +88,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/smith/proprietary/vendor/firmware/fast_switch_ringtone.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/fast_switch_ringtone.txt \
     vendor/motorola/smith/proprietary/vendor/firmware/fast_switch_sonification.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/fast_switch_sonification.txt \
     vendor/motorola/smith/proprietary/vendor/firmware/fast_switch_voice.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/fast_switch_voice.txt \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/motorola/smith/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/motorola/smith/proprietary/vendor/firmware/marley-dsp1-ultrasound.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.bin \
     vendor/motorola/smith/proprietary/vendor/firmware/marley-dsp1-ultrasound.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.wmfw \
     vendor/motorola/smith/proprietary/vendor/firmware/marley-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-frontend.wmfw \

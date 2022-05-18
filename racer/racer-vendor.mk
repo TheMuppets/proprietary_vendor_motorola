@@ -133,6 +133,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/racer/proprietary/vendor/firmware/goodix_cfg_group2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group2.bin \
     vendor/motorola/racer/proprietary/vendor/firmware/goodix_cfg_group2_parker.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group2_parker.bin \
     vendor/motorola/racer/proprietary/vendor/firmware/goodix_cfg_group_boe_racerl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_boe_racerl.bin \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/motorola/racer/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/motorola/racer/proprietary/vendor/firmware/marley-dsp1-ultrasound.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.bin \
     vendor/motorola/racer/proprietary/vendor/firmware/marley-dsp1-ultrasound.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp1-ultrasound.wmfw \
     vendor/motorola/racer/proprietary/vendor/firmware/marley-dsp2-aov-frontend.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/marley-dsp2-aov-frontend.wmfw \

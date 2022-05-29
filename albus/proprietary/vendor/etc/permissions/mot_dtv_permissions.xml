@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the standard set of features for devices that support MobileTV solution. -->
+<permissions>
+    <permission name="com.motorola.dtv.permission.ACCESS_DTV">
+        <group gid="oem_5019" />
+    </permission>
+</permissions>

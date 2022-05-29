@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <permission name="com.motorola.mod.permission.MOD_INTERNAL" >
+        <group gid="oem_5020" />
+        <group gid="camera" />
+    </permission>
+    <feature name="com.motorola.hardware.mods" />
+</permissions>

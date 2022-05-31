@@ -68,6 +68,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/motorola/racer/proprietary/vendor/etc/thermal-engine-racer.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-racer.conf \
     vendor/motorola/racer/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.b00 \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.b01 \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.b02 \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.b03 \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.b04 \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.elf \
+    vendor/motorola/racer/proprietary/vendor/firmware/old_ipa/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/old_ipa/ipa_fws.mdt \
     vendor/motorola/racer/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/motorola/racer/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
     vendor/motorola/racer/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \

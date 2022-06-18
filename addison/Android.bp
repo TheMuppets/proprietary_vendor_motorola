@@ -166,9 +166,64 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "ModFmwkProxyService",
+	owner: "motorola",
+	apk: "proprietary/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ModService",
+	owner: "motorola",
+	apk: "proprietary/priv-app/ModService/ModService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ProjectorApp",
+	owner: "motorola",
+	apk: "proprietary/priv-app/ProjectorApp/ProjectorApp.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "DTVPlayer",
+	owner: "motorola",
+	apk: "proprietary/vendor/app/DTVPlayer/DTVPlayer.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "DTVService",
+	owner: "motorola",
+	apk: "proprietary/vendor/app/DTVService/DTVService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -239,61 +294,6 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "ModFmwkProxyService",
-	owner: "motorola",
-	apk: "proprietary/system/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ModService",
-	owner: "motorola",
-	apk: "proprietary/system/priv-app/ModService/ModService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ProjectorApp",
-	owner: "motorola",
-	apk: "proprietary/system/priv-app/ProjectorApp/ProjectorApp.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "DTVPlayer",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/DTVPlayer/DTVPlayer.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "DTVService",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/DTVService/DTVService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	soc_specific: true,
 }
 

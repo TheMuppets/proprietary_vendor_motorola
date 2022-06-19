@@ -216,17 +216,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DTVPlayer",
-	owner: "motorola",
-	apk: "proprietary/vendor/app/DTVPlayer/DTVPlayer.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "DTVService",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/DTVService/DTVService.apk",

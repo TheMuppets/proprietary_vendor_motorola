@@ -770,5 +770,4 @@ PRODUCT_PACKAGES += \
     ModFmwkProxyService \
     ModService \
     ProjectorApp \
-    DTVPlayer \
     DTVService

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-   <hidden-api-whitelisted-app package="com.motorola.camera2" />
-</config>

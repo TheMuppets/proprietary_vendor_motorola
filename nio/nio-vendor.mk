@@ -1139,6 +1139,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/29_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/29_version_qcrildb.sql \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/30_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/30_version_qcrildb.sql \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/31_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/31_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/33_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/33_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/34_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/34_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/35_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/35_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/36_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/36_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/37_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/37_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/38_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/38_version_qcrildb.sql \
+    vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/39_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/39_version_qcrildb.sql \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
     vendor/motorola/nio/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \

@@ -6,7 +6,4 @@ INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','06','911','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','10','911','','');
 
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('466','110','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('466','119','','');
-
 COMMIT TRANSACTION;

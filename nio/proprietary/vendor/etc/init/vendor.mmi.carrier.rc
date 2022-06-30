@@ -21,6 +21,8 @@ on fs && property:ro.boot.carrier=retca
 
 on fs && property:ro.boot.carrier=tracfone
     setprop ro.build.tf_modelnumber ${ro.boot.hardware.sku}
+
+on property:ro.build.display.id=* && property:ro.boot.carrier=tracfone
     setprop ro.build.sw_version ${ro.build.display.id}
 
 on fs && property:ro.boot.carrier=att

@@ -242,6 +242,7 @@ android_app_import {
 	name: "MotCamera3",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/MotCamera3/MotCamera3.apk",
+	overrides: ["Camera2"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

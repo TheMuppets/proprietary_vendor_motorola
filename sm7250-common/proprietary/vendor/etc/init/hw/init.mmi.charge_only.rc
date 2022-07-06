@@ -1,0 +1,27 @@
+# Wait for the USB init shell script to finish, to prevent enumeration issues
+on property:init.svc.vendor.mmi-usb-sh=stopped && property:ro.boot.mode=charger
+    setprop sys.usb.configfs 1
+    setprop sys.usb.config charging
+
+on moto-charger
+    chown radio wakelock /sys/power/wake_lock
+    chmod 0660 /sys/power/wake_lock
+    chown radio wakelock /sys/power/wake_unlock
+    chmod 0660 /sys/power/wake_unlock
+    trigger firmware_mounts_complete
+    start vendor.charge_only_mode
+    start vendor.batt_health
+    start vendor.thermal-com
+    start system_suspend
+
+    # Enable only CPU core 0 to keep current drain to a minimum
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu6/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
+

@@ -1,0 +1,38 @@
+{
+	"Video": {
+		"Features": {
+			"perf_control": false,
+			"enc_csc_custom_matrix": false,
+			"enc_bitrate_savings": true,
+			"enc_auto_blur": true,
+			"enc_cvp_enable": false
+		},
+		"Presets": {
+			"dec_sec_prefetch_size_internal": 209715200,
+			"dec_sec_prefetch_size_output": 13434880,
+			"max_supported_render_rate": 120,
+			"enc_linear_color_format": 0,
+			"vt_driver_version": 534123018,
+			"ltr_max_count": 3,
+			"preprocess_max_downscale_factor": 8,
+			"preprocess_rotation": 1
+		},
+		// List of HW codecs enabled for this target
+		"codecs-available": {
+			"decoders": [
+				"c2.qti.avc.decoder",
+				"c2.qti.avc.decoder.secure",
+				"c2.qti.hevc.decoder",
+				"c2.qti.hevc.decoder.secure",
+				"c2.qti.vp9.decoder",
+				"c2.qti.vp9.decoder.secure"
+			],
+			"encoders": [
+				"c2.qti.avc.encoder",
+				"c2.qti.hevc.encoder",
+				"c2.qti.hevc.encoder.cq",
+				"c2.qti.heic.encoder"
+			]
+		}
+	}
+}

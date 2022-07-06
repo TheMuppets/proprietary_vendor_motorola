@@ -1,0 +1,11 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "QRD","Surf"],
+    "soc_id": ["434", "435", "459"]
+  },
+  "sns_tilt": {
+    "owner": "sns_tilt",
+    "enabled": {"ver": "0","type": "int", "data": "1"
+    }
+  }
+}

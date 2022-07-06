@@ -75,3 +75,28 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/framework/com.motorola.motosignature.jar"],
+}
+
+dex_import {
+	name: "moto-core_services",
+	owner: "motorola",
+	jars: ["proprietary/framework/moto-core_services.jar"],
+}
+
+dex_import {
+	name: "moto-settings",
+	owner: "motorola",
+	jars: ["proprietary/framework/moto-settings.jar"],
+}
+
+dex_import {
+	name: "com.motorola.androidx.camera.extensions",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/com.motorola.androidx.camera.extensions.jar"],
+	product_specific: true,
+}
+

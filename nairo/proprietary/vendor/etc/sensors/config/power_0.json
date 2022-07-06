@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf"],
+    "soc_id": ["400"]
+  },
+  "power":{
+    "owner": "power_manager",
+    ".island":{
+      "owner": "power_manager",
+      "enable_island":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}

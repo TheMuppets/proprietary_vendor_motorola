@@ -28,13 +28,3 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 }
-
-prebuilt_etc_xml {
-	name: "vendor.goodix.hardware.biometrics.fingerprint@2.1-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint@2.1-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-

@@ -1,0 +1,19 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "RCM", "IDP", "QRD"],
+    "soc_id": ["475", "497", "498"]
+  },
+  "mot_camgest":{
+    "owner": "mot_camgest",
+    ".params":{
+      "owner": "mot_camgest",
+      "y_orient_down_thres":{ "type": "flt", "ver": "0",
+        "data": "-4.25"
+      },
+      "y_orient_up_thres":{ "type": "flt", "ver": "0",
+        "data": "4.5"
+      }
+    }
+  }
+}

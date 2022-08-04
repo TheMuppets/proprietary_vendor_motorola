@@ -1,0 +1,37 @@
+// @file mot_barocal.proto
+//
+// Defines message types for Motorola's barometer calibration
+//
+// Copyright (c) 2020 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_barocal"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - MOT_BAROCAL_MSGID_MOT_BAROCAL_REQ is used to enable the sensor
+
+// Message IDs for Mot Barocal
+enum mot_barocal_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_BAROCAL_MSGID_MOT_BAROCAL_REQ = 998;
+}
+
+message mot_barocal_req
+{
+  // Reference pressure
+  required float reference = 1;
+}
+
+// Stream events:
+//
+// Emits one sns_cal_event on completion
+//
+// This sensor does not publish configuration events.

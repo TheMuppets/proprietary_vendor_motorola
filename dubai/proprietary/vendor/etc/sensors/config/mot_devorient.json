@@ -1,0 +1,16 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "RCM", "IDP", "QRD"],
+    "soc_id": ["475", "497", "498"]
+  },
+  "mot_devorient":{
+    "owner": "mot_devorient",
+    ".algo_config":{
+      "owner": "mot_devorient",
+      "flat_gpio_num":{ "type": "int", "ver": "3",
+        "data": "-1"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// @file mot_offbody.proto
+//
+// Defines message types for the Motorola Off Body Sensor.
+//
+// Copyright (c) 2018 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Mot_offbody monitors accelerometer variance.
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_offbody"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs
+enum mot_offbody_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_OFFBODY_MSGID_MOT_OFFBODY_EVENT = 783;
+}
+
+enum mot_offbody_trig_type
+{
+  option (nanopb_enumopt).long_names = false;
+  MOT_OFFBODY_TRIG_TYPE_UNKNOWN    = 0;
+  MOT_OFFBODY_TRIG_TYPE_ON_BODY    = 1;
+  MOT_OFFBODY_TRIG_TYPE_OFF_BODY   = 2;
+}
+
+message mot_offbody_event
+{
+  // Event output
+
+  // Trigger type
+  required mot_offbody_trig_type trig_type = 1;
+
+  // Device angle at time of trigger (state change)
+  // The range is 0 degrees to 180 degrees
+  // 0 = Flat up, 180 = flat down
+  required float theta = 2;
+}
+
+// Stream events:
+//
+// The mot_offbody_event message is used to publish updated state
+//
+// This sensor does not publish configuration events.
+

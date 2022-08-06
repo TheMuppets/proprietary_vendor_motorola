@@ -50,6 +50,12 @@ enum sns_proximity_msgid {
   // Purpose: This message is sent whenever a recalibration is complete
   MOT_PROXIMITY_MSGID_SNS_PROXIMITY_RECAL_EVENT = 871;
 
+  // Force a log dump of registers to debug a prox/als lockup
+  MOT_PROXIMITY_MSGID_SNS_PROXIMITY_REG_DUMP = 872;
+
+  // To notify adsp that a new client comes from AP side
+  MOT_PROXIMITY_MSGID_AP_ENABLE_PROX_REQ = 873;
+
   // Uses message: sns_proximity_event_recurrent
   // Purpose: A recurring output data event from the proximity sensor to its client.
   SNS_PROXIMITY_MSGID_SNS_PROXIMITY_EVENT_RECURRENT  = 1031;

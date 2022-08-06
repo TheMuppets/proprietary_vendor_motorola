@@ -56,6 +56,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.perf.splh" Value="hw" Target="yupik" />
                 <Prop Name="ro.vendor.perf.gplaf" Value="true" Target="yupik" />
                 <Prop Name="ro.vendor.perf.enable.prekill" Value="false" Target="lahaina" />
+                <Prop Name="ro.vendor.perf.splh" Value="none" Target="lahaina" />
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />

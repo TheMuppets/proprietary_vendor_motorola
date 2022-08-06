@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-Copyright (c) 2020 Qualcomm Technologies, Inc.
+Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 All Rights Reserved.
 Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -15,6 +15,11 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
         <Device version="2">
             <FpsOffsetMap fps="90" advancedSfOffsetPercentage="45"/>
             <FpsOffsetMap fps="120" advancedSfOffsetPercentage="48"/>
+            <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
+        </Device>
+        <Device version="3">
+            <FpsOffsetMap fps="90" advancedSfOffsetPercentage="45"/>
+            <FpsOffsetMap fps="120" advancedSfOffsetPercentage="40"/>
             <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
         </Device>
     </DeviceSettingList>

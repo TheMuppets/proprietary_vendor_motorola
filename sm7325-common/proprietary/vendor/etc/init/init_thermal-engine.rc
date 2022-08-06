@@ -18,3 +18,7 @@ service thermal-engine /vendor/bin/thermal-engine
 
 on property:sys.boot_completed=1
 	setprop vendor.boot_completed ${sys.boot_completed}
+
+on property:vendor.thermal.mode=*
+	stop thermal-engine
+	start thermal-engine

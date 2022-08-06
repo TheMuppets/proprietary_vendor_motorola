@@ -101,6 +101,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "uimgbaservice",
+	owner: "motorola",
+	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
@@ -139,17 +150,6 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimgbaservice",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -206,6 +206,20 @@ dex_import {
 }
 
 dex_import {
+	name: "uimgbalibrary",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/uimgbalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimgbamanagerlibrary",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "moto-telephony",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
@@ -237,20 +251,6 @@ dex_import {
 	name: "qcrilhook",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimgbalibrary",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/uimgbalibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimgbamanagerlibrary",
-	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/uimgbamanagerlibrary.jar"],
 	system_ext_specific: true,
 }
 

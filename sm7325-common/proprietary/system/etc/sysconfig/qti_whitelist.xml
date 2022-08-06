@@ -47,6 +47,7 @@
     <allow-in-power-save package="com.android.email" />
     <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
     <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
+    <allow-in-power-save package="com.qti.xdivert" />
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
@@ -66,7 +67,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.radioconfigtest" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.roamingsettings" />
     <hidden-api-whitelisted-app package="com.qualcomm.simcontacts" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.simsettings" />
     <hidden-api-whitelisted-app package="org.codeaurora.ims" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.ims" />
     <hidden-api-whitelisted-app package="com.qti.xdivert" />

@@ -4,6 +4,6 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
-on init
+on early-boot
     write /sys/kernel/icnss/wpss_boot 1
 

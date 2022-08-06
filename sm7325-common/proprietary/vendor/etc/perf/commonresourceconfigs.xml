@@ -114,6 +114,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x39" Node="/dev/stune/top-app/schedtune.colocate" Supported="no" />
         <Minor OpcodeValue="0x3A" Node="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive" />
         <Minor OpcodeValue="0x3B" Node="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive" />
+        <Minor OpcodeValue="0x3D" Node="/proc/sys/kernel/%s" Supported="no"/>
     <!-- sched major end -->
 
     <!-- core hotplug major start -->
@@ -248,7 +249,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0xE" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/idle_mbps" />
         <Minor OpcodeValue="0xF" Node="/sys/devices/system/cpu/bus_dcvs/DDR/19091000.qcom,bwmon-ddr/min_freq" />
         <Minor OpcodeValue="0x10" Node="/sys/devices/system/cpu/bus_dcvs/DDR/19091000.qcom,bwmon-ddr/max_freq" />
-
+        <Minor OpcodeValue="0x11" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/use_ab" />
 
     <!-- llcbw hwmon major end -->
 

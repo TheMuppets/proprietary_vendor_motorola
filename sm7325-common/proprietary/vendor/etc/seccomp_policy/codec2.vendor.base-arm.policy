@@ -34,7 +34,7 @@ memfd_create: 1
 ftruncate: 1
 ftruncate64: 1
 
-mremap: arg3 == 3
+mremap: arg3 == 3 || arg3 == MREMAP_MAYMOVE
 munmap: 1
 prctl: 1
 getuid32: 1

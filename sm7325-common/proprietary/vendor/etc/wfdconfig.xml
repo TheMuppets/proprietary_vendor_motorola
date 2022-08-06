@@ -237,7 +237,7 @@
 
         <!--  disable HDCP by default -->
         <ContentProtection>
-            <Valid>0</Valid>
+            <Valid>1</Valid>
             <!--
                 Valid values WFD_HDCP_2_0,
                 WFD_HDCP_2_1 and WFD_HDCP_2_2

@@ -318,7 +318,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlengine.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlenginev2.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libc2d_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d_helper.so \
-    vendor/motorola/berlin/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerapostproc.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
@@ -370,7 +369,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@2.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
-    vendor/motorola/berlin/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov08a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov08a10_eeprom.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a10_eeprom.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov32b40_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov32b40_eeprom.so \
@@ -495,7 +493,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libc2d_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d_helper.so \
-    vendor/motorola/berlin/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
@@ -531,7 +528,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libofflinedump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinedump.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
-    vendor/motorola/berlin/proprietary/vendor/lib64/liboffloadhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboffloadhal.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
@@ -552,5 +548,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@2.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so \
-    vendor/motorola/berlin/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
-    vendor/motorola/berlin/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0.so
+    vendor/motorola/berlin/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so

@@ -92,4 +92,4 @@ sched_getaffinity: 1
 socket: 1
 process_vm_readv: 1
 tgkill: 1
-
+sigreturn: 1

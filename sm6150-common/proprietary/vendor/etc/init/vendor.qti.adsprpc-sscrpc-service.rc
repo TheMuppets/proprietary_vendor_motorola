@@ -45,3 +45,6 @@ service vendor.adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
    class core
    user system
    group system
+
+on property:vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
+   stop vendor.adsprpcd_sensorspd

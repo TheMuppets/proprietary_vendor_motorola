@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-#Copyright (c) 2019 Qualcomm Technologies, Inc.
+#Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
 #All Rights Reserved.
 #Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -15,3 +15,10 @@ service thermal-engine /vendor/bin/thermal-engine
 	socket thermal-recv-client stream 0660 system oem_2907
 	socket thermal-recv-passive-client stream 0660 system oem_2907
 	socket thermal-send-rule stream 0660 system oem_2907
+
+on property:sys.boot_completed=1
+	setprop vendor.boot_completed ${sys.boot_completed}
+
+on property:vendor.thermal.mode=*
+	stop thermal-engine
+	start thermal-engine

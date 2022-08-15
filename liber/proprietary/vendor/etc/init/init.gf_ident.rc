@@ -1,0 +1,6 @@
+service gf_ident /vendor/bin/hw/goodix_ident
+    class late_start
+    user system
+    group system input uhid
+    oneshot
+    disabled

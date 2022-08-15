@@ -5,3 +5,4 @@ service goodix_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-go
     class late_start
     user system
     group system input uhid
+    disabled

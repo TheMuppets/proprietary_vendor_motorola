@@ -258,7 +258,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
-    vendor/motorola/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
@@ -405,55 +404,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Argo_Navis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Argo_Navis.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Attentive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Attentive.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Awake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Awake.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Bird_Loop.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Bird_Loop.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Brilliant_Times.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Brilliant_Times.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Chimey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Chimey_Phone.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_City_Lights.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_City_Lights.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Complex.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Complex.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Crazy_Dream.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Crazy_Dream.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Curve_Ball_Blend.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Digital_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Digital_Phone.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Electrovision.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Electrovision.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Ether_Shake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Ether_Shake.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Fateful_Words.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Fateful_Words.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Firefly.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Firefly.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Flutey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Flutey_Phone.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Future_Funk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Funk.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Future_Hi_Tech.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Hi_Tech.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Girtab.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Girtab.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Hello.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hello.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Hexagon.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hexagon.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Hydra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hydra.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Insert_Coin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Insert_Coin.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Jumping_Dots.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Jumping_Dots.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Keys.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Keys.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Loopy.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Loopy_Lounge.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy_Lounge.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Modular.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Modular.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Momentum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Momentum.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Morning.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Morning.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Natural.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Natural.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_New_Player.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_New_Player.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Now_or_Never.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Now_or_Never.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Onward.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Onward.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Organ_Dub.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Organ_Dub.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Overclocked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Overclocked.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Pegasus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pegasus.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Play.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Play.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Pyxis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pyxis.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Regrade.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Regrade.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Scarabaeus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Scarabaeus.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Sceptrum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sceptrum.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Simple.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Simple.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Solarium.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Solarium.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Sparse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sparse.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Terrabytes.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Terrabytes.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Verizon_Airwaves.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Verizon_Airwaves.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp_Zero_Hour.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Zero_Hour.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_mono.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_mono.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_rcv_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_rcv_reg.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \

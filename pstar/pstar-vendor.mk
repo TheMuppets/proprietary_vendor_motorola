@@ -23,6 +23,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/pstar/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/pstar/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/motorola/pstar/proprietary/vendor/etc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st.conf \
+    vendor/motorola/pstar/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml \
+    vendor/motorola/pstar/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml \
     vendor/motorola/pstar/proprietary/vendor/etc/thermal-engine-pstar.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-pstar.conf \
     vendor/motorola/pstar/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/motorola/pstar/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \

@@ -35,6 +35,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/etc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-st.conf \
     vendor/motorola/berlin/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/motorola/berlin/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+    vendor/motorola/berlin/proprietary/vendor/etc/maxx_conf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/maxx_conf.ini \
+    vendor/motorola/berlin/proprietary/vendor/etc/maxx_default.mps:$(TARGET_COPY_OUT_VENDOR)/etc/maxx_default.mps \
     vendor/motorola/berlin/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
     vendor/motorola/berlin/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
     vendor/motorola/berlin/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml \
@@ -187,6 +189,59 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/berlin/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/motorola/berlin/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Argo_Navis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Argo_Navis.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Attentive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Attentive.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Awake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Awake.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Bird_Loop.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Bird_Loop.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Brilliant_Times.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Brilliant_Times.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Chimey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Chimey_Phone.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_City_Lights.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_City_Lights.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Complex.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Complex.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Crazy_Dream.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Crazy_Dream.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Curve_Ball_Blend.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Digital_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Digital_Phone.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Electrovision.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Electrovision.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Ether_Shake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Ether_Shake.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Fateful_Words.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Fateful_Words.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Firefly.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Firefly.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Flutey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Flutey_Phone.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Future_Funk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Funk.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Future_Hi_Tech.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Hi_Tech.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Girtab.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Girtab.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Hello.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hello.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Hexagon.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hexagon.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Hydra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hydra.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Insert_Coin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Insert_Coin.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Jumping_Dots.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Jumping_Dots.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Keys.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Keys.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Loopy.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Loopy_Lounge.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy_Lounge.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Modular.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Modular.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Momentum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Momentum.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Morning.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Morning.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Moto_Original.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto_Original.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Moto_Retro.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto_Retro.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Natural.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Natural.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_New_Player.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_New_Player.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Now_or_Never.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Now_or_Never.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Onward.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Onward.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Organ_Dub.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Organ_Dub.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Overclocked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Overclocked.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Pegasus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pegasus.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Play.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Play.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Pyxis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pyxis.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Regrade.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Regrade.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Scarabaeus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Scarabaeus.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Sceptrum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sceptrum.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Simple.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Simple.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Solarium.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Solarium.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Sparse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sparse.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Terrabytes.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Terrabytes.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Verizon_Airwaves.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Verizon_Airwaves.bin \
+    vendor/motorola/berlin/proprietary/vendor/firmware/aw8695_rtp_Zero_Hour.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Zero_Hour.bin \
     vendor/motorola/berlin/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali.bin \
     vendor/motorola/berlin/proprietary/vendor/firmware/cs35l41-dsp1-spk-cali.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-cali.wmfw \
     vendor/motorola/berlin/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot.bin \
@@ -312,10 +367,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.stats.common.so \
     vendor/motorola/berlin/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/motorola/berlin/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/libAndroidAlgSys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAndroidAlgSys.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_distortion_correction.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libarcsoft_portrait_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_portrait_distortion_correction.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlengine.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlenginev2.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libc2d_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d_helper.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerapostproc.so \
@@ -367,6 +425,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance_zoom_stabilization.so \
     vendor/motorola/berlin/proprietary/vendor/lib/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.desktop@2.0.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/soundfx/libmaxxeffect-cembedded.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmaxxeffect-cembedded.so \
     vendor/motorola/berlin/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov08a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov08a10_eeprom.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a10_eeprom.so \
@@ -485,6 +544,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libarcsoft_portrait_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_distortion_correction.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/libarcsoft_triple_sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_triple_sat.so \
@@ -546,5 +606,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_zoom_stabilization.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@1.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.camera.desktop@2.0.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so

@@ -288,8 +288,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
-    vendor/motorola/sm7325-common/proprietary/vendor/etc/maxx_conf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/maxx_conf.ini \
-    vendor/motorola/sm7325-common/proprietary/vendor/etc/maxx_default.mps:$(TARGET_COPY_OUT_VENDOR)/etc/maxx_default.mps \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/media_yupik_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v0/video_system_specs.json \
     vendor/motorola/sm7325-common/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
@@ -367,59 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/a619_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a619_gmu.bin \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Argo_Navis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Argo_Navis.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Attentive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Attentive.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Awake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Awake.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Bird_Loop.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Bird_Loop.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Brilliant_Times.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Brilliant_Times.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Chimey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Chimey_Phone.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_City_Lights.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_City_Lights.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Complex.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Complex.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Crazy_Dream.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Crazy_Dream.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Curve_Ball_Blend.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Digital_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Digital_Phone.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Electrovision.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Electrovision.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Ether_Shake.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Ether_Shake.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Fateful_Words.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Fateful_Words.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Firefly.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Firefly.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Flutey_Phone.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Flutey_Phone.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Future_Funk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Funk.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Future_Hi_Tech.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Future_Hi_Tech.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Girtab.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Girtab.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Hello.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hello.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Hexagon.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hexagon.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Hydra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Hydra.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Insert_Coin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Insert_Coin.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Jumping_Dots.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Jumping_Dots.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Keys.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Keys.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Loopy.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Loopy_Lounge.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Loopy_Lounge.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Modular.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Modular.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Momentum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Momentum.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Morning.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Morning.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Moto.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Moto_Original.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto_Original.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Moto_Retro.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Moto_Retro.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Natural.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Natural.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_New_Player.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_New_Player.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Now_or_Never.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Now_or_Never.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Onward.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Onward.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Organ_Dub.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Organ_Dub.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Overclocked.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Overclocked.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Pegasus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pegasus.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Play.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Play.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Pyxis.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Pyxis.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Regrade.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Regrade.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Scarabaeus.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Scarabaeus.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Sceptrum.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sceptrum.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Simple.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Simple.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Solarium.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Solarium.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Sparse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Sparse.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Terrabytes.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Terrabytes.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Verizon_Airwaves.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Verizon_Airwaves.bin \
-    vendor/motorola/sm7325-common/proprietary/vendor/firmware/aw8695_rtp_Zero_Hour.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp_Zero_Hour.bin \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/evass-lt.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b00 \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/evass-lt.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b01 \
     vendor/motorola/sm7325-common/proprietary/vendor/firmware/evass-lt.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b02 \
@@ -541,7 +486,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib/libAndroidAlgSys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAndroidAlgSys.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
@@ -567,7 +511,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
@@ -577,7 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
@@ -704,7 +646,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/rfsa/adsp/libworker_pool.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libworker_pool.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib/soundfx/libmaxxeffect-cembedded.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmaxxeffect-cembedded.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
@@ -803,7 +744,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
@@ -1008,8 +948,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiwakelock.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
-    vendor/motorola/sm7325-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/motorola/sm7325-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \

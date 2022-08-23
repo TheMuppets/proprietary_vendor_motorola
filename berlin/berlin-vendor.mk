@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/config/stk3a5x_0_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_always.json \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/config/stk3a5x_0_emerald_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_emerald_always.json \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/config/stk3a5x_0_white_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_white_always.json \
-    vendor/motorola/berlin/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/proto/als_mastercal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/als_mastercal.proto \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
     vendor/motorola/berlin/proprietary/vendor/etc/sensors/proto/mot_barocal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_barocal.proto \

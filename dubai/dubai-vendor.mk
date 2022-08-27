@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/dubai/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
+    vendor/motorola/dubai/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/dubai/proprietary/vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.desktop@2.0-service \
     vendor/motorola/dubai/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/dubai/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
@@ -28,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/dubai/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
     vendor/motorola/dubai/proprietary/vendor/etc/camera/mot_engine_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_engine_config.bin \
     vendor/motorola/dubai/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/motorola/dubai/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
     vendor/motorola/dubai/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
     vendor/motorola/dubai/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc \
     vendor/motorola/dubai/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -513,7 +515,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/dubai/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/motorola/dubai/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/motorola/dubai/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/motorola/dubai/proprietary/vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so \
     vendor/motorola/dubai/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
     vendor/motorola/dubai/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/motorola/dubai/proprietary/vendor/lib64/com.qti.feature2.arcrawpro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.arcrawpro.so \
@@ -622,4 +623,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/dubai/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
     vendor/motorola/dubai/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/dubai/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
-    vendor/motorola/dubai/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+    vendor/motorola/dubai/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
+    vendor/motorola/dubai/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so

@@ -118,12 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708_boeB4_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708_boeB4_always.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708_boe_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708_boe_always.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708_csotB5_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708_csotB5_always.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708_csot_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708_csot_always.json \
-    vendor/motorola/racer/proprietary/vendor/etc/sensors/config/tcs3708_tianma_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3708_tianma_always.json \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/motorola/racer/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/motorola/racer/proprietary/vendor/etc/thermal-engine-racer.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-racer.conf \

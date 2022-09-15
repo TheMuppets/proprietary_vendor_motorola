@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/racer/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
     vendor/motorola/racer/proprietary/product/lib64/libsmudge_detect.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsmudge_detect.so \
     vendor/motorola/racer/proprietary/product/lib64/libzxing-core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libzxing-core.so \
+    vendor/motorola/racer/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/racer/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
     vendor/motorola/racer/proprietary/system_ext/lib/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/racer/proprietary/system_ext/lib64/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcf_native_window_helper.motocamera.so \
@@ -358,4 +359,5 @@ PRODUCT_PACKAGES += \
     com.motorola.motosignature \
     moto-core_services \
     moto-settings \
-    com.motorola.androidx.camera.extensions
+    com.motorola.androidx.camera.extensions \
+    com.android.hotwordenrollment.common.util

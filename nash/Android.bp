@@ -436,7 +436,7 @@ android_app_import {
 	name: "ProjectorApp",
 	owner: "motorola",
 	apk: "proprietary/priv-app/ProjectorApp/ProjectorApp.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},

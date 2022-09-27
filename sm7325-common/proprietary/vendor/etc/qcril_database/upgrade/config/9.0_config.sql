@@ -6,8 +6,7 @@
 */
 
 CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT PRIMARY KEY NOT NULL, def_val TEXT, value TEXT);
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES('qcrildb_version',9.0);
-UPDATE qcril_properties_table SET def_val="" WHERE property="all_bc_msg";
+UPDATE qcril_properties_table set def_val='9' where property='qcrildb_version';UPDATE qcril_properties_table SET def_val="" WHERE property="all_bc_msg";
 UPDATE qcril_properties_table SET def_val="false" WHERE property="persist.vendor.radio.do_not_use_ril_optr_db";
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.shutdown_deactivate_timer", "90");
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.qcril_uim_vcc_feature";

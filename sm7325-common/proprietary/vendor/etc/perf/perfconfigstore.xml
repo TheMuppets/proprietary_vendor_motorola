@@ -55,8 +55,9 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.perf.wlc.heavygame" Value="false" Target="yupik" />
                 <Prop Name="ro.vendor.perf.splh" Value="hw" Target="yupik" />
                 <Prop Name="ro.vendor.perf.gplaf" Value="true" Target="yupik" />
-                <Prop Name="ro.vendor.perf.enable.prekill" Value="false" Target="lahaina" />
+                <Prop Name="ro.vendor.perf.enable.prekill" Value="false" />
                 <Prop Name="ro.vendor.perf.splh" Value="none" Target="lahaina" />
+                <Prop Name="ro.vendor.perf.gplaf" Value="false" Target="lahaina" />
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />

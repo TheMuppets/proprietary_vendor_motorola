@@ -1,8 +1,7 @@
-BEGIN TRANSACTION;
 
-CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT,value TEXT, PRIMARY KEY(property));
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 4);
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
 
+UPDATE qcril_properties_table set value='4' where property='qcrildb_version';
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','88','000','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','88','08','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','88','110','','');
@@ -20,4 +19,3 @@ INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','99',
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','99','911','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('222','99','999','','');
 
-COMMIT TRANSACTION;

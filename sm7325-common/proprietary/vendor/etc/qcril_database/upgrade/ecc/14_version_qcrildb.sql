@@ -4,10 +4,8 @@
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 */
 
-BEGIN TRANSACTION;
 
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 14);
-
+UPDATE qcril_properties_table set value='14' where property='qcrildb_version';
 DELETE FROM qcril_operator_specific_config where MCC = '310' AND MNC = '730';
 DELETE FROM qcril_operator_specific_config where MCC = '311' AND MNC = '220';
 DELETE FROM qcril_operator_specific_config where MCC = '311' AND MNC = '221';
@@ -30,4 +28,3 @@ DELETE FROM qcril_operator_specific_config where MCC = '311' AND MNC = '587';
 DELETE FROM qcril_operator_specific_config where MCC = '311' AND MNC = '588';
 DELETE FROM qcril_operator_specific_config where MCC = '311' AND MNC = '589';
 
-COMMIT TRANSACTION;

@@ -299,18 +299,18 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	name: "vendor.dolby.media.c2@1.0-service",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

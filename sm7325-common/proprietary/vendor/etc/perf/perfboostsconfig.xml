@@ -56,7 +56,7 @@
        <Config
            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="yupik"
            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                      0x40800000, 1497, 0x40800100, 1497, 0x40800200, 1766" />
+                      0x40800000, 1516, 0x40800100, 1516, 0x40800200, 1766" />
 
     <!--app lauch boost (disabling packing)-->
 
@@ -150,6 +150,7 @@
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBW_MAX_FREQ resource opcode, value-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- LLCCBW resource opcode, value-->
         <!-- L3 resource opcode, value-->
@@ -161,8 +162,8 @@
                        0x40C74000, 0xF0, 0x40408000, 0x63, 0x40C20000, 0x28,
                        0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x3C,
                        0x42C10000, 0x1, 0x40800200, 0x76C, 0x40800000, 0x76C,
-                       0x40800100, 0x4B0, 0x43010000, 0x50, 0x41828000, 0x3A,
-                       0x43400000, 0x3480" />
+                       0x40800100, 0x4B0, 0x43018000, 0xFF, 0x43010000, 0x50,
+                       0x41828000, 0x3A, 0x43400000, 0x3480" />
 
      <!-- config_enableLaunchBoost6-->
         <!-- SLB_BIG_CORE_1, val-->
@@ -235,10 +236,21 @@
                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
 
        <Config
-           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"
+           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"  Fps="60"
            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                      0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
-
+                      0x40800000, 1344, 0x40800100, 1324, 0x40800200, 1324" />
+       <Config
+           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"  Fps="90"
+           Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1344, 0x40800100, 1324, 0x40800200, 1324" />
+       <Config
+           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"  Fps="120"
+           Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516" />
+       <Config
+           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"  Fps="144"
+           Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516" />
     <!--Vertical Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -295,8 +307,8 @@
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="60"
-            Resources="0x43010000, 0x26, 0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056,
-                       0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -313,8 +325,8 @@
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -335,9 +347,8 @@
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -349,20 +360,18 @@
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-        <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="144"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43400000, 0x1F40" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="144"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2" />
 
 
     <!--Horizontal Scroll boost-->
@@ -380,7 +389,7 @@
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="60"
-            Resources="0x43010000, 0x26, 0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056,
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
                        0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -398,8 +407,8 @@
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -420,9 +429,8 @@
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -434,20 +442,18 @@
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-        <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="144"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43400000, 0x1F40" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="144"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2" />
 
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -523,8 +529,8 @@
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="90"
-            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -546,9 +552,8 @@
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -560,20 +565,18 @@
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
         <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-        <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="144"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43400000, 0x1F40" />
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="144"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
-                       0x40C78000, 0, 0x40C7C000, 0, 0x43010000, 0x11, 0x43400000, 0x1F40" />
+            Resources="0x43010000, 0x26, 0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1516,
+                       0x40C00000, 2"  />
 
     <!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -1087,6 +1090,9 @@
                 Id="0x00001097" Type="0" Enable="true" Timeout="7" Target="yupik" Fps="144"
                 Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="9" Target="yupik" Fps="120"
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
     <!--Large Comp HInt -->
         <!-- CPU min freq resource opcode, value -->
         <!-- GPU MIN_FREQUENCY resource opcode,value -->

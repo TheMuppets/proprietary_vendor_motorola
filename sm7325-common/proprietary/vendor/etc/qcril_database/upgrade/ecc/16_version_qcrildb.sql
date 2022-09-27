@@ -1,8 +1,7 @@
-BEGIN TRANSACTION;
 
-CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT,value TEXT, PRIMARY KEY(property));
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 16);
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
 
+UPDATE qcril_properties_table set value='16' where property='qcrildb_version';
 
 INSERT OR REPLACE INTO "qcril_operator_specific_config" VALUES('310','750',1);
 INSERT OR REPLACE INTO "qcril_operator_specific_config" VALUES('311','440',1);
@@ -20,6 +19,5 @@ INSERT OR REPLACE INTO "qcril_operator_specific_config" VALUES('310','960',1);
 INSERT OR REPLACE INTO "qcril_operator_specific_config" VALUES('311','050',1);
 INSERT OR REPLACE INTO "qcril_operator_specific_config" VALUES('311','650',1);
 
-COMMIT TRANSACTION;
 
 

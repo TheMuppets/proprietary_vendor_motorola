@@ -1,8 +1,7 @@
-BEGIN TRANSACTION;
 
-CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT,value TEXT, PRIMARY KEY(property));
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 25);
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
 
+UPDATE qcril_properties_table set value='25' where property='qcrildb_version';
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('310','730','*272911','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('310','240','*272911','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('311','580','*272911','','');
@@ -27,4 +26,3 @@ INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('311','588'
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('311','589','*272911','','');
 INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('311','870','*272911','','');
 
-COMMIT TRANSACTION;

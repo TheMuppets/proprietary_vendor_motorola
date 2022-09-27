@@ -1,0 +1,24 @@
+<!--
+
+     This program is protected under international and U.S. copyright laws as
+     an unpublished work. This program is confidential and proprietary to the
+     copyright owners. Reproduction or disclosure, in whole or in part, or the
+     production of derivative works therefrom without the express permission of
+     the copyright owners is prohibited.
+
+                   Copyright (C) 2020-2021 by Dolby Laboratories,
+                               All rights reserved.
+
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl" override="true">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>software</instance>
+        </interface>
+    </hal>
+</manifest>

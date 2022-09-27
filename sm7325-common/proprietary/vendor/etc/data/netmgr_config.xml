@@ -3127,6 +3127,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
+      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
       <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
@@ -3270,6 +3271,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
+      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
       <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>

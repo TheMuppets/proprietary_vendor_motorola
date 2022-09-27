@@ -28,6 +28,42 @@
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+ /*
+ *  Changes from Qualcomm Innovation Center are provided under the following license:
+ *
+ *  Copyright (c) 2021 Qualcomm Innovation Center, Inc. All rights reserved.
+ *
+ *  Redistribution and use in source and binary forms, with or without
+ *  modification, are permitted (subject to the limitations in the
+ *  disclaimer below) provided that the following conditions are met:
+ *
+ *      * Redistributions of source code must retain the above copyright
+ *        notice, this list of conditions and the following disclaimer.
+ *
+ *      * Redistributions in binary form must reproduce the above
+ *        copyright notice, this list of conditions and the following
+ *        disclaimer in the documentation and/or other materials provided
+ *        with the distribution.
+ *
+ *      * Neither the name of Qualcomm Innovation Center, Inc. nor the names of its
+ *        contributors may be used to endorse or promote products derived
+ *        from this software without specific prior written permission.
+ *
+ *  NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+ *  GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+ *  HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+ *  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ *  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ *  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ *  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ *  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ *  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+ *  IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ *  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ *  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 -->
 <HintConfigs>
     <Powerhint>
@@ -225,69 +261,69 @@
         <!--CPU-LLC BWMON - Set sample_ms 33-->
         <!--CPU-LLC BWMON - Set io_percent 100 -->
         <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
-		<!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
         <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
         <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
         <!--L CPU - Disable schedutil PL -->
         <!--L CPU - Set hispeed load 99 -->
-		<!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
-		<!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
+        <!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
         <Config
             Id="0x00001330" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x41820000, 0x21, 0x41808000, 0x64, 0x4180C000, 0, 0x4300C000, 0x21, 0x43004000, 0x64, 0x43008000, 0, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8"/>
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21, 0x43020000, 0x64, 0x43024000, 0, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8"/>
 
 
         <!--camera 30fps-->
         <!--CPU-LLC BWMON - Set sample_ms 33 -->
         <!--CPU-LLC BWMON - Set io_percent 100 -->
         <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
-		<!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
         <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
         <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
-		<!--L CPU min freq 998400 -->
+        <!--L CPU min freq 998400 -->
         <!--L CPU - Disable schedutil PL -->
         <!--L CPU - Set hispeed load 99 -->
-		<!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
-		<!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
+        <!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
     <!--Set sched_prefer_spread to 2 -->
     <!--Set sched_boost to 2 -->
         <Config
             Id="0x00001331" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x41820000, 0x21, 0x41808000, 0x64, 0x4180C000, 0, 0x4300C000, 0x21, 0x43004000, 0x64, 0x43008000, 0, 0x40800100, 0x3E6, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8, 0x40CA8000, 0x2, 0x40C00000, 0x2"/>
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21, 0x43020000, 0x64, 0x43024000, 0, 0x40800100, 0x3E6, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8, 0x40CA8000, 0x2, 0x40C00000, 0x2"/>
 
         <!--camera 60fps-->
         <!--CPU-LLC BWMON - Set sample_ms 16 -->
         <!--CPU-LLC BWMON - Set io_percent 100 -->
         <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
-		<!--CPU-LLC-DDR BWMON - Set sample_ms 16 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 16 -->
         <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
         <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
-		<!--L CPU min freq 1209600 -->
+        <!--L CPU min freq 1209600 -->
         <!--L CPU - Disable schedutil PL -->
         <!--L CPU - Set hispeed load 99 -->
-		<!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
-		<!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
+        <!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
         <!--Set sched_prefer_spread to 2  -->
         <!--Set sched_boost to 2 -->
         <Config
             Id="0x00001332" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x41820000, 0x10, 0x41808000, 0x64, 0x4180C000, 0, 0x4300C000, 0x10, 0x43004000, 0x64, 0x43008000, 0, 0x40800100, 0x4B9, 0x41444100, 0, 0x41440100, 0x63, 0x43420000, 0xC8, 0x40CA8000, 0x2, 0x40C00000, 0x2"/>
+            Resources="0x4183C000, 0x10, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21, 0x43020000, 0x64, 0x43024000, 0, 0x40800100, 0x4B9, 0x41444100, 0, 0x41440100, 0x63, 0x43420000, 0xC8, 0x40CA8000, 0x2, 0x40C00000, 0x2"/>
 
         <!--camera 8k30-->
         <!--CPU-LLC BWMON - Set sample_ms 33 -->
         <!--CPU-LLC BWMON - Set io_percent 100 -->
         <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
-		<!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
         <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
         <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
-		<!--L CPU min freq 1209600 -->
+        <!--L CPU min freq 1209600 -->
         <!--L CPU - Disable schedutil PL -->
         <!--L CPU - Set hispeed load 99 -->
-		<!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
-		<!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 200 -->
+        <!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
         <Config
             Id="0x00001335" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x41820000, 0x21, 0x41808000, 0x64, 0x4180C000, 0, 0x4300C000, 0x21, 0x43004000, 0x64, 0x43008000, 0, 0x40800100, 0x4B9, 0x41444100, 0, 0x41440100, 0x63, 0x43420000, 0xC8"/>
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21, 0x43020000, 0x64, 0x43024000, 0, 0x40800100, 0x4B9, 0x41444100, 0, 0x41440100, 0x63, 0x43420000, 0xC8"/>
 
         <!--video encode HFR fps-->
         <!--MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 0x1-->
@@ -315,7 +351,7 @@
         <!--CPU-LLC BWMON - Set hyst_length hyst_trigger hist memory 0 -->
         <Config
             Id="0x00001334" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x40400000, 0x1, 0x40800100, 0x40C, 0x40800000, 0x4CC, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x41820000, 0x0A, 0x41808000, 0x50, 0x4180C000, 0"/>
+            Resources="0x40400000, 0x1, 0x40800100, 0x40C, 0x40800000, 0x4CC, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x4183C000, 0x0A, 0x41834000, 0x50, 0x41838000, 0"/>
 
         <!--camera 30FPS SHDR-->
         <!--CPU-LLC BWMON - Set sample_ms 33 -->
@@ -331,7 +367,7 @@
         <!--CPU0-LLC-DDR MEM LAT - Set ratio_ceil 200 - no resource id yet-->
         <Config
             Id="0x00001337" Enable="true" Timeout="0" Target="lahaina"
-            Resources="0x41820000, 0x21, 0x41808000, 0x64, 0x4180C000, 0, 0x4300C000, 0x21, 0x43004000, 0x64, 0x43008000, 0, 0x40800100, 0x3E6, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8"/>
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21, 0x43020000, 0x64, 0x43024000, 0, 0x40800100, 0x3E6, 0x41444100, 0, 0x41440100, 0x63,0x43420000, 0xC8"/>
 
         <!--camera preview -->
         <!--L CPU CORE 0 SCHED LOAD BOOST -->

@@ -6,6 +6,61 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/channel
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/channel/proprietary/product/lib/libBulkSNPE.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libBulkSNPE.so \
+    vendor/motorola/channel/proprietary/product/lib/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libFNVfbEngineHAL.so \
+    vendor/motorola/channel/proprietary/product/lib/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libPlatformValidatorShared.so \
+    vendor/motorola/channel/proprietary/product/lib/libSNPE.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libSNPE.so \
+    vendor/motorola/channel/proprietary/product/lib/libSNPE_G.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libSNPE_G.so \
+    vendor/motorola/channel/proprietary/product/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libarcsoft_dualcam_refocus.so \
+    vendor/motorola/channel/proprietary/product/lib/libarcsoft_supernight.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libarcsoft_supernight.so \
+    vendor/motorola/channel/proprietary/product/lib/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libbg-postproc-jni.so \
+    vendor/motorola/channel/proprietary/product/lib/libbs-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libbs-depth.so \
+    vendor/motorola/channel/proprietary/product/lib/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libc++.so \
+    vendor/motorola/channel/proprietary/product/lib/libc++_shared.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libc++_shared.so \
+    vendor/motorola/channel/proprietary/product/lib/libcalculator.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libcalculator.so \
+    vendor/motorola/channel/proprietary/product/lib/libcalculator_domains.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libcalculator_domains.so \
+    vendor/motorola/channel/proprietary/product/lib/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libcamerax_extension_jni.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-ASIA.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-LATAM.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-US.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-US.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-channel_ASIA.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-channel_ASIA.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-channel_LATAM.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-channel_LATAM.so \
+    vendor/motorola/channel/proprietary/product/lib/libfn-beauty-vfb-channel_US.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libfn-beauty-vfb-channel_US.so \
+    vendor/motorola/channel/proprietary/product/lib/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libgif.so \
+    vendor/motorola/channel/proprietary/product/lib/libhta.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libhta.so \
+    vendor/motorola/channel/proprietary/product/lib/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libjpeg.so \
+    vendor/motorola/channel/proprietary/product/lib/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib/liblenovo_panorama.so \
+    vendor/motorola/channel/proprietary/product/lib/liblenovo_panorama_qc.so:$(TARGET_COPY_OUT_PRODUCT)/lib/liblenovo_panorama_qc.so \
+    vendor/motorola/channel/proprietary/product/lib/libmcf-qc-fd-offline_local.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmcf-qc-fd-offline_local.so \
+    vendor/motorola/channel/proprietary/product/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmmcamera_faceproc2.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_cinema_graph.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_defocusface.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_defocusface.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_easy_hdr.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_image_stab5.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_image_stab5.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_panorama_gp3.so \
+    vendor/motorola/channel/proprietary/product/lib/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmorpho_sensor_fusion.so \
+    vendor/motorola/channel/proprietary/product/lib/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmot-cinemagraph-engine.so \
+    vendor/motorola/channel/proprietary/product/lib/libmot-remosaic-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmot-remosaic-util.so \
+    vendor/motorola/channel/proprietary/product/lib/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmot-util.so \
+    vendor/motorola/channel/proprietary/product/lib/libmp-dis-v4.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmp-dis-v4.so \
+    vendor/motorola/channel/proprietary/product/lib/libmp-dis-v5.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmp-dis-v5.so \
+    vendor/motorola/channel/proprietary/product/lib/libmp-superres.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmp-superres.so \
+    vendor/motorola/channel/proprietary/product/lib/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libmpbase.so \
+    vendor/motorola/channel/proprietary/product/lib/libnnp.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libnnp.so \
+    vendor/motorola/channel/proprietary/product/lib/libqc-clearsight.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqc-clearsight.so \
+    vendor/motorola/channel/proprietary/product/lib/libqc-depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqc-depth.so \
+    vendor/motorola/channel/proprietary/product/lib/libqc-focus.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqc-focus.so \
+    vendor/motorola/channel/proprietary/product/lib/libqc-offline-fd-local.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqc-offline-fd-local.so \
+    vendor/motorola/channel/proprietary/product/lib/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqc-snpe.so \
+    vendor/motorola/channel/proprietary/product/lib/libsnpe_adsp.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsnpe_adsp.so \
+    vendor/motorola/channel/proprietary/product/lib/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsnpe_dsp_domains.so \
+    vendor/motorola/channel/proprietary/product/lib/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsnpe_dsp_domains_system.so \
+    vendor/motorola/channel/proprietary/product/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsnpe_dsp_domains_v2.so \
+    vendor/motorola/channel/proprietary/product/lib/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsnpe_dsp_domains_v2_system.so \
+    vendor/motorola/channel/proprietary/product/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsymphony-cpu.so \
+    vendor/motorola/channel/proprietary/product/lib/libubifocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libubifocus.so \
+    vendor/motorola/channel/proprietary/product/lib/libyuv.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libyuv.so \
+    vendor/motorola/channel/proprietary/product/lib/libzxing-core.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libzxing-core.so \
     vendor/motorola/channel/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/channel/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/channel/proprietary/vendor/etc/acdbdata/common/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Bluetooth_cal.acdb \

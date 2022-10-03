@@ -366,6 +366,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib/com.qti.settings.sdm865.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.sdm865.so \
     vendor/motorola/berlin/proprietary/vendor/lib/com.qti.settings.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.sm8350.so \
     vendor/motorola/berlin/proprietary/vendor/lib/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.stats.common.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.distortionmapper.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/com.qualcomm.mcx.linearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.linearmapper.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.policy.mfl.so \
+    vendor/motorola/berlin/proprietary/vendor/lib/com.qualcomm.qti.mcx.usecase.extension.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.mcx.usecase.extension.so \
     vendor/motorola/berlin/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/motorola/berlin/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/motorola/berlin/proprietary/vendor/lib/libAndroidAlgSys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAndroidAlgSys.so \
@@ -542,6 +546,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/com.qti.settings.sdm865.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.sdm865.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/com.qti.settings.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.sm8350.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.stats.common.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.distortionmapper.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/com.qualcomm.mcx.linearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.linearmapper.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.policy.mfl.so \
+    vendor/motorola/berlin/proprietary/vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.mcx.usecase.extension.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \

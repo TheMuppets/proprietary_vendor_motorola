@@ -6,6 +6,67 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/berlin
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/berlin/proprietary/vendor/etc/permissions/com.motorola.camera3.berlin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.berlin.xml \
+    vendor/motorola/berlin/proprietary/vendor/etc/permissions/com.motorola.camera3.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.content.ai.xml \
+    vendor/motorola/berlin/proprietary/vendor/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.lens.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
+    vendor/motorola/berlin/proprietary/vendor/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.motodisplay.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
+    vendor/motorola/berlin/proprietary/product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml \
+    vendor/motorola/berlin/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
+    vendor/motorola/berlin/proprietary/product/lib64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libFNVfbEngineHAL.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libSNPE.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSNPE.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libSuperSensorCPU_v05052021.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSuperSensorCPU_v05052021.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libSuperSensorProcessorCWrapper_v2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSuperSensorProcessorCWrapper_v2.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libSuperSensorProcessor_v05052021.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSuperSensorProcessor_v05052021.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libSuperSensor_v05052021.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libSuperSensor_v05052021.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_dualcam_refocus.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_frc.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_frc.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_hdr_scbokeh_image.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_hdr_scbokeh_image.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_multiframe_bokeh_image.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_multiframe_bokeh_image.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_scbokeh_Generic.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_scbokeh_Generic.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_supernight.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libarcsoft_superportrait.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_superportrait.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libas-super-slow-motion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libas-super-slow-motion.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libbarhopper_v3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbarhopper_v3.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbg-postproc-jni.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libc++_shared.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++_shared.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcamerax_extension_jni.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libdoc-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdoc-util.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libdynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdynamic_depth.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libfn-beauty-vfb-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-base.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libfoundation.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfoundation.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libgg-dynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-dynamic_depth.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libgg-tensorflow-lite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-tensorflow-lite.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgif.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjpeg.so \
+    vendor/motorola/berlin/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmcf-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-base.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmcf-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-jni.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmcf-qc-fd-offline_local.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-qc-fd-offline_local.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmcf-stand-alone-sm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-stand-alone-sm.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmmcamera_faceproc2.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_cinema_graph.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_sensor_fusion.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-cinemagraph-engine.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-util.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmpbase.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libsmart_ppt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsmart_ppt.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libsmudge_detect.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsmudge_detect.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libtensorflowlite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite.so \
+    vendor/motorola/berlin/proprietary/product/lib64/libtensorflowlite_gpu_delegate.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite_gpu_delegate.so \
+    vendor/motorola/berlin/proprietary/system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
+    vendor/motorola/berlin/proprietary/vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.androidx.camera.extensions.xml \
+    vendor/motorola/berlin/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
+    vendor/motorola/berlin/proprietary/system_ext/lib/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcf_native_window_helper.motocamera.so \
+    vendor/motorola/berlin/proprietary/system_ext/lib64/libmcf_native_window_helper.motocamera.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcf_native_window_helper.motocamera.so \
     vendor/motorola/berlin/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/motorola/berlin/proprietary/vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.desktop@2.0-service \
     vendor/motorola/berlin/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
@@ -619,3 +680,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/berlin/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so \
     vendor/motorola/berlin/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+
+PRODUCT_PACKAGES += \
+    MotCamera3AI \
+    MotCamera3 \
+    com.motorola.androidx.camera.extensions

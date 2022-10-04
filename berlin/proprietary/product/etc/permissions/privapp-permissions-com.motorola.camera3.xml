@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <privapp-permissions package="com.motorola.camera3">
+
+        <!-- System defined permissions -->
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+
+    </privapp-permissions>
+</permissions>

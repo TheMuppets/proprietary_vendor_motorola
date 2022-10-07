@@ -246,6 +246,13 @@ dex_import {
 }
 
 dex_import {
+	name: "uimservicelibrary",
+	owner: "motorola",
+	jars: ["proprietary/product/framework/uimservicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "moto-telephony",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],

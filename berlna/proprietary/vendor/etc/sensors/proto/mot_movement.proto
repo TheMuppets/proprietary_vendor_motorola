@@ -1,0 +1,82 @@
+// @file mot_movement.proto
+//
+// Defines standard message types for the Mot_Movement
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std.proto";
+import "sns_std_sensor.proto";
+
+// Mot_Movement Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_movement"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Sensor output event:
+// Mot_Movement use mot_movement_event for it's output event
+
+enum mot_movement_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // From client, name is string matched to "mot_movement_config" msg below
+  MOT_MOVEMENT_MSGID_MOT_MOVEMENT_CONFIG = 512;
+
+  // From Algo, name is string matched to "mot_movement_event" msg below
+  MOT_MOVEMENT_MSGID_MOT_MOVEMENT_EVENT = 772;
+}
+
+enum mot_movement_event_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // These values selected to match values used in DSP register
+  MOT_MOVEMENT_EVENT_TYPE_UNKNOWN          = 0;
+  MOT_MOVEMENT_EVENT_TYPE_MOTION           = 1;
+  MOT_MOVEMENT_EVENT_TYPE_STATIONARY       = 2;
+}
+
+message mot_movement_event
+{
+  // motion state
+  required mot_movement_event_type state = 1 [default = MOT_MOVEMENT_EVENT_TYPE_UNKNOWN];
+}
+
+// Configuration Message
+// Used to either request for a new configuration of the Mot_Movement Sensor or
+// alter an already existing configuration
+message mot_movement_config
+{
+  /**<   standard deviation threshold for motion, 9.8 m/s2 (1G) = 1024 */
+  required float threshold = 1;
+
+  /**<   Continuous motion duration before event triggers. In s. */
+  required uint32 startTime = 2;
+
+  /**<   Continuous non-motion duration before event triggers. In s. */
+  required uint32 stopTime = 3;
+
+  /**<   A ratio (alpha coefficient) to apply when calculating the
+     * standard deviation running average. Must be a positive value in
+     * the (0, 1) interval.
+     *
+     * When motion is increasing, the average is adjusted as:
+     *  runAvg = ratio * current + (1 - ratio) * runAvg
+     * When motion is decreasing, the average is adjusted as:
+     *  runAvg = ratio * runAvg + (1 - ratio) * current
+     *
+     * When this optional field is not provided, the algorithm will not
+     * compute any running average.
+     */
+  optional float runAvgRatio = 4;
+
+  /**<   The running average is capped at this value so that when there
+     * is extensive motion it doesn't take a long time to settle back
+     * down. This value is ignored if the runAvgRatio is not set.
+    */
+  optional float runAvgCap = 5;
+
+}

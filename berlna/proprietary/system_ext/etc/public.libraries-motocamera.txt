@@ -1,0 +1,1 @@
+libmcf_native_window_helper.motocamera.so

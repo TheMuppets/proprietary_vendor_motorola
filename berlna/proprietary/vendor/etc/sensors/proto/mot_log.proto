@@ -1,0 +1,46 @@
+// @file mot_log.proto
+//
+// Defines message types for the Motorola Logging Sensor.
+//
+// Copyright (c) 2017 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// Mot mechanism for slpi code to send log messages through a logging sensor
+// and QMI up to the standard Android logging mechanism
+
+// Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_log"
+
+// Message IDs for Mot Log Sensor
+enum mot_log_msgid {
+    option (nanopb_enumopt).long_names = false;
+
+    // MSGID for sensors to send events to the mot_log sensor
+    MOT_LOG_MSGID_MOT_LOG_EVENT = 470;
+}
+
+// Verb levels (same as sensors_log.h)
+enum mot_log_verb {
+    option (nanopb_enumopt).long_names = false;
+
+    MOT_LOG_VERB_E = 1;
+    MOT_LOG_VERB_I = 2;
+    MOT_LOG_VERB_D = 3;
+    MOT_LOG_VERB_V = 4;
+}
+
+message mot_log_event
+{
+    // Verbosity
+    required mot_log_verb verb = 1 [default = MOT_LOG_VERB_V];
+
+    // Message
+    required string msg = 2;
+
+    // Optional log tag (truncated to 15 chars)
+    optional string tag = 3;
+}

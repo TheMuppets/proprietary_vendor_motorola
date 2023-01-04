@@ -1,0 +1,4 @@
+service imgtuner-hal-1-0 /vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
+    class hal
+    user camera
+    group camera

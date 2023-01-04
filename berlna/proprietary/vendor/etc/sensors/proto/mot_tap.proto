@@ -1,0 +1,44 @@
+// @file mot_tap.proto
+//
+// Defines standard message types for the Mot_Tap
+//
+// Copyright (c) 2019 Motorola Mobility
+// All Rights Reserved.
+// Confidential and Proprietary - Motorola Mobility
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std.proto";
+import "sns_std_sensor.proto";
+
+// Mot_Tap Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "mot_tap"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_SINGLE_OUTPUT
+
+// Sensor output event:
+// Mot_Tap use mot_tap_event for its output event
+
+enum mot_tap_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // From Algo, name is string matched to "mot_tap_event" msg below
+  MOT_TAP_MSGID_MOT_TAP_EVENT = 1056;
+}
+
+enum mot_tap_event_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  MOT_TAP_EVENT_TYPE_UNKNOWN            = 0;
+  MOT_TAP_EVENT_TYPE_TAP_DETECTED       = 1;
+}
+
+message mot_tap_event
+{
+  required mot_tap_event_type state = 1 [default = MOT_TAP_EVENT_TYPE_UNKNOWN];
+  required int32 taps = 2;
+  required float period = 3;
+  required float conf = 4;
+  optional float angle = 5;
+}

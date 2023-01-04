@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <required-managed-device package="com.motorola.camera3"/>
+    <required-managed-user package="com.motorola.camera3"/>
+</config>

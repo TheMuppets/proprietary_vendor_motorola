@@ -173,9 +173,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/parker/proprietary/vendor/firmware/mot_bm24218.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_bm24218.prog \
     vendor/motorola/parker/proprietary/vendor/firmware/mot_bm24218_tele.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_bm24218_tele.coeff \
     vendor/motorola/parker/proprietary/vendor/firmware/mot_bm24218_tele.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_bm24218_tele.prog \
+    vendor/motorola/parker/proprietary/vendor/lib/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sm6150.so \
     vendor/motorola/parker/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/motorola/parker/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
     vendor/motorola/parker/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/motorola/parker/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
+    vendor/motorola/parker/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
+    vendor/motorola/parker/proprietary/vendor/lib/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunshorten.so \
+    vendor/motorola/parker/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so \
+    vendor/motorola/parker/proprietary/vendor/lib/soundfx/libspeakerbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspeakerbundle.so \
+    vendor/motorola/parker/proprietary/vendor/lib/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libtinyalsa.so \
     vendor/motorola/parker/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_cat24c64_s5kgm1sp_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_cat24c64_s5kgm1sp_eeprom.so \
     vendor/motorola/parker/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128_ov08a10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128_ov08a10_eeprom.so \
     vendor/motorola/parker/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_ov16885_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_ov16885_eeprom.so \

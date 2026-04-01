@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libmcf-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-base.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libmcf-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-jni.so \
-    vendor/motorola/exynos9610-common/proprietary/product/lib64/libmegface.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmegface.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_cinema_graph.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_defocusface.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_defocusface.so \
     vendor/motorola/exynos9610-common/proprietary/product/lib64/libmorpho_easy_hdr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_easy_hdr.so \
